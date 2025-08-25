@@ -3,6 +3,7 @@ import torch
 
 from backbone.vitclassifaction  import VisionTransformer
 from backbone.vitface import ViTs_face
+import config as Config
 
 def load_timm_pretrained_weights(custom_model, model_name='deit_tiny_patch16_224'):
     """Loads pretrained weights from timm into your custom model."""
@@ -31,10 +32,10 @@ def load_model_weights(model, checkpoint_path, strict=False):
     model.load_state_dict(compatible_state, strict=strict)
 
 
-def get_model(config, num_classes=100, lora_rank=0, pretrained=True, 
+def get_model(num_classes=100, lora_rank=0, pretrained=True, 
               drop_rate=0, device='cuda'):
     
-    task_name = getattr(config, 'taskName', getattr(config, 'TaskName', '')).lower()
+    task_name = getattr(Config, 'taskName', getattr(Config, 'TaskName', '')).lower()
     
     if task_name == "classification":
         model = VisionTransformer(
