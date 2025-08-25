@@ -1,0 +1,232 @@
+=== Configurations ===
+Config: TaskName set to 'Face_recognition'
+🚀 Enhanced GS-LoRA CLU Training - Step 3
+============================================================
+🔧 Configuration:
+   Device: cuda
+   LoRA Rank: 16 (Enhanced)
+   Base Learning Rate: 0.001
+   Training Phases: 30 + 60 + 30 = 120 epochs
+   Loss Weights: Retain=2.0, New=2.0, Forget=0.15
+   Sparsity Settings: Warmup=10, Alpha_K=0.003
+   Learning Rate Multipliers: LoRA=2.0x, Retain=0.5x, New=1.5x
+   Step Description: Third step: Retain 30-69, Forget 20-29, Learn 70-79
+============================================================
+
+================================================================================
+ENHANCED GS-LoRA STEP 3
+Retain Classes: 30-69 (40 classes)
+Forget Classes: 20-29 (10 classes)
+New Classes:    70-79 (10 classes)
+LoRA Rank: 16, Epochs: 120
+================================================================================
+🛠️ Explicitly received params: {'GPU_ID': [0], 'num_class': 100, 'lora_rank': 16}
+🔒 LoRA mode (rank=16): Freezing backbone, unfreezing LoRA + classifier
+Loaded pretrained weights from timm: deit_tiny_patch16_224
+✅ Loaded pretrained weights
+✅ Built face model
+
+📊 Parameter Summary:
+  🔢 Total Parameters     : 5.79M
+  ✅ Trainable Parameters : 0.39M
+  📉 % Trainable          : 6.69%
+✓ Loaded model from: checkpoints/steps/20_69.pth
+  Compatible parameters: 187/187
+✓ Found 12 LoRA groups for enhanced sparse regularization
+✓ Data loaders created:
+  Retain: 66 batches
+  Forget: 111 batches
+  New:    119 batches
+✓ Enhanced optimizer created with 2 parameter groups
+
+🚀 Starting Enhanced Training for 120 epochs
+Phase Schedule: Retention(30) -> Balanced(60) -> Fine-tuning(30)
+Epoch 001/120 [Retention ] | Retain 58.38%(28.2) | Forget 0.00%(17.3) | New 0.00%(20.8) | Combined 45.98% | Balanced 29.19% | H-Mean 73.72 | Efficiency 29.19 | Zero 0.000 | LR 1.50e-03 | α 0.0000
+  ✓ Saved new best model: Combined Acc 45.98%
+    Path: checkpoints/steps/best_step3_epoch1.pth
+Epoch 002/120 [Retention ] | Retain 57.56%(28.8) | Forget 0.00%(19.0) | New 0.10%(21.4) | Combined 45.36% | Balanced 28.83% | H-Mean 73.07 | Efficiency 28.83 | Zero 0.000 | LR 1.50e-03 | α 0.0000
+Epoch 003/120 [Retention ] | Retain 60.06%(29.1) | Forget 0.00%(18.6) | New 0.83%(20.4) | Combined 47.48% | Balanced 30.45% | H-Mean 75.05 | Efficiency 30.45 | Zero 0.000 | LR 1.50e-03 | α 0.0000
+  ✓ Saved new best model: Combined Acc 47.48%
+    Path: checkpoints/steps/best_step3_epoch3.pth
+Epoch 004/120 [Retention ] | Retain 62.76%(28.7) | Forget 0.00%(17.6) | New 2.08%(20.3) | Combined 49.87% | Balanced 32.42% | H-Mean 77.12 | Efficiency 32.42 | Zero 0.000 | LR 1.50e-03 | α 0.0000
+  ✓ Saved new best model: Combined Acc 49.87%
+    Path: checkpoints/steps/best_step3_epoch4.pth
+Epoch 005/120 [Retention ] | Retain 62.14%(30.4) | Forget 0.00%(18.8) | New 0.62%(21.9) | Combined 49.07% | Balanced 31.38% | H-Mean 76.65 | Efficiency 31.38 | Zero 0.000 | LR 1.50e-03 | α 0.0000
+Epoch 006/120 [Retention ] | Retain 63.26%(31.3) | Forget 0.00%(20.5) | New 3.85%(22.1) | Combined 50.64% | Balanced 33.56% | H-Mean 77.50 | Efficiency 33.56 | Zero 0.000 | LR 1.50e-03 | α 0.0000
+  ✓ Saved new best model: Combined Acc 50.64%
+    Path: checkpoints/steps/best_step3_epoch6.pth
+Epoch 007/120 [Retention ] | Retain 62.19%(29.1) | Forget 0.00%(18.5) | New 3.33%(20.1) | Combined 49.69% | Balanced 32.76% | H-Mean 76.69 | Efficiency 32.76 | Zero 0.000 | LR 1.50e-03 | α 0.0000
+Epoch 008/120 [Retention ] | Retain 63.68%(30.4) | Forget 0.00%(19.0) | New 4.89%(20.4) | Combined 51.19% | Balanced 34.29% | H-Mean 77.81 | Efficiency 34.29 | Zero 0.000 | LR 1.50e-03 | α 0.0000
+  ✓ Saved new best model: Combined Acc 51.19%
+    Path: checkpoints/steps/best_step3_epoch8.pth
+Epoch 009/120 [Retention ] | Retain 63.46%(29.7) | Forget 0.00%(18.4) | New 7.08%(19.7) | Combined 51.48% | Balanced 35.27% | H-Mean 77.64 | Efficiency 35.27 | Zero 0.000 | LR 1.50e-03 | α 0.0000
+Epoch 010/120 [Retention ] | Retain 62.70%(29.7) | Forget 0.00%(19.2) | New 4.68%(20.3) | Combined 50.38% | Balanced 33.69% | H-Mean 77.07 | Efficiency 33.69 | Zero 0.000 | LR 1.50e-03 | α 0.0000
+Epoch 011/120 [Retention ] | Retain 63.26%(28.6) | Forget 0.00%(17.8) | New 7.28%(18.7) | Combined 51.37% | Balanced 35.27% | H-Mean 77.50 | Efficiency 35.27 | Zero 0.000 | LR 1.50e-03 | α 0.0001
+Epoch 012/120 [Retention ] | Retain 62.53%(29.0) | Forget 0.00%(19.0) | New 6.87%(18.1) | Combined 50.71% | Balanced 34.70% | H-Mean 76.95 | Efficiency 34.70 | Zero 0.000 | LR 1.50e-03 | α 0.0002
+Epoch 013/120 [Retention ] | Retain 63.68%(29.9) | Forget 0.00%(18.5) | New 10.51%(18.7) | Combined 52.39% | Balanced 37.10% | H-Mean 77.81 | Efficiency 37.10 | Zero 0.000 | LR 1.50e-03 | α 0.0002
+  ✓ Saved new best model: Combined Acc 52.39%
+    Path: checkpoints/steps/best_step3_epoch13.pth
+Epoch 014/120 [Retention ] | Retain 61.04%(29.6) | Forget 0.00%(18.1) | New 13.32%(18.0) | Combined 50.91% | Balanced 37.18% | H-Mean 75.81 | Efficiency 37.18 | Zero 0.000 | LR 1.50e-03 | α 0.0003
+Epoch 015/120 [Retention ] | Retain 62.28%(29.4) | Forget 0.00%(17.6) | New 15.71%(17.0) | Combined 52.39% | Balanced 39.00% | H-Mean 76.76 | Efficiency 39.00 | Zero 0.000 | LR 1.50e-03 | α 0.0004
+Epoch 016/120 [Retention ] | Retain 61.66%(29.4) | Forget 0.00%(18.3) | New 13.11%(16.9) | Combined 51.35% | Balanced 37.39% | H-Mean 76.28 | Efficiency 37.39 | Zero 0.000 | LR 1.50e-03 | α 0.0005
+Epoch 017/120 [Retention ] | Retain 62.92%(29.3) | Forget 0.00%(17.6) | New 19.25%(16.1) | Combined 53.65% | Balanced 41.09% | H-Mean 77.24 | Efficiency 41.09 | Zero 0.000 | LR 1.50e-03 | α 0.0005
+  ✓ Saved new best model: Combined Acc 53.65%
+    Path: checkpoints/steps/best_step3_epoch17.pth
+Epoch 018/120 [Retention ] | Retain 62.11%(28.5) | Forget 0.00%(16.7) | New 20.40%(15.9) | Combined 53.25% | Balanced 41.25% | H-Mean 76.63 | Efficiency 41.25 | Zero 0.000 | LR 1.50e-03 | α 0.0006
+Epoch 019/120 [Retention ] | Retain 61.94%(28.4) | Forget 0.00%(17.6) | New 21.85%(15.6) | Combined 53.43% | Balanced 41.90% | H-Mean 76.50 | Efficiency 41.90 | Zero 0.000 | LR 1.50e-03 | α 0.0007
+Epoch 020/120 [Retention ] | Retain 62.87%(28.1) | Forget 0.00%(16.7) | New 27.37%(14.2) | Combined 55.33% | Balanced 45.12% | H-Mean 77.20 | Efficiency 45.12 | Zero 0.000 | LR 1.50e-03 | α 0.0007
+  ✓ Saved new best model: Combined Acc 55.33%
+    Path: checkpoints/steps/best_step3_epoch20.pth
+Epoch 021/120 [Retention ] | Retain 63.18%(29.2) | Forget 0.00%(17.2) | New 25.08%(14.7) | Combined 55.08% | Balanced 44.13% | H-Mean 77.43 | Efficiency 44.13 | Zero 0.000 | LR 1.50e-03 | α 0.0008
+Epoch 022/120 [Retention ] | Retain 61.27%(28.3) | Forget 0.00%(16.1) | New 29.03%(14.0) | Combined 54.42% | Balanced 45.15% | H-Mean 75.98 | Efficiency 45.15 | Zero 0.000 | LR 1.50e-03 | α 0.0008
+Epoch 023/120 [Retention ] | Retain 62.22%(29.1) | Forget 0.00%(17.5) | New 32.15%(14.3) | Combined 55.84% | Balanced 47.19% | H-Mean 76.71 | Efficiency 47.19 | Zero 0.000 | LR 1.50e-03 | α 0.0009
+  ✓ Saved new best model: Combined Acc 55.84%
+    Path: checkpoints/steps/best_step3_epoch23.pth
+Epoch 024/120 [Retention ] | Retain 60.76%(28.1) | Forget 0.00%(17.1) | New 26.64%(13.2) | Combined 53.51% | Balanced 43.70% | H-Mean 75.59 | Efficiency 43.70 | Zero 0.000 | LR 1.50e-03 | α 0.0010
+Epoch 025/120 [Retention ] | Retain 61.27%(29.0) | Forget 0.00%(17.1) | New 28.62%(13.8) | Combined 54.33% | Balanced 44.94% | H-Mean 75.98 | Efficiency 44.94 | Zero 0.000 | LR 1.50e-03 | α 0.0010
+Epoch 026/120 [Retention ] | Retain 61.61%(28.5) | Forget 0.00%(17.2) | New 30.91%(13.2) | Combined 55.08% | Balanced 46.26% | H-Mean 76.24 | Efficiency 46.26 | Zero 0.000 | LR 1.50e-03 | α 0.0011
+Epoch 027/120 [Retention ] | Retain 60.12%(27.6) | Forget 0.00%(16.7) | New 31.63%(12.1) | Combined 54.07% | Balanced 45.88% | H-Mean 75.09 | Efficiency 45.88 | Zero 0.000 | LR 1.50e-03 | α 0.0011
+Epoch 028/120 [Retention ] | Retain 61.55%(27.9) | Forget 0.00%(16.1) | New 36.00%(11.5) | Combined 56.12% | Balanced 48.78% | H-Mean 76.20 | Efficiency 48.78 | Zero 0.000 | LR 1.50e-03 | α 0.0012
+Epoch 029/120 [Retention ] | Retain 60.23%(27.3) | Forget 0.00%(15.6) | New 40.48%(10.7) | Combined 56.03% | Balanced 50.35% | H-Mean 75.18 | Efficiency 50.35 | Zero 0.000 | LR 1.50e-03 | α 0.0012
+Epoch 030/120 [Retention ] | Retain 60.90%(27.6) | Forget 0.00%(15.9) | New 34.03%(11.8) | Combined 55.19% | Balanced 47.47% | H-Mean 75.70 | Efficiency 47.47 | Zero 0.000 | LR 1.50e-03 | α 0.0013
+
+🔄 Transitioning to Balanced Phase (emphasis on both retain and new)
+Epoch 031/120 [Balanced  ] | Retain 59.50%(27.6) | Forget 0.00%(15.0) | New 36.94%(11.2) | Combined 54.71% | Balanced 48.22% | H-Mean 74.61 | Efficiency 48.22 | Zero 0.000 | LR 1.49e-03 | α 0.0013
+Epoch 032/120 [Balanced  ] | Retain 60.65%(26.5) | Forget 0.00%(13.7) | New 40.58%(9.7) | Combined 56.39% | Balanced 50.62% | H-Mean 75.51 | Efficiency 50.62 | Zero 0.000 | LR 1.48e-03 | α 0.0014
+  ✓ Saved new best model: Combined Acc 56.39%
+    Path: checkpoints/steps/best_step3_epoch32.pth
+Epoch 033/120 [Balanced  ] | Retain 61.61%(27.8) | Forget 0.00%(14.7) | New 37.36%(10.6) | Combined 56.45% | Balanced 49.48% | H-Mean 76.24 | Efficiency 49.48 | Zero 0.000 | LR 1.48e-03 | α 0.0014
+Epoch 034/120 [Balanced  ] | Retain 59.47%(26.7) | Forget 0.00%(14.7) | New 41.52%(10.6) | Combined 55.66% | Balanced 50.50% | H-Mean 74.59 | Efficiency 50.50 | Zero 0.000 | LR 1.47e-03 | α 0.0014
+Epoch 035/120 [Balanced  ] | Retain 60.01%(27.4) | Forget 0.00%(15.1) | New 46.72%(10.2) | Combined 57.18% | Balanced 53.36% | H-Mean 75.00 | Efficiency 53.36 | Zero 0.000 | LR 1.46e-03 | α 0.0015
+  ✓ Saved new best model: Combined Acc 57.18%
+    Path: checkpoints/steps/best_step3_epoch35.pth
+Epoch 036/120 [Balanced  ] | Retain 60.03%(26.5) | Forget 0.00%(13.6) | New 46.83%(9.3) | Combined 57.23% | Balanced 53.43% | H-Mean 75.03 | Efficiency 53.43 | Zero 0.000 | LR 1.45e-03 | α 0.0015
+Epoch 037/120 [Balanced  ] | Retain 60.37%(27.0) | Forget 0.00%(15.0) | New 43.39%(10.0) | Combined 56.76% | Balanced 51.88% | H-Mean 75.29 | Efficiency 51.88 | Zero 0.000 | LR 1.45e-03 | α 0.0016
+Epoch 038/120 [Balanced  ] | Retain 59.44%(25.8) | Forget 0.00%(13.6) | New 46.31%(9.2) | Combined 56.65% | Balanced 52.88% | H-Mean 74.56 | Efficiency 52.88 | Zero 0.000 | LR 1.44e-03 | α 0.0016
+Epoch 039/120 [Balanced  ] | Retain 58.97%(26.5) | Forget 0.00%(14.9) | New 47.55%(9.9) | Combined 56.54% | Balanced 53.26% | H-Mean 74.19 | Efficiency 53.26 | Zero 0.000 | LR 1.43e-03 | α 0.0016
+Epoch 040/120 [Balanced  ] | Retain 59.61%(25.6) | Forget 0.00%(13.4) | New 49.22%(9.3) | Combined 57.40% | Balanced 54.42% | H-Mean 74.70 | Efficiency 54.42 | Zero 0.000 | LR 1.43e-03 | α 0.0017
+Epoch 041/120 [Balanced  ] | Retain 61.27%(27.0) | Forget 0.00%(14.4) | New 54.63%(9.5) | Combined 59.86% | Balanced 57.95% | H-Mean 75.98 | Efficiency 57.95 | Zero 0.000 | LR 1.42e-03 | α 0.0017
+  ✓ Saved new best model: Combined Acc 59.86%
+    Path: checkpoints/steps/best_step3_epoch41.pth
+Epoch 042/120 [Balanced  ] | Retain 58.91%(25.5) | Forget 0.00%(13.8) | New 54.42%(9.0) | Combined 57.96% | Balanced 56.67% | H-Mean 74.14 | Efficiency 56.67 | Zero 0.000 | LR 1.41e-03 | α 0.0017
+Epoch 043/120 [Balanced  ] | Retain 59.28%(26.7) | Forget 0.00%(14.0) | New 53.07%(9.3) | Combined 57.96% | Balanced 56.17% | H-Mean 74.43 | Efficiency 56.17 | Zero 0.000 | LR 1.40e-03 | α 0.0018
+Epoch 044/120 [Balanced  ] | Retain 57.87%(25.5) | Forget 0.00%(12.8) | New 50.78%(9.4) | Combined 56.37% | Balanced 54.33% | H-Mean 73.32 | Efficiency 54.33 | Zero 0.000 | LR 1.39e-03 | α 0.0018
+Epoch 045/120 [Balanced  ] | Retain 57.51%(24.4) | Forget 0.00%(12.7) | New 58.38%(8.5) | Combined 57.69% | Balanced 57.94% | H-Mean 73.02 | Efficiency 57.94 | Zero 0.000 | LR 1.39e-03 | α 0.0018
+Epoch 046/120 [Balanced  ] | Retain 58.52%(26.4) | Forget 0.00%(14.2) | New 54.01%(9.8) | Combined 57.56% | Balanced 56.26% | H-Mean 73.83 | Efficiency 56.26 | Zero 0.000 | LR 1.38e-03 | α 0.0019
+Epoch 047/120 [Balanced  ] | Retain 57.51%(23.9) | Forget 0.00%(12.2) | New 56.09%(8.2) | Combined 57.21% | Balanced 56.80% | H-Mean 73.02 | Efficiency 56.80 | Zero 0.000 | LR 1.37e-03 | α 0.0019
+Epoch 048/120 [Balanced  ] | Retain 57.65%(24.6) | Forget 0.00%(12.2) | New 60.67%(8.4) | Combined 58.29% | Balanced 59.16% | H-Mean 73.14 | Efficiency 59.16 | Zero 0.000 | LR 1.36e-03 | α 0.0019
+Epoch 049/120 [Balanced  ] | Retain 56.61%(24.1) | Forget 0.00%(12.7) | New 59.73%(8.5) | Combined 57.27% | Balanced 58.17% | H-Mean 72.29 | Efficiency 58.17 | Zero 0.000 | LR 1.36e-03 | α 0.0020
+Epoch 050/120 [Balanced  ] | Retain 56.05%(24.0) | Forget 0.00%(12.4) | New 64.72%(8.3) | Combined 57.89% | Balanced 60.39% | H-Mean 71.83 | Efficiency 60.39 | Zero 0.000 | LR 1.35e-03 | α 0.0020
+Epoch 051/120 [Balanced  ] | Retain 55.07%(24.4) | Forget 0.00%(12.7) | New 62.75%(8.7) | Combined 56.70% | Balanced 58.91% | H-Mean 71.02 | Efficiency 58.91 | Zero 0.000 | LR 1.34e-03 | α 0.0020
+Epoch 052/120 [Balanced  ] | Retain 57.65%(24.4) | Forget 0.00%(12.8) | New 63.58%(8.8) | Combined 58.91% | Balanced 60.61% | H-Mean 73.14 | Efficiency 60.61 | Zero 0.000 | LR 1.34e-03 | α 0.0020
+Epoch 053/120 [Balanced  ] | Retain 57.40%(24.4) | Forget 0.00%(13.2) | New 62.75%(9.2) | Combined 58.53% | Balanced 60.07% | H-Mean 72.93 | Efficiency 60.07 | Zero 0.000 | LR 1.33e-03 | α 0.0021
+Epoch 054/120 [Balanced  ] | Retain 56.39%(24.6) | Forget 0.00%(12.3) | New 62.43%(9.2) | Combined 57.67% | Balanced 59.41% | H-Mean 72.11 | Efficiency 59.41 | Zero 0.000 | LR 1.32e-03 | α 0.0021
+Epoch 055/120 [Balanced  ] | Retain 55.52%(23.9) | Forget 0.00%(12.5) | New 65.35%(9.1) | Combined 57.60% | Balanced 60.43% | H-Mean 71.40 | Efficiency 60.43 | Zero 0.000 | LR 1.31e-03 | α 0.0021
+Epoch 056/120 [Balanced  ] | Retain 55.68%(23.8) | Forget 0.00%(12.8) | New 65.56%(9.0) | Combined 57.78% | Balanced 60.62% | H-Mean 71.53 | Efficiency 60.62 | Zero 0.000 | LR 1.30e-03 | α 0.0021
+Epoch 057/120 [Balanced  ] | Retain 53.47%(23.0) | Forget 0.00%(12.4) | New 65.97%(8.6) | Combined 56.12% | Balanced 59.72% | H-Mean 69.68 | Efficiency 59.72 | Zero 0.000 | LR 1.30e-03 | α 0.0022
+Epoch 058/120 [Balanced  ] | Retain 55.12%(23.6) | Forget 0.00%(12.9) | New 66.60%(8.7) | Combined 57.56% | Balanced 60.86% | H-Mean 71.07 | Efficiency 60.86 | Zero 0.000 | LR 1.29e-03 | α 0.0022
+Epoch 059/120 [Balanced  ] | Retain 56.30%(23.9) | Forget 0.00%(12.8) | New 67.95%(9.2) | Combined 58.78% | Balanced 62.13% | H-Mean 72.04 | Efficiency 62.13 | Zero 0.000 | LR 1.28e-03 | α 0.0022
+Epoch 060/120 [Balanced  ] | Retain 55.68%(24.3) | Forget 0.00%(13.3) | New 66.18%(9.3) | Combined 57.91% | Balanced 60.93% | H-Mean 71.53 | Efficiency 60.93 | Zero 0.000 | LR 1.27e-03 | α 0.0022
+Epoch 061/120 [Balanced  ] | Retain 57.40%(25.2) | Forget 0.00%(13.9) | New 64.00%(9.9) | Combined 58.80% | Balanced 60.70% | H-Mean 72.93 | Efficiency 60.70 | Zero 0.000 | LR 1.27e-03 | α 0.0023
+Epoch 062/120 [Balanced  ] | Retain 54.90%(24.1) | Forget 0.00%(13.7) | New 66.91%(9.5) | Combined 57.45% | Balanced 60.90% | H-Mean 70.88 | Efficiency 60.90 | Zero 0.000 | LR 1.26e-03 | α 0.0023
+Epoch 063/120 [Balanced  ] | Retain 54.98%(24.1) | Forget 0.00%(12.7) | New 68.47%(9.8) | Combined 57.85% | Balanced 61.73% | H-Mean 70.95 | Efficiency 61.73 | Zero 0.000 | LR 1.25e-03 | α 0.0023
+Epoch 064/120 [Balanced  ] | Retain 55.37%(23.9) | Forget 0.00%(12.9) | New 68.68%(10.1) | Combined 58.20% | Balanced 62.03% | H-Mean 71.28 | Efficiency 62.03 | Zero 0.000 | LR 1.25e-03 | α 0.0023
+Epoch 065/120 [Balanced  ] | Retain 54.56%(23.0) | Forget 0.00%(11.7) | New 70.97%(8.7) | Combined 58.05% | Balanced 62.76% | H-Mean 70.60 | Efficiency 62.76 | Zero 0.000 | LR 1.24e-03 | α 0.0023
+Epoch 066/120 [Balanced  ] | Retain 56.47%(24.7) | Forget 0.00%(13.2) | New 67.85%(10.1) | Combined 58.89% | Balanced 62.16% | H-Mean 72.18 | Efficiency 62.16 | Zero 0.000 | LR 1.23e-03 | α 0.0023
+Epoch 067/120 [Balanced  ] | Retain 53.41%(22.6) | Forget 0.00%(11.3) | New 70.97%(9.5) | Combined 57.14% | Balanced 62.19% | H-Mean 69.63 | Efficiency 62.19 | Zero 0.000 | LR 1.22e-03 | α 0.0024
+Epoch 068/120 [Balanced  ] | Retain 55.29%(24.0) | Forget 0.00%(14.0) | New 67.95%(10.3) | Combined 57.98% | Balanced 61.62% | H-Mean 71.21 | Efficiency 61.62 | Zero 0.000 | LR 1.22e-03 | α 0.0024
+Epoch 069/120 [Balanced  ] | Retain 53.86%(23.1) | Forget 0.00%(12.9) | New 73.78%(9.7) | Combined 58.09% | Balanced 63.82% | H-Mean 70.01 | Efficiency 63.82 | Zero 0.000 | LR 1.21e-03 | α 0.0024
+Epoch 070/120 [Balanced  ] | Retain 53.97%(23.8) | Forget 0.00%(14.2) | New 72.11%(10.0) | Combined 57.82% | Balanced 63.04% | H-Mean 70.11 | Efficiency 63.04 | Zero 0.000 | LR 1.20e-03 | α 0.0024
+Epoch 071/120 [Balanced  ] | Retain 55.82%(23.9) | Forget 0.00%(13.8) | New 70.45%(10.7) | Combined 58.93% | Balanced 63.14% | H-Mean 71.65 | Efficiency 63.14 | Zero 0.000 | LR 1.19e-03 | α 0.0024
+Epoch 072/120 [Balanced  ] | Retain 53.10%(22.4) | Forget 0.00%(12.1) | New 74.19%(9.7) | Combined 57.58% | Balanced 63.65% | H-Mean 69.37 | Efficiency 63.65 | Zero 0.000 | LR 1.19e-03 | α 0.0024
+Epoch 073/120 [Balanced  ] | Retain 56.22%(24.2) | Forget 0.00%(13.2) | New 70.55%(10.8) | Combined 59.26% | Balanced 63.38% | H-Mean 71.97 | Efficiency 63.38 | Zero 0.000 | LR 1.18e-03 | α 0.0025
+Epoch 074/120 [Balanced  ] | Retain 52.65%(22.9) | Forget 0.00%(12.7) | New 74.19%(10.1) | Combined 57.23% | Balanced 63.42% | H-Mean 68.98 | Efficiency 63.42 | Zero 0.000 | LR 1.17e-03 | α 0.0025
+Epoch 075/120 [Balanced  ] | Retain 54.93%(23.0) | Forget 0.00%(12.6) | New 75.13%(10.1) | Combined 59.22% | Balanced 65.03% | H-Mean 70.91 | Efficiency 65.03 | Zero 0.000 | LR 1.16e-03 | α 0.0025
+Epoch 076/120 [Balanced  ] | Retain 54.06%(23.3) | Forget 0.00%(13.3) | New 75.13%(10.9) | Combined 58.53% | Balanced 64.59% | H-Mean 70.18 | Efficiency 64.59 | Zero 0.000 | LR 1.16e-03 | α 0.0025
+Epoch 077/120 [Balanced  ] | Retain 53.58%(22.7) | Forget 0.00%(13.1) | New 74.71%(10.7) | Combined 58.07% | Balanced 64.15% | H-Mean 69.77 | Efficiency 64.15 | Zero 0.000 | LR 1.15e-03 | α 0.0025
+Epoch 078/120 [Balanced  ] | Retain 53.75%(22.8) | Forget 0.00%(12.6) | New 73.57%(10.5) | Combined 57.96% | Balanced 63.66% | H-Mean 69.92 | Efficiency 63.66 | Zero 0.000 | LR 1.14e-03 | α 0.0025
+Epoch 079/120 [Balanced  ] | Retain 54.81%(23.6) | Forget 0.00%(13.1) | New 73.47%(11.2) | Combined 58.78% | Balanced 64.14% | H-Mean 70.81 | Efficiency 64.14 | Zero 0.000 | LR 1.13e-03 | α 0.0025
+Epoch 080/120 [Balanced  ] | Retain 53.66%(23.1) | Forget 0.00%(12.8) | New 74.61%(10.8) | Combined 58.11% | Balanced 64.14% | H-Mean 69.84 | Efficiency 64.14 | Zero 0.000 | LR 1.13e-03 | α 0.0026
+Epoch 081/120 [Balanced  ] | Retain 54.50%(23.6) | Forget 0.00%(12.7) | New 75.03%(10.8) | Combined 58.86% | Balanced 64.77% | H-Mean 70.55 | Efficiency 64.77 | Zero 0.000 | LR 1.12e-03 | α 0.0026
+Epoch 082/120 [Balanced  ] | Retain 54.53%(23.7) | Forget 0.00%(13.5) | New 74.82%(11.0) | Combined 58.84% | Balanced 64.68% | H-Mean 70.58 | Efficiency 64.68 | Zero 0.000 | LR 1.11e-03 | α 0.0026
+Epoch 083/120 [Balanced  ] | Retain 54.08%(23.3) | Forget 0.00%(13.5) | New 75.13%(11.5) | Combined 58.55% | Balanced 64.61% | H-Mean 70.20 | Efficiency 64.61 | Zero 0.000 | LR 1.10e-03 | α 0.0026
+Epoch 084/120 [Balanced  ] | Retain 55.37%(23.9) | Forget 0.00%(13.9) | New 73.57%(11.6) | Combined 59.24% | Balanced 64.47% | H-Mean 71.28 | Efficiency 64.47 | Zero 0.000 | LR 1.10e-03 | α 0.0026
+Epoch 085/120 [Balanced  ] | Retain 54.98%(23.9) | Forget 0.00%(13.2) | New 72.74%(11.7) | Combined 58.75% | Balanced 63.86% | H-Mean 70.95 | Efficiency 63.86 | Zero 0.000 | LR 1.09e-03 | α 0.0026
+Epoch 086/120 [Balanced  ] | Retain 54.00%(23.3) | Forget 0.00%(13.2) | New 76.27%(11.9) | Combined 58.73% | Balanced 65.14% | H-Mean 70.13 | Efficiency 65.14 | Zero 0.000 | LR 1.08e-03 | α 0.0026
+Epoch 087/120 [Balanced  ] | Retain 54.11%(23.3) | Forget 0.00%(13.0) | New 75.23%(11.4) | Combined 58.60% | Balanced 64.67% | H-Mean 70.22 | Efficiency 64.67 | Zero 0.000 | LR 1.07e-03 | α 0.0026
+Epoch 088/120 [Balanced  ] | Retain 52.43%(22.4) | Forget 0.00%(12.3) | New 77.21%(11.2) | Combined 57.69% | Balanced 64.82% | H-Mean 68.79 | Efficiency 64.82 | Zero 0.000 | LR 1.06e-03 | α 0.0026
+Epoch 089/120 [Balanced  ] | Retain 52.40%(22.3) | Forget 0.00%(12.1) | New 77.00%(11.1) | Combined 57.63% | Balanced 64.70% | H-Mean 68.77 | Efficiency 64.70 | Zero 0.000 | LR 1.06e-03 | α 0.0027
+Epoch 090/120 [Balanced  ] | Retain 52.51%(22.1) | Forget 0.00%(11.6) | New 79.19%(11.3) | Combined 58.18% | Balanced 65.85% | H-Mean 68.86 | Efficiency 65.85 | Zero 0.000 | LR 4.50e-04 | α 0.0027
+
+🔧 Transitioning to Fine-tuning Phase (optimizing efficiency)
+Epoch 091/120 [Fine-tuning] | Retain 54.06%(23.4) | Forget 0.00%(12.5) | New 77.94%(12.3) | Combined 59.13% | Balanced 66.00% | H-Mean 70.18 | Efficiency 66.00 | Zero 0.000 | LR 4.50e-04 | α 0.0027
+Epoch 092/120 [Fine-tuning] | Retain 54.34%(23.4) | Forget 0.00%(12.7) | New 78.25%(12.0) | Combined 59.42% | Balanced 66.29% | H-Mean 70.41 | Efficiency 66.29 | Zero 0.000 | LR 4.50e-04 | α 0.0027
+Epoch 093/120 [Fine-tuning] | Retain 54.70%(23.7) | Forget 0.00%(13.0) | New 77.84%(12.1) | Combined 59.62% | Balanced 66.27% | H-Mean 70.72 | Efficiency 66.27 | Zero 0.000 | LR 4.50e-04 | α 0.0027
+Epoch 094/120 [Fine-tuning] | Retain 54.34%(23.5) | Forget 0.00%(13.2) | New 77.94%(12.2) | Combined 59.35% | Balanced 66.14% | H-Mean 70.41 | Efficiency 66.14 | Zero 0.000 | LR 4.50e-04 | α 0.0027
+Epoch 095/120 [Fine-tuning] | Retain 53.19%(23.2) | Forget 0.00%(12.7) | New 77.00%(12.5) | Combined 58.24% | Balanced 65.09% | H-Mean 69.44 | Efficiency 65.09 | Zero 0.000 | LR 4.50e-04 | α 0.0027
+Epoch 096/120 [Fine-tuning] | Retain 54.00%(23.5) | Forget 0.00%(13.5) | New 78.36%(13.4) | Combined 59.17% | Balanced 66.18% | H-Mean 70.13 | Efficiency 66.18 | Zero 0.000 | LR 4.50e-04 | α 0.0027
+Epoch 097/120 [Fine-tuning] | Retain 54.14%(23.8) | Forget 0.00%(13.6) | New 78.56%(13.0) | Combined 59.33% | Balanced 66.35% | H-Mean 70.25 | Efficiency 66.35 | Zero 0.000 | LR 4.50e-04 | α 0.0027
+Epoch 098/120 [Fine-tuning] | Retain 54.84%(24.0) | Forget 0.00%(13.5) | New 78.67%(13.0) | Combined 59.90% | Balanced 66.75% | H-Mean 70.84 | Efficiency 66.75 | Zero 0.000 | LR 4.50e-04 | α 0.0027
+Epoch 099/120 [Fine-tuning] | Retain 54.39%(23.8) | Forget 0.00%(13.4) | New 77.84%(12.5) | Combined 59.37% | Balanced 66.11% | H-Mean 70.46 | Efficiency 66.11 | Zero 0.000 | LR 4.50e-04 | α 0.0027
+Epoch 100/120 [Fine-tuning] | Retain 53.52%(23.3) | Forget 0.00%(13.4) | New 79.60%(13.1) | Combined 59.06% | Balanced 66.56% | H-Mean 69.73 | Efficiency 66.56 | Zero 0.000 | LR 4.50e-04 | α 0.0027
+Epoch 101/120 [Fine-tuning] | Retain 54.73%(24.0) | Forget 0.00%(14.1) | New 78.56%(13.3) | Combined 59.79% | Balanced 66.65% | H-Mean 70.74 | Efficiency 66.65 | Zero 0.000 | LR 4.50e-04 | α 0.0027
+Epoch 102/120 [Fine-tuning] | Retain 54.03%(23.4) | Forget 0.00%(13.4) | New 78.77%(12.9) | Combined 59.28% | Balanced 66.40% | H-Mean 70.15 | Efficiency 66.40 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 103/120 [Fine-tuning] | Retain 54.31%(23.9) | Forget 0.00%(13.8) | New 79.29%(13.5) | Combined 59.62% | Balanced 66.80% | H-Mean 70.39 | Efficiency 66.80 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 104/120 [Fine-tuning] | Retain 54.00%(23.6) | Forget 0.00%(13.5) | New 77.63%(13.3) | Combined 59.02% | Balanced 65.81% | H-Mean 70.13 | Efficiency 65.81 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 105/120 [Fine-tuning] | Retain 54.22%(24.1) | Forget 0.00%(14.0) | New 77.52%(13.9) | Combined 59.17% | Balanced 65.87% | H-Mean 70.32 | Efficiency 65.87 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 106/120 [Fine-tuning] | Retain 53.44%(23.2) | Forget 0.00%(13.7) | New 78.88%(13.2) | Combined 58.84% | Balanced 66.16% | H-Mean 69.65 | Efficiency 66.16 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 107/120 [Fine-tuning] | Retain 53.80%(23.7) | Forget 0.00%(13.9) | New 78.46%(13.7) | Combined 59.04% | Balanced 66.13% | H-Mean 69.96 | Efficiency 66.13 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 108/120 [Fine-tuning] | Retain 53.02%(23.2) | Forget 0.00%(13.6) | New 79.50%(13.6) | Combined 58.64% | Balanced 66.26% | H-Mean 69.30 | Efficiency 66.26 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 109/120 [Fine-tuning] | Retain 53.49%(23.4) | Forget 0.00%(13.5) | New 79.71%(13.3) | Combined 59.06% | Balanced 66.60% | H-Mean 69.70 | Efficiency 66.60 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 110/120 [Fine-tuning] | Retain 53.19%(23.4) | Forget 0.00%(14.0) | New 78.36%(13.5) | Combined 58.53% | Balanced 65.77% | H-Mean 69.44 | Efficiency 65.77 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 111/120 [Fine-tuning] | Retain 54.03%(23.8) | Forget 0.00%(14.3) | New 79.29%(13.9) | Combined 59.39% | Balanced 66.66% | H-Mean 70.15 | Efficiency 66.66 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 112/120 [Fine-tuning] | Retain 54.39%(24.0) | Forget 0.00%(14.3) | New 79.71%(14.1) | Combined 59.77% | Balanced 67.05% | H-Mean 70.46 | Efficiency 67.05 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 113/120 [Fine-tuning] | Retain 53.05%(23.4) | Forget 0.00%(13.8) | New 80.75%(13.9) | Combined 58.93% | Balanced 66.90% | H-Mean 69.32 | Efficiency 66.90 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 114/120 [Fine-tuning] | Retain 53.69%(23.9) | Forget 0.00%(14.1) | New 80.23%(14.1) | Combined 59.33% | Balanced 66.96% | H-Mean 69.87 | Efficiency 66.96 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 115/120 [Fine-tuning] | Retain 52.79%(23.1) | Forget 0.00%(13.2) | New 81.17%(13.8) | Combined 58.82% | Balanced 66.98% | H-Mean 69.10 | Efficiency 66.98 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 116/120 [Fine-tuning] | Retain 53.72%(24.0) | Forget 0.00%(14.0) | New 79.92%(14.3) | Combined 59.28% | Balanced 66.82% | H-Mean 69.89 | Efficiency 66.82 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 117/120 [Fine-tuning] | Retain 54.25%(24.1) | Forget 0.00%(14.4) | New 78.77%(14.1) | Combined 59.46% | Balanced 66.51% | H-Mean 70.34 | Efficiency 66.51 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 118/120 [Fine-tuning] | Retain 52.71%(23.5) | Forget 0.00%(14.1) | New 79.19%(14.2) | Combined 58.33% | Balanced 65.95% | H-Mean 69.03 | Efficiency 65.95 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 119/120 [Fine-tuning] | Retain 53.72%(24.0) | Forget 0.00%(14.2) | New 78.36%(14.5) | Combined 58.95% | Balanced 66.04% | H-Mean 69.89 | Efficiency 66.04 | Zero 0.000 | LR 4.50e-04 | α 0.0028
+Epoch 120/120 [Fine-tuning] | Retain 53.16%(24.2) | Forget 0.00%(14.8) | New 80.23%(14.5) | Combined 58.91% | Balanced 66.69% | H-Mean 69.42 | Efficiency 66.69 | Zero 0.000 | LR 4.50e-04 | α 0.0029
+
+================================================================================
+ENHANCED GS-LoRA STEP 3 COMPLETE
+================================================================================
+📊 Final Comprehensive Evaluation:
+   Retain Classes (30-69):
+     Accuracy: 53.16%
+     F1-Score: 49.45%
+     Confidence: 29.8%
+   Forget Classes (20-29):
+     Accuracy: 0.00% (lower is better)
+     F1-Score: 0.00%
+     Confidence: 18.2%
+   New Classes (70-79):
+     Accuracy: 80.23%
+     F1-Score: 19.89%
+     Confidence: 18.3%
+   Combined Performance:
+     Overall Accuracy: 58.91%
+     Balanced Accuracy: 66.69%
+   Model Efficiency:
+     Zero Group Ratio: 0.000 (0.0% sparse)
+     Efficiency Score: 66.69
+   Training History: checkpoints/steps/training_history_step3.json
+   Best Performance Achieved:
+     Epoch: 41
+     Combined Accuracy: 59.86%
+     Balanced Accuracy: 57.95%
+     Best Zero Ratio: 0.000
+   Final Model: checkpoints/steps/30_79.pth
+================================================================================
+⚠️  Retain accuracy 53.16% below threshold 60.00%
+⚠️  Combined accuracy 58.91% below threshold 60.00%
+⚠️  Sparsity 0.000 below threshold 0.100
+❌ Some success criteria not met, but training completed
+
+⏱️  Training Time: 02:07:39
+
+❌ Enhanced GS-LoRA Step 3 completed with issues!
+📁 Model still saved to: checkpoints/steps/30_79.pth
+💡 Consider adjusting hyperparameters or training for more epochs

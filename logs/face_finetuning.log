@@ -1,0 +1,3539 @@
+=== Configurations ===
+Config: TaskName set to 'Face_recognition'
+🔥 Starting Training for FACE task
+📁 Models will be saved to: checkpoints/face/oracle/
+
+🎯 Training plan:
+   1. Classes  0-49 (50 classes)
+   2. Classes 10-59 (50 classes)
+   3. Classes 20-69 (50 classes)
+   4. Classes 30-79 (50 classes)
+   5. Classes 40-89 (50 classes)
+   6. Classes 50-99 (50 classes)
+
+
+================================================================================
+🚀 TRAINING MODEL 1/6
+================================================================================
+
+🚀 Training FACE Model on Classes: 0–49
+📊 Number of classes: 50
+🛠️ Explicitly received params: {'GPU_ID': [0], 'num_class': 100}
+🔓 Full fine-tuning: All parameters trainable
+✅ Built face model
+Loading pretrained weights from: checkpoints/face/oracle/0_49.pth
+🔄 Loading model weights from checkpoints/face/oracle/0_49.pth...
+⚠️ Skipping keys: []
+
+📊 Parameter Summary:
+  🔢 Total Parameters     : 5.43M
+  ✅ Trainable Parameters : 5.43M
+  📉 % Trainable          : 100.00%
+Loading Face Recognition data from /media/jag/volD2/faces_webface_112x112_sub100_train_test/train
+Loading Face Recognition data from /media/jag/volD2/faces_webface_112x112_sub100_train_test/test
+
+📁 Models will be saved to: checkpoints/face/oracle
+🎯 Target epochs: 150, Learning rate: 0.0001
+
+📅 Epoch 1/150 — FACE — Classes: 0-49
+📊 Train - Loss: 17.3068, Acc: 30.41%, Prec: 31.10%, Rec: 27.68%, F1: 26.96%
+📊 Val   - Loss: 17.3514, Acc: 31.74%, Prec: 35.88%, Rec: 28.92%, F1: 27.57%
+📈 Learning Rate: 1.00e-05
+✅ New Best Val Acc: 31.74% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 2/150 — FACE — Classes: 0-49
+📊 Train - Loss: 17.2429, Acc: 31.94%, Prec: 33.24%, Rec: 29.33%, F1: 29.00%
+📊 Val   - Loss: 17.0842, Acc: 29.08%, Prec: 34.96%, Rec: 26.70%, F1: 25.86%
+📈 Learning Rate: 1.00e-05
+📉 No improvement. Best so far: 31.74% (patience: 1/1000)
+
+📅 Epoch 3/150 — FACE — Classes: 0-49
+📊 Train - Loss: 17.1998, Acc: 32.75%, Prec: 33.87%, Rec: 30.04%, F1: 29.64%
+📊 Val   - Loss: 17.1635, Acc: 30.32%, Prec: 37.34%, Rec: 27.67%, F1: 26.57%
+📈 Learning Rate: 9.99e-06
+📉 No improvement. Best so far: 31.74% (patience: 2/1000)
+
+📅 Epoch 4/150 — FACE — Classes: 0-49
+📊 Train - Loss: 17.1508, Acc: 33.89%, Prec: 35.85%, Rec: 31.27%, F1: 30.99%
+📊 Val   - Loss: 16.9716, Acc: 30.63%, Prec: 37.21%, Rec: 27.37%, F1: 25.90%
+📈 Learning Rate: 9.98e-06
+📉 No improvement. Best so far: 31.74% (patience: 3/1000)
+
+📅 Epoch 5/150 — FACE — Classes: 0-49
+📊 Train - Loss: 17.1018, Acc: 34.86%, Prec: 36.14%, Rec: 32.34%, F1: 32.08%
+📊 Val   - Loss: 16.7491, Acc: 31.81%, Prec: 37.78%, Rec: 29.08%, F1: 28.24%
+📈 Learning Rate: 9.98e-06
+✅ New Best Val Acc: 31.81% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 6/150 — FACE — Classes: 0-49
+📊 Train - Loss: 17.0610, Acc: 35.52%, Prec: 37.39%, Rec: 32.75%, F1: 32.60%
+📊 Val   - Loss: 17.0396, Acc: 33.73%, Prec: 37.94%, Rec: 31.02%, F1: 30.40%
+📈 Learning Rate: 9.96e-06
+✅ New Best Val Acc: 33.73% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 7/150 — FACE — Classes: 0-49
+📊 Train - Loss: 17.0189, Acc: 36.05%, Prec: 38.17%, Rec: 33.61%, F1: 33.66%
+📊 Val   - Loss: 16.7131, Acc: 33.80%, Prec: 38.84%, Rec: 30.74%, F1: 30.18%
+📈 Learning Rate: 9.95e-06
+✅ New Best Val Acc: 33.80% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 8/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.9553, Acc: 37.17%, Prec: 39.16%, Rec: 34.56%, F1: 34.54%
+📊 Val   - Loss: 16.9262, Acc: 37.07%, Prec: 42.77%, Rec: 34.64%, F1: 34.21%
+📈 Learning Rate: 9.94e-06
+✅ New Best Val Acc: 37.07% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 9/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.9233, Acc: 37.42%, Prec: 39.01%, Rec: 34.98%, F1: 34.98%
+📊 Val   - Loss: 16.7759, Acc: 35.48%, Prec: 43.51%, Rec: 32.19%, F1: 31.74%
+📈 Learning Rate: 9.92e-06
+📉 No improvement. Best so far: 37.07% (patience: 1/1000)
+
+📅 Epoch 10/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.8858, Acc: 38.34%, Prec: 40.97%, Rec: 35.74%, F1: 35.95%
+📊 Val   - Loss: 16.6322, Acc: 38.34%, Prec: 44.18%, Rec: 35.95%, F1: 35.69%
+📈 Learning Rate: 9.90e-06
+✅ New Best Val Acc: 38.34% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 11/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.8089, Acc: 39.18%, Prec: 41.75%, Rec: 36.65%, F1: 36.95%
+📊 Val   - Loss: 16.4739, Acc: 34.71%, Prec: 44.85%, Rec: 31.92%, F1: 31.15%
+📈 Learning Rate: 9.88e-06
+📉 No improvement. Best so far: 38.34% (patience: 1/1000)
+
+📅 Epoch 12/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.7777, Acc: 40.16%, Prec: 42.68%, Rec: 37.61%, F1: 37.79%
+📊 Val   - Loss: 16.4759, Acc: 37.03%, Prec: 43.91%, Rec: 34.60%, F1: 34.51%
+📈 Learning Rate: 9.86e-06
+📉 No improvement. Best so far: 38.34% (patience: 2/1000)
+
+📅 Epoch 13/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.7507, Acc: 40.37%, Prec: 42.79%, Rec: 37.74%, F1: 37.94%
+📊 Val   - Loss: 16.7827, Acc: 40.86%, Prec: 45.44%, Rec: 38.57%, F1: 38.35%
+📈 Learning Rate: 9.83e-06
+✅ New Best Val Acc: 40.86% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 14/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.7034, Acc: 41.30%, Prec: 43.02%, Rec: 38.75%, F1: 38.94%
+📊 Val   - Loss: 16.7744, Acc: 36.65%, Prec: 46.53%, Rec: 33.58%, F1: 33.31%
+📈 Learning Rate: 9.81e-06
+📉 No improvement. Best so far: 40.86% (patience: 1/1000)
+
+📅 Epoch 15/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.6598, Acc: 41.56%, Prec: 43.73%, Rec: 39.03%, F1: 39.28%
+📊 Val   - Loss: 16.1164, Acc: 40.68%, Prec: 47.31%, Rec: 37.99%, F1: 38.66%
+📈 Learning Rate: 9.78e-06
+📉 No improvement. Best so far: 40.86% (patience: 2/1000)
+
+📅 Epoch 16/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.6384, Acc: 42.38%, Prec: 44.57%, Rec: 39.75%, F1: 40.03%
+📊 Val   - Loss: 16.8843, Acc: 40.66%, Prec: 47.44%, Rec: 38.22%, F1: 38.31%
+📈 Learning Rate: 9.75e-06
+📉 No improvement. Best so far: 40.86% (patience: 3/1000)
+
+📅 Epoch 17/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.5898, Acc: 42.95%, Prec: 44.69%, Rec: 40.36%, F1: 40.41%
+📊 Val   - Loss: 16.4123, Acc: 41.48%, Prec: 47.83%, Rec: 38.90%, F1: 39.39%
+📈 Learning Rate: 9.72e-06
+✅ New Best Val Acc: 41.48% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 18/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.5406, Acc: 43.69%, Prec: 45.66%, Rec: 41.16%, F1: 41.43%
+📊 Val   - Loss: 16.6454, Acc: 40.88%, Prec: 48.02%, Rec: 38.32%, F1: 38.63%
+📈 Learning Rate: 9.68e-06
+📉 No improvement. Best so far: 41.48% (patience: 1/1000)
+
+📅 Epoch 19/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.5133, Acc: 44.44%, Prec: 46.31%, Rec: 41.88%, F1: 42.11%
+📊 Val   - Loss: 16.6955, Acc: 42.12%, Prec: 48.48%, Rec: 39.54%, F1: 39.77%
+📈 Learning Rate: 9.65e-06
+✅ New Best Val Acc: 42.12% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 20/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.4840, Acc: 44.18%, Prec: 46.30%, Rec: 41.82%, F1: 42.16%
+📊 Val   - Loss: 16.1906, Acc: 39.51%, Prec: 46.12%, Rec: 37.41%, F1: 36.72%
+📈 Learning Rate: 9.61e-06
+📉 No improvement. Best so far: 42.12% (patience: 1/1000)
+
+📅 Epoch 21/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.4436, Acc: 44.83%, Prec: 46.65%, Rec: 42.36%, F1: 42.58%
+📊 Val   - Loss: 16.4865, Acc: 45.71%, Prec: 49.53%, Rec: 43.61%, F1: 43.51%
+📈 Learning Rate: 9.57e-06
+✅ New Best Val Acc: 45.71% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 22/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.4087, Acc: 45.82%, Prec: 47.91%, Rec: 43.50%, F1: 43.91%
+📊 Val   - Loss: 16.2369, Acc: 44.82%, Prec: 49.80%, Rec: 42.40%, F1: 43.00%
+📈 Learning Rate: 9.53e-06
+📉 No improvement. Best so far: 45.71% (patience: 1/1000)
+
+📅 Epoch 23/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.3618, Acc: 45.90%, Prec: 47.71%, Rec: 43.53%, F1: 43.91%
+📊 Val   - Loss: 16.0836, Acc: 43.89%, Prec: 47.55%, Rec: 41.63%, F1: 40.72%
+📈 Learning Rate: 9.49e-06
+📉 No improvement. Best so far: 45.71% (patience: 2/1000)
+
+📅 Epoch 24/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.3419, Acc: 46.60%, Prec: 48.48%, Rec: 44.25%, F1: 44.59%
+📊 Val   - Loss: 16.2034, Acc: 45.29%, Prec: 51.09%, Rec: 43.17%, F1: 43.77%
+📈 Learning Rate: 9.44e-06
+📉 No improvement. Best so far: 45.71% (patience: 3/1000)
+
+📅 Epoch 25/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.3109, Acc: 46.94%, Prec: 48.65%, Rec: 44.56%, F1: 44.87%
+📊 Val   - Loss: 16.1779, Acc: 45.60%, Prec: 51.33%, Rec: 43.05%, F1: 42.98%
+📈 Learning Rate: 9.40e-06
+📉 No improvement. Best so far: 45.71% (patience: 4/1000)
+
+📅 Epoch 26/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.2423, Acc: 48.23%, Prec: 49.92%, Rec: 45.86%, F1: 46.25%
+📊 Val   - Loss: 16.5114, Acc: 43.89%, Prec: 51.99%, Rec: 41.57%, F1: 42.55%
+📈 Learning Rate: 9.35e-06
+📉 No improvement. Best so far: 45.71% (patience: 5/1000)
+
+📅 Epoch 27/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.2368, Acc: 48.10%, Prec: 49.69%, Rec: 45.87%, F1: 46.29%
+📊 Val   - Loss: 16.6846, Acc: 43.12%, Prec: 49.25%, Rec: 40.59%, F1: 41.02%
+📈 Learning Rate: 9.30e-06
+📉 No improvement. Best so far: 45.71% (patience: 6/1000)
+
+📅 Epoch 28/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.2035, Acc: 48.66%, Prec: 50.22%, Rec: 46.33%, F1: 46.70%
+📊 Val   - Loss: 16.6093, Acc: 43.40%, Prec: 47.72%, Rec: 41.30%, F1: 41.48%
+📈 Learning Rate: 9.25e-06
+📉 No improvement. Best so far: 45.71% (patience: 7/1000)
+
+📅 Epoch 29/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.1763, Acc: 48.94%, Prec: 50.39%, Rec: 46.68%, F1: 47.07%
+📊 Val   - Loss: 16.1396, Acc: 45.00%, Prec: 51.94%, Rec: 42.46%, F1: 43.00%
+📈 Learning Rate: 9.20e-06
+📉 No improvement. Best so far: 45.71% (patience: 8/1000)
+
+📅 Epoch 30/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.1458, Acc: 49.52%, Prec: 50.99%, Rec: 47.26%, F1: 47.62%
+📊 Val   - Loss: 16.1556, Acc: 47.99%, Prec: 54.29%, Rec: 45.93%, F1: 47.16%
+📈 Learning Rate: 9.14e-06
+✅ New Best Val Acc: 47.99% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 31/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.1158, Acc: 49.72%, Prec: 50.97%, Rec: 47.62%, F1: 47.94%
+📊 Val   - Loss: 16.5795, Acc: 47.12%, Prec: 53.68%, Rec: 44.54%, F1: 45.01%
+📈 Learning Rate: 9.08e-06
+📉 No improvement. Best so far: 47.99% (patience: 1/1000)
+
+📅 Epoch 32/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.0723, Acc: 50.40%, Prec: 51.90%, Rec: 48.19%, F1: 48.62%
+📊 Val   - Loss: 16.3334, Acc: 45.62%, Prec: 52.68%, Rec: 43.23%, F1: 44.03%
+📈 Learning Rate: 9.03e-06
+📉 No improvement. Best so far: 47.99% (patience: 2/1000)
+
+📅 Epoch 33/150 — FACE — Classes: 0-49
+📊 Train - Loss: 16.0502, Acc: 50.93%, Prec: 52.48%, Rec: 48.72%, F1: 49.12%
+📊 Val   - Loss: 15.5001, Acc: 50.35%, Prec: 55.09%, Rec: 48.21%, F1: 48.75%
+📈 Learning Rate: 8.97e-06
+✅ New Best Val Acc: 50.35% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 34/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.9974, Acc: 51.39%, Prec: 52.76%, Rec: 49.14%, F1: 49.55%
+📊 Val   - Loss: 16.3034, Acc: 47.26%, Prec: 53.72%, Rec: 45.30%, F1: 45.11%
+📈 Learning Rate: 8.91e-06
+📉 No improvement. Best so far: 50.35% (patience: 1/1000)
+
+📅 Epoch 35/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.9659, Acc: 52.10%, Prec: 53.33%, Rec: 50.00%, F1: 50.45%
+📊 Val   - Loss: 16.3280, Acc: 48.38%, Prec: 53.85%, Rec: 46.27%, F1: 46.95%
+📈 Learning Rate: 8.84e-06
+📉 No improvement. Best so far: 50.35% (patience: 2/1000)
+
+📅 Epoch 36/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.9434, Acc: 52.32%, Prec: 54.15%, Rec: 50.08%, F1: 50.63%
+📊 Val   - Loss: 16.3613, Acc: 49.51%, Prec: 53.62%, Rec: 47.66%, F1: 47.93%
+📈 Learning Rate: 8.78e-06
+📉 No improvement. Best so far: 50.35% (patience: 3/1000)
+
+📅 Epoch 37/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.9355, Acc: 51.88%, Prec: 53.07%, Rec: 49.69%, F1: 50.06%
+📊 Val   - Loss: 16.2623, Acc: 50.49%, Prec: 55.54%, Rec: 48.01%, F1: 48.37%
+📈 Learning Rate: 8.72e-06
+✅ New Best Val Acc: 50.49% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 38/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.9011, Acc: 52.58%, Prec: 54.23%, Rec: 50.39%, F1: 51.01%
+📊 Val   - Loss: 15.9772, Acc: 52.66%, Prec: 56.76%, Rec: 50.65%, F1: 50.72%
+📈 Learning Rate: 8.65e-06
+✅ New Best Val Acc: 52.66% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 39/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.8620, Acc: 53.53%, Prec: 54.95%, Rec: 51.40%, F1: 51.89%
+📊 Val   - Loss: 15.9092, Acc: 49.47%, Prec: 55.82%, Rec: 47.22%, F1: 47.97%
+📈 Learning Rate: 8.58e-06
+📉 No improvement. Best so far: 52.66% (patience: 1/1000)
+
+📅 Epoch 40/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.8239, Acc: 53.85%, Prec: 55.19%, Rec: 51.77%, F1: 52.26%
+📊 Val   - Loss: 15.6082, Acc: 52.52%, Prec: 56.29%, Rec: 50.60%, F1: 51.38%
+📈 Learning Rate: 8.51e-06
+📉 No improvement. Best so far: 52.66% (patience: 2/1000)
+
+📅 Epoch 41/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.8150, Acc: 53.86%, Prec: 55.14%, Rec: 51.81%, F1: 52.33%
+📊 Val   - Loss: 15.9967, Acc: 52.43%, Prec: 56.03%, Rec: 50.37%, F1: 50.86%
+📈 Learning Rate: 8.44e-06
+📉 No improvement. Best so far: 52.66% (patience: 3/1000)
+
+📅 Epoch 42/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.7829, Acc: 54.08%, Prec: 55.59%, Rec: 52.01%, F1: 52.56%
+📊 Val   - Loss: 16.1986, Acc: 53.32%, Prec: 58.41%, Rec: 51.32%, F1: 52.10%
+📈 Learning Rate: 8.37e-06
+✅ New Best Val Acc: 53.32% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 43/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.7428, Acc: 54.99%, Prec: 56.44%, Rec: 53.01%, F1: 53.62%
+📊 Val   - Loss: 15.9128, Acc: 52.81%, Prec: 57.65%, Rec: 51.33%, F1: 51.86%
+📈 Learning Rate: 8.30e-06
+📉 No improvement. Best so far: 53.32% (patience: 1/1000)
+
+📅 Epoch 44/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.7075, Acc: 55.72%, Prec: 57.37%, Rec: 53.64%, F1: 54.24%
+📊 Val   - Loss: 16.0333, Acc: 53.65%, Prec: 58.94%, Rec: 51.70%, F1: 52.70%
+📈 Learning Rate: 8.22e-06
+✅ New Best Val Acc: 53.65% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 45/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.7074, Acc: 55.85%, Prec: 57.34%, Rec: 53.85%, F1: 54.47%
+📊 Val   - Loss: 15.8404, Acc: 52.79%, Prec: 56.39%, Rec: 50.83%, F1: 51.06%
+📈 Learning Rate: 8.15e-06
+📉 No improvement. Best so far: 53.65% (patience: 1/1000)
+
+📅 Epoch 46/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.6481, Acc: 56.07%, Prec: 57.42%, Rec: 54.07%, F1: 54.67%
+📊 Val   - Loss: 16.1561, Acc: 53.41%, Prec: 58.26%, Rec: 51.22%, F1: 52.10%
+📈 Learning Rate: 8.07e-06
+📉 No improvement. Best so far: 53.65% (patience: 2/1000)
+
+📅 Epoch 47/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.6222, Acc: 56.38%, Prec: 57.64%, Rec: 54.39%, F1: 54.96%
+📊 Val   - Loss: 15.8861, Acc: 52.21%, Prec: 58.97%, Rec: 50.02%, F1: 51.17%
+📈 Learning Rate: 7.99e-06
+📉 No improvement. Best so far: 53.65% (patience: 3/1000)
+
+📅 Epoch 48/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.6197, Acc: 56.51%, Prec: 57.74%, Rec: 54.51%, F1: 55.10%
+📊 Val   - Loss: 15.8983, Acc: 54.32%, Prec: 59.16%, Rec: 52.33%, F1: 53.56%
+📈 Learning Rate: 7.91e-06
+✅ New Best Val Acc: 54.32% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 49/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.6010, Acc: 57.14%, Prec: 58.54%, Rec: 55.18%, F1: 55.80%
+📊 Val   - Loss: 15.8458, Acc: 53.19%, Prec: 58.00%, Rec: 51.21%, F1: 51.98%
+📈 Learning Rate: 7.83e-06
+📉 No improvement. Best so far: 54.32% (patience: 1/1000)
+
+📅 Epoch 50/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.5835, Acc: 57.16%, Prec: 58.72%, Rec: 55.24%, F1: 55.88%
+📊 Val   - Loss: 15.6598, Acc: 54.07%, Prec: 58.82%, Rec: 52.06%, F1: 52.76%
+📈 Learning Rate: 7.75e-06
+📉 No improvement. Best so far: 54.32% (patience: 2/1000)
+
+📅 Epoch 51/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.5554, Acc: 57.58%, Prec: 58.82%, Rec: 55.59%, F1: 56.15%
+📊 Val   - Loss: 15.8467, Acc: 55.31%, Prec: 59.67%, Rec: 52.96%, F1: 53.72%
+📈 Learning Rate: 7.67e-06
+✅ New Best Val Acc: 55.31% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 52/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.5149, Acc: 58.21%, Prec: 59.66%, Rec: 56.32%, F1: 56.97%
+📊 Val   - Loss: 15.7256, Acc: 53.52%, Prec: 58.72%, Rec: 51.67%, F1: 53.07%
+📈 Learning Rate: 7.58e-06
+📉 No improvement. Best so far: 55.31% (patience: 1/1000)
+
+📅 Epoch 53/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.5034, Acc: 58.10%, Prec: 59.47%, Rec: 56.15%, F1: 56.77%
+📊 Val   - Loss: 15.9136, Acc: 54.74%, Prec: 58.79%, Rec: 52.99%, F1: 53.63%
+📈 Learning Rate: 7.50e-06
+📉 No improvement. Best so far: 55.31% (patience: 2/1000)
+
+📅 Epoch 54/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.4824, Acc: 58.30%, Prec: 59.64%, Rec: 56.28%, F1: 56.94%
+📊 Val   - Loss: 15.2962, Acc: 56.77%, Prec: 60.32%, Rec: 55.06%, F1: 55.81%
+📈 Learning Rate: 7.42e-06
+✅ New Best Val Acc: 56.77% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 55/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.4634, Acc: 58.94%, Prec: 60.10%, Rec: 57.09%, F1: 57.69%
+📊 Val   - Loss: 15.5327, Acc: 56.22%, Prec: 59.72%, Rec: 54.42%, F1: 54.84%
+📈 Learning Rate: 7.33e-06
+📉 No improvement. Best so far: 56.77% (patience: 1/1000)
+
+📅 Epoch 56/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.4363, Acc: 59.09%, Prec: 60.53%, Rec: 57.18%, F1: 57.76%
+📊 Val   - Loss: 15.7768, Acc: 56.22%, Prec: 59.69%, Rec: 54.56%, F1: 55.13%
+📈 Learning Rate: 7.24e-06
+📉 No improvement. Best so far: 56.77% (patience: 2/1000)
+
+📅 Epoch 57/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.4152, Acc: 59.61%, Prec: 61.19%, Rec: 57.77%, F1: 58.48%
+📊 Val   - Loss: 15.5894, Acc: 56.18%, Prec: 59.25%, Rec: 54.46%, F1: 55.02%
+📈 Learning Rate: 7.16e-06
+📉 No improvement. Best so far: 56.77% (patience: 3/1000)
+
+📅 Epoch 58/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.3973, Acc: 59.77%, Prec: 60.96%, Rec: 57.87%, F1: 58.52%
+📊 Val   - Loss: 15.7460, Acc: 56.42%, Prec: 59.61%, Rec: 54.75%, F1: 55.18%
+📈 Learning Rate: 7.07e-06
+📉 No improvement. Best so far: 56.77% (patience: 4/1000)
+
+📅 Epoch 59/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.3472, Acc: 60.56%, Prec: 61.93%, Rec: 58.73%, F1: 59.42%
+📊 Val   - Loss: 15.5339, Acc: 56.91%, Prec: 60.12%, Rec: 55.09%, F1: 55.56%
+📈 Learning Rate: 6.98e-06
+✅ New Best Val Acc: 56.91% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 60/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.3381, Acc: 60.54%, Prec: 61.73%, Rec: 58.66%, F1: 59.31%
+📊 Val   - Loss: 15.8234, Acc: 57.70%, Prec: 60.99%, Rec: 55.95%, F1: 56.98%
+📈 Learning Rate: 6.89e-06
+✅ New Best Val Acc: 57.70% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 61/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.3283, Acc: 60.95%, Prec: 62.25%, Rec: 59.11%, F1: 59.80%
+📊 Val   - Loss: 15.6882, Acc: 56.64%, Prec: 60.24%, Rec: 54.49%, F1: 55.28%
+📈 Learning Rate: 6.80e-06
+📉 No improvement. Best so far: 57.70% (patience: 1/1000)
+
+📅 Epoch 62/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.3100, Acc: 61.07%, Prec: 62.28%, Rec: 59.24%, F1: 59.90%
+📊 Val   - Loss: 15.2412, Acc: 58.32%, Prec: 60.87%, Rec: 56.64%, F1: 57.24%
+📈 Learning Rate: 6.71e-06
+✅ New Best Val Acc: 58.32% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 63/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.2769, Acc: 61.13%, Prec: 62.22%, Rec: 59.20%, F1: 59.79%
+📊 Val   - Loss: 15.6083, Acc: 57.33%, Prec: 61.25%, Rec: 55.41%, F1: 56.16%
+📈 Learning Rate: 6.62e-06
+📉 No improvement. Best so far: 58.32% (patience: 1/1000)
+
+📅 Epoch 64/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.2852, Acc: 60.67%, Prec: 61.88%, Rec: 58.84%, F1: 59.49%
+📊 Val   - Loss: 15.8152, Acc: 57.41%, Prec: 61.43%, Rec: 55.67%, F1: 56.35%
+📈 Learning Rate: 6.53e-06
+📉 No improvement. Best so far: 58.32% (patience: 2/1000)
+
+📅 Epoch 65/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.2377, Acc: 62.00%, Prec: 63.05%, Rec: 60.10%, F1: 60.76%
+📊 Val   - Loss: 15.2010, Acc: 58.92%, Prec: 61.39%, Rec: 57.33%, F1: 57.87%
+📈 Learning Rate: 6.44e-06
+✅ New Best Val Acc: 58.92% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 66/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.2367, Acc: 61.49%, Prec: 62.68%, Rec: 59.64%, F1: 60.32%
+📊 Val   - Loss: 15.2786, Acc: 58.85%, Prec: 61.60%, Rec: 57.42%, F1: 57.80%
+📈 Learning Rate: 6.34e-06
+📉 No improvement. Best so far: 58.92% (patience: 1/1000)
+
+📅 Epoch 67/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.1965, Acc: 62.29%, Prec: 63.77%, Rec: 60.49%, F1: 61.22%
+📊 Val   - Loss: 15.3742, Acc: 57.26%, Prec: 62.19%, Rec: 55.10%, F1: 56.57%
+📈 Learning Rate: 6.25e-06
+📉 No improvement. Best so far: 58.92% (patience: 2/1000)
+
+📅 Epoch 68/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.1884, Acc: 62.08%, Prec: 63.30%, Rec: 60.23%, F1: 60.92%
+📊 Val   - Loss: 15.7470, Acc: 55.98%, Prec: 59.47%, Rec: 54.14%, F1: 54.07%
+📈 Learning Rate: 6.16e-06
+📉 No improvement. Best so far: 58.92% (patience: 3/1000)
+
+📅 Epoch 69/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.1423, Acc: 62.77%, Prec: 64.02%, Rec: 60.99%, F1: 61.65%
+📊 Val   - Loss: 15.4699, Acc: 59.78%, Prec: 62.63%, Rec: 57.90%, F1: 58.82%
+📈 Learning Rate: 6.06e-06
+✅ New Best Val Acc: 59.78% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 70/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.1592, Acc: 62.91%, Prec: 64.33%, Rec: 61.07%, F1: 61.83%
+📊 Val   - Loss: 15.3921, Acc: 57.88%, Prec: 60.61%, Rec: 56.33%, F1: 56.36%
+📈 Learning Rate: 5.97e-06
+📉 No improvement. Best so far: 59.78% (patience: 1/1000)
+
+📅 Epoch 71/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.1358, Acc: 62.57%, Prec: 63.78%, Rec: 60.85%, F1: 61.53%
+📊 Val   - Loss: 15.4861, Acc: 58.96%, Prec: 61.61%, Rec: 57.45%, F1: 58.00%
+📈 Learning Rate: 5.88e-06
+📉 No improvement. Best so far: 59.78% (patience: 2/1000)
+
+📅 Epoch 72/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.1211, Acc: 63.12%, Prec: 64.28%, Rec: 61.38%, F1: 62.10%
+📊 Val   - Loss: 15.2079, Acc: 59.21%, Prec: 62.12%, Rec: 57.74%, F1: 58.16%
+📈 Learning Rate: 5.78e-06
+📉 No improvement. Best so far: 59.78% (patience: 3/1000)
+
+📅 Epoch 73/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.1017, Acc: 63.38%, Prec: 64.67%, Rec: 61.63%, F1: 62.32%
+📊 Val   - Loss: 15.4200, Acc: 59.21%, Prec: 63.05%, Rec: 57.39%, F1: 58.56%
+📈 Learning Rate: 5.69e-06
+📉 No improvement. Best so far: 59.78% (patience: 4/1000)
+
+📅 Epoch 74/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.1000, Acc: 63.31%, Prec: 64.38%, Rec: 61.51%, F1: 62.21%
+📊 Val   - Loss: 15.1470, Acc: 59.14%, Prec: 61.83%, Rec: 57.43%, F1: 58.09%
+📈 Learning Rate: 5.59e-06
+📉 No improvement. Best so far: 59.78% (patience: 5/1000)
+
+📅 Epoch 75/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.0665, Acc: 63.95%, Prec: 65.17%, Rec: 62.39%, F1: 63.07%
+📊 Val   - Loss: 15.5122, Acc: 59.47%, Prec: 63.09%, Rec: 57.84%, F1: 58.46%
+📈 Learning Rate: 5.50e-06
+📉 No improvement. Best so far: 59.78% (patience: 6/1000)
+
+📅 Epoch 76/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.0703, Acc: 64.12%, Prec: 65.32%, Rec: 62.44%, F1: 63.14%
+📊 Val   - Loss: 15.4103, Acc: 60.69%, Prec: 62.92%, Rec: 59.13%, F1: 59.58%
+📈 Learning Rate: 5.41e-06
+✅ New Best Val Acc: 60.69% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 77/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.0350, Acc: 64.47%, Prec: 65.71%, Rec: 62.82%, F1: 63.48%
+📊 Val   - Loss: 15.0192, Acc: 60.71%, Prec: 63.50%, Rec: 59.13%, F1: 59.71%
+📈 Learning Rate: 5.31e-06
+✅ New Best Val Acc: 60.71% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 78/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.0074, Acc: 64.28%, Prec: 65.77%, Rec: 62.58%, F1: 63.37%
+📊 Val   - Loss: 15.3160, Acc: 60.78%, Prec: 63.70%, Rec: 59.23%, F1: 60.04%
+📈 Learning Rate: 5.22e-06
+✅ New Best Val Acc: 60.78% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 79/150 — FACE — Classes: 0-49
+📊 Train - Loss: 15.0124, Acc: 64.71%, Prec: 65.84%, Rec: 62.97%, F1: 63.64%
+📊 Val   - Loss: 15.0165, Acc: 60.18%, Prec: 64.37%, Rec: 58.45%, F1: 59.63%
+📈 Learning Rate: 5.12e-06
+📉 No improvement. Best so far: 60.78% (patience: 1/1000)
+
+📅 Epoch 80/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.9758, Acc: 65.17%, Prec: 66.32%, Rec: 63.47%, F1: 64.19%
+📊 Val   - Loss: 15.3877, Acc: 61.09%, Prec: 64.11%, Rec: 59.37%, F1: 60.35%
+📈 Learning Rate: 5.03e-06
+✅ New Best Val Acc: 61.09% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 81/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.9767, Acc: 65.39%, Prec: 66.77%, Rec: 63.66%, F1: 64.45%
+📊 Val   - Loss: 15.1899, Acc: 61.49%, Prec: 64.28%, Rec: 59.77%, F1: 60.52%
+📈 Learning Rate: 4.94e-06
+✅ New Best Val Acc: 61.49% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 82/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.9464, Acc: 65.31%, Prec: 66.47%, Rec: 63.56%, F1: 64.23%
+📊 Val   - Loss: 15.1824, Acc: 61.75%, Prec: 64.22%, Rec: 60.19%, F1: 60.77%
+📈 Learning Rate: 4.84e-06
+✅ New Best Val Acc: 61.75% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 83/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.9575, Acc: 65.12%, Prec: 66.30%, Rec: 63.45%, F1: 64.16%
+📊 Val   - Loss: 14.8588, Acc: 60.69%, Prec: 63.78%, Rec: 58.92%, F1: 59.98%
+📈 Learning Rate: 4.75e-06
+📉 No improvement. Best so far: 61.75% (patience: 1/1000)
+
+📅 Epoch 84/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.9109, Acc: 65.30%, Prec: 66.40%, Rec: 63.67%, F1: 64.35%
+📊 Val   - Loss: 15.2382, Acc: 61.97%, Prec: 64.62%, Rec: 60.47%, F1: 61.29%
+📈 Learning Rate: 4.66e-06
+✅ New Best Val Acc: 61.97% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 85/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.9143, Acc: 66.00%, Prec: 67.18%, Rec: 64.38%, F1: 65.07%
+📊 Val   - Loss: 15.1898, Acc: 60.38%, Prec: 63.29%, Rec: 58.56%, F1: 59.34%
+📈 Learning Rate: 4.56e-06
+📉 No improvement. Best so far: 61.97% (patience: 1/1000)
+
+📅 Epoch 86/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.9221, Acc: 65.46%, Prec: 66.67%, Rec: 63.81%, F1: 64.54%
+📊 Val   - Loss: 15.3835, Acc: 61.55%, Prec: 63.83%, Rec: 60.26%, F1: 60.46%
+📈 Learning Rate: 4.47e-06
+📉 No improvement. Best so far: 61.97% (patience: 2/1000)
+
+📅 Epoch 87/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.8762, Acc: 66.38%, Prec: 67.58%, Rec: 64.75%, F1: 65.45%
+📊 Val   - Loss: 14.8092, Acc: 63.37%, Prec: 65.00%, Rec: 61.95%, F1: 62.60%
+📈 Learning Rate: 4.38e-06
+✅ New Best Val Acc: 63.37% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 88/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.8595, Acc: 66.24%, Prec: 67.38%, Rec: 64.61%, F1: 65.30%
+📊 Val   - Loss: 15.5570, Acc: 63.24%, Prec: 65.01%, Rec: 61.95%, F1: 62.39%
+📈 Learning Rate: 4.29e-06
+📉 No improvement. Best so far: 63.37% (patience: 1/1000)
+
+📅 Epoch 89/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.8643, Acc: 66.05%, Prec: 66.86%, Rec: 64.48%, F1: 65.09%
+📊 Val   - Loss: 15.1379, Acc: 63.41%, Prec: 65.91%, Rec: 61.98%, F1: 62.76%
+📈 Learning Rate: 4.20e-06
+✅ New Best Val Acc: 63.41% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 90/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.8408, Acc: 66.74%, Prec: 67.67%, Rec: 65.05%, F1: 65.72%
+📊 Val   - Loss: 14.9911, Acc: 63.88%, Prec: 66.04%, Rec: 62.51%, F1: 63.10%
+📈 Learning Rate: 4.11e-06
+✅ New Best Val Acc: 63.88% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 91/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.8302, Acc: 66.86%, Prec: 67.89%, Rec: 65.32%, F1: 65.97%
+📊 Val   - Loss: 15.2984, Acc: 63.19%, Prec: 65.70%, Rec: 61.50%, F1: 62.29%
+📈 Learning Rate: 4.02e-06
+📉 No improvement. Best so far: 63.88% (patience: 1/1000)
+
+📅 Epoch 92/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.8352, Acc: 67.06%, Prec: 68.17%, Rec: 65.44%, F1: 66.13%
+📊 Val   - Loss: 15.4501, Acc: 62.26%, Prec: 65.51%, Rec: 60.62%, F1: 61.68%
+📈 Learning Rate: 3.93e-06
+📉 No improvement. Best so far: 63.88% (patience: 2/1000)
+
+📅 Epoch 93/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.8106, Acc: 66.62%, Prec: 67.57%, Rec: 65.03%, F1: 65.75%
+📊 Val   - Loss: 15.3562, Acc: 62.59%, Prec: 65.57%, Rec: 60.75%, F1: 61.66%
+📈 Learning Rate: 3.84e-06
+📉 No improvement. Best so far: 63.88% (patience: 3/1000)
+
+📅 Epoch 94/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.8052, Acc: 67.10%, Prec: 68.53%, Rec: 65.55%, F1: 66.33%
+📊 Val   - Loss: 15.3204, Acc: 62.22%, Prec: 65.16%, Rec: 60.85%, F1: 61.57%
+📈 Learning Rate: 3.76e-06
+📉 No improvement. Best so far: 63.88% (patience: 4/1000)
+
+📅 Epoch 95/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.7883, Acc: 67.25%, Prec: 68.25%, Rec: 65.65%, F1: 66.35%
+📊 Val   - Loss: 14.9901, Acc: 62.51%, Prec: 64.66%, Rec: 60.96%, F1: 61.78%
+📈 Learning Rate: 3.67e-06
+📉 No improvement. Best so far: 63.88% (patience: 5/1000)
+
+📅 Epoch 96/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.7705, Acc: 67.55%, Prec: 68.70%, Rec: 66.07%, F1: 66.84%
+📊 Val   - Loss: 14.6849, Acc: 64.36%, Prec: 66.06%, Rec: 62.99%, F1: 63.42%
+📈 Learning Rate: 3.58e-06
+✅ New Best Val Acc: 64.36% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 97/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.7553, Acc: 67.65%, Prec: 68.58%, Rec: 66.05%, F1: 66.72%
+📊 Val   - Loss: 15.5266, Acc: 62.11%, Prec: 65.08%, Rec: 60.49%, F1: 61.23%
+📈 Learning Rate: 3.50e-06
+📉 No improvement. Best so far: 64.36% (patience: 1/1000)
+
+📅 Epoch 98/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.7424, Acc: 67.77%, Prec: 68.85%, Rec: 66.28%, F1: 66.97%
+📊 Val   - Loss: 15.1410, Acc: 64.08%, Prec: 65.47%, Rec: 62.88%, F1: 63.29%
+📈 Learning Rate: 3.42e-06
+📉 No improvement. Best so far: 64.36% (patience: 2/1000)
+
+📅 Epoch 99/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.7378, Acc: 68.01%, Prec: 69.19%, Rec: 66.51%, F1: 67.22%
+📊 Val   - Loss: 15.0903, Acc: 64.65%, Prec: 66.69%, Rec: 63.34%, F1: 64.13%
+📈 Learning Rate: 3.33e-06
+✅ New Best Val Acc: 64.65% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 100/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.7405, Acc: 67.87%, Prec: 68.78%, Rec: 66.47%, F1: 67.12%
+📊 Val   - Loss: 15.0052, Acc: 63.19%, Prec: 65.09%, Rec: 61.73%, F1: 62.44%
+📈 Learning Rate: 3.25e-06
+📉 No improvement. Best so far: 64.65% (patience: 1/1000)
+
+📅 Epoch 101/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.7141, Acc: 68.20%, Prec: 69.22%, Rec: 66.71%, F1: 67.41%
+📊 Val   - Loss: 15.7020, Acc: 64.59%, Prec: 67.05%, Rec: 63.15%, F1: 63.76%
+📈 Learning Rate: 3.17e-06
+📉 No improvement. Best so far: 64.65% (patience: 2/1000)
+
+📅 Epoch 102/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.7033, Acc: 68.28%, Prec: 69.32%, Rec: 66.84%, F1: 67.52%
+📊 Val   - Loss: 15.0298, Acc: 62.68%, Prec: 66.17%, Rec: 61.01%, F1: 62.14%
+📈 Learning Rate: 3.09e-06
+📉 No improvement. Best so far: 64.65% (patience: 3/1000)
+
+📅 Epoch 103/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.6829, Acc: 68.37%, Prec: 69.52%, Rec: 66.83%, F1: 67.57%
+📊 Val   - Loss: 14.8185, Acc: 64.36%, Prec: 66.79%, Rec: 62.94%, F1: 63.75%
+📈 Learning Rate: 3.01e-06
+📉 No improvement. Best so far: 64.65% (patience: 4/1000)
+
+📅 Epoch 104/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.6815, Acc: 68.98%, Prec: 70.01%, Rec: 67.50%, F1: 68.21%
+📊 Val   - Loss: 15.5385, Acc: 63.72%, Prec: 66.06%, Rec: 62.15%, F1: 63.02%
+📈 Learning Rate: 2.93e-06
+📉 No improvement. Best so far: 64.65% (patience: 5/1000)
+
+📅 Epoch 105/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.6798, Acc: 68.74%, Prec: 69.59%, Rec: 67.23%, F1: 67.84%
+📊 Val   - Loss: 15.0757, Acc: 64.54%, Prec: 65.82%, Rec: 63.35%, F1: 63.69%
+📈 Learning Rate: 2.85e-06
+📉 No improvement. Best so far: 64.65% (patience: 6/1000)
+
+📅 Epoch 106/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.6587, Acc: 69.02%, Prec: 69.98%, Rec: 67.57%, F1: 68.23%
+📊 Val   - Loss: 15.4778, Acc: 63.61%, Prec: 65.22%, Rec: 62.26%, F1: 62.79%
+📈 Learning Rate: 2.78e-06
+📉 No improvement. Best so far: 64.65% (patience: 7/1000)
+
+📅 Epoch 107/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.6654, Acc: 68.87%, Prec: 69.97%, Rec: 67.38%, F1: 68.11%
+📊 Val   - Loss: 14.9684, Acc: 64.74%, Prec: 66.75%, Rec: 63.25%, F1: 64.03%
+📈 Learning Rate: 2.70e-06
+✅ New Best Val Acc: 64.74% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 108/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.6348, Acc: 68.98%, Prec: 70.06%, Rec: 67.55%, F1: 68.24%
+📊 Val   - Loss: 14.9852, Acc: 64.81%, Prec: 66.79%, Rec: 63.41%, F1: 64.18%
+📈 Learning Rate: 2.63e-06
+✅ New Best Val Acc: 64.81% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 109/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.6390, Acc: 69.36%, Prec: 70.29%, Rec: 67.93%, F1: 68.54%
+📊 Val   - Loss: 14.6405, Acc: 64.43%, Prec: 65.90%, Rec: 63.11%, F1: 63.71%
+📈 Learning Rate: 2.56e-06
+📉 No improvement. Best so far: 64.81% (patience: 1/1000)
+
+📅 Epoch 110/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.6350, Acc: 69.44%, Prec: 70.55%, Rec: 67.94%, F1: 68.67%
+📊 Val   - Loss: 15.0454, Acc: 64.01%, Prec: 66.09%, Rec: 62.55%, F1: 63.26%
+📈 Learning Rate: 2.49e-06
+📉 No improvement. Best so far: 64.81% (patience: 2/1000)
+
+📅 Epoch 111/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.6122, Acc: 69.44%, Prec: 70.54%, Rec: 68.00%, F1: 68.71%
+📊 Val   - Loss: 15.0530, Acc: 65.94%, Prec: 67.25%, Rec: 64.55%, F1: 65.20%
+📈 Learning Rate: 2.42e-06
+✅ New Best Val Acc: 65.94% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 112/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5989, Acc: 69.93%, Prec: 71.10%, Rec: 68.52%, F1: 69.26%
+📊 Val   - Loss: 15.3240, Acc: 65.27%, Prec: 67.22%, Rec: 64.04%, F1: 64.77%
+📈 Learning Rate: 2.35e-06
+📉 No improvement. Best so far: 65.94% (patience: 1/1000)
+
+📅 Epoch 113/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.6027, Acc: 69.46%, Prec: 70.55%, Rec: 68.03%, F1: 68.75%
+📊 Val   - Loss: 15.0876, Acc: 65.18%, Prec: 66.72%, Rec: 63.85%, F1: 64.40%
+📈 Learning Rate: 2.28e-06
+📉 No improvement. Best so far: 65.94% (patience: 2/1000)
+
+📅 Epoch 114/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.6073, Acc: 69.56%, Prec: 70.47%, Rec: 68.15%, F1: 68.81%
+📊 Val   - Loss: 15.1932, Acc: 65.29%, Prec: 66.79%, Rec: 63.97%, F1: 64.52%
+📈 Learning Rate: 2.22e-06
+📉 No improvement. Best so far: 65.94% (patience: 3/1000)
+
+📅 Epoch 115/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.6033, Acc: 69.87%, Prec: 70.84%, Rec: 68.51%, F1: 69.18%
+📊 Val   - Loss: 15.0691, Acc: 64.87%, Prec: 66.85%, Rec: 63.49%, F1: 64.22%
+📈 Learning Rate: 2.16e-06
+📉 No improvement. Best so far: 65.94% (patience: 4/1000)
+
+📅 Epoch 116/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5665, Acc: 69.75%, Prec: 70.65%, Rec: 68.34%, F1: 69.00%
+📊 Val   - Loss: 15.1317, Acc: 65.60%, Prec: 67.18%, Rec: 64.24%, F1: 64.93%
+📈 Learning Rate: 2.09e-06
+📉 No improvement. Best so far: 65.94% (patience: 5/1000)
+
+📅 Epoch 117/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5858, Acc: 69.96%, Prec: 70.92%, Rec: 68.56%, F1: 69.19%
+📊 Val   - Loss: 14.7963, Acc: 65.52%, Prec: 67.05%, Rec: 64.27%, F1: 64.85%
+📈 Learning Rate: 2.03e-06
+📉 No improvement. Best so far: 65.94% (patience: 6/1000)
+
+📅 Epoch 118/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5549, Acc: 70.37%, Prec: 71.37%, Rec: 68.95%, F1: 69.65%
+📊 Val   - Loss: 15.0526, Acc: 65.38%, Prec: 67.12%, Rec: 64.18%, F1: 64.81%
+📈 Learning Rate: 1.97e-06
+📉 No improvement. Best so far: 65.94% (patience: 7/1000)
+
+📅 Epoch 119/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5695, Acc: 69.90%, Prec: 70.76%, Rec: 68.50%, F1: 69.14%
+📊 Val   - Loss: 14.8847, Acc: 65.58%, Prec: 67.20%, Rec: 64.38%, F1: 64.87%
+📈 Learning Rate: 1.92e-06
+📉 No improvement. Best so far: 65.94% (patience: 8/1000)
+
+📅 Epoch 120/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5456, Acc: 70.52%, Prec: 71.49%, Rec: 69.10%, F1: 69.81%
+📊 Val   - Loss: 14.7881, Acc: 65.41%, Prec: 66.84%, Rec: 64.25%, F1: 64.74%
+📈 Learning Rate: 1.86e-06
+📉 No improvement. Best so far: 65.94% (patience: 9/1000)
+
+📅 Epoch 121/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5269, Acc: 70.57%, Prec: 71.56%, Rec: 69.27%, F1: 69.95%
+📊 Val   - Loss: 14.9799, Acc: 64.21%, Prec: 66.20%, Rec: 62.65%, F1: 63.38%
+📈 Learning Rate: 1.80e-06
+📉 No improvement. Best so far: 65.94% (patience: 10/1000)
+
+📅 Epoch 122/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5337, Acc: 70.63%, Prec: 71.50%, Rec: 69.19%, F1: 69.88%
+📊 Val   - Loss: 14.7325, Acc: 65.49%, Prec: 67.41%, Rec: 64.13%, F1: 64.86%
+📈 Learning Rate: 1.75e-06
+📉 No improvement. Best so far: 65.94% (patience: 11/1000)
+
+📅 Epoch 123/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5285, Acc: 70.60%, Prec: 71.59%, Rec: 69.27%, F1: 69.96%
+📊 Val   - Loss: 14.8438, Acc: 66.53%, Prec: 68.03%, Rec: 65.36%, F1: 65.78%
+📈 Learning Rate: 1.70e-06
+✅ New Best Val Acc: 66.53% — Model saved to checkpoints/face/oracle/0_49.pth
+
+📅 Epoch 124/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5201, Acc: 70.49%, Prec: 71.49%, Rec: 69.08%, F1: 69.79%
+📊 Val   - Loss: 15.3139, Acc: 65.89%, Prec: 67.46%, Rec: 64.60%, F1: 65.20%
+📈 Learning Rate: 1.65e-06
+📉 No improvement. Best so far: 66.53% (patience: 1/1000)
+
+📅 Epoch 125/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5171, Acc: 70.78%, Prec: 71.57%, Rec: 69.43%, F1: 70.07%
+📊 Val   - Loss: 14.8602, Acc: 65.89%, Prec: 67.53%, Rec: 64.62%, F1: 65.29%
+📈 Learning Rate: 1.60e-06
+📉 No improvement. Best so far: 66.53% (patience: 2/1000)
+
+📅 Epoch 126/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4927, Acc: 71.10%, Prec: 72.24%, Rec: 69.72%, F1: 70.48%
+📊 Val   - Loss: 14.8967, Acc: 66.02%, Prec: 67.43%, Rec: 64.81%, F1: 65.40%
+📈 Learning Rate: 1.56e-06
+📉 No improvement. Best so far: 66.53% (patience: 3/1000)
+
+📅 Epoch 127/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5060, Acc: 70.96%, Prec: 71.91%, Rec: 69.66%, F1: 70.36%
+📊 Val   - Loss: 14.9011, Acc: 65.78%, Prec: 67.55%, Rec: 64.47%, F1: 65.19%
+📈 Learning Rate: 1.51e-06
+📉 No improvement. Best so far: 66.53% (patience: 4/1000)
+
+📅 Epoch 128/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4929, Acc: 70.79%, Prec: 71.86%, Rec: 69.38%, F1: 70.10%
+📊 Val   - Loss: 14.9810, Acc: 66.22%, Prec: 67.59%, Rec: 64.91%, F1: 65.48%
+📈 Learning Rate: 1.47e-06
+📉 No improvement. Best so far: 66.53% (patience: 5/1000)
+
+📅 Epoch 129/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.5013, Acc: 70.81%, Prec: 71.73%, Rec: 69.43%, F1: 70.11%
+📊 Val   - Loss: 14.9704, Acc: 65.60%, Prec: 67.21%, Rec: 64.39%, F1: 65.03%
+📈 Learning Rate: 1.43e-06
+📉 No improvement. Best so far: 66.53% (patience: 6/1000)
+
+📅 Epoch 130/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4641, Acc: 71.45%, Prec: 72.35%, Rec: 70.15%, F1: 70.83%
+📊 Val   - Loss: 14.8944, Acc: 65.54%, Prec: 66.95%, Rec: 64.15%, F1: 64.69%
+📈 Learning Rate: 1.39e-06
+📉 No improvement. Best so far: 66.53% (patience: 7/1000)
+
+📅 Epoch 131/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4807, Acc: 71.43%, Prec: 72.64%, Rec: 70.12%, F1: 70.91%
+📊 Val   - Loss: 15.0888, Acc: 65.74%, Prec: 67.54%, Rec: 64.25%, F1: 65.03%
+📈 Learning Rate: 1.35e-06
+📉 No improvement. Best so far: 66.53% (patience: 8/1000)
+
+📅 Epoch 132/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4786, Acc: 71.41%, Prec: 72.32%, Rec: 70.06%, F1: 70.72%
+📊 Val   - Loss: 14.7960, Acc: 65.63%, Prec: 67.23%, Rec: 64.42%, F1: 64.99%
+📈 Learning Rate: 1.32e-06
+📉 No improvement. Best so far: 66.53% (patience: 9/1000)
+
+📅 Epoch 133/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4510, Acc: 71.71%, Prec: 72.66%, Rec: 70.35%, F1: 71.05%
+📊 Val   - Loss: 15.1623, Acc: 65.76%, Prec: 67.19%, Rec: 64.52%, F1: 65.12%
+📈 Learning Rate: 1.28e-06
+📉 No improvement. Best so far: 66.53% (patience: 10/1000)
+
+📅 Epoch 134/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4664, Acc: 71.46%, Prec: 72.33%, Rec: 70.14%, F1: 70.79%
+📊 Val   - Loss: 15.0702, Acc: 65.38%, Prec: 67.02%, Rec: 64.00%, F1: 64.73%
+📈 Learning Rate: 1.25e-06
+📉 No improvement. Best so far: 66.53% (patience: 11/1000)
+
+📅 Epoch 135/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4546, Acc: 71.54%, Prec: 72.46%, Rec: 70.17%, F1: 70.85%
+📊 Val   - Loss: 14.9618, Acc: 65.98%, Prec: 67.27%, Rec: 64.75%, F1: 65.31%
+📈 Learning Rate: 1.22e-06
+📉 No improvement. Best so far: 66.53% (patience: 12/1000)
+
+📅 Epoch 136/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4615, Acc: 71.29%, Prec: 72.26%, Rec: 70.01%, F1: 70.68%
+📊 Val   - Loss: 14.8045, Acc: 65.89%, Prec: 67.50%, Rec: 64.56%, F1: 65.28%
+📈 Learning Rate: 1.19e-06
+📉 No improvement. Best so far: 66.53% (patience: 13/1000)
+
+📅 Epoch 137/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4416, Acc: 72.01%, Prec: 72.77%, Rec: 70.67%, F1: 71.27%
+📊 Val   - Loss: 14.9989, Acc: 66.02%, Prec: 67.50%, Rec: 64.76%, F1: 65.43%
+📈 Learning Rate: 1.17e-06
+📉 No improvement. Best so far: 66.53% (patience: 14/1000)
+
+📅 Epoch 138/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4532, Acc: 71.68%, Prec: 72.71%, Rec: 70.35%, F1: 71.05%
+📊 Val   - Loss: 14.7523, Acc: 65.78%, Prec: 67.56%, Rec: 64.55%, F1: 65.29%
+📈 Learning Rate: 1.14e-06
+📉 No improvement. Best so far: 66.53% (patience: 15/1000)
+
+📅 Epoch 139/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4526, Acc: 71.20%, Prec: 72.05%, Rec: 69.78%, F1: 70.43%
+📊 Val   - Loss: 14.8424, Acc: 65.85%, Prec: 67.33%, Rec: 64.53%, F1: 65.20%
+📈 Learning Rate: 1.12e-06
+📉 No improvement. Best so far: 66.53% (patience: 16/1000)
+
+📅 Epoch 140/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4288, Acc: 71.64%, Prec: 72.67%, Rec: 70.31%, F1: 71.02%
+📊 Val   - Loss: 15.0704, Acc: 66.16%, Prec: 67.78%, Rec: 64.86%, F1: 65.60%
+📈 Learning Rate: 1.10e-06
+📉 No improvement. Best so far: 66.53% (patience: 17/1000)
+
+📅 Epoch 141/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4410, Acc: 71.56%, Prec: 72.43%, Rec: 70.21%, F1: 70.87%
+📊 Val   - Loss: 14.8837, Acc: 65.69%, Prec: 67.48%, Rec: 64.30%, F1: 64.97%
+📈 Learning Rate: 1.08e-06
+📉 No improvement. Best so far: 66.53% (patience: 18/1000)
+
+📅 Epoch 142/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4297, Acc: 72.05%, Prec: 72.96%, Rec: 70.73%, F1: 71.44%
+📊 Val   - Loss: 15.1934, Acc: 66.11%, Prec: 67.48%, Rec: 65.07%, F1: 65.52%
+📈 Learning Rate: 1.06e-06
+📉 No improvement. Best so far: 66.53% (patience: 19/1000)
+
+📅 Epoch 143/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4330, Acc: 71.62%, Prec: 72.60%, Rec: 70.31%, F1: 70.98%
+📊 Val   - Loss: 14.8723, Acc: 65.98%, Prec: 67.21%, Rec: 64.68%, F1: 65.32%
+📈 Learning Rate: 1.05e-06
+📉 No improvement. Best so far: 66.53% (patience: 20/1000)
+
+📅 Epoch 144/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4198, Acc: 71.94%, Prec: 72.96%, Rec: 70.73%, F1: 71.43%
+📊 Val   - Loss: 14.9571, Acc: 65.65%, Prec: 67.24%, Rec: 64.27%, F1: 64.99%
+📈 Learning Rate: 1.04e-06
+📉 No improvement. Best so far: 66.53% (patience: 21/1000)
+
+📅 Epoch 145/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4314, Acc: 71.88%, Prec: 72.76%, Rec: 70.59%, F1: 71.25%
+📊 Val   - Loss: 14.9238, Acc: 66.02%, Prec: 67.37%, Rec: 64.71%, F1: 65.31%
+📈 Learning Rate: 1.02e-06
+📉 No improvement. Best so far: 66.53% (patience: 22/1000)
+
+📅 Epoch 146/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4235, Acc: 72.11%, Prec: 72.98%, Rec: 70.81%, F1: 71.46%
+📊 Val   - Loss: 15.0508, Acc: 66.33%, Prec: 67.49%, Rec: 65.17%, F1: 65.63%
+📈 Learning Rate: 1.02e-06
+📉 No improvement. Best so far: 66.53% (patience: 23/1000)
+
+📅 Epoch 147/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.3976, Acc: 72.07%, Prec: 72.86%, Rec: 70.78%, F1: 71.43%
+📊 Val   - Loss: 14.7549, Acc: 65.80%, Prec: 67.55%, Rec: 64.56%, F1: 65.25%
+📈 Learning Rate: 1.01e-06
+📉 No improvement. Best so far: 66.53% (patience: 24/1000)
+
+📅 Epoch 148/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4158, Acc: 71.95%, Prec: 72.82%, Rec: 70.56%, F1: 71.23%
+📊 Val   - Loss: 15.0830, Acc: 65.91%, Prec: 67.49%, Rec: 64.66%, F1: 65.29%
+📈 Learning Rate: 1.00e-06
+📉 No improvement. Best so far: 66.53% (patience: 25/1000)
+
+📅 Epoch 149/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.4119, Acc: 72.31%, Prec: 73.10%, Rec: 70.99%, F1: 71.62%
+📊 Val   - Loss: 14.8211, Acc: 65.83%, Prec: 67.43%, Rec: 64.55%, F1: 65.22%
+📈 Learning Rate: 1.00e-06
+📉 No improvement. Best so far: 66.53% (patience: 26/1000)
+
+📅 Epoch 150/150 — FACE — Classes: 0-49
+📊 Train - Loss: 14.3998, Acc: 71.96%, Prec: 72.87%, Rec: 70.64%, F1: 71.34%
+📊 Val   - Loss: 15.0668, Acc: 66.53%, Prec: 67.85%, Rec: 65.38%, F1: 65.84%
+📈 Learning Rate: 1.00e-06
+📉 No improvement. Best so far: 66.53% (patience: 27/1000)
+🏁 Training finished in 382.6 minutes.
+🏆 Best validation accuracy: 66.53%
+
+✅ Completed training for classes 0-49: 66.53%
+
+================================================================================
+🚀 TRAINING MODEL 2/6
+================================================================================
+
+🚀 Training FACE Model on Classes: 10–59
+📊 Number of classes: 50
+🛠️ Explicitly received params: {'GPU_ID': [0], 'num_class': 100}
+🔓 Full fine-tuning: All parameters trainable
+✅ Built face model
+Loading pretrained weights from: checkpoints/face/oracle/0_49.pth
+🔄 Loading model weights from checkpoints/face/oracle/0_49.pth...
+⚠️ Skipping keys: []
+
+📊 Parameter Summary:
+  🔢 Total Parameters     : 5.43M
+  ✅ Trainable Parameters : 5.43M
+  📉 % Trainable          : 100.00%
+Loading Face Recognition data from /media/jag/volD2/faces_webface_112x112_sub100_train_test/train
+Loading Face Recognition data from /media/jag/volD2/faces_webface_112x112_sub100_train_test/test
+
+📁 Models will be saved to: checkpoints/face/oracle
+🎯 Target epochs: 150, Learning rate: 0.0001
+
+📅 Epoch 1/150 — FACE — Classes: 10-59
+📊 Train - Loss: 17.6086, Acc: 26.49%, Prec: 24.63%, Rec: 23.76%, F1: 22.42%
+📊 Val   - Loss: 16.4090, Acc: 41.05%, Prec: 46.45%, Rec: 38.38%, F1: 37.63%
+📈 Learning Rate: 1.00e-05
+✅ New Best Val Acc: 41.05% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 2/150 — FACE — Classes: 10-59
+📊 Train - Loss: 16.2208, Acc: 48.03%, Prec: 47.17%, Rec: 45.47%, F1: 44.91%
+📊 Val   - Loss: 16.1805, Acc: 49.78%, Prec: 54.99%, Rec: 47.19%, F1: 46.37%
+📈 Learning Rate: 1.00e-05
+✅ New Best Val Acc: 49.78% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 3/150 — FACE — Classes: 10-59
+📊 Train - Loss: 15.7719, Acc: 54.64%, Prec: 54.94%, Rec: 52.45%, F1: 52.37%
+📊 Val   - Loss: 16.2068, Acc: 57.40%, Prec: 60.34%, Rec: 55.39%, F1: 55.26%
+📈 Learning Rate: 9.99e-06
+✅ New Best Val Acc: 57.40% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 4/150 — FACE — Classes: 10-59
+📊 Train - Loss: 15.5179, Acc: 58.28%, Prec: 58.13%, Rec: 56.22%, F1: 56.14%
+📊 Val   - Loss: 15.9026, Acc: 57.65%, Prec: 61.71%, Rec: 55.83%, F1: 56.35%
+📈 Learning Rate: 9.98e-06
+✅ New Best Val Acc: 57.65% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 5/150 — FACE — Classes: 10-59
+📊 Train - Loss: 15.3520, Acc: 60.14%, Prec: 60.53%, Rec: 58.25%, F1: 58.38%
+📊 Val   - Loss: 16.0618, Acc: 58.45%, Prec: 61.29%, Rec: 57.01%, F1: 57.06%
+📈 Learning Rate: 9.98e-06
+✅ New Best Val Acc: 58.45% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 6/150 — FACE — Classes: 10-59
+📊 Train - Loss: 15.2426, Acc: 61.66%, Prec: 61.91%, Rec: 59.86%, F1: 60.03%
+📊 Val   - Loss: 15.7569, Acc: 59.59%, Prec: 62.80%, Rec: 58.05%, F1: 58.06%
+📈 Learning Rate: 9.96e-06
+✅ New Best Val Acc: 59.59% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 7/150 — FACE — Classes: 10-59
+📊 Train - Loss: 15.1496, Acc: 62.83%, Prec: 63.21%, Rec: 61.18%, F1: 61.45%
+📊 Val   - Loss: 15.8581, Acc: 60.09%, Prec: 63.62%, Rec: 58.38%, F1: 58.80%
+📈 Learning Rate: 9.95e-06
+✅ New Best Val Acc: 60.09% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 8/150 — FACE — Classes: 10-59
+📊 Train - Loss: 15.0983, Acc: 63.42%, Prec: 63.70%, Rec: 61.68%, F1: 61.91%
+📊 Val   - Loss: 15.5142, Acc: 59.63%, Prec: 63.76%, Rec: 58.10%, F1: 58.25%
+📈 Learning Rate: 9.94e-06
+📉 No improvement. Best so far: 60.09% (patience: 1/1000)
+
+📅 Epoch 9/150 — FACE — Classes: 10-59
+📊 Train - Loss: 15.0367, Acc: 64.39%, Prec: 64.75%, Rec: 62.69%, F1: 62.95%
+📊 Val   - Loss: 15.2822, Acc: 62.50%, Prec: 63.89%, Rec: 61.33%, F1: 61.42%
+📈 Learning Rate: 9.92e-06
+✅ New Best Val Acc: 62.50% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 10/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.9681, Acc: 64.73%, Prec: 65.08%, Rec: 63.06%, F1: 63.39%
+📊 Val   - Loss: 15.0665, Acc: 62.43%, Prec: 64.49%, Rec: 61.03%, F1: 60.78%
+📈 Learning Rate: 9.90e-06
+📉 No improvement. Best so far: 62.50% (patience: 1/1000)
+
+📅 Epoch 11/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.9448, Acc: 64.66%, Prec: 65.05%, Rec: 63.10%, F1: 63.38%
+📊 Val   - Loss: 15.5026, Acc: 62.54%, Prec: 65.03%, Rec: 60.89%, F1: 61.22%
+📈 Learning Rate: 9.88e-06
+✅ New Best Val Acc: 62.54% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 12/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.8991, Acc: 65.61%, Prec: 65.99%, Rec: 64.16%, F1: 64.45%
+📊 Val   - Loss: 15.4373, Acc: 63.43%, Prec: 65.83%, Rec: 62.23%, F1: 62.43%
+📈 Learning Rate: 9.86e-06
+✅ New Best Val Acc: 63.43% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 13/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.8518, Acc: 66.28%, Prec: 66.89%, Rec: 64.77%, F1: 65.16%
+📊 Val   - Loss: 15.4523, Acc: 62.93%, Prec: 66.32%, Rec: 61.68%, F1: 61.89%
+📈 Learning Rate: 9.83e-06
+📉 No improvement. Best so far: 63.43% (patience: 1/1000)
+
+📅 Epoch 14/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.8082, Acc: 66.70%, Prec: 67.34%, Rec: 65.19%, F1: 65.65%
+📊 Val   - Loss: 15.7660, Acc: 62.59%, Prec: 65.36%, Rec: 61.28%, F1: 61.40%
+📈 Learning Rate: 9.81e-06
+📉 No improvement. Best so far: 63.43% (patience: 2/1000)
+
+📅 Epoch 15/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.7838, Acc: 66.64%, Prec: 66.84%, Rec: 65.16%, F1: 65.43%
+📊 Val   - Loss: 15.5650, Acc: 63.32%, Prec: 65.89%, Rec: 62.00%, F1: 62.55%
+📈 Learning Rate: 9.78e-06
+📉 No improvement. Best so far: 63.43% (patience: 3/1000)
+
+📅 Epoch 16/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.7561, Acc: 67.19%, Prec: 67.68%, Rec: 65.73%, F1: 66.13%
+📊 Val   - Loss: 15.7078, Acc: 63.29%, Prec: 66.16%, Rec: 61.83%, F1: 62.13%
+📈 Learning Rate: 9.75e-06
+📉 No improvement. Best so far: 63.43% (patience: 4/1000)
+
+📅 Epoch 17/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.7128, Acc: 67.67%, Prec: 68.22%, Rec: 66.23%, F1: 66.59%
+📊 Val   - Loss: 15.5152, Acc: 64.50%, Prec: 66.73%, Rec: 63.14%, F1: 63.63%
+📈 Learning Rate: 9.72e-06
+✅ New Best Val Acc: 64.50% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 18/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.6902, Acc: 67.88%, Prec: 68.29%, Rec: 66.44%, F1: 66.79%
+📊 Val   - Loss: 15.4165, Acc: 63.38%, Prec: 65.49%, Rec: 62.23%, F1: 62.40%
+📈 Learning Rate: 9.68e-06
+📉 No improvement. Best so far: 64.50% (patience: 1/1000)
+
+📅 Epoch 19/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.6433, Acc: 68.42%, Prec: 69.04%, Rec: 67.03%, F1: 67.48%
+📊 Val   - Loss: 15.7978, Acc: 64.36%, Prec: 66.20%, Rec: 63.16%, F1: 63.49%
+📈 Learning Rate: 9.65e-06
+📉 No improvement. Best so far: 64.50% (patience: 2/1000)
+
+📅 Epoch 20/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.6337, Acc: 68.60%, Prec: 68.94%, Rec: 67.23%, F1: 67.61%
+📊 Val   - Loss: 15.3469, Acc: 63.68%, Prec: 67.25%, Rec: 61.81%, F1: 62.61%
+📈 Learning Rate: 9.61e-06
+📉 No improvement. Best so far: 64.50% (patience: 3/1000)
+
+📅 Epoch 21/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.6122, Acc: 68.62%, Prec: 68.98%, Rec: 67.25%, F1: 67.59%
+📊 Val   - Loss: 14.6330, Acc: 64.23%, Prec: 66.93%, Rec: 62.85%, F1: 63.20%
+📈 Learning Rate: 9.57e-06
+📉 No improvement. Best so far: 64.50% (patience: 4/1000)
+
+📅 Epoch 22/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.5667, Acc: 69.29%, Prec: 69.89%, Rec: 67.96%, F1: 68.39%
+📊 Val   - Loss: 14.6702, Acc: 66.05%, Prec: 67.15%, Rec: 65.27%, F1: 65.15%
+📈 Learning Rate: 9.53e-06
+✅ New Best Val Acc: 66.05% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 23/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.5525, Acc: 69.44%, Prec: 69.76%, Rec: 67.98%, F1: 68.39%
+📊 Val   - Loss: 14.6080, Acc: 66.34%, Prec: 67.66%, Rec: 65.20%, F1: 65.50%
+📈 Learning Rate: 9.49e-06
+✅ New Best Val Acc: 66.34% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 24/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.5024, Acc: 70.36%, Prec: 70.60%, Rec: 69.04%, F1: 69.38%
+📊 Val   - Loss: 14.8314, Acc: 64.50%, Prec: 68.22%, Rec: 63.57%, F1: 64.20%
+📈 Learning Rate: 9.44e-06
+📉 No improvement. Best so far: 66.34% (patience: 1/1000)
+
+📅 Epoch 25/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.4783, Acc: 70.29%, Prec: 70.89%, Rec: 68.99%, F1: 69.45%
+📊 Val   - Loss: 15.6576, Acc: 65.59%, Prec: 67.58%, Rec: 64.24%, F1: 64.48%
+📈 Learning Rate: 9.40e-06
+📉 No improvement. Best so far: 66.34% (patience: 2/1000)
+
+📅 Epoch 26/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.4709, Acc: 70.35%, Prec: 70.78%, Rec: 69.00%, F1: 69.40%
+📊 Val   - Loss: 14.8891, Acc: 65.79%, Prec: 68.01%, Rec: 64.61%, F1: 64.92%
+📈 Learning Rate: 9.35e-06
+📉 No improvement. Best so far: 66.34% (patience: 3/1000)
+
+📅 Epoch 27/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.4444, Acc: 70.67%, Prec: 71.34%, Rec: 69.31%, F1: 69.79%
+📊 Val   - Loss: 14.5307, Acc: 65.79%, Prec: 67.99%, Rec: 64.57%, F1: 64.78%
+📈 Learning Rate: 9.30e-06
+📉 No improvement. Best so far: 66.34% (patience: 4/1000)
+
+📅 Epoch 28/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.4013, Acc: 71.42%, Prec: 71.93%, Rec: 70.07%, F1: 70.50%
+📊 Val   - Loss: 14.1698, Acc: 65.86%, Prec: 67.96%, Rec: 65.11%, F1: 65.10%
+📈 Learning Rate: 9.25e-06
+📉 No improvement. Best so far: 66.34% (patience: 5/1000)
+
+📅 Epoch 29/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.3847, Acc: 71.42%, Prec: 71.79%, Rec: 70.16%, F1: 70.56%
+📊 Val   - Loss: 15.3444, Acc: 65.43%, Prec: 68.37%, Rec: 64.14%, F1: 64.41%
+📈 Learning Rate: 9.20e-06
+📉 No improvement. Best so far: 66.34% (patience: 6/1000)
+
+📅 Epoch 30/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.3628, Acc: 71.47%, Prec: 71.95%, Rec: 70.17%, F1: 70.56%
+📊 Val   - Loss: 15.7459, Acc: 66.36%, Prec: 69.02%, Rec: 65.30%, F1: 65.81%
+📈 Learning Rate: 9.14e-06
+✅ New Best Val Acc: 66.36% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 31/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.3443, Acc: 72.23%, Prec: 72.68%, Rec: 70.94%, F1: 71.39%
+📊 Val   - Loss: 14.5232, Acc: 65.73%, Prec: 68.87%, Rec: 64.64%, F1: 65.03%
+📈 Learning Rate: 9.08e-06
+📉 No improvement. Best so far: 66.36% (patience: 1/1000)
+
+📅 Epoch 32/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.3241, Acc: 72.21%, Prec: 72.65%, Rec: 70.96%, F1: 71.39%
+📊 Val   - Loss: 14.1323, Acc: 67.23%, Prec: 69.49%, Rec: 65.98%, F1: 66.58%
+📈 Learning Rate: 9.03e-06
+✅ New Best Val Acc: 67.23% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 33/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.3113, Acc: 72.34%, Prec: 72.82%, Rec: 71.13%, F1: 71.57%
+📊 Val   - Loss: 14.9129, Acc: 66.27%, Prec: 68.36%, Rec: 65.20%, F1: 65.57%
+📈 Learning Rate: 8.97e-06
+📉 No improvement. Best so far: 67.23% (patience: 1/1000)
+
+📅 Epoch 34/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.2635, Acc: 73.17%, Prec: 73.44%, Rec: 71.90%, F1: 72.30%
+📊 Val   - Loss: 15.4610, Acc: 66.41%, Prec: 68.51%, Rec: 65.21%, F1: 65.52%
+📈 Learning Rate: 8.91e-06
+📉 No improvement. Best so far: 67.23% (patience: 2/1000)
+
+📅 Epoch 35/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.2481, Acc: 73.24%, Prec: 73.64%, Rec: 71.95%, F1: 72.42%
+📊 Val   - Loss: 14.3915, Acc: 67.52%, Prec: 69.71%, Rec: 66.39%, F1: 66.86%
+📈 Learning Rate: 8.84e-06
+✅ New Best Val Acc: 67.52% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 36/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.2093, Acc: 73.31%, Prec: 73.95%, Rec: 72.07%, F1: 72.58%
+📊 Val   - Loss: 14.0772, Acc: 65.91%, Prec: 68.26%, Rec: 64.65%, F1: 64.90%
+📈 Learning Rate: 8.78e-06
+📉 No improvement. Best so far: 67.52% (patience: 1/1000)
+
+📅 Epoch 37/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.2038, Acc: 73.35%, Prec: 73.85%, Rec: 72.04%, F1: 72.48%
+📊 Val   - Loss: 14.5307, Acc: 68.30%, Prec: 69.72%, Rec: 67.24%, F1: 67.70%
+📈 Learning Rate: 8.72e-06
+✅ New Best Val Acc: 68.30% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 38/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.1827, Acc: 73.95%, Prec: 74.41%, Rec: 72.65%, F1: 73.13%
+📊 Val   - Loss: 14.1481, Acc: 67.20%, Prec: 69.40%, Rec: 65.99%, F1: 66.36%
+📈 Learning Rate: 8.65e-06
+📉 No improvement. Best so far: 68.30% (patience: 1/1000)
+
+📅 Epoch 39/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.1297, Acc: 74.30%, Prec: 74.78%, Rec: 73.02%, F1: 73.49%
+📊 Val   - Loss: 14.8201, Acc: 67.07%, Prec: 70.16%, Rec: 65.69%, F1: 66.64%
+📈 Learning Rate: 8.58e-06
+📉 No improvement. Best so far: 68.30% (patience: 2/1000)
+
+📅 Epoch 40/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.1559, Acc: 73.92%, Prec: 74.29%, Rec: 72.67%, F1: 73.10%
+📊 Val   - Loss: 14.4266, Acc: 68.46%, Prec: 70.41%, Rec: 67.21%, F1: 67.74%
+📈 Learning Rate: 8.51e-06
+✅ New Best Val Acc: 68.46% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 41/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.1288, Acc: 74.24%, Prec: 74.81%, Rec: 72.99%, F1: 73.51%
+📊 Val   - Loss: 14.1097, Acc: 69.32%, Prec: 71.02%, Rec: 68.15%, F1: 68.84%
+📈 Learning Rate: 8.44e-06
+✅ New Best Val Acc: 69.32% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 42/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.1436, Acc: 74.16%, Prec: 74.68%, Rec: 72.99%, F1: 73.49%
+📊 Val   - Loss: 13.6265, Acc: 68.07%, Prec: 70.63%, Rec: 66.86%, F1: 67.71%
+📈 Learning Rate: 8.37e-06
+📉 No improvement. Best so far: 69.32% (patience: 1/1000)
+
+📅 Epoch 43/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.0922, Acc: 74.39%, Prec: 74.86%, Rec: 73.23%, F1: 73.66%
+📊 Val   - Loss: 15.0735, Acc: 67.59%, Prec: 69.71%, Rec: 66.67%, F1: 67.32%
+📈 Learning Rate: 8.30e-06
+📉 No improvement. Best so far: 69.32% (patience: 2/1000)
+
+📅 Epoch 44/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.0865, Acc: 74.99%, Prec: 75.59%, Rec: 73.76%, F1: 74.28%
+📊 Val   - Loss: 14.6628, Acc: 68.18%, Prec: 69.79%, Rec: 67.03%, F1: 67.36%
+📈 Learning Rate: 8.22e-06
+📉 No improvement. Best so far: 69.32% (patience: 3/1000)
+
+📅 Epoch 45/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.0267, Acc: 75.45%, Prec: 76.05%, Rec: 74.31%, F1: 74.84%
+📊 Val   - Loss: 14.7285, Acc: 68.23%, Prec: 70.63%, Rec: 67.00%, F1: 67.70%
+📈 Learning Rate: 8.15e-06
+📉 No improvement. Best so far: 69.32% (patience: 4/1000)
+
+📅 Epoch 46/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.0279, Acc: 75.42%, Prec: 75.86%, Rec: 74.23%, F1: 74.69%
+📊 Val   - Loss: 15.2690, Acc: 67.68%, Prec: 70.26%, Rec: 66.20%, F1: 66.70%
+📈 Learning Rate: 8.07e-06
+📉 No improvement. Best so far: 69.32% (patience: 5/1000)
+
+📅 Epoch 47/150 — FACE — Classes: 10-59
+📊 Train - Loss: 14.0072, Acc: 75.43%, Prec: 75.89%, Rec: 74.31%, F1: 74.76%
+📊 Val   - Loss: 16.1715, Acc: 68.18%, Prec: 70.60%, Rec: 66.94%, F1: 67.62%
+📈 Learning Rate: 7.99e-06
+📉 No improvement. Best so far: 69.32% (patience: 6/1000)
+
+📅 Epoch 48/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.9962, Acc: 76.14%, Prec: 76.50%, Rec: 75.02%, F1: 75.47%
+📊 Val   - Loss: 14.8087, Acc: 69.00%, Prec: 70.83%, Rec: 67.83%, F1: 68.39%
+📈 Learning Rate: 7.91e-06
+📉 No improvement. Best so far: 69.32% (patience: 7/1000)
+
+📅 Epoch 49/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.9728, Acc: 75.89%, Prec: 76.38%, Rec: 74.77%, F1: 75.25%
+📊 Val   - Loss: 14.5562, Acc: 69.32%, Prec: 72.07%, Rec: 67.98%, F1: 68.87%
+📈 Learning Rate: 7.83e-06
+📉 No improvement. Best so far: 69.32% (patience: 8/1000)
+
+📅 Epoch 50/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.9414, Acc: 76.75%, Prec: 77.09%, Rec: 75.68%, F1: 76.11%
+📊 Val   - Loss: 14.4047, Acc: 68.25%, Prec: 70.21%, Rec: 67.55%, F1: 67.68%
+📈 Learning Rate: 7.75e-06
+📉 No improvement. Best so far: 69.32% (patience: 9/1000)
+
+📅 Epoch 51/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.9413, Acc: 76.28%, Prec: 76.76%, Rec: 75.16%, F1: 75.62%
+📊 Val   - Loss: 14.8708, Acc: 68.64%, Prec: 70.62%, Rec: 67.59%, F1: 68.05%
+📈 Learning Rate: 7.67e-06
+📉 No improvement. Best so far: 69.32% (patience: 10/1000)
+
+📅 Epoch 52/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.9088, Acc: 76.75%, Prec: 77.09%, Rec: 75.59%, F1: 76.04%
+📊 Val   - Loss: 14.4017, Acc: 69.77%, Prec: 71.59%, Rec: 68.70%, F1: 69.20%
+📈 Learning Rate: 7.58e-06
+✅ New Best Val Acc: 69.77% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 53/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.8892, Acc: 77.07%, Prec: 77.44%, Rec: 75.97%, F1: 76.43%
+📊 Val   - Loss: 14.0571, Acc: 69.93%, Prec: 71.43%, Rec: 68.99%, F1: 69.35%
+📈 Learning Rate: 7.50e-06
+✅ New Best Val Acc: 69.93% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 54/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.8789, Acc: 76.97%, Prec: 77.33%, Rec: 75.86%, F1: 76.30%
+📊 Val   - Loss: 15.1170, Acc: 68.98%, Prec: 71.13%, Rec: 67.57%, F1: 68.17%
+📈 Learning Rate: 7.42e-06
+📉 No improvement. Best so far: 69.93% (patience: 1/1000)
+
+📅 Epoch 55/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.8553, Acc: 77.52%, Prec: 77.95%, Rec: 76.35%, F1: 76.83%
+📊 Val   - Loss: 15.0298, Acc: 70.03%, Prec: 71.83%, Rec: 68.71%, F1: 69.41%
+📈 Learning Rate: 7.33e-06
+✅ New Best Val Acc: 70.03% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 56/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.8549, Acc: 77.24%, Prec: 77.65%, Rec: 76.14%, F1: 76.57%
+📊 Val   - Loss: 14.3957, Acc: 69.46%, Prec: 70.58%, Rec: 68.41%, F1: 68.52%
+📈 Learning Rate: 7.24e-06
+📉 No improvement. Best so far: 70.03% (patience: 1/1000)
+
+📅 Epoch 57/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.8295, Acc: 77.74%, Prec: 78.11%, Rec: 76.73%, F1: 77.16%
+📊 Val   - Loss: 14.5527, Acc: 69.30%, Prec: 71.88%, Rec: 67.99%, F1: 69.04%
+📈 Learning Rate: 7.16e-06
+📉 No improvement. Best so far: 70.03% (patience: 2/1000)
+
+📅 Epoch 58/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.8079, Acc: 77.89%, Prec: 78.30%, Rec: 76.82%, F1: 77.28%
+📊 Val   - Loss: 15.1764, Acc: 70.14%, Prec: 72.06%, Rec: 69.07%, F1: 69.75%
+📈 Learning Rate: 7.07e-06
+✅ New Best Val Acc: 70.14% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 59/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.7921, Acc: 78.18%, Prec: 78.61%, Rec: 77.05%, F1: 77.56%
+📊 Val   - Loss: 14.7408, Acc: 68.91%, Prec: 70.88%, Rec: 67.63%, F1: 68.22%
+📈 Learning Rate: 6.98e-06
+📉 No improvement. Best so far: 70.14% (patience: 1/1000)
+
+📅 Epoch 60/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.7761, Acc: 78.24%, Prec: 78.47%, Rec: 77.07%, F1: 77.51%
+📊 Val   - Loss: 14.2989, Acc: 70.28%, Prec: 71.58%, Rec: 69.14%, F1: 69.57%
+📈 Learning Rate: 6.89e-06
+✅ New Best Val Acc: 70.28% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 61/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.7880, Acc: 77.92%, Prec: 78.41%, Rec: 76.92%, F1: 77.41%
+📊 Val   - Loss: 15.0634, Acc: 69.14%, Prec: 70.73%, Rec: 67.81%, F1: 68.35%
+📈 Learning Rate: 6.80e-06
+📉 No improvement. Best so far: 70.28% (patience: 1/1000)
+
+📅 Epoch 62/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.7723, Acc: 78.25%, Prec: 78.56%, Rec: 77.28%, F1: 77.69%
+📊 Val   - Loss: 13.8561, Acc: 68.23%, Prec: 70.52%, Rec: 67.00%, F1: 67.48%
+📈 Learning Rate: 6.71e-06
+📉 No improvement. Best so far: 70.28% (patience: 2/1000)
+
+📅 Epoch 63/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.7257, Acc: 78.71%, Prec: 79.20%, Rec: 77.65%, F1: 78.16%
+📊 Val   - Loss: 13.8623, Acc: 69.32%, Prec: 71.43%, Rec: 68.32%, F1: 68.87%
+📈 Learning Rate: 6.62e-06
+📉 No improvement. Best so far: 70.28% (patience: 3/1000)
+
+📅 Epoch 64/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.7199, Acc: 78.77%, Prec: 79.01%, Rec: 77.71%, F1: 78.14%
+📊 Val   - Loss: 14.6744, Acc: 69.46%, Prec: 71.97%, Rec: 68.28%, F1: 68.99%
+📈 Learning Rate: 6.53e-06
+📉 No improvement. Best so far: 70.28% (patience: 4/1000)
+
+📅 Epoch 65/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.7008, Acc: 79.30%, Prec: 79.63%, Rec: 78.28%, F1: 78.73%
+📊 Val   - Loss: 14.2254, Acc: 71.00%, Prec: 72.32%, Rec: 69.94%, F1: 70.50%
+📈 Learning Rate: 6.44e-06
+✅ New Best Val Acc: 71.00% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 66/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.6748, Acc: 79.53%, Prec: 80.21%, Rec: 78.52%, F1: 79.07%
+📊 Val   - Loss: 15.1313, Acc: 69.27%, Prec: 70.76%, Rec: 68.44%, F1: 68.90%
+📈 Learning Rate: 6.34e-06
+📉 No improvement. Best so far: 71.00% (patience: 1/1000)
+
+📅 Epoch 67/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.6705, Acc: 79.78%, Prec: 80.12%, Rec: 78.80%, F1: 79.23%
+📊 Val   - Loss: 13.5825, Acc: 70.14%, Prec: 71.78%, Rec: 69.08%, F1: 69.79%
+📈 Learning Rate: 6.25e-06
+📉 No improvement. Best so far: 71.00% (patience: 2/1000)
+
+📅 Epoch 68/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.6237, Acc: 79.85%, Prec: 80.04%, Rec: 78.80%, F1: 79.19%
+📊 Val   - Loss: 13.7948, Acc: 70.16%, Prec: 71.94%, Rec: 69.08%, F1: 69.72%
+📈 Learning Rate: 6.16e-06
+📉 No improvement. Best so far: 71.00% (patience: 3/1000)
+
+📅 Epoch 69/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.6539, Acc: 79.63%, Prec: 80.14%, Rec: 78.64%, F1: 79.16%
+📊 Val   - Loss: 15.2787, Acc: 69.27%, Prec: 70.93%, Rec: 67.93%, F1: 68.52%
+📈 Learning Rate: 6.06e-06
+📉 No improvement. Best so far: 71.00% (patience: 4/1000)
+
+📅 Epoch 70/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.6153, Acc: 80.01%, Prec: 80.50%, Rec: 79.07%, F1: 79.55%
+📊 Val   - Loss: 14.4234, Acc: 70.37%, Prec: 71.68%, Rec: 69.32%, F1: 69.64%
+📈 Learning Rate: 5.97e-06
+📉 No improvement. Best so far: 71.00% (patience: 5/1000)
+
+📅 Epoch 71/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.5932, Acc: 80.94%, Prec: 81.41%, Rec: 79.97%, F1: 80.47%
+📊 Val   - Loss: 14.8138, Acc: 70.66%, Prec: 72.38%, Rec: 69.60%, F1: 70.24%
+📈 Learning Rate: 5.88e-06
+📉 No improvement. Best so far: 71.00% (patience: 6/1000)
+
+📅 Epoch 72/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.5654, Acc: 80.52%, Prec: 81.10%, Rec: 79.53%, F1: 80.05%
+📊 Val   - Loss: 14.3461, Acc: 71.57%, Prec: 72.77%, Rec: 70.59%, F1: 71.04%
+📈 Learning Rate: 5.78e-06
+✅ New Best Val Acc: 71.57% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 73/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.5608, Acc: 80.76%, Prec: 81.05%, Rec: 79.78%, F1: 80.19%
+📊 Val   - Loss: 14.0756, Acc: 70.87%, Prec: 72.84%, Rec: 69.75%, F1: 70.51%
+📈 Learning Rate: 5.69e-06
+📉 No improvement. Best so far: 71.57% (patience: 1/1000)
+
+📅 Epoch 74/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.5584, Acc: 81.08%, Prec: 81.48%, Rec: 80.20%, F1: 80.62%
+📊 Val   - Loss: 14.1909, Acc: 71.34%, Prec: 72.47%, Rec: 70.31%, F1: 70.72%
+📈 Learning Rate: 5.59e-06
+📉 No improvement. Best so far: 71.57% (patience: 2/1000)
+
+📅 Epoch 75/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.5760, Acc: 80.69%, Prec: 81.10%, Rec: 79.71%, F1: 80.20%
+📊 Val   - Loss: 13.7055, Acc: 71.37%, Prec: 73.25%, Rec: 70.16%, F1: 70.93%
+📈 Learning Rate: 5.50e-06
+📉 No improvement. Best so far: 71.57% (patience: 3/1000)
+
+📅 Epoch 76/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.5279, Acc: 81.63%, Prec: 81.94%, Rec: 80.74%, F1: 81.15%
+📊 Val   - Loss: 14.6082, Acc: 70.82%, Prec: 72.19%, Rec: 69.90%, F1: 70.37%
+📈 Learning Rate: 5.41e-06
+📉 No improvement. Best so far: 71.57% (patience: 4/1000)
+
+📅 Epoch 77/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.5305, Acc: 81.10%, Prec: 81.39%, Rec: 80.17%, F1: 80.60%
+📊 Val   - Loss: 14.3513, Acc: 71.12%, Prec: 72.44%, Rec: 70.19%, F1: 70.61%
+📈 Learning Rate: 5.31e-06
+📉 No improvement. Best so far: 71.57% (patience: 5/1000)
+
+📅 Epoch 78/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.5066, Acc: 81.56%, Prec: 82.03%, Rec: 80.66%, F1: 81.12%
+📊 Val   - Loss: 14.4523, Acc: 69.46%, Prec: 71.32%, Rec: 68.17%, F1: 68.65%
+📈 Learning Rate: 5.22e-06
+📉 No improvement. Best so far: 71.57% (patience: 6/1000)
+
+📅 Epoch 79/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.5143, Acc: 81.58%, Prec: 82.01%, Rec: 80.65%, F1: 81.14%
+📊 Val   - Loss: 13.9697, Acc: 70.84%, Prec: 72.20%, Rec: 69.76%, F1: 70.33%
+📈 Learning Rate: 5.12e-06
+📉 No improvement. Best so far: 71.57% (patience: 7/1000)
+
+📅 Epoch 80/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.4640, Acc: 82.11%, Prec: 82.40%, Rec: 81.19%, F1: 81.62%
+📊 Val   - Loss: 14.4408, Acc: 71.28%, Prec: 72.94%, Rec: 70.16%, F1: 70.60%
+📈 Learning Rate: 5.03e-06
+📉 No improvement. Best so far: 71.57% (patience: 8/1000)
+
+📅 Epoch 81/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.4688, Acc: 82.04%, Prec: 82.49%, Rec: 81.14%, F1: 81.61%
+📊 Val   - Loss: 14.3943, Acc: 71.44%, Prec: 72.90%, Rec: 70.33%, F1: 70.96%
+📈 Learning Rate: 4.94e-06
+📉 No improvement. Best so far: 71.57% (patience: 9/1000)
+
+📅 Epoch 82/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.4711, Acc: 82.07%, Prec: 82.56%, Rec: 81.18%, F1: 81.68%
+📊 Val   - Loss: 14.3900, Acc: 71.59%, Prec: 73.16%, Rec: 70.54%, F1: 71.22%
+📈 Learning Rate: 4.84e-06
+✅ New Best Val Acc: 71.59% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 83/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.4453, Acc: 82.26%, Prec: 82.50%, Rec: 81.28%, F1: 81.69%
+📊 Val   - Loss: 13.6332, Acc: 71.48%, Prec: 73.33%, Rec: 70.35%, F1: 71.10%
+📈 Learning Rate: 4.75e-06
+📉 No improvement. Best so far: 71.59% (patience: 1/1000)
+
+📅 Epoch 84/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.4423, Acc: 82.30%, Prec: 82.69%, Rec: 81.46%, F1: 81.89%
+📊 Val   - Loss: 14.1605, Acc: 72.05%, Prec: 72.97%, Rec: 71.10%, F1: 71.46%
+📈 Learning Rate: 4.66e-06
+✅ New Best Val Acc: 72.05% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 85/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.4143, Acc: 82.54%, Prec: 82.88%, Rec: 81.65%, F1: 82.09%
+📊 Val   - Loss: 13.6342, Acc: 71.44%, Prec: 73.06%, Rec: 70.39%, F1: 71.03%
+📈 Learning Rate: 4.56e-06
+📉 No improvement. Best so far: 72.05% (patience: 1/1000)
+
+📅 Epoch 86/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.4013, Acc: 82.84%, Prec: 83.16%, Rec: 81.97%, F1: 82.41%
+📊 Val   - Loss: 14.2122, Acc: 70.91%, Prec: 72.55%, Rec: 69.96%, F1: 70.45%
+📈 Learning Rate: 4.47e-06
+📉 No improvement. Best so far: 72.05% (patience: 2/1000)
+
+📅 Epoch 87/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.3629, Acc: 83.16%, Prec: 83.43%, Rec: 82.30%, F1: 82.71%
+📊 Val   - Loss: 15.1638, Acc: 71.07%, Prec: 72.65%, Rec: 70.06%, F1: 70.56%
+📈 Learning Rate: 4.38e-06
+📉 No improvement. Best so far: 72.05% (patience: 3/1000)
+
+📅 Epoch 88/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.3973, Acc: 83.08%, Prec: 83.52%, Rec: 82.19%, F1: 82.67%
+📊 Val   - Loss: 14.6758, Acc: 72.05%, Prec: 73.15%, Rec: 71.07%, F1: 71.44%
+📈 Learning Rate: 4.29e-06
+📉 No improvement. Best so far: 72.05% (patience: 4/1000)
+
+📅 Epoch 89/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.3698, Acc: 83.13%, Prec: 83.53%, Rec: 82.22%, F1: 82.70%
+📊 Val   - Loss: 13.6337, Acc: 72.09%, Prec: 73.00%, Rec: 71.19%, F1: 71.64%
+📈 Learning Rate: 4.20e-06
+✅ New Best Val Acc: 72.09% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 90/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.3428, Acc: 83.37%, Prec: 83.74%, Rec: 82.52%, F1: 82.98%
+📊 Val   - Loss: 14.7065, Acc: 71.78%, Prec: 73.12%, Rec: 70.78%, F1: 71.26%
+📈 Learning Rate: 4.11e-06
+📉 No improvement. Best so far: 72.09% (patience: 1/1000)
+
+📅 Epoch 91/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.3669, Acc: 83.36%, Prec: 83.67%, Rec: 82.49%, F1: 82.91%
+📊 Val   - Loss: 14.2397, Acc: 71.39%, Prec: 72.46%, Rec: 70.23%, F1: 70.67%
+📈 Learning Rate: 4.02e-06
+📉 No improvement. Best so far: 72.09% (patience: 2/1000)
+
+📅 Epoch 92/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.3423, Acc: 83.45%, Prec: 83.76%, Rec: 82.56%, F1: 83.01%
+📊 Val   - Loss: 14.5979, Acc: 71.41%, Prec: 72.76%, Rec: 70.34%, F1: 70.86%
+📈 Learning Rate: 3.93e-06
+📉 No improvement. Best so far: 72.09% (patience: 3/1000)
+
+📅 Epoch 93/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.3216, Acc: 83.41%, Prec: 83.70%, Rec: 82.49%, F1: 82.92%
+📊 Val   - Loss: 14.3031, Acc: 72.07%, Prec: 73.52%, Rec: 71.19%, F1: 71.90%
+📈 Learning Rate: 3.84e-06
+📉 No improvement. Best so far: 72.09% (patience: 4/1000)
+
+📅 Epoch 94/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.3301, Acc: 83.84%, Prec: 84.25%, Rec: 83.01%, F1: 83.46%
+📊 Val   - Loss: 14.6415, Acc: 71.57%, Prec: 73.02%, Rec: 70.42%, F1: 70.91%
+📈 Learning Rate: 3.76e-06
+📉 No improvement. Best so far: 72.09% (patience: 5/1000)
+
+📅 Epoch 95/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.2895, Acc: 83.93%, Prec: 84.22%, Rec: 83.01%, F1: 83.46%
+📊 Val   - Loss: 13.8226, Acc: 71.57%, Prec: 73.53%, Rec: 70.29%, F1: 71.15%
+📈 Learning Rate: 3.67e-06
+📉 No improvement. Best so far: 72.09% (patience: 6/1000)
+
+📅 Epoch 96/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.3066, Acc: 83.66%, Prec: 84.10%, Rec: 82.78%, F1: 83.25%
+📊 Val   - Loss: 14.0574, Acc: 72.25%, Prec: 72.83%, Rec: 71.40%, F1: 71.71%
+📈 Learning Rate: 3.58e-06
+✅ New Best Val Acc: 72.25% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 97/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.2818, Acc: 84.08%, Prec: 84.34%, Rec: 83.30%, F1: 83.68%
+📊 Val   - Loss: 13.8468, Acc: 72.71%, Prec: 73.60%, Rec: 71.84%, F1: 72.18%
+📈 Learning Rate: 3.50e-06
+✅ New Best Val Acc: 72.71% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 98/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.2933, Acc: 84.02%, Prec: 84.25%, Rec: 83.19%, F1: 83.57%
+📊 Val   - Loss: 14.3503, Acc: 71.89%, Prec: 73.55%, Rec: 70.97%, F1: 71.59%
+📈 Learning Rate: 3.42e-06
+📉 No improvement. Best so far: 72.71% (patience: 1/1000)
+
+📅 Epoch 99/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.2645, Acc: 84.37%, Prec: 84.66%, Rec: 83.54%, F1: 83.95%
+📊 Val   - Loss: 13.6051, Acc: 72.78%, Prec: 74.19%, Rec: 71.73%, F1: 72.34%
+📈 Learning Rate: 3.33e-06
+✅ New Best Val Acc: 72.78% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 100/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.2644, Acc: 84.24%, Prec: 84.57%, Rec: 83.45%, F1: 83.87%
+📊 Val   - Loss: 13.6685, Acc: 72.64%, Prec: 73.80%, Rec: 71.52%, F1: 72.17%
+📈 Learning Rate: 3.25e-06
+📉 No improvement. Best so far: 72.78% (patience: 1/1000)
+
+📅 Epoch 101/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.2199, Acc: 84.84%, Prec: 85.17%, Rec: 84.02%, F1: 84.44%
+📊 Val   - Loss: 14.6157, Acc: 72.14%, Prec: 73.44%, Rec: 71.29%, F1: 71.81%
+📈 Learning Rate: 3.17e-06
+📉 No improvement. Best so far: 72.78% (patience: 2/1000)
+
+📅 Epoch 102/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.2326, Acc: 84.77%, Prec: 85.04%, Rec: 83.95%, F1: 84.36%
+📊 Val   - Loss: 14.2252, Acc: 71.84%, Prec: 72.84%, Rec: 70.82%, F1: 71.25%
+📈 Learning Rate: 3.09e-06
+📉 No improvement. Best so far: 72.78% (patience: 3/1000)
+
+📅 Epoch 103/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.2402, Acc: 84.45%, Prec: 84.77%, Rec: 83.57%, F1: 84.00%
+📊 Val   - Loss: 13.6698, Acc: 73.03%, Prec: 74.58%, Rec: 71.81%, F1: 72.50%
+📈 Learning Rate: 3.01e-06
+✅ New Best Val Acc: 73.03% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 104/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.2398, Acc: 84.55%, Prec: 84.83%, Rec: 83.74%, F1: 84.17%
+📊 Val   - Loss: 13.5453, Acc: 73.19%, Prec: 74.34%, Rec: 72.17%, F1: 72.61%
+📈 Learning Rate: 2.93e-06
+✅ New Best Val Acc: 73.19% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 105/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.2246, Acc: 84.68%, Prec: 84.93%, Rec: 83.89%, F1: 84.27%
+📊 Val   - Loss: 13.9025, Acc: 73.23%, Prec: 74.12%, Rec: 72.37%, F1: 72.84%
+📈 Learning Rate: 2.85e-06
+✅ New Best Val Acc: 73.23% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 106/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.2125, Acc: 85.26%, Prec: 85.56%, Rec: 84.49%, F1: 84.91%
+📊 Val   - Loss: 13.9885, Acc: 72.62%, Prec: 73.67%, Rec: 71.62%, F1: 72.19%
+📈 Learning Rate: 2.78e-06
+📉 No improvement. Best so far: 73.23% (patience: 1/1000)
+
+📅 Epoch 107/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1886, Acc: 85.37%, Prec: 85.71%, Rec: 84.67%, F1: 85.07%
+📊 Val   - Loss: 14.7038, Acc: 72.34%, Prec: 73.48%, Rec: 71.40%, F1: 71.86%
+📈 Learning Rate: 2.70e-06
+📉 No improvement. Best so far: 73.23% (patience: 2/1000)
+
+📅 Epoch 108/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1871, Acc: 85.20%, Prec: 85.49%, Rec: 84.46%, F1: 84.85%
+📊 Val   - Loss: 14.5098, Acc: 72.57%, Prec: 73.62%, Rec: 71.60%, F1: 72.13%
+📈 Learning Rate: 2.63e-06
+📉 No improvement. Best so far: 73.23% (patience: 3/1000)
+
+📅 Epoch 109/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.2126, Acc: 84.92%, Prec: 85.34%, Rec: 84.20%, F1: 84.64%
+📊 Val   - Loss: 14.3523, Acc: 72.44%, Prec: 73.64%, Rec: 71.58%, F1: 72.03%
+📈 Learning Rate: 2.56e-06
+📉 No improvement. Best so far: 73.23% (patience: 4/1000)
+
+📅 Epoch 110/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1682, Acc: 85.50%, Prec: 85.66%, Rec: 84.68%, F1: 85.04%
+📊 Val   - Loss: 14.1341, Acc: 72.69%, Prec: 74.31%, Rec: 71.56%, F1: 72.25%
+📈 Learning Rate: 2.49e-06
+📉 No improvement. Best so far: 73.23% (patience: 5/1000)
+
+📅 Epoch 111/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1718, Acc: 85.53%, Prec: 85.86%, Rec: 84.67%, F1: 85.11%
+📊 Val   - Loss: 14.5869, Acc: 72.55%, Prec: 73.52%, Rec: 71.67%, F1: 72.15%
+📈 Learning Rate: 2.42e-06
+📉 No improvement. Best so far: 73.23% (patience: 6/1000)
+
+📅 Epoch 112/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1781, Acc: 85.31%, Prec: 85.51%, Rec: 84.62%, F1: 84.96%
+📊 Val   - Loss: 14.2877, Acc: 72.30%, Prec: 73.40%, Rec: 71.31%, F1: 71.73%
+📈 Learning Rate: 2.35e-06
+📉 No improvement. Best so far: 73.23% (patience: 7/1000)
+
+📅 Epoch 113/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1622, Acc: 85.53%, Prec: 85.90%, Rec: 84.77%, F1: 85.19%
+📊 Val   - Loss: 14.7573, Acc: 73.07%, Prec: 74.33%, Rec: 71.99%, F1: 72.64%
+📈 Learning Rate: 2.28e-06
+📉 No improvement. Best so far: 73.23% (patience: 8/1000)
+
+📅 Epoch 114/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1713, Acc: 85.51%, Prec: 85.80%, Rec: 84.67%, F1: 85.10%
+📊 Val   - Loss: 13.9007, Acc: 73.07%, Prec: 74.19%, Rec: 72.04%, F1: 72.62%
+📈 Learning Rate: 2.22e-06
+📉 No improvement. Best so far: 73.23% (patience: 9/1000)
+
+📅 Epoch 115/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1425, Acc: 86.02%, Prec: 86.28%, Rec: 85.23%, F1: 85.62%
+📊 Val   - Loss: 14.5470, Acc: 72.48%, Prec: 74.03%, Rec: 71.60%, F1: 72.17%
+📈 Learning Rate: 2.16e-06
+📉 No improvement. Best so far: 73.23% (patience: 10/1000)
+
+📅 Epoch 116/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1292, Acc: 85.99%, Prec: 86.20%, Rec: 85.19%, F1: 85.57%
+📊 Val   - Loss: 13.9488, Acc: 72.89%, Prec: 74.82%, Rec: 71.86%, F1: 72.74%
+📈 Learning Rate: 2.09e-06
+📉 No improvement. Best so far: 73.23% (patience: 11/1000)
+
+📅 Epoch 117/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1306, Acc: 86.10%, Prec: 86.37%, Rec: 85.24%, F1: 85.67%
+📊 Val   - Loss: 13.8981, Acc: 71.91%, Prec: 73.47%, Rec: 70.69%, F1: 71.25%
+📈 Learning Rate: 2.03e-06
+📉 No improvement. Best so far: 73.23% (patience: 12/1000)
+
+📅 Epoch 118/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1291, Acc: 85.97%, Prec: 86.35%, Rec: 85.16%, F1: 85.62%
+📊 Val   - Loss: 14.7608, Acc: 72.62%, Prec: 73.97%, Rec: 71.63%, F1: 72.24%
+📈 Learning Rate: 1.97e-06
+📉 No improvement. Best so far: 73.23% (patience: 13/1000)
+
+📅 Epoch 119/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1214, Acc: 86.04%, Prec: 86.22%, Rec: 85.30%, F1: 85.65%
+📊 Val   - Loss: 14.2541, Acc: 72.73%, Prec: 73.82%, Rec: 71.73%, F1: 72.31%
+📈 Learning Rate: 1.92e-06
+📉 No improvement. Best so far: 73.23% (patience: 14/1000)
+
+📅 Epoch 120/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0985, Acc: 85.86%, Prec: 86.18%, Rec: 85.04%, F1: 85.46%
+📊 Val   - Loss: 14.9952, Acc: 73.14%, Prec: 74.10%, Rec: 72.24%, F1: 72.79%
+📈 Learning Rate: 1.86e-06
+📉 No improvement. Best so far: 73.23% (patience: 15/1000)
+
+📅 Epoch 121/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.1130, Acc: 86.32%, Prec: 86.53%, Rec: 85.56%, F1: 85.93%
+📊 Val   - Loss: 13.9380, Acc: 72.85%, Prec: 73.67%, Rec: 72.01%, F1: 72.45%
+📈 Learning Rate: 1.80e-06
+📉 No improvement. Best so far: 73.23% (patience: 16/1000)
+
+📅 Epoch 122/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0920, Acc: 86.50%, Prec: 86.82%, Rec: 85.74%, F1: 86.15%
+📊 Val   - Loss: 14.1961, Acc: 73.50%, Prec: 74.39%, Rec: 72.50%, F1: 73.05%
+📈 Learning Rate: 1.75e-06
+✅ New Best Val Acc: 73.50% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 123/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0812, Acc: 86.36%, Prec: 86.66%, Rec: 85.59%, F1: 86.00%
+📊 Val   - Loss: 13.7670, Acc: 73.41%, Prec: 74.40%, Rec: 72.38%, F1: 72.90%
+📈 Learning Rate: 1.70e-06
+📉 No improvement. Best so far: 73.50% (patience: 1/1000)
+
+📅 Epoch 124/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0968, Acc: 86.58%, Prec: 87.01%, Rec: 85.89%, F1: 86.33%
+📊 Val   - Loss: 13.7445, Acc: 72.85%, Prec: 73.64%, Rec: 71.76%, F1: 72.29%
+📈 Learning Rate: 1.65e-06
+📉 No improvement. Best so far: 73.50% (patience: 2/1000)
+
+📅 Epoch 125/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0733, Acc: 86.38%, Prec: 86.66%, Rec: 85.62%, F1: 86.03%
+📊 Val   - Loss: 14.3066, Acc: 73.37%, Prec: 74.40%, Rec: 72.42%, F1: 72.97%
+📈 Learning Rate: 1.60e-06
+📉 No improvement. Best so far: 73.50% (patience: 3/1000)
+
+📅 Epoch 126/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0905, Acc: 86.46%, Prec: 86.82%, Rec: 85.72%, F1: 86.14%
+📊 Val   - Loss: 14.1982, Acc: 72.94%, Prec: 73.75%, Rec: 72.07%, F1: 72.50%
+📈 Learning Rate: 1.56e-06
+📉 No improvement. Best so far: 73.50% (patience: 4/1000)
+
+📅 Epoch 127/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0864, Acc: 86.54%, Prec: 86.81%, Rec: 85.79%, F1: 86.19%
+📊 Val   - Loss: 14.1744, Acc: 73.21%, Prec: 74.05%, Rec: 72.28%, F1: 72.65%
+📈 Learning Rate: 1.51e-06
+📉 No improvement. Best so far: 73.50% (patience: 5/1000)
+
+📅 Epoch 128/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0717, Acc: 86.54%, Prec: 86.71%, Rec: 85.82%, F1: 86.16%
+📊 Val   - Loss: 13.6838, Acc: 73.10%, Prec: 74.01%, Rec: 72.13%, F1: 72.66%
+📈 Learning Rate: 1.47e-06
+📉 No improvement. Best so far: 73.50% (patience: 6/1000)
+
+📅 Epoch 129/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0710, Acc: 86.46%, Prec: 86.65%, Rec: 85.75%, F1: 86.09%
+📊 Val   - Loss: 14.0017, Acc: 73.30%, Prec: 74.20%, Rec: 72.39%, F1: 72.82%
+📈 Learning Rate: 1.43e-06
+📉 No improvement. Best so far: 73.50% (patience: 7/1000)
+
+📅 Epoch 130/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0484, Acc: 86.94%, Prec: 87.20%, Rec: 86.23%, F1: 86.61%
+📊 Val   - Loss: 13.9596, Acc: 72.96%, Prec: 73.89%, Rec: 72.14%, F1: 72.56%
+📈 Learning Rate: 1.39e-06
+📉 No improvement. Best so far: 73.50% (patience: 8/1000)
+
+📅 Epoch 131/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0677, Acc: 86.76%, Prec: 87.04%, Rec: 86.03%, F1: 86.42%
+📊 Val   - Loss: 13.8677, Acc: 73.46%, Prec: 74.45%, Rec: 72.51%, F1: 73.02%
+📈 Learning Rate: 1.35e-06
+📉 No improvement. Best so far: 73.50% (patience: 9/1000)
+
+📅 Epoch 132/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0484, Acc: 86.78%, Prec: 87.01%, Rec: 86.01%, F1: 86.39%
+📊 Val   - Loss: 13.8056, Acc: 73.48%, Prec: 74.48%, Rec: 72.61%, F1: 73.10%
+📈 Learning Rate: 1.32e-06
+📉 No improvement. Best so far: 73.50% (patience: 10/1000)
+
+📅 Epoch 133/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0531, Acc: 86.85%, Prec: 87.14%, Rec: 86.06%, F1: 86.47%
+📊 Val   - Loss: 14.0266, Acc: 72.98%, Prec: 73.91%, Rec: 72.04%, F1: 72.44%
+📈 Learning Rate: 1.28e-06
+📉 No improvement. Best so far: 73.50% (patience: 11/1000)
+
+📅 Epoch 134/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0462, Acc: 86.90%, Prec: 87.22%, Rec: 86.22%, F1: 86.62%
+📊 Val   - Loss: 13.6216, Acc: 73.28%, Prec: 74.19%, Rec: 72.28%, F1: 72.83%
+📈 Learning Rate: 1.25e-06
+📉 No improvement. Best so far: 73.50% (patience: 12/1000)
+
+📅 Epoch 135/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0359, Acc: 87.55%, Prec: 87.84%, Rec: 86.79%, F1: 87.20%
+📊 Val   - Loss: 13.5204, Acc: 73.35%, Prec: 74.31%, Rec: 72.31%, F1: 72.87%
+📈 Learning Rate: 1.22e-06
+📉 No improvement. Best so far: 73.50% (patience: 13/1000)
+
+📅 Epoch 136/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0344, Acc: 87.11%, Prec: 87.29%, Rec: 86.38%, F1: 86.74%
+📊 Val   - Loss: 14.2504, Acc: 73.50%, Prec: 74.18%, Rec: 72.62%, F1: 73.01%
+📈 Learning Rate: 1.19e-06
+📉 No improvement. Best so far: 73.50% (patience: 14/1000)
+
+📅 Epoch 137/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0424, Acc: 87.08%, Prec: 87.38%, Rec: 86.38%, F1: 86.76%
+📊 Val   - Loss: 13.7084, Acc: 73.21%, Prec: 74.01%, Rec: 72.20%, F1: 72.67%
+📈 Learning Rate: 1.17e-06
+📉 No improvement. Best so far: 73.50% (patience: 15/1000)
+
+📅 Epoch 138/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0138, Acc: 86.85%, Prec: 87.07%, Rec: 86.03%, F1: 86.41%
+📊 Val   - Loss: 14.2764, Acc: 72.98%, Prec: 74.00%, Rec: 72.04%, F1: 72.49%
+📈 Learning Rate: 1.14e-06
+📉 No improvement. Best so far: 73.50% (patience: 16/1000)
+
+📅 Epoch 139/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0407, Acc: 86.84%, Prec: 87.11%, Rec: 86.16%, F1: 86.53%
+📊 Val   - Loss: 14.2557, Acc: 73.69%, Prec: 74.69%, Rec: 72.60%, F1: 73.11%
+📈 Learning Rate: 1.12e-06
+✅ New Best Val Acc: 73.69% — Model saved to checkpoints/face/oracle/10_59.pth
+
+📅 Epoch 140/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0164, Acc: 87.44%, Prec: 87.66%, Rec: 86.66%, F1: 87.05%
+📊 Val   - Loss: 13.9986, Acc: 73.37%, Prec: 74.35%, Rec: 72.36%, F1: 72.87%
+📈 Learning Rate: 1.10e-06
+📉 No improvement. Best so far: 73.69% (patience: 1/1000)
+
+📅 Epoch 141/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0391, Acc: 86.85%, Prec: 87.16%, Rec: 86.15%, F1: 86.54%
+📊 Val   - Loss: 14.2717, Acc: 73.16%, Prec: 73.90%, Rec: 72.20%, F1: 72.68%
+📈 Learning Rate: 1.08e-06
+📉 No improvement. Best so far: 73.69% (patience: 2/1000)
+
+📅 Epoch 142/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0211, Acc: 86.92%, Prec: 87.14%, Rec: 86.23%, F1: 86.58%
+📊 Val   - Loss: 14.4211, Acc: 73.16%, Prec: 74.21%, Rec: 72.17%, F1: 72.71%
+📈 Learning Rate: 1.06e-06
+📉 No improvement. Best so far: 73.69% (patience: 3/1000)
+
+📅 Epoch 143/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0195, Acc: 87.55%, Prec: 87.82%, Rec: 86.82%, F1: 87.20%
+📊 Val   - Loss: 14.2704, Acc: 73.62%, Prec: 74.60%, Rec: 72.73%, F1: 73.21%
+📈 Learning Rate: 1.05e-06
+📉 No improvement. Best so far: 73.69% (patience: 4/1000)
+
+📅 Epoch 144/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0252, Acc: 87.37%, Prec: 87.67%, Rec: 86.68%, F1: 87.08%
+📊 Val   - Loss: 14.1857, Acc: 73.53%, Prec: 74.64%, Rec: 72.56%, F1: 73.19%
+📈 Learning Rate: 1.04e-06
+📉 No improvement. Best so far: 73.69% (patience: 5/1000)
+
+📅 Epoch 145/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0177, Acc: 87.23%, Prec: 87.49%, Rec: 86.46%, F1: 86.87%
+📊 Val   - Loss: 14.1910, Acc: 73.21%, Prec: 74.21%, Rec: 72.04%, F1: 72.60%
+📈 Learning Rate: 1.02e-06
+📉 No improvement. Best so far: 73.69% (patience: 6/1000)
+
+📅 Epoch 146/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0148, Acc: 87.55%, Prec: 87.87%, Rec: 86.89%, F1: 87.26%
+📊 Val   - Loss: 14.3972, Acc: 73.55%, Prec: 74.49%, Rec: 72.64%, F1: 73.06%
+📈 Learning Rate: 1.02e-06
+📉 No improvement. Best so far: 73.69% (patience: 7/1000)
+
+📅 Epoch 147/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0213, Acc: 87.19%, Prec: 87.48%, Rec: 86.51%, F1: 86.90%
+📊 Val   - Loss: 14.0734, Acc: 72.98%, Prec: 73.89%, Rec: 71.90%, F1: 72.41%
+📈 Learning Rate: 1.01e-06
+📉 No improvement. Best so far: 73.69% (patience: 8/1000)
+
+📅 Epoch 148/150 — FACE — Classes: 10-59
+📊 Train - Loss: 12.9998, Acc: 87.22%, Prec: 87.50%, Rec: 86.50%, F1: 86.90%
+📊 Val   - Loss: 14.2804, Acc: 73.46%, Prec: 74.37%, Rec: 72.49%, F1: 72.99%
+📈 Learning Rate: 1.00e-06
+📉 No improvement. Best so far: 73.69% (patience: 9/1000)
+
+📅 Epoch 149/150 — FACE — Classes: 10-59
+📊 Train - Loss: 12.9928, Acc: 87.63%, Prec: 87.88%, Rec: 86.93%, F1: 87.31%
+📊 Val   - Loss: 14.3184, Acc: 73.16%, Prec: 74.11%, Rec: 72.14%, F1: 72.66%
+📈 Learning Rate: 1.00e-06
+📉 No improvement. Best so far: 73.69% (patience: 10/1000)
+
+📅 Epoch 150/150 — FACE — Classes: 10-59
+📊 Train - Loss: 13.0131, Acc: 87.28%, Prec: 87.55%, Rec: 86.57%, F1: 86.96%
+📊 Val   - Loss: 14.1659, Acc: 73.30%, Prec: 74.00%, Rec: 72.37%, F1: 72.81%
+📈 Learning Rate: 1.00e-06
+📉 No improvement. Best so far: 73.69% (patience: 11/1000)
+🏁 Training finished in 252.1 minutes.
+🏆 Best validation accuracy: 73.69%
+
+✅ Completed training for classes 10-59: 73.69%
+
+================================================================================
+🚀 TRAINING MODEL 3/6
+================================================================================
+
+🚀 Training FACE Model on Classes: 20–69
+📊 Number of classes: 50
+🛠️ Explicitly received params: {'GPU_ID': [0], 'num_class': 100}
+🔓 Full fine-tuning: All parameters trainable
+✅ Built face model
+Loading pretrained weights from: checkpoints/face/oracle/0_49.pth
+🔄 Loading model weights from checkpoints/face/oracle/0_49.pth...
+⚠️ Skipping keys: []
+
+📊 Parameter Summary:
+  🔢 Total Parameters     : 5.43M
+  ✅ Trainable Parameters : 5.43M
+  📉 % Trainable          : 100.00%
+Loading Face Recognition data from /media/jag/volD2/faces_webface_112x112_sub100_train_test/train
+Loading Face Recognition data from /media/jag/volD2/faces_webface_112x112_sub100_train_test/test
+
+📁 Models will be saved to: checkpoints/face/oracle
+🎯 Target epochs: 150, Learning rate: 0.0001
+
+📅 Epoch 1/150 — FACE — Classes: 20-69
+📊 Train - Loss: 17.6890, Acc: 25.80%, Prec: 23.50%, Rec: 22.97%, F1: 21.68%
+📊 Val   - Loss: 16.8913, Acc: 38.68%, Prec: 39.47%, Rec: 35.86%, F1: 33.54%
+📈 Learning Rate: 1.00e-05
+✅ New Best Val Acc: 38.68% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 2/150 — FACE — Classes: 20-69
+📊 Train - Loss: 16.3809, Acc: 44.45%, Prec: 43.55%, Rec: 42.07%, F1: 40.90%
+📊 Val   - Loss: 15.8770, Acc: 47.16%, Prec: 50.37%, Rec: 44.64%, F1: 43.67%
+📈 Learning Rate: 1.00e-05
+✅ New Best Val Acc: 47.16% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 3/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.9482, Acc: 51.20%, Prec: 51.19%, Rec: 49.14%, F1: 48.39%
+📊 Val   - Loss: 16.3044, Acc: 50.55%, Prec: 52.50%, Rec: 48.64%, F1: 47.64%
+📈 Learning Rate: 9.99e-06
+✅ New Best Val Acc: 50.55% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 4/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.7179, Acc: 54.32%, Prec: 54.47%, Rec: 52.42%, F1: 51.87%
+📊 Val   - Loss: 15.4151, Acc: 54.43%, Prec: 57.07%, Rec: 52.81%, F1: 52.64%
+📈 Learning Rate: 9.98e-06
+✅ New Best Val Acc: 54.43% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 5/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.5991, Acc: 55.52%, Prec: 55.34%, Rec: 53.68%, F1: 53.24%
+📊 Val   - Loss: 15.0366, Acc: 55.01%, Prec: 56.32%, Rec: 53.05%, F1: 52.58%
+📈 Learning Rate: 9.98e-06
+✅ New Best Val Acc: 55.01% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 6/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.5179, Acc: 55.91%, Prec: 55.84%, Rec: 54.14%, F1: 53.82%
+📊 Val   - Loss: 15.8614, Acc: 51.56%, Prec: 56.99%, Rec: 49.75%, F1: 48.83%
+📈 Learning Rate: 9.96e-06
+📉 No improvement. Best so far: 55.01% (patience: 1/1000)
+
+📅 Epoch 7/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.4030, Acc: 58.21%, Prec: 58.33%, Rec: 56.49%, F1: 56.31%
+📊 Val   - Loss: 15.8071, Acc: 55.51%, Prec: 59.72%, Rec: 53.46%, F1: 53.54%
+📈 Learning Rate: 9.95e-06
+✅ New Best Val Acc: 55.51% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 8/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.3599, Acc: 59.00%, Prec: 59.39%, Rec: 57.30%, F1: 57.22%
+📊 Val   - Loss: 15.6500, Acc: 54.68%, Prec: 58.85%, Rec: 52.74%, F1: 52.76%
+📈 Learning Rate: 9.94e-06
+📉 No improvement. Best so far: 55.51% (patience: 1/1000)
+
+📅 Epoch 9/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.3274, Acc: 58.75%, Prec: 59.05%, Rec: 57.11%, F1: 56.99%
+📊 Val   - Loss: 15.5647, Acc: 54.86%, Prec: 58.24%, Rec: 52.92%, F1: 53.07%
+📈 Learning Rate: 9.92e-06
+📉 No improvement. Best so far: 55.51% (patience: 2/1000)
+
+📅 Epoch 10/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.2566, Acc: 59.91%, Prec: 60.27%, Rec: 58.32%, F1: 58.29%
+📊 Val   - Loss: 15.6216, Acc: 55.40%, Prec: 59.39%, Rec: 53.67%, F1: 53.30%
+📈 Learning Rate: 9.90e-06
+📉 No improvement. Best so far: 55.51% (patience: 3/1000)
+
+📅 Epoch 11/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.1876, Acc: 60.62%, Prec: 60.80%, Rec: 59.04%, F1: 59.03%
+📊 Val   - Loss: 15.5425, Acc: 57.89%, Prec: 59.28%, Rec: 56.40%, F1: 55.99%
+📈 Learning Rate: 9.88e-06
+✅ New Best Val Acc: 57.89% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 12/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.1635, Acc: 61.43%, Prec: 61.67%, Rec: 59.82%, F1: 59.80%
+📊 Val   - Loss: 15.6452, Acc: 57.30%, Prec: 60.86%, Rec: 55.71%, F1: 56.09%
+📈 Learning Rate: 9.86e-06
+📉 No improvement. Best so far: 57.89% (patience: 1/1000)
+
+📅 Epoch 13/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.1209, Acc: 61.96%, Prec: 62.49%, Rec: 60.45%, F1: 60.55%
+📊 Val   - Loss: 15.4304, Acc: 57.15%, Prec: 61.48%, Rec: 55.41%, F1: 55.89%
+📈 Learning Rate: 9.83e-06
+📉 No improvement. Best so far: 57.89% (patience: 2/1000)
+
+📅 Epoch 14/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.0838, Acc: 62.12%, Prec: 62.48%, Rec: 60.63%, F1: 60.73%
+📊 Val   - Loss: 15.2838, Acc: 59.14%, Prec: 63.76%, Rec: 57.52%, F1: 57.90%
+📈 Learning Rate: 9.81e-06
+✅ New Best Val Acc: 59.14% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 15/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.0488, Acc: 62.60%, Prec: 62.99%, Rec: 61.05%, F1: 61.22%
+📊 Val   - Loss: 15.9535, Acc: 58.58%, Prec: 61.51%, Rec: 56.63%, F1: 56.97%
+📈 Learning Rate: 9.78e-06
+📉 No improvement. Best so far: 59.14% (patience: 1/1000)
+
+📅 Epoch 16/150 — FACE — Classes: 20-69
+📊 Train - Loss: 15.0126, Acc: 63.51%, Prec: 63.93%, Rec: 62.00%, F1: 62.13%
+📊 Val   - Loss: 15.9097, Acc: 58.29%, Prec: 64.01%, Rec: 56.54%, F1: 57.33%
+📈 Learning Rate: 9.75e-06
+📉 No improvement. Best so far: 59.14% (patience: 2/1000)
+
+📅 Epoch 17/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.9569, Acc: 63.86%, Prec: 63.96%, Rec: 62.35%, F1: 62.45%
+📊 Val   - Loss: 14.6234, Acc: 59.05%, Prec: 63.51%, Rec: 57.41%, F1: 58.12%
+📈 Learning Rate: 9.72e-06
+📉 No improvement. Best so far: 59.14% (patience: 3/1000)
+
+📅 Epoch 18/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.9355, Acc: 63.97%, Prec: 64.35%, Rec: 62.56%, F1: 62.74%
+📊 Val   - Loss: 15.7870, Acc: 59.55%, Prec: 62.13%, Rec: 57.81%, F1: 57.85%
+📈 Learning Rate: 9.68e-06
+✅ New Best Val Acc: 59.55% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 19/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.9193, Acc: 64.38%, Prec: 64.70%, Rec: 62.94%, F1: 63.12%
+📊 Val   - Loss: 15.1456, Acc: 61.09%, Prec: 63.81%, Rec: 59.29%, F1: 59.64%
+📈 Learning Rate: 9.65e-06
+✅ New Best Val Acc: 61.09% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 20/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.8892, Acc: 64.77%, Prec: 65.07%, Rec: 63.29%, F1: 63.45%
+📊 Val   - Loss: 15.7478, Acc: 61.86%, Prec: 63.56%, Rec: 60.49%, F1: 60.40%
+📈 Learning Rate: 9.61e-06
+✅ New Best Val Acc: 61.86% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 21/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.8313, Acc: 65.61%, Prec: 66.21%, Rec: 64.17%, F1: 64.47%
+📊 Val   - Loss: 15.6987, Acc: 60.58%, Prec: 62.45%, Rec: 59.28%, F1: 59.49%
+📈 Learning Rate: 9.57e-06
+📉 No improvement. Best so far: 61.86% (patience: 1/1000)
+
+📅 Epoch 22/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.8264, Acc: 65.80%, Prec: 66.10%, Rec: 64.39%, F1: 64.60%
+📊 Val   - Loss: 14.7170, Acc: 60.94%, Prec: 64.03%, Rec: 59.62%, F1: 60.05%
+📈 Learning Rate: 9.53e-06
+📉 No improvement. Best so far: 61.86% (patience: 2/1000)
+
+📅 Epoch 23/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.7961, Acc: 65.75%, Prec: 66.28%, Rec: 64.44%, F1: 64.72%
+📊 Val   - Loss: 15.2630, Acc: 62.80%, Prec: 65.95%, Rec: 61.26%, F1: 61.67%
+📈 Learning Rate: 9.49e-06
+✅ New Best Val Acc: 62.80% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 24/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.7571, Acc: 66.62%, Prec: 67.13%, Rec: 65.24%, F1: 65.53%
+📊 Val   - Loss: 14.8217, Acc: 61.23%, Prec: 63.76%, Rec: 59.92%, F1: 59.82%
+📈 Learning Rate: 9.44e-06
+📉 No improvement. Best so far: 62.80% (patience: 1/1000)
+
+📅 Epoch 25/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.7502, Acc: 66.55%, Prec: 67.19%, Rec: 65.27%, F1: 65.58%
+📊 Val   - Loss: 15.0486, Acc: 62.04%, Prec: 64.37%, Rec: 60.80%, F1: 60.96%
+📈 Learning Rate: 9.40e-06
+📉 No improvement. Best so far: 62.80% (patience: 2/1000)
+
+📅 Epoch 26/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.7061, Acc: 67.17%, Prec: 67.50%, Rec: 65.76%, F1: 66.02%
+📊 Val   - Loss: 14.9218, Acc: 62.04%, Prec: 64.49%, Rec: 60.55%, F1: 60.62%
+📈 Learning Rate: 9.35e-06
+📉 No improvement. Best so far: 62.80% (patience: 3/1000)
+
+📅 Epoch 27/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.6562, Acc: 67.95%, Prec: 68.22%, Rec: 66.55%, F1: 66.78%
+📊 Val   - Loss: 15.9948, Acc: 62.33%, Prec: 65.78%, Rec: 60.57%, F1: 60.89%
+📈 Learning Rate: 9.30e-06
+📉 No improvement. Best so far: 62.80% (patience: 4/1000)
+
+📅 Epoch 28/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.6631, Acc: 67.64%, Prec: 68.30%, Rec: 66.32%, F1: 66.71%
+📊 Val   - Loss: 15.3862, Acc: 59.70%, Prec: 63.71%, Rec: 58.09%, F1: 58.05%
+📈 Learning Rate: 9.25e-06
+📉 No improvement. Best so far: 62.80% (patience: 5/1000)
+
+📅 Epoch 29/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.6232, Acc: 68.18%, Prec: 68.57%, Rec: 66.86%, F1: 67.11%
+📊 Val   - Loss: 15.1546, Acc: 63.70%, Prec: 65.43%, Rec: 62.29%, F1: 62.57%
+📈 Learning Rate: 9.20e-06
+✅ New Best Val Acc: 63.70% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 30/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.5969, Acc: 68.50%, Prec: 69.12%, Rec: 67.12%, F1: 67.47%
+📊 Val   - Loss: 14.8072, Acc: 63.99%, Prec: 66.64%, Rec: 62.78%, F1: 63.24%
+📈 Learning Rate: 9.14e-06
+✅ New Best Val Acc: 63.99% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 31/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.5754, Acc: 68.55%, Prec: 68.97%, Rec: 67.21%, F1: 67.54%
+📊 Val   - Loss: 14.7243, Acc: 64.19%, Prec: 65.66%, Rec: 62.94%, F1: 63.15%
+📈 Learning Rate: 9.08e-06
+✅ New Best Val Acc: 64.19% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 32/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.5409, Acc: 69.05%, Prec: 69.57%, Rec: 67.67%, F1: 68.02%
+📊 Val   - Loss: 14.6356, Acc: 63.00%, Prec: 66.19%, Rec: 61.75%, F1: 62.26%
+📈 Learning Rate: 9.03e-06
+📉 No improvement. Best so far: 64.19% (patience: 1/1000)
+
+📅 Epoch 33/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.5426, Acc: 69.08%, Prec: 69.75%, Rec: 67.87%, F1: 68.21%
+📊 Val   - Loss: 15.1854, Acc: 61.50%, Prec: 64.27%, Rec: 60.18%, F1: 60.54%
+📈 Learning Rate: 8.97e-06
+📉 No improvement. Best so far: 64.19% (patience: 2/1000)
+
+📅 Epoch 34/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.5062, Acc: 69.58%, Prec: 70.06%, Rec: 68.31%, F1: 68.65%
+📊 Val   - Loss: 14.8406, Acc: 63.59%, Prec: 65.78%, Rec: 62.14%, F1: 62.60%
+📈 Learning Rate: 8.91e-06
+📉 No improvement. Best so far: 64.19% (patience: 3/1000)
+
+📅 Epoch 35/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.4878, Acc: 69.68%, Prec: 70.12%, Rec: 68.37%, F1: 68.69%
+📊 Val   - Loss: 14.8102, Acc: 61.88%, Prec: 65.44%, Rec: 60.33%, F1: 60.89%
+📈 Learning Rate: 8.84e-06
+📉 No improvement. Best so far: 64.19% (patience: 4/1000)
+
+📅 Epoch 36/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.4816, Acc: 69.63%, Prec: 69.96%, Rec: 68.28%, F1: 68.58%
+📊 Val   - Loss: 14.7367, Acc: 64.60%, Prec: 66.69%, Rec: 63.47%, F1: 63.73%
+📈 Learning Rate: 8.78e-06
+✅ New Best Val Acc: 64.60% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 37/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.4482, Acc: 70.43%, Prec: 70.93%, Rec: 69.21%, F1: 69.58%
+📊 Val   - Loss: 14.5273, Acc: 64.30%, Prec: 67.10%, Rec: 62.91%, F1: 63.29%
+📈 Learning Rate: 8.72e-06
+📉 No improvement. Best so far: 64.60% (patience: 1/1000)
+
+📅 Epoch 38/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.4283, Acc: 70.50%, Prec: 70.63%, Rec: 69.22%, F1: 69.45%
+📊 Val   - Loss: 15.0775, Acc: 63.99%, Prec: 67.01%, Rec: 62.52%, F1: 62.95%
+📈 Learning Rate: 8.65e-06
+📉 No improvement. Best so far: 64.60% (patience: 2/1000)
+
+📅 Epoch 39/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.3981, Acc: 70.95%, Prec: 71.54%, Rec: 69.71%, F1: 70.10%
+📊 Val   - Loss: 14.9912, Acc: 64.26%, Prec: 67.25%, Rec: 62.81%, F1: 63.51%
+📈 Learning Rate: 8.58e-06
+📉 No improvement. Best so far: 64.60% (patience: 3/1000)
+
+📅 Epoch 40/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.3496, Acc: 71.33%, Prec: 71.72%, Rec: 70.05%, F1: 70.39%
+📊 Val   - Loss: 15.5299, Acc: 64.01%, Prec: 65.28%, Rec: 62.99%, F1: 62.79%
+📈 Learning Rate: 8.51e-06
+📉 No improvement. Best so far: 64.60% (patience: 4/1000)
+
+📅 Epoch 41/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.3958, Acc: 70.38%, Prec: 70.98%, Rec: 69.15%, F1: 69.58%
+📊 Val   - Loss: 14.8977, Acc: 65.02%, Prec: 66.42%, Rec: 63.90%, F1: 64.14%
+📈 Learning Rate: 8.44e-06
+✅ New Best Val Acc: 65.02% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 42/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.3528, Acc: 71.42%, Prec: 71.69%, Rec: 70.17%, F1: 70.48%
+📊 Val   - Loss: 13.8602, Acc: 63.43%, Prec: 67.34%, Rec: 61.93%, F1: 62.36%
+📈 Learning Rate: 8.37e-06
+📉 No improvement. Best so far: 65.02% (patience: 1/1000)
+
+📅 Epoch 43/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.3037, Acc: 71.98%, Prec: 72.54%, Rec: 70.80%, F1: 71.17%
+📊 Val   - Loss: 15.1640, Acc: 65.49%, Prec: 67.97%, Rec: 64.29%, F1: 64.95%
+📈 Learning Rate: 8.30e-06
+✅ New Best Val Acc: 65.49% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 44/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.2814, Acc: 71.86%, Prec: 72.18%, Rec: 70.59%, F1: 70.91%
+📊 Val   - Loss: 14.5279, Acc: 65.36%, Prec: 66.91%, Rec: 64.06%, F1: 64.48%
+📈 Learning Rate: 8.22e-06
+📉 No improvement. Best so far: 65.49% (patience: 1/1000)
+
+📅 Epoch 45/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.2670, Acc: 72.32%, Prec: 72.85%, Rec: 71.19%, F1: 71.58%
+📊 Val   - Loss: 15.2214, Acc: 65.02%, Prec: 67.07%, Rec: 63.73%, F1: 64.14%
+📈 Learning Rate: 8.15e-06
+📉 No improvement. Best so far: 65.49% (patience: 2/1000)
+
+📅 Epoch 46/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.2263, Acc: 72.96%, Prec: 73.36%, Rec: 71.79%, F1: 72.16%
+📊 Val   - Loss: 14.7433, Acc: 66.01%, Prec: 68.20%, Rec: 64.87%, F1: 65.06%
+📈 Learning Rate: 8.07e-06
+✅ New Best Val Acc: 66.01% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 47/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.2277, Acc: 72.99%, Prec: 73.46%, Rec: 71.78%, F1: 72.19%
+📊 Val   - Loss: 14.4057, Acc: 65.20%, Prec: 66.84%, Rec: 63.83%, F1: 63.79%
+📈 Learning Rate: 7.99e-06
+📉 No improvement. Best so far: 66.01% (patience: 1/1000)
+
+📅 Epoch 48/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.1957, Acc: 73.49%, Prec: 73.87%, Rec: 72.29%, F1: 72.63%
+📊 Val   - Loss: 14.4400, Acc: 64.68%, Prec: 68.05%, Rec: 63.01%, F1: 63.92%
+📈 Learning Rate: 7.91e-06
+📉 No improvement. Best so far: 66.01% (patience: 2/1000)
+
+📅 Epoch 49/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.1891, Acc: 73.37%, Prec: 73.95%, Rec: 72.16%, F1: 72.61%
+📊 Val   - Loss: 14.4303, Acc: 66.01%, Prec: 68.63%, Rec: 64.50%, F1: 65.29%
+📈 Learning Rate: 7.83e-06
+📉 No improvement. Best so far: 66.01% (patience: 3/1000)
+
+📅 Epoch 50/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.1813, Acc: 73.33%, Prec: 74.03%, Rec: 72.14%, F1: 72.56%
+📊 Val   - Loss: 14.6928, Acc: 66.55%, Prec: 68.63%, Rec: 65.45%, F1: 65.83%
+📈 Learning Rate: 7.75e-06
+✅ New Best Val Acc: 66.55% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 51/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.1344, Acc: 73.97%, Prec: 74.38%, Rec: 72.79%, F1: 73.17%
+📊 Val   - Loss: 14.8046, Acc: 66.37%, Prec: 68.29%, Rec: 65.30%, F1: 65.66%
+📈 Learning Rate: 7.67e-06
+📉 No improvement. Best so far: 66.55% (patience: 1/1000)
+
+📅 Epoch 52/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.1254, Acc: 73.87%, Prec: 74.40%, Rec: 72.77%, F1: 73.17%
+📊 Val   - Loss: 15.1251, Acc: 66.43%, Prec: 67.99%, Rec: 65.31%, F1: 65.39%
+📈 Learning Rate: 7.58e-06
+📉 No improvement. Best so far: 66.55% (patience: 2/1000)
+
+📅 Epoch 53/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.0996, Acc: 74.31%, Prec: 74.74%, Rec: 73.11%, F1: 73.54%
+📊 Val   - Loss: 15.5433, Acc: 66.43%, Prec: 69.64%, Rec: 65.28%, F1: 66.13%
+📈 Learning Rate: 7.50e-06
+📉 No improvement. Best so far: 66.55% (patience: 3/1000)
+
+📅 Epoch 54/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.1071, Acc: 74.45%, Prec: 74.92%, Rec: 73.37%, F1: 73.76%
+📊 Val   - Loss: 15.7201, Acc: 66.10%, Prec: 68.13%, Rec: 64.74%, F1: 65.30%
+📈 Learning Rate: 7.42e-06
+📉 No improvement. Best so far: 66.55% (patience: 4/1000)
+
+📅 Epoch 55/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.0951, Acc: 74.81%, Prec: 75.24%, Rec: 73.73%, F1: 74.07%
+📊 Val   - Loss: 14.2792, Acc: 66.93%, Prec: 68.86%, Rec: 65.68%, F1: 66.25%
+📈 Learning Rate: 7.33e-06
+✅ New Best Val Acc: 66.93% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 56/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.0470, Acc: 75.41%, Prec: 75.94%, Rec: 74.36%, F1: 74.81%
+📊 Val   - Loss: 14.9297, Acc: 64.91%, Prec: 67.35%, Rec: 63.47%, F1: 63.98%
+📈 Learning Rate: 7.24e-06
+📉 No improvement. Best so far: 66.93% (patience: 1/1000)
+
+📅 Epoch 57/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.0564, Acc: 75.15%, Prec: 75.56%, Rec: 74.06%, F1: 74.44%
+📊 Val   - Loss: 14.5060, Acc: 65.85%, Prec: 67.64%, Rec: 64.73%, F1: 65.07%
+📈 Learning Rate: 7.16e-06
+📉 No improvement. Best so far: 66.93% (patience: 2/1000)
+
+📅 Epoch 58/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.0170, Acc: 75.54%, Prec: 76.14%, Rec: 74.48%, F1: 74.89%
+📊 Val   - Loss: 14.4746, Acc: 65.69%, Prec: 68.47%, Rec: 64.46%, F1: 64.83%
+📈 Learning Rate: 7.07e-06
+📉 No improvement. Best so far: 66.93% (patience: 3/1000)
+
+📅 Epoch 59/150 — FACE — Classes: 20-69
+📊 Train - Loss: 14.0058, Acc: 75.31%, Prec: 75.92%, Rec: 74.14%, F1: 74.60%
+📊 Val   - Loss: 14.8099, Acc: 66.79%, Prec: 68.59%, Rec: 65.50%, F1: 66.02%
+📈 Learning Rate: 6.98e-06
+📉 No improvement. Best so far: 66.93% (patience: 4/1000)
+
+📅 Epoch 60/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.9906, Acc: 75.99%, Prec: 76.54%, Rec: 74.92%, F1: 75.35%
+📊 Val   - Loss: 15.4178, Acc: 66.75%, Prec: 68.61%, Rec: 65.51%, F1: 66.06%
+📈 Learning Rate: 6.89e-06
+📉 No improvement. Best so far: 66.93% (patience: 5/1000)
+
+📅 Epoch 61/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.9729, Acc: 75.88%, Prec: 76.27%, Rec: 74.82%, F1: 75.20%
+📊 Val   - Loss: 14.6722, Acc: 67.09%, Prec: 69.02%, Rec: 66.00%, F1: 66.34%
+📈 Learning Rate: 6.80e-06
+✅ New Best Val Acc: 67.09% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 62/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.9392, Acc: 76.25%, Prec: 76.82%, Rec: 75.24%, F1: 75.69%
+📊 Val   - Loss: 14.3436, Acc: 67.33%, Prec: 68.57%, Rec: 66.31%, F1: 66.66%
+📈 Learning Rate: 6.71e-06
+✅ New Best Val Acc: 67.33% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 63/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.9488, Acc: 76.36%, Prec: 76.76%, Rec: 75.29%, F1: 75.70%
+📊 Val   - Loss: 14.3021, Acc: 67.74%, Prec: 69.76%, Rec: 66.32%, F1: 66.99%
+📈 Learning Rate: 6.62e-06
+✅ New Best Val Acc: 67.74% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 64/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.9336, Acc: 76.41%, Prec: 76.91%, Rec: 75.47%, F1: 75.90%
+📊 Val   - Loss: 14.3530, Acc: 67.33%, Prec: 69.12%, Rec: 66.26%, F1: 66.82%
+📈 Learning Rate: 6.53e-06
+📉 No improvement. Best so far: 67.74% (patience: 1/1000)
+
+📅 Epoch 65/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.9045, Acc: 76.76%, Prec: 77.29%, Rec: 75.73%, F1: 76.17%
+📊 Val   - Loss: 15.3219, Acc: 68.48%, Prec: 70.34%, Rec: 67.31%, F1: 67.83%
+📈 Learning Rate: 6.44e-06
+✅ New Best Val Acc: 68.48% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 66/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.8953, Acc: 76.68%, Prec: 77.05%, Rec: 75.59%, F1: 75.98%
+📊 Val   - Loss: 14.3592, Acc: 67.44%, Prec: 68.94%, Rec: 66.27%, F1: 66.71%
+📈 Learning Rate: 6.34e-06
+📉 No improvement. Best so far: 68.48% (patience: 1/1000)
+
+📅 Epoch 67/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.8745, Acc: 77.28%, Prec: 77.91%, Rec: 76.26%, F1: 76.71%
+📊 Val   - Loss: 14.8887, Acc: 67.89%, Prec: 69.74%, Rec: 66.66%, F1: 67.18%
+📈 Learning Rate: 6.25e-06
+📉 No improvement. Best so far: 68.48% (patience: 2/1000)
+
+📅 Epoch 68/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.8709, Acc: 77.13%, Prec: 77.62%, Rec: 76.11%, F1: 76.53%
+📊 Val   - Loss: 14.2023, Acc: 67.78%, Prec: 69.46%, Rec: 66.76%, F1: 67.19%
+📈 Learning Rate: 6.16e-06
+📉 No improvement. Best so far: 68.48% (patience: 3/1000)
+
+📅 Epoch 69/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.8388, Acc: 77.92%, Prec: 78.25%, Rec: 76.87%, F1: 77.25%
+📊 Val   - Loss: 15.1110, Acc: 67.74%, Prec: 69.84%, Rec: 66.54%, F1: 66.93%
+📈 Learning Rate: 6.06e-06
+📉 No improvement. Best so far: 68.48% (patience: 4/1000)
+
+📅 Epoch 70/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.8278, Acc: 77.50%, Prec: 77.98%, Rec: 76.46%, F1: 76.90%
+📊 Val   - Loss: 14.7537, Acc: 68.32%, Prec: 70.36%, Rec: 67.25%, F1: 67.89%
+📈 Learning Rate: 5.97e-06
+📉 No improvement. Best so far: 68.48% (patience: 5/1000)
+
+📅 Epoch 71/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.8131, Acc: 78.16%, Prec: 78.59%, Rec: 77.13%, F1: 77.54%
+📊 Val   - Loss: 14.3777, Acc: 68.90%, Prec: 69.88%, Rec: 67.96%, F1: 68.21%
+📈 Learning Rate: 5.88e-06
+✅ New Best Val Acc: 68.90% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 72/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.8127, Acc: 78.00%, Prec: 78.58%, Rec: 77.07%, F1: 77.53%
+📊 Val   - Loss: 15.0291, Acc: 68.39%, Prec: 70.13%, Rec: 67.18%, F1: 67.87%
+📈 Learning Rate: 5.78e-06
+📉 No improvement. Best so far: 68.90% (patience: 1/1000)
+
+📅 Epoch 73/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.7797, Acc: 78.31%, Prec: 78.81%, Rec: 77.30%, F1: 77.74%
+📊 Val   - Loss: 15.1100, Acc: 67.96%, Prec: 69.93%, Rec: 66.80%, F1: 67.40%
+📈 Learning Rate: 5.69e-06
+📉 No improvement. Best so far: 68.90% (patience: 2/1000)
+
+📅 Epoch 74/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.7753, Acc: 78.23%, Prec: 78.63%, Rec: 77.23%, F1: 77.66%
+📊 Val   - Loss: 14.6021, Acc: 68.66%, Prec: 69.86%, Rec: 67.58%, F1: 67.96%
+📈 Learning Rate: 5.59e-06
+📉 No improvement. Best so far: 68.90% (patience: 3/1000)
+
+📅 Epoch 75/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.7803, Acc: 78.64%, Prec: 79.20%, Rec: 77.67%, F1: 78.14%
+📊 Val   - Loss: 14.9172, Acc: 69.04%, Prec: 70.31%, Rec: 67.92%, F1: 68.40%
+📈 Learning Rate: 5.50e-06
+✅ New Best Val Acc: 69.04% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 76/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.7320, Acc: 78.88%, Prec: 79.41%, Rec: 77.97%, F1: 78.41%
+📊 Val   - Loss: 14.4185, Acc: 69.33%, Prec: 71.11%, Rec: 68.06%, F1: 68.72%
+📈 Learning Rate: 5.41e-06
+✅ New Best Val Acc: 69.33% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 77/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.7335, Acc: 79.02%, Prec: 79.45%, Rec: 78.04%, F1: 78.46%
+📊 Val   - Loss: 13.9885, Acc: 68.27%, Prec: 69.85%, Rec: 67.13%, F1: 67.74%
+📈 Learning Rate: 5.31e-06
+📉 No improvement. Best so far: 69.33% (patience: 1/1000)
+
+📅 Epoch 78/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.7322, Acc: 79.37%, Prec: 79.85%, Rec: 78.40%, F1: 78.84%
+📊 Val   - Loss: 14.3848, Acc: 68.48%, Prec: 70.32%, Rec: 67.38%, F1: 67.81%
+📈 Learning Rate: 5.22e-06
+📉 No improvement. Best so far: 69.33% (patience: 2/1000)
+
+📅 Epoch 79/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.6781, Acc: 79.81%, Prec: 80.20%, Rec: 78.82%, F1: 79.26%
+📊 Val   - Loss: 14.3728, Acc: 68.77%, Prec: 70.12%, Rec: 67.45%, F1: 67.86%
+📈 Learning Rate: 5.12e-06
+📉 No improvement. Best so far: 69.33% (patience: 3/1000)
+
+📅 Epoch 80/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.6884, Acc: 79.48%, Prec: 79.85%, Rec: 78.47%, F1: 78.88%
+📊 Val   - Loss: 14.3309, Acc: 68.59%, Prec: 69.79%, Rec: 67.36%, F1: 67.75%
+📈 Learning Rate: 5.03e-06
+📉 No improvement. Best so far: 69.33% (patience: 4/1000)
+
+📅 Epoch 81/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.6781, Acc: 79.87%, Prec: 80.29%, Rec: 78.97%, F1: 79.37%
+📊 Val   - Loss: 14.4147, Acc: 68.61%, Prec: 69.91%, Rec: 67.57%, F1: 67.91%
+📈 Learning Rate: 4.94e-06
+📉 No improvement. Best so far: 69.33% (patience: 5/1000)
+
+📅 Epoch 82/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.6631, Acc: 79.53%, Prec: 80.00%, Rec: 78.60%, F1: 79.03%
+📊 Val   - Loss: 14.5371, Acc: 69.60%, Prec: 71.27%, Rec: 68.38%, F1: 68.97%
+📈 Learning Rate: 4.84e-06
+✅ New Best Val Acc: 69.60% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 83/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.6442, Acc: 80.07%, Prec: 80.43%, Rec: 79.17%, F1: 79.56%
+📊 Val   - Loss: 15.2613, Acc: 69.10%, Prec: 70.33%, Rec: 67.97%, F1: 68.27%
+📈 Learning Rate: 4.75e-06
+📉 No improvement. Best so far: 69.60% (patience: 1/1000)
+
+📅 Epoch 84/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.6247, Acc: 80.25%, Prec: 80.54%, Rec: 79.31%, F1: 79.69%
+📊 Val   - Loss: 14.7899, Acc: 69.55%, Prec: 71.11%, Rec: 68.48%, F1: 68.95%
+📈 Learning Rate: 4.66e-06
+📉 No improvement. Best so far: 69.60% (patience: 2/1000)
+
+📅 Epoch 85/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.6163, Acc: 80.46%, Prec: 80.93%, Rec: 79.45%, F1: 79.90%
+📊 Val   - Loss: 13.8251, Acc: 69.44%, Prec: 70.92%, Rec: 68.33%, F1: 68.76%
+📈 Learning Rate: 4.56e-06
+📉 No improvement. Best so far: 69.60% (patience: 3/1000)
+
+📅 Epoch 86/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.6201, Acc: 80.55%, Prec: 81.10%, Rec: 79.61%, F1: 80.08%
+📊 Val   - Loss: 13.7598, Acc: 69.53%, Prec: 70.62%, Rec: 68.51%, F1: 68.91%
+📈 Learning Rate: 4.47e-06
+📉 No improvement. Best so far: 69.60% (patience: 4/1000)
+
+📅 Epoch 87/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.6046, Acc: 80.00%, Prec: 80.35%, Rec: 78.99%, F1: 79.42%
+📊 Val   - Loss: 14.8793, Acc: 69.13%, Prec: 70.86%, Rec: 67.85%, F1: 68.48%
+📈 Learning Rate: 4.38e-06
+📉 No improvement. Best so far: 69.60% (patience: 5/1000)
+
+📅 Epoch 88/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.5883, Acc: 80.83%, Prec: 81.25%, Rec: 79.88%, F1: 80.29%
+📊 Val   - Loss: 14.2886, Acc: 69.19%, Prec: 70.62%, Rec: 68.19%, F1: 68.76%
+📈 Learning Rate: 4.29e-06
+📉 No improvement. Best so far: 69.60% (patience: 6/1000)
+
+📅 Epoch 89/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.5754, Acc: 81.08%, Prec: 81.42%, Rec: 80.13%, F1: 80.54%
+📊 Val   - Loss: 14.8471, Acc: 69.46%, Prec: 70.87%, Rec: 68.17%, F1: 68.73%
+📈 Learning Rate: 4.20e-06
+📉 No improvement. Best so far: 69.60% (patience: 7/1000)
+
+📅 Epoch 90/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.5812, Acc: 80.75%, Prec: 81.14%, Rec: 79.86%, F1: 80.26%
+📊 Val   - Loss: 13.5722, Acc: 69.67%, Prec: 70.55%, Rec: 68.68%, F1: 68.96%
+📈 Learning Rate: 4.11e-06
+✅ New Best Val Acc: 69.67% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 91/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.5511, Acc: 80.79%, Prec: 81.11%, Rec: 79.89%, F1: 80.29%
+📊 Val   - Loss: 13.6890, Acc: 69.46%, Prec: 70.99%, Rec: 68.65%, F1: 69.05%
+📈 Learning Rate: 4.02e-06
+📉 No improvement. Best so far: 69.67% (patience: 1/1000)
+
+📅 Epoch 92/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.5305, Acc: 81.13%, Prec: 81.45%, Rec: 80.22%, F1: 80.60%
+📊 Val   - Loss: 14.0603, Acc: 70.18%, Prec: 71.33%, Rec: 69.29%, F1: 69.62%
+📈 Learning Rate: 3.93e-06
+✅ New Best Val Acc: 70.18% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 93/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.5438, Acc: 81.56%, Prec: 81.85%, Rec: 80.71%, F1: 81.08%
+📊 Val   - Loss: 14.3473, Acc: 70.09%, Prec: 71.38%, Rec: 69.09%, F1: 69.70%
+📈 Learning Rate: 3.84e-06
+📉 No improvement. Best so far: 70.18% (patience: 1/1000)
+
+📅 Epoch 94/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.5520, Acc: 81.52%, Prec: 81.91%, Rec: 80.59%, F1: 81.00%
+📊 Val   - Loss: 14.2284, Acc: 70.11%, Prec: 71.32%, Rec: 68.99%, F1: 69.49%
+📈 Learning Rate: 3.76e-06
+📉 No improvement. Best so far: 70.18% (patience: 2/1000)
+
+📅 Epoch 95/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.4989, Acc: 81.83%, Prec: 82.26%, Rec: 80.88%, F1: 81.32%
+📊 Val   - Loss: 14.4052, Acc: 70.23%, Prec: 70.96%, Rec: 69.18%, F1: 69.61%
+📈 Learning Rate: 3.67e-06
+✅ New Best Val Acc: 70.23% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 96/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.4983, Acc: 81.80%, Prec: 82.14%, Rec: 80.92%, F1: 81.32%
+📊 Val   - Loss: 14.0044, Acc: 69.82%, Prec: 70.96%, Rec: 68.69%, F1: 69.18%
+📈 Learning Rate: 3.58e-06
+📉 No improvement. Best so far: 70.23% (patience: 1/1000)
+
+📅 Epoch 97/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.4902, Acc: 82.08%, Prec: 82.40%, Rec: 81.18%, F1: 81.59%
+📊 Val   - Loss: 14.1308, Acc: 69.73%, Prec: 71.03%, Rec: 68.56%, F1: 69.08%
+📈 Learning Rate: 3.50e-06
+📉 No improvement. Best so far: 70.23% (patience: 2/1000)
+
+📅 Epoch 98/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.4691, Acc: 82.03%, Prec: 82.48%, Rec: 81.16%, F1: 81.61%
+📊 Val   - Loss: 14.3747, Acc: 70.02%, Prec: 71.21%, Rec: 69.12%, F1: 69.50%
+📈 Learning Rate: 3.42e-06
+📉 No improvement. Best so far: 70.23% (patience: 3/1000)
+
+📅 Epoch 99/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.5048, Acc: 81.95%, Prec: 82.37%, Rec: 81.05%, F1: 81.50%
+📊 Val   - Loss: 14.3079, Acc: 70.65%, Prec: 71.41%, Rec: 69.70%, F1: 70.03%
+📈 Learning Rate: 3.33e-06
+✅ New Best Val Acc: 70.65% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 100/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.4763, Acc: 82.37%, Prec: 82.89%, Rec: 81.58%, F1: 82.02%
+📊 Val   - Loss: 14.4046, Acc: 69.85%, Prec: 70.80%, Rec: 68.93%, F1: 69.23%
+📈 Learning Rate: 3.25e-06
+📉 No improvement. Best so far: 70.65% (patience: 1/1000)
+
+📅 Epoch 101/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.4399, Acc: 82.29%, Prec: 82.60%, Rec: 81.39%, F1: 81.81%
+📊 Val   - Loss: 14.5599, Acc: 70.50%, Prec: 71.78%, Rec: 69.32%, F1: 69.90%
+📈 Learning Rate: 3.17e-06
+📉 No improvement. Best so far: 70.65% (patience: 2/1000)
+
+📅 Epoch 102/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.4351, Acc: 82.39%, Prec: 82.75%, Rec: 81.44%, F1: 81.86%
+📊 Val   - Loss: 14.4021, Acc: 70.25%, Prec: 71.16%, Rec: 69.21%, F1: 69.58%
+📈 Learning Rate: 3.09e-06
+📉 No improvement. Best so far: 70.65% (patience: 3/1000)
+
+📅 Epoch 103/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.4337, Acc: 82.81%, Prec: 83.21%, Rec: 81.92%, F1: 82.34%
+📊 Val   - Loss: 14.2002, Acc: 70.14%, Prec: 70.88%, Rec: 69.04%, F1: 69.42%
+📈 Learning Rate: 3.01e-06
+📉 No improvement. Best so far: 70.65% (patience: 4/1000)
+
+📅 Epoch 104/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.4201, Acc: 82.76%, Prec: 83.14%, Rec: 81.94%, F1: 82.34%
+📊 Val   - Loss: 14.8423, Acc: 69.40%, Prec: 71.18%, Rec: 68.47%, F1: 68.93%
+📈 Learning Rate: 2.93e-06
+📉 No improvement. Best so far: 70.65% (patience: 5/1000)
+
+📅 Epoch 105/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.4339, Acc: 82.72%, Prec: 83.17%, Rec: 81.97%, F1: 82.40%
+📊 Val   - Loss: 14.3434, Acc: 70.41%, Prec: 71.44%, Rec: 69.49%, F1: 69.93%
+📈 Learning Rate: 2.85e-06
+📉 No improvement. Best so far: 70.65% (patience: 6/1000)
+
+📅 Epoch 106/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.4124, Acc: 82.93%, Prec: 83.32%, Rec: 82.05%, F1: 82.49%
+📊 Val   - Loss: 14.3402, Acc: 70.29%, Prec: 71.41%, Rec: 69.30%, F1: 69.76%
+📈 Learning Rate: 2.78e-06
+📉 No improvement. Best so far: 70.65% (patience: 7/1000)
+
+📅 Epoch 107/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3931, Acc: 83.12%, Prec: 83.57%, Rec: 82.22%, F1: 82.67%
+📊 Val   - Loss: 14.7804, Acc: 70.74%, Prec: 71.63%, Rec: 69.72%, F1: 70.22%
+📈 Learning Rate: 2.70e-06
+✅ New Best Val Acc: 70.74% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 108/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3860, Acc: 82.86%, Prec: 83.19%, Rec: 81.91%, F1: 82.35%
+📊 Val   - Loss: 14.6383, Acc: 69.64%, Prec: 70.02%, Rec: 68.68%, F1: 68.91%
+📈 Learning Rate: 2.63e-06
+📉 No improvement. Best so far: 70.74% (patience: 1/1000)
+
+📅 Epoch 109/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3855, Acc: 83.33%, Prec: 83.55%, Rec: 82.44%, F1: 82.81%
+📊 Val   - Loss: 14.1278, Acc: 70.47%, Prec: 71.51%, Rec: 69.40%, F1: 69.91%
+📈 Learning Rate: 2.56e-06
+📉 No improvement. Best so far: 70.74% (patience: 2/1000)
+
+📅 Epoch 110/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3783, Acc: 83.19%, Prec: 83.63%, Rec: 82.41%, F1: 82.81%
+📊 Val   - Loss: 14.2860, Acc: 70.52%, Prec: 71.39%, Rec: 69.63%, F1: 69.96%
+📈 Learning Rate: 2.49e-06
+📉 No improvement. Best so far: 70.74% (patience: 3/1000)
+
+📅 Epoch 111/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3823, Acc: 83.22%, Prec: 83.61%, Rec: 82.46%, F1: 82.86%
+📊 Val   - Loss: 14.6015, Acc: 70.34%, Prec: 71.51%, Rec: 69.48%, F1: 69.77%
+📈 Learning Rate: 2.42e-06
+📉 No improvement. Best so far: 70.74% (patience: 4/1000)
+
+📅 Epoch 112/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3823, Acc: 83.44%, Prec: 83.85%, Rec: 82.60%, F1: 83.03%
+📊 Val   - Loss: 13.9218, Acc: 70.45%, Prec: 71.23%, Rec: 69.38%, F1: 69.65%
+📈 Learning Rate: 2.35e-06
+📉 No improvement. Best so far: 70.74% (patience: 5/1000)
+
+📅 Epoch 113/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3576, Acc: 83.60%, Prec: 83.92%, Rec: 82.75%, F1: 83.14%
+📊 Val   - Loss: 14.5383, Acc: 70.14%, Prec: 71.24%, Rec: 69.01%, F1: 69.56%
+📈 Learning Rate: 2.28e-06
+📉 No improvement. Best so far: 70.74% (patience: 6/1000)
+
+📅 Epoch 114/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3328, Acc: 83.89%, Prec: 84.30%, Rec: 83.11%, F1: 83.51%
+📊 Val   - Loss: 13.8004, Acc: 70.34%, Prec: 71.50%, Rec: 69.39%, F1: 69.87%
+📈 Learning Rate: 2.22e-06
+📉 No improvement. Best so far: 70.74% (patience: 7/1000)
+
+📅 Epoch 115/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3442, Acc: 83.56%, Prec: 83.89%, Rec: 82.68%, F1: 83.09%
+📊 Val   - Loss: 14.4784, Acc: 70.43%, Prec: 71.05%, Rec: 69.35%, F1: 69.76%
+📈 Learning Rate: 2.16e-06
+📉 No improvement. Best so far: 70.74% (patience: 8/1000)
+
+📅 Epoch 116/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3458, Acc: 83.60%, Prec: 84.00%, Rec: 82.76%, F1: 83.17%
+📊 Val   - Loss: 14.6831, Acc: 70.43%, Prec: 71.14%, Rec: 69.30%, F1: 69.73%
+📈 Learning Rate: 2.09e-06
+📉 No improvement. Best so far: 70.74% (patience: 9/1000)
+
+📅 Epoch 117/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3210, Acc: 84.08%, Prec: 84.40%, Rec: 83.29%, F1: 83.68%
+📊 Val   - Loss: 14.3606, Acc: 70.74%, Prec: 71.67%, Rec: 69.82%, F1: 70.23%
+📈 Learning Rate: 2.03e-06
+📉 No improvement. Best so far: 70.74% (patience: 10/1000)
+
+📅 Epoch 118/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3285, Acc: 83.79%, Prec: 84.27%, Rec: 82.98%, F1: 83.43%
+📊 Val   - Loss: 14.1378, Acc: 70.50%, Prec: 71.75%, Rec: 69.49%, F1: 69.89%
+📈 Learning Rate: 1.97e-06
+📉 No improvement. Best so far: 70.74% (patience: 11/1000)
+
+📅 Epoch 119/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3031, Acc: 84.04%, Prec: 84.43%, Rec: 83.22%, F1: 83.64%
+📊 Val   - Loss: 14.5117, Acc: 70.77%, Prec: 71.50%, Rec: 69.74%, F1: 70.09%
+📈 Learning Rate: 1.92e-06
+✅ New Best Val Acc: 70.77% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 120/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3098, Acc: 84.15%, Prec: 84.43%, Rec: 83.29%, F1: 83.69%
+📊 Val   - Loss: 14.2310, Acc: 70.92%, Prec: 71.55%, Rec: 69.92%, F1: 70.22%
+📈 Learning Rate: 1.86e-06
+✅ New Best Val Acc: 70.92% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 121/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3088, Acc: 84.34%, Prec: 84.91%, Rec: 83.51%, F1: 84.00%
+📊 Val   - Loss: 14.2208, Acc: 70.47%, Prec: 71.12%, Rec: 69.47%, F1: 69.79%
+📈 Learning Rate: 1.80e-06
+📉 No improvement. Best so far: 70.92% (patience: 1/1000)
+
+📅 Epoch 122/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3076, Acc: 84.02%, Prec: 84.24%, Rec: 83.15%, F1: 83.53%
+📊 Val   - Loss: 14.4483, Acc: 70.81%, Prec: 71.74%, Rec: 69.88%, F1: 70.28%
+📈 Learning Rate: 1.75e-06
+📉 No improvement. Best so far: 70.92% (patience: 2/1000)
+
+📅 Epoch 123/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.3066, Acc: 84.17%, Prec: 84.63%, Rec: 83.48%, F1: 83.89%
+📊 Val   - Loss: 14.7448, Acc: 70.65%, Prec: 71.47%, Rec: 69.72%, F1: 70.09%
+📈 Learning Rate: 1.70e-06
+📉 No improvement. Best so far: 70.92% (patience: 3/1000)
+
+📅 Epoch 124/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2759, Acc: 84.60%, Prec: 84.94%, Rec: 83.79%, F1: 84.20%
+📊 Val   - Loss: 14.3326, Acc: 70.45%, Prec: 71.52%, Rec: 69.38%, F1: 69.83%
+📈 Learning Rate: 1.65e-06
+📉 No improvement. Best so far: 70.92% (patience: 4/1000)
+
+📅 Epoch 125/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2871, Acc: 84.78%, Prec: 85.15%, Rec: 83.98%, F1: 84.39%
+📊 Val   - Loss: 14.5458, Acc: 70.54%, Prec: 71.75%, Rec: 69.45%, F1: 70.02%
+📈 Learning Rate: 1.60e-06
+📉 No improvement. Best so far: 70.92% (patience: 5/1000)
+
+📅 Epoch 126/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2737, Acc: 84.32%, Prec: 84.70%, Rec: 83.52%, F1: 83.91%
+📊 Val   - Loss: 14.6466, Acc: 71.06%, Prec: 72.09%, Rec: 70.07%, F1: 70.61%
+📈 Learning Rate: 1.56e-06
+✅ New Best Val Acc: 71.06% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 127/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2861, Acc: 84.69%, Prec: 85.09%, Rec: 83.96%, F1: 84.38%
+📊 Val   - Loss: 14.7813, Acc: 70.90%, Prec: 71.65%, Rec: 69.95%, F1: 70.30%
+📈 Learning Rate: 1.51e-06
+📉 No improvement. Best so far: 71.06% (patience: 1/1000)
+
+📅 Epoch 128/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2512, Acc: 84.92%, Prec: 85.15%, Rec: 84.16%, F1: 84.47%
+📊 Val   - Loss: 14.2779, Acc: 70.99%, Prec: 71.78%, Rec: 69.98%, F1: 70.23%
+📈 Learning Rate: 1.47e-06
+📉 No improvement. Best so far: 71.06% (patience: 2/1000)
+
+📅 Epoch 129/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2748, Acc: 84.47%, Prec: 84.72%, Rec: 83.69%, F1: 84.05%
+📊 Val   - Loss: 14.1255, Acc: 70.72%, Prec: 71.82%, Rec: 69.67%, F1: 70.16%
+📈 Learning Rate: 1.43e-06
+📉 No improvement. Best so far: 71.06% (patience: 3/1000)
+
+📅 Epoch 130/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2553, Acc: 84.84%, Prec: 85.29%, Rec: 84.05%, F1: 84.49%
+📊 Val   - Loss: 14.5306, Acc: 71.12%, Prec: 71.93%, Rec: 70.13%, F1: 70.57%
+📈 Learning Rate: 1.39e-06
+✅ New Best Val Acc: 71.12% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 131/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2505, Acc: 85.04%, Prec: 85.53%, Rec: 84.23%, F1: 84.70%
+📊 Val   - Loss: 14.3825, Acc: 71.30%, Prec: 71.82%, Rec: 70.32%, F1: 70.65%
+📈 Learning Rate: 1.35e-06
+✅ New Best Val Acc: 71.30% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 132/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2564, Acc: 84.69%, Prec: 84.95%, Rec: 83.94%, F1: 84.31%
+📊 Val   - Loss: 14.8306, Acc: 70.77%, Prec: 71.63%, Rec: 69.80%, F1: 70.11%
+📈 Learning Rate: 1.32e-06
+📉 No improvement. Best so far: 71.30% (patience: 1/1000)
+
+📅 Epoch 133/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2403, Acc: 85.23%, Prec: 85.69%, Rec: 84.50%, F1: 84.91%
+📊 Val   - Loss: 14.5116, Acc: 71.10%, Prec: 71.90%, Rec: 70.04%, F1: 70.49%
+📈 Learning Rate: 1.28e-06
+📉 No improvement. Best so far: 71.30% (patience: 2/1000)
+
+📅 Epoch 134/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2551, Acc: 85.08%, Prec: 85.46%, Rec: 84.26%, F1: 84.70%
+📊 Val   - Loss: 13.9197, Acc: 71.55%, Prec: 72.04%, Rec: 70.53%, F1: 70.85%
+📈 Learning Rate: 1.25e-06
+✅ New Best Val Acc: 71.55% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 135/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2235, Acc: 85.25%, Prec: 85.57%, Rec: 84.45%, F1: 84.86%
+📊 Val   - Loss: 14.6019, Acc: 71.37%, Prec: 72.39%, Rec: 70.24%, F1: 70.78%
+📈 Learning Rate: 1.22e-06
+📉 No improvement. Best so far: 71.55% (patience: 1/1000)
+
+📅 Epoch 136/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2369, Acc: 85.27%, Prec: 85.62%, Rec: 84.55%, F1: 84.94%
+📊 Val   - Loss: 14.5994, Acc: 71.15%, Prec: 71.86%, Rec: 70.06%, F1: 70.41%
+📈 Learning Rate: 1.19e-06
+📉 No improvement. Best so far: 71.55% (patience: 2/1000)
+
+📅 Epoch 137/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2194, Acc: 85.27%, Prec: 85.59%, Rec: 84.53%, F1: 84.91%
+📊 Val   - Loss: 14.4367, Acc: 71.64%, Prec: 72.23%, Rec: 70.77%, F1: 71.06%
+📈 Learning Rate: 1.17e-06
+✅ New Best Val Acc: 71.64% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 138/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2321, Acc: 85.40%, Prec: 85.82%, Rec: 84.62%, F1: 85.03%
+📊 Val   - Loss: 14.3537, Acc: 71.42%, Prec: 71.99%, Rec: 70.39%, F1: 70.70%
+📈 Learning Rate: 1.14e-06
+📉 No improvement. Best so far: 71.64% (patience: 1/1000)
+
+📅 Epoch 139/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2200, Acc: 85.57%, Prec: 85.90%, Rec: 84.82%, F1: 85.22%
+📊 Val   - Loss: 14.5227, Acc: 71.53%, Prec: 72.22%, Rec: 70.64%, F1: 70.98%
+📈 Learning Rate: 1.12e-06
+📉 No improvement. Best so far: 71.64% (patience: 2/1000)
+
+📅 Epoch 140/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2043, Acc: 85.21%, Prec: 85.54%, Rec: 84.39%, F1: 84.78%
+📊 Val   - Loss: 14.3319, Acc: 71.24%, Prec: 72.22%, Rec: 70.23%, F1: 70.64%
+📈 Learning Rate: 1.10e-06
+📉 No improvement. Best so far: 71.64% (patience: 3/1000)
+
+📅 Epoch 141/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2208, Acc: 85.12%, Prec: 85.44%, Rec: 84.35%, F1: 84.75%
+📊 Val   - Loss: 14.5682, Acc: 71.33%, Prec: 71.79%, Rec: 70.35%, F1: 70.67%
+📈 Learning Rate: 1.08e-06
+📉 No improvement. Best so far: 71.64% (patience: 4/1000)
+
+📅 Epoch 142/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2431, Acc: 85.10%, Prec: 85.53%, Rec: 84.32%, F1: 84.74%
+📊 Val   - Loss: 14.4932, Acc: 71.17%, Prec: 72.05%, Rec: 70.15%, F1: 70.62%
+📈 Learning Rate: 1.06e-06
+📉 No improvement. Best so far: 71.64% (patience: 5/1000)
+
+📅 Epoch 143/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2136, Acc: 85.47%, Prec: 85.87%, Rec: 84.69%, F1: 85.10%
+📊 Val   - Loss: 14.3139, Acc: 71.64%, Prec: 72.35%, Rec: 70.62%, F1: 71.05%
+📈 Learning Rate: 1.05e-06
+📉 No improvement. Best so far: 71.64% (patience: 6/1000)
+
+📅 Epoch 144/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2112, Acc: 85.22%, Prec: 85.59%, Rec: 84.48%, F1: 84.89%
+📊 Val   - Loss: 14.6202, Acc: 71.42%, Prec: 71.87%, Rec: 70.38%, F1: 70.72%
+📈 Learning Rate: 1.04e-06
+📉 No improvement. Best so far: 71.64% (patience: 7/1000)
+
+📅 Epoch 145/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2062, Acc: 85.62%, Prec: 85.97%, Rec: 84.86%, F1: 85.27%
+📊 Val   - Loss: 14.4294, Acc: 71.57%, Prec: 72.18%, Rec: 70.60%, F1: 70.98%
+📈 Learning Rate: 1.02e-06
+📉 No improvement. Best so far: 71.64% (patience: 8/1000)
+
+📅 Epoch 146/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2080, Acc: 85.63%, Prec: 86.09%, Rec: 84.91%, F1: 85.34%
+📊 Val   - Loss: 14.0380, Acc: 71.68%, Prec: 72.54%, Rec: 70.80%, F1: 71.20%
+📈 Learning Rate: 1.02e-06
+✅ New Best Val Acc: 71.68% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 147/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.2027, Acc: 85.66%, Prec: 86.12%, Rec: 84.96%, F1: 85.39%
+📊 Val   - Loss: 14.6428, Acc: 71.80%, Prec: 72.36%, Rec: 70.82%, F1: 71.26%
+📈 Learning Rate: 1.01e-06
+✅ New Best Val Acc: 71.80% — Model saved to checkpoints/face/oracle/20_69.pth
+
+📅 Epoch 148/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.1994, Acc: 85.65%, Prec: 86.00%, Rec: 84.94%, F1: 85.31%
+📊 Val   - Loss: 14.1421, Acc: 71.57%, Prec: 72.59%, Rec: 70.51%, F1: 71.00%
+📈 Learning Rate: 1.00e-06
+📉 No improvement. Best so far: 71.80% (patience: 1/1000)
+
+📅 Epoch 149/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.1911, Acc: 85.62%, Prec: 86.11%, Rec: 84.93%, F1: 85.38%
+📊 Val   - Loss: 13.9157, Acc: 71.55%, Prec: 72.06%, Rec: 70.48%, F1: 70.89%
+📈 Learning Rate: 1.00e-06
+📉 No improvement. Best so far: 71.80% (patience: 2/1000)
+
+📅 Epoch 150/150 — FACE — Classes: 20-69
+📊 Train - Loss: 13.1803, Acc: 85.69%, Prec: 86.08%, Rec: 84.94%, F1: 85.35%
+📊 Val   - Loss: 14.5198, Acc: 71.53%, Prec: 72.36%, Rec: 70.63%, F1: 71.05%
+📈 Learning Rate: 1.00e-06
+📉 No improvement. Best so far: 71.80% (patience: 3/1000)
+🏁 Training finished in 216.0 minutes.
+🏆 Best validation accuracy: 71.80%
+
+✅ Completed training for classes 20-69: 71.80%
+
+================================================================================
+🚀 TRAINING MODEL 4/6
+================================================================================
+
+🚀 Training FACE Model on Classes: 30–79
+📊 Number of classes: 50
+🛠️ Explicitly received params: {'GPU_ID': [0], 'num_class': 100}
+🔓 Full fine-tuning: All parameters trainable
+✅ Built face model
+Loading pretrained weights from: checkpoints/face/oracle/0_49.pth
+🔄 Loading model weights from checkpoints/face/oracle/0_49.pth...
+⚠️ Skipping keys: []
+
+📊 Parameter Summary:
+  🔢 Total Parameters     : 5.43M
+  ✅ Trainable Parameters : 5.43M
+  📉 % Trainable          : 100.00%
+Loading Face Recognition data from /media/jag/volD2/faces_webface_112x112_sub100_train_test/train
+Loading Face Recognition data from /media/jag/volD2/faces_webface_112x112_sub100_train_test/test
+
+📁 Models will be saved to: checkpoints/face/oracle
+🎯 Target epochs: 150, Learning rate: 0.0001
+
+📅 Epoch 1/150 — FACE — Classes: 30-79
+📊 Train - Loss: 17.8978, Acc: 22.07%, Prec: 20.24%, Rec: 20.41%, F1: 18.93%
+📊 Val   - Loss: 17.2765, Acc: 35.68%, Prec: 39.57%, Rec: 33.21%, F1: 31.55%
+📈 Learning Rate: 1.00e-05
+✅ New Best Val Acc: 35.68% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 2/150 — FACE — Classes: 30-79
+📊 Train - Loss: 16.6791, Acc: 41.33%, Prec: 40.44%, Rec: 39.67%, F1: 38.79%
+📊 Val   - Loss: 16.5044, Acc: 44.50%, Prec: 47.91%, Rec: 42.84%, F1: 42.12%
+📈 Learning Rate: 1.00e-05
+✅ New Best Val Acc: 44.50% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 3/150 — FACE — Classes: 30-79
+📊 Train - Loss: 16.2702, Acc: 47.10%, Prec: 47.36%, Rec: 45.70%, F1: 45.24%
+📊 Val   - Loss: 16.5183, Acc: 48.25%, Prec: 50.73%, Rec: 46.60%, F1: 46.08%
+📈 Learning Rate: 9.99e-06
+✅ New Best Val Acc: 48.25% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 4/150 — FACE — Classes: 30-79
+📊 Train - Loss: 16.0163, Acc: 50.62%, Prec: 50.64%, Rec: 49.33%, F1: 48.85%
+📊 Val   - Loss: 15.9627, Acc: 49.38%, Prec: 54.82%, Rec: 47.68%, F1: 47.90%
+📈 Learning Rate: 9.98e-06
+✅ New Best Val Acc: 49.38% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 5/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.8993, Acc: 52.52%, Prec: 52.58%, Rec: 51.25%, F1: 50.95%
+📊 Val   - Loss: 15.5031, Acc: 51.61%, Prec: 57.40%, Rec: 49.97%, F1: 50.20%
+📈 Learning Rate: 9.98e-06
+✅ New Best Val Acc: 51.61% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 6/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.7587, Acc: 54.70%, Prec: 54.93%, Rec: 53.52%, F1: 53.27%
+📊 Val   - Loss: 15.7831, Acc: 53.96%, Prec: 57.56%, Rec: 52.47%, F1: 52.53%
+📈 Learning Rate: 9.96e-06
+✅ New Best Val Acc: 53.96% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 7/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.6773, Acc: 55.24%, Prec: 55.73%, Rec: 53.92%, F1: 53.83%
+📊 Val   - Loss: 16.0227, Acc: 53.05%, Prec: 58.25%, Rec: 51.12%, F1: 51.32%
+📈 Learning Rate: 9.95e-06
+📉 No improvement. Best so far: 53.96% (patience: 1/1000)
+
+📅 Epoch 8/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.6284, Acc: 56.17%, Prec: 56.83%, Rec: 54.89%, F1: 54.94%
+📊 Val   - Loss: 15.6036, Acc: 56.34%, Prec: 58.96%, Rec: 54.84%, F1: 54.79%
+📈 Learning Rate: 9.94e-06
+✅ New Best Val Acc: 56.34% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 9/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.5170, Acc: 57.53%, Prec: 57.88%, Rec: 56.23%, F1: 56.20%
+📊 Val   - Loss: 16.1291, Acc: 54.40%, Prec: 59.63%, Rec: 52.82%, F1: 52.82%
+📈 Learning Rate: 9.92e-06
+📉 No improvement. Best so far: 56.34% (patience: 1/1000)
+
+📅 Epoch 10/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.4801, Acc: 58.52%, Prec: 58.98%, Rec: 57.27%, F1: 57.34%
+📊 Val   - Loss: 15.8658, Acc: 57.45%, Prec: 60.54%, Rec: 56.01%, F1: 56.13%
+📈 Learning Rate: 9.90e-06
+✅ New Best Val Acc: 57.45% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 11/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.4198, Acc: 59.11%, Prec: 59.58%, Rec: 57.92%, F1: 57.96%
+📊 Val   - Loss: 15.7901, Acc: 56.74%, Prec: 61.53%, Rec: 55.23%, F1: 55.84%
+📈 Learning Rate: 9.88e-06
+📉 No improvement. Best so far: 57.45% (patience: 1/1000)
+
+📅 Epoch 12/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.3660, Acc: 59.71%, Prec: 60.36%, Rec: 58.58%, F1: 58.68%
+📊 Val   - Loss: 15.9190, Acc: 54.35%, Prec: 61.27%, Rec: 53.18%, F1: 53.53%
+📈 Learning Rate: 9.86e-06
+📉 No improvement. Best so far: 57.45% (patience: 2/1000)
+
+📅 Epoch 13/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.3109, Acc: 60.18%, Prec: 60.85%, Rec: 58.95%, F1: 59.05%
+📊 Val   - Loss: 15.6106, Acc: 56.43%, Prec: 61.16%, Rec: 55.18%, F1: 55.91%
+📈 Learning Rate: 9.83e-06
+📉 No improvement. Best so far: 57.45% (patience: 3/1000)
+
+📅 Epoch 14/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.2656, Acc: 61.03%, Prec: 61.67%, Rec: 59.82%, F1: 59.96%
+📊 Val   - Loss: 15.2110, Acc: 58.97%, Prec: 62.79%, Rec: 57.32%, F1: 57.85%
+📈 Learning Rate: 9.81e-06
+✅ New Best Val Acc: 58.97% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 15/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.2127, Acc: 61.96%, Prec: 62.34%, Rec: 60.73%, F1: 60.82%
+📊 Val   - Loss: 15.8136, Acc: 59.62%, Prec: 62.87%, Rec: 58.60%, F1: 58.81%
+📈 Learning Rate: 9.78e-06
+✅ New Best Val Acc: 59.62% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 16/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.1696, Acc: 62.39%, Prec: 62.91%, Rec: 61.32%, F1: 61.43%
+📊 Val   - Loss: 15.1975, Acc: 58.71%, Prec: 63.23%, Rec: 57.16%, F1: 57.94%
+📈 Learning Rate: 9.75e-06
+📉 No improvement. Best so far: 59.62% (patience: 1/1000)
+
+📅 Epoch 17/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.1308, Acc: 62.79%, Prec: 63.50%, Rec: 61.61%, F1: 61.82%
+📊 Val   - Loss: 15.7613, Acc: 59.75%, Prec: 63.10%, Rec: 58.55%, F1: 59.07%
+📈 Learning Rate: 9.72e-06
+✅ New Best Val Acc: 59.75% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 18/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.0987, Acc: 63.16%, Prec: 63.55%, Rec: 61.96%, F1: 62.16%
+📊 Val   - Loss: 15.1455, Acc: 61.67%, Prec: 63.03%, Rec: 60.82%, F1: 60.61%
+📈 Learning Rate: 9.68e-06
+✅ New Best Val Acc: 61.67% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 19/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.0652, Acc: 63.37%, Prec: 64.03%, Rec: 62.24%, F1: 62.53%
+📊 Val   - Loss: 15.4524, Acc: 59.22%, Prec: 63.06%, Rec: 57.93%, F1: 58.46%
+📈 Learning Rate: 9.65e-06
+📉 No improvement. Best so far: 61.67% (patience: 1/1000)
+
+📅 Epoch 20/150 — FACE — Classes: 30-79
+📊 Train - Loss: 15.0213, Acc: 63.60%, Prec: 63.90%, Rec: 62.43%, F1: 62.54%
+📊 Val   - Loss: 15.0244, Acc: 61.30%, Prec: 64.69%, Rec: 60.21%, F1: 60.95%
+📈 Learning Rate: 9.61e-06
+📉 No improvement. Best so far: 61.67% (patience: 2/1000)
+
+📅 Epoch 21/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.9982, Acc: 64.03%, Prec: 64.68%, Rec: 62.88%, F1: 63.11%
+📊 Val   - Loss: 15.7697, Acc: 61.12%, Prec: 64.70%, Rec: 59.82%, F1: 60.19%
+📈 Learning Rate: 9.57e-06
+📉 No improvement. Best so far: 61.67% (patience: 3/1000)
+
+📅 Epoch 22/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.9662, Acc: 64.94%, Prec: 65.59%, Rec: 63.86%, F1: 64.14%
+📊 Val   - Loss: 15.3305, Acc: 61.07%, Prec: 64.97%, Rec: 59.59%, F1: 60.33%
+📈 Learning Rate: 9.53e-06
+📉 No improvement. Best so far: 61.67% (patience: 4/1000)
+
+📅 Epoch 23/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.9282, Acc: 65.23%, Prec: 65.78%, Rec: 64.17%, F1: 64.46%
+📊 Val   - Loss: 15.3082, Acc: 61.01%, Prec: 64.13%, Rec: 59.65%, F1: 59.80%
+📈 Learning Rate: 9.49e-06
+📉 No improvement. Best so far: 61.67% (patience: 5/1000)
+
+📅 Epoch 24/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.8815, Acc: 65.96%, Prec: 66.47%, Rec: 64.83%, F1: 65.08%
+📊 Val   - Loss: 15.1681, Acc: 59.55%, Prec: 64.52%, Rec: 58.11%, F1: 59.24%
+📈 Learning Rate: 9.44e-06
+📉 No improvement. Best so far: 61.67% (patience: 6/1000)
+
+📅 Epoch 25/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.8294, Acc: 66.16%, Prec: 66.60%, Rec: 65.02%, F1: 65.30%
+📊 Val   - Loss: 14.8452, Acc: 61.38%, Prec: 63.79%, Rec: 59.75%, F1: 60.10%
+📈 Learning Rate: 9.40e-06
+📉 No improvement. Best so far: 61.67% (patience: 7/1000)
+
+📅 Epoch 26/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.8061, Acc: 66.55%, Prec: 66.96%, Rec: 65.38%, F1: 65.65%
+📊 Val   - Loss: 15.4390, Acc: 62.07%, Prec: 63.81%, Rec: 61.08%, F1: 61.03%
+📈 Learning Rate: 9.35e-06
+✅ New Best Val Acc: 62.07% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 27/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.7866, Acc: 66.79%, Prec: 67.24%, Rec: 65.67%, F1: 65.90%
+📊 Val   - Loss: 16.1745, Acc: 63.40%, Prec: 65.38%, Rec: 62.22%, F1: 62.35%
+📈 Learning Rate: 9.30e-06
+✅ New Best Val Acc: 63.40% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 28/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.7665, Acc: 66.81%, Prec: 67.31%, Rec: 65.75%, F1: 66.05%
+📊 Val   - Loss: 15.1908, Acc: 62.89%, Prec: 65.71%, Rec: 61.77%, F1: 62.25%
+📈 Learning Rate: 9.25e-06
+📉 No improvement. Best so far: 63.40% (patience: 1/1000)
+
+📅 Epoch 29/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.7341, Acc: 67.37%, Prec: 68.02%, Rec: 66.25%, F1: 66.60%
+📊 Val   - Loss: 15.5141, Acc: 63.93%, Prec: 66.48%, Rec: 62.66%, F1: 63.15%
+📈 Learning Rate: 9.20e-06
+✅ New Best Val Acc: 63.93% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 30/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.7008, Acc: 67.85%, Prec: 68.38%, Rec: 66.86%, F1: 67.15%
+📊 Val   - Loss: 14.8537, Acc: 63.66%, Prec: 66.67%, Rec: 62.44%, F1: 62.95%
+📈 Learning Rate: 9.14e-06
+📉 No improvement. Best so far: 63.93% (patience: 1/1000)
+
+📅 Epoch 31/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.6804, Acc: 67.93%, Prec: 68.42%, Rec: 66.87%, F1: 67.16%
+📊 Val   - Loss: 14.9629, Acc: 63.59%, Prec: 67.35%, Rec: 62.35%, F1: 62.83%
+📈 Learning Rate: 9.08e-06
+📉 No improvement. Best so far: 63.93% (patience: 2/1000)
+
+📅 Epoch 32/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.6436, Acc: 68.34%, Prec: 68.78%, Rec: 67.31%, F1: 67.57%
+📊 Val   - Loss: 15.2239, Acc: 64.10%, Prec: 66.89%, Rec: 62.94%, F1: 63.40%
+📈 Learning Rate: 9.03e-06
+✅ New Best Val Acc: 64.10% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 33/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.6020, Acc: 68.91%, Prec: 69.55%, Rec: 67.92%, F1: 68.23%
+📊 Val   - Loss: 15.3300, Acc: 64.30%, Prec: 67.81%, Rec: 62.84%, F1: 63.77%
+📈 Learning Rate: 8.97e-06
+✅ New Best Val Acc: 64.30% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 34/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.6001, Acc: 69.52%, Prec: 70.19%, Rec: 68.48%, F1: 68.87%
+📊 Val   - Loss: 15.5690, Acc: 64.94%, Prec: 67.69%, Rec: 63.84%, F1: 64.56%
+📈 Learning Rate: 8.91e-06
+✅ New Best Val Acc: 64.94% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 35/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.5712, Acc: 69.04%, Prec: 69.58%, Rec: 68.00%, F1: 68.30%
+📊 Val   - Loss: 14.8121, Acc: 65.47%, Prec: 67.42%, Rec: 64.48%, F1: 64.62%
+📈 Learning Rate: 8.84e-06
+✅ New Best Val Acc: 65.47% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 36/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.5163, Acc: 69.90%, Prec: 70.39%, Rec: 68.82%, F1: 69.15%
+📊 Val   - Loss: 14.6232, Acc: 64.39%, Prec: 66.69%, Rec: 63.40%, F1: 64.00%
+📈 Learning Rate: 8.78e-06
+📉 No improvement. Best so far: 65.47% (patience: 1/1000)
+
+📅 Epoch 37/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.5080, Acc: 69.98%, Prec: 70.61%, Rec: 68.94%, F1: 69.32%
+📊 Val   - Loss: 15.1750, Acc: 65.83%, Prec: 69.18%, Rec: 64.65%, F1: 65.48%
+📈 Learning Rate: 8.72e-06
+✅ New Best Val Acc: 65.83% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 38/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.4717, Acc: 70.51%, Prec: 71.05%, Rec: 69.48%, F1: 69.83%
+📊 Val   - Loss: 15.0680, Acc: 65.16%, Prec: 68.45%, Rec: 64.09%, F1: 64.77%
+📈 Learning Rate: 8.65e-06
+📉 No improvement. Best so far: 65.83% (patience: 1/1000)
+
+📅 Epoch 39/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.4659, Acc: 70.90%, Prec: 71.44%, Rec: 69.94%, F1: 70.29%
+📊 Val   - Loss: 15.4657, Acc: 64.79%, Prec: 67.28%, Rec: 63.69%, F1: 64.28%
+📈 Learning Rate: 8.58e-06
+📉 No improvement. Best so far: 65.83% (patience: 2/1000)
+
+📅 Epoch 40/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.4211, Acc: 71.10%, Prec: 71.72%, Rec: 70.14%, F1: 70.51%
+📊 Val   - Loss: 14.5274, Acc: 66.36%, Prec: 69.10%, Rec: 65.14%, F1: 65.62%
+📈 Learning Rate: 8.51e-06
+✅ New Best Val Acc: 66.36% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 41/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.4168, Acc: 71.10%, Prec: 71.64%, Rec: 70.05%, F1: 70.43%
+📊 Val   - Loss: 15.4194, Acc: 65.36%, Prec: 68.84%, Rec: 64.20%, F1: 65.03%
+📈 Learning Rate: 8.44e-06
+📉 No improvement. Best so far: 66.36% (patience: 1/1000)
+
+📅 Epoch 42/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.3754, Acc: 71.89%, Prec: 72.42%, Rec: 70.86%, F1: 71.21%
+📊 Val   - Loss: 14.6705, Acc: 64.72%, Prec: 68.61%, Rec: 63.66%, F1: 64.07%
+📈 Learning Rate: 8.37e-06
+📉 No improvement. Best so far: 66.36% (patience: 2/1000)
+
+📅 Epoch 43/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.3542, Acc: 71.64%, Prec: 72.36%, Rec: 70.69%, F1: 71.05%
+📊 Val   - Loss: 14.5226, Acc: 65.47%, Prec: 67.91%, Rec: 64.39%, F1: 64.74%
+📈 Learning Rate: 8.30e-06
+📉 No improvement. Best so far: 66.36% (patience: 3/1000)
+
+📅 Epoch 44/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.3076, Acc: 72.51%, Prec: 73.01%, Rec: 71.47%, F1: 71.82%
+📊 Val   - Loss: 14.6239, Acc: 65.72%, Prec: 68.68%, Rec: 64.72%, F1: 65.27%
+📈 Learning Rate: 8.22e-06
+📉 No improvement. Best so far: 66.36% (patience: 4/1000)
+
+📅 Epoch 45/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.3160, Acc: 72.01%, Prec: 72.44%, Rec: 71.03%, F1: 71.35%
+📊 Val   - Loss: 14.7400, Acc: 65.38%, Prec: 69.00%, Rec: 64.09%, F1: 64.89%
+📈 Learning Rate: 8.15e-06
+📉 No improvement. Best so far: 66.36% (patience: 5/1000)
+
+📅 Epoch 46/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.3147, Acc: 72.21%, Prec: 72.92%, Rec: 71.16%, F1: 71.58%
+📊 Val   - Loss: 14.8114, Acc: 66.64%, Prec: 69.44%, Rec: 65.39%, F1: 66.24%
+📈 Learning Rate: 8.07e-06
+✅ New Best Val Acc: 66.64% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 47/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.2390, Acc: 73.34%, Prec: 73.89%, Rec: 72.41%, F1: 72.80%
+📊 Val   - Loss: 15.4280, Acc: 66.29%, Prec: 68.27%, Rec: 65.24%, F1: 65.47%
+📈 Learning Rate: 7.99e-06
+📉 No improvement. Best so far: 66.64% (patience: 1/1000)
+
+📅 Epoch 48/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.2556, Acc: 72.67%, Prec: 73.08%, Rec: 71.63%, F1: 71.97%
+📊 Val   - Loss: 14.8915, Acc: 66.93%, Prec: 69.48%, Rec: 65.90%, F1: 66.58%
+📈 Learning Rate: 7.91e-06
+✅ New Best Val Acc: 66.93% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 49/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.2195, Acc: 73.26%, Prec: 73.77%, Rec: 72.28%, F1: 72.61%
+📊 Val   - Loss: 14.8992, Acc: 65.96%, Prec: 68.72%, Rec: 64.72%, F1: 65.21%
+📈 Learning Rate: 7.83e-06
+📉 No improvement. Best so far: 66.93% (patience: 1/1000)
+
+📅 Epoch 50/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.2083, Acc: 73.10%, Prec: 73.37%, Rec: 72.05%, F1: 72.36%
+📊 Val   - Loss: 15.0815, Acc: 67.64%, Prec: 70.16%, Rec: 66.46%, F1: 66.75%
+📈 Learning Rate: 7.75e-06
+✅ New Best Val Acc: 67.64% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 51/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.1988, Acc: 74.00%, Prec: 74.46%, Rec: 72.92%, F1: 73.25%
+📊 Val   - Loss: 15.0757, Acc: 67.48%, Prec: 70.16%, Rec: 66.32%, F1: 67.08%
+📈 Learning Rate: 7.67e-06
+📉 No improvement. Best so far: 67.64% (patience: 1/1000)
+
+📅 Epoch 52/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.1456, Acc: 74.42%, Prec: 74.92%, Rec: 73.39%, F1: 73.78%
+📊 Val   - Loss: 13.9357, Acc: 67.15%, Prec: 69.53%, Rec: 66.05%, F1: 66.50%
+📈 Learning Rate: 7.58e-06
+📉 No improvement. Best so far: 67.64% (patience: 2/1000)
+
+📅 Epoch 53/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.1469, Acc: 74.34%, Prec: 74.77%, Rec: 73.32%, F1: 73.68%
+📊 Val   - Loss: 14.3893, Acc: 67.77%, Prec: 70.13%, Rec: 66.59%, F1: 67.10%
+📈 Learning Rate: 7.50e-06
+✅ New Best Val Acc: 67.77% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 54/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.1235, Acc: 74.29%, Prec: 75.03%, Rec: 73.31%, F1: 73.78%
+📊 Val   - Loss: 14.4683, Acc: 68.44%, Prec: 70.66%, Rec: 67.30%, F1: 67.77%
+📈 Learning Rate: 7.42e-06
+✅ New Best Val Acc: 68.44% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 55/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.0910, Acc: 74.81%, Prec: 75.17%, Rec: 73.78%, F1: 74.15%
+📊 Val   - Loss: 14.2104, Acc: 67.13%, Prec: 69.71%, Rec: 66.00%, F1: 66.65%
+📈 Learning Rate: 7.33e-06
+📉 No improvement. Best so far: 68.44% (patience: 1/1000)
+
+📅 Epoch 56/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.0660, Acc: 74.96%, Prec: 75.46%, Rec: 73.90%, F1: 74.33%
+📊 Val   - Loss: 14.8949, Acc: 67.18%, Prec: 70.18%, Rec: 65.98%, F1: 66.63%
+📈 Learning Rate: 7.24e-06
+📉 No improvement. Best so far: 68.44% (patience: 2/1000)
+
+📅 Epoch 57/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.0384, Acc: 75.81%, Prec: 76.48%, Rec: 74.85%, F1: 75.33%
+📊 Val   - Loss: 15.2278, Acc: 68.32%, Prec: 70.80%, Rec: 67.36%, F1: 68.00%
+📈 Learning Rate: 7.16e-06
+📉 No improvement. Best so far: 68.44% (patience: 3/1000)
+
+📅 Epoch 58/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.0385, Acc: 75.69%, Prec: 76.17%, Rec: 74.74%, F1: 75.13%
+📊 Val   - Loss: 14.7576, Acc: 67.88%, Prec: 71.07%, Rec: 66.55%, F1: 67.57%
+📈 Learning Rate: 7.07e-06
+📉 No improvement. Best so far: 68.44% (patience: 4/1000)
+
+📅 Epoch 59/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.0276, Acc: 75.64%, Prec: 75.99%, Rec: 74.62%, F1: 74.96%
+📊 Val   - Loss: 14.5708, Acc: 68.72%, Prec: 70.67%, Rec: 67.64%, F1: 68.09%
+📈 Learning Rate: 6.98e-06
+✅ New Best Val Acc: 68.72% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 60/150 — FACE — Classes: 30-79
+📊 Train - Loss: 14.0035, Acc: 75.92%, Prec: 76.38%, Rec: 75.00%, F1: 75.39%
+📊 Val   - Loss: 13.5936, Acc: 67.46%, Prec: 70.21%, Rec: 66.13%, F1: 66.84%
+📈 Learning Rate: 6.89e-06
+📉 No improvement. Best so far: 68.72% (patience: 1/1000)
+
+📅 Epoch 61/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.9964, Acc: 75.74%, Prec: 76.17%, Rec: 74.77%, F1: 75.14%
+📊 Val   - Loss: 14.5147, Acc: 67.18%, Prec: 70.22%, Rec: 65.88%, F1: 66.77%
+📈 Learning Rate: 6.80e-06
+📉 No improvement. Best so far: 68.72% (patience: 2/1000)
+
+📅 Epoch 62/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.9669, Acc: 76.52%, Prec: 76.99%, Rec: 75.49%, F1: 75.87%
+📊 Val   - Loss: 15.2335, Acc: 66.27%, Prec: 70.39%, Rec: 64.99%, F1: 66.08%
+📈 Learning Rate: 6.71e-06
+📉 No improvement. Best so far: 68.72% (patience: 3/1000)
+
+📅 Epoch 63/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.9321, Acc: 76.38%, Prec: 76.87%, Rec: 75.47%, F1: 75.82%
+📊 Val   - Loss: 13.9909, Acc: 69.43%, Prec: 71.42%, Rec: 68.29%, F1: 69.03%
+📈 Learning Rate: 6.62e-06
+✅ New Best Val Acc: 69.43% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 64/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.9341, Acc: 76.57%, Prec: 76.96%, Rec: 75.63%, F1: 76.00%
+📊 Val   - Loss: 14.7125, Acc: 68.59%, Prec: 71.19%, Rec: 67.53%, F1: 68.32%
+📈 Learning Rate: 6.53e-06
+📉 No improvement. Best so far: 69.43% (patience: 1/1000)
+
+📅 Epoch 65/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.9333, Acc: 76.81%, Prec: 77.21%, Rec: 75.83%, F1: 76.23%
+📊 Val   - Loss: 14.7017, Acc: 68.39%, Prec: 70.77%, Rec: 67.20%, F1: 68.03%
+📈 Learning Rate: 6.44e-06
+📉 No improvement. Best so far: 69.43% (patience: 2/1000)
+
+📅 Epoch 66/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.8843, Acc: 77.29%, Prec: 77.80%, Rec: 76.23%, F1: 76.67%
+📊 Val   - Loss: 14.2770, Acc: 69.21%, Prec: 70.45%, Rec: 68.39%, F1: 68.41%
+📈 Learning Rate: 6.34e-06
+📉 No improvement. Best so far: 69.43% (patience: 3/1000)
+
+📅 Epoch 67/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.8548, Acc: 78.10%, Prec: 78.54%, Rec: 77.19%, F1: 77.58%
+📊 Val   - Loss: 14.9782, Acc: 68.41%, Prec: 70.52%, Rec: 67.48%, F1: 68.04%
+📈 Learning Rate: 6.25e-06
+📉 No improvement. Best so far: 69.43% (patience: 4/1000)
+
+📅 Epoch 68/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.8457, Acc: 77.95%, Prec: 78.41%, Rec: 77.00%, F1: 77.41%
+📊 Val   - Loss: 14.6094, Acc: 69.58%, Prec: 71.74%, Rec: 68.53%, F1: 69.26%
+📈 Learning Rate: 6.16e-06
+✅ New Best Val Acc: 69.58% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 69/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.8621, Acc: 77.59%, Prec: 77.99%, Rec: 76.67%, F1: 77.04%
+📊 Val   - Loss: 14.7013, Acc: 70.07%, Prec: 71.22%, Rec: 69.22%, F1: 69.63%
+📈 Learning Rate: 6.06e-06
+✅ New Best Val Acc: 70.07% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 70/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.8395, Acc: 78.03%, Prec: 78.47%, Rec: 77.09%, F1: 77.51%
+📊 Val   - Loss: 15.1480, Acc: 69.45%, Prec: 71.35%, Rec: 68.38%, F1: 69.03%
+📈 Learning Rate: 5.97e-06
+📉 No improvement. Best so far: 70.07% (patience: 1/1000)
+
+📅 Epoch 71/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.8017, Acc: 78.49%, Prec: 78.89%, Rec: 77.58%, F1: 77.96%
+📊 Val   - Loss: 14.3221, Acc: 68.13%, Prec: 71.16%, Rec: 66.92%, F1: 67.82%
+📈 Learning Rate: 5.88e-06
+📉 No improvement. Best so far: 70.07% (patience: 2/1000)
+
+📅 Epoch 72/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.7921, Acc: 78.23%, Prec: 78.58%, Rec: 77.24%, F1: 77.63%
+📊 Val   - Loss: 14.4895, Acc: 68.99%, Prec: 72.01%, Rec: 67.95%, F1: 68.77%
+📈 Learning Rate: 5.78e-06
+📉 No improvement. Best so far: 70.07% (patience: 3/1000)
+
+📅 Epoch 73/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.7794, Acc: 78.68%, Prec: 79.13%, Rec: 77.73%, F1: 78.12%
+📊 Val   - Loss: 14.1179, Acc: 70.20%, Prec: 72.51%, Rec: 69.30%, F1: 69.96%
+📈 Learning Rate: 5.69e-06
+✅ New Best Val Acc: 70.20% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 74/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.7565, Acc: 78.87%, Prec: 79.42%, Rec: 77.98%, F1: 78.40%
+📊 Val   - Loss: 14.1465, Acc: 71.00%, Prec: 72.42%, Rec: 70.10%, F1: 70.53%
+📈 Learning Rate: 5.59e-06
+✅ New Best Val Acc: 71.00% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 75/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.7441, Acc: 79.07%, Prec: 79.40%, Rec: 78.19%, F1: 78.55%
+📊 Val   - Loss: 14.4255, Acc: 70.07%, Prec: 71.47%, Rec: 69.16%, F1: 69.56%
+📈 Learning Rate: 5.50e-06
+📉 No improvement. Best so far: 71.00% (patience: 1/1000)
+
+📅 Epoch 76/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.7188, Acc: 79.32%, Prec: 79.80%, Rec: 78.45%, F1: 78.83%
+📊 Val   - Loss: 14.7442, Acc: 70.89%, Prec: 72.33%, Rec: 69.97%, F1: 70.44%
+📈 Learning Rate: 5.41e-06
+📉 No improvement. Best so far: 71.00% (patience: 2/1000)
+
+📅 Epoch 77/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.7402, Acc: 79.15%, Prec: 79.48%, Rec: 78.28%, F1: 78.63%
+📊 Val   - Loss: 14.0075, Acc: 70.49%, Prec: 72.63%, Rec: 69.61%, F1: 70.28%
+📈 Learning Rate: 5.31e-06
+📉 No improvement. Best so far: 71.00% (patience: 3/1000)
+
+📅 Epoch 78/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.7091, Acc: 79.34%, Prec: 79.80%, Rec: 78.46%, F1: 78.89%
+📊 Val   - Loss: 14.9620, Acc: 69.05%, Prec: 71.35%, Rec: 68.00%, F1: 68.58%
+📈 Learning Rate: 5.22e-06
+📉 No improvement. Best so far: 71.00% (patience: 4/1000)
+
+📅 Epoch 79/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.6815, Acc: 79.79%, Prec: 80.22%, Rec: 78.83%, F1: 79.27%
+📊 Val   - Loss: 14.5191, Acc: 70.36%, Prec: 72.83%, Rec: 69.24%, F1: 70.04%
+📈 Learning Rate: 5.12e-06
+📉 No improvement. Best so far: 71.00% (patience: 5/1000)
+
+📅 Epoch 80/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.6775, Acc: 79.49%, Prec: 80.05%, Rec: 78.56%, F1: 79.03%
+📊 Val   - Loss: 13.8035, Acc: 70.23%, Prec: 72.36%, Rec: 69.07%, F1: 69.76%
+📈 Learning Rate: 5.03e-06
+📉 No improvement. Best so far: 71.00% (patience: 6/1000)
+
+📅 Epoch 81/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.6591, Acc: 80.12%, Prec: 80.57%, Rec: 79.23%, F1: 79.63%
+📊 Val   - Loss: 13.8992, Acc: 69.47%, Prec: 72.80%, Rec: 68.29%, F1: 69.47%
+📈 Learning Rate: 4.94e-06
+📉 No improvement. Best so far: 71.00% (patience: 7/1000)
+
+📅 Epoch 82/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.6262, Acc: 80.40%, Prec: 80.82%, Rec: 79.58%, F1: 79.99%
+📊 Val   - Loss: 14.4989, Acc: 69.56%, Prec: 71.22%, Rec: 68.78%, F1: 69.04%
+📈 Learning Rate: 4.84e-06
+📉 No improvement. Best so far: 71.00% (patience: 8/1000)
+
+📅 Epoch 83/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.6438, Acc: 80.24%, Prec: 80.67%, Rec: 79.43%, F1: 79.81%
+📊 Val   - Loss: 14.4433, Acc: 70.78%, Prec: 72.54%, Rec: 69.75%, F1: 70.27%
+📈 Learning Rate: 4.75e-06
+📉 No improvement. Best so far: 71.00% (patience: 9/1000)
+
+📅 Epoch 84/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.6205, Acc: 80.33%, Prec: 80.68%, Rec: 79.48%, F1: 79.86%
+📊 Val   - Loss: 14.0474, Acc: 70.82%, Prec: 72.56%, Rec: 69.82%, F1: 70.47%
+📈 Learning Rate: 4.66e-06
+📉 No improvement. Best so far: 71.00% (patience: 10/1000)
+
+📅 Epoch 85/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.6156, Acc: 80.35%, Prec: 80.72%, Rec: 79.48%, F1: 79.87%
+📊 Val   - Loss: 14.7051, Acc: 70.47%, Prec: 73.03%, Rec: 69.67%, F1: 70.40%
+📈 Learning Rate: 4.56e-06
+📉 No improvement. Best so far: 71.00% (patience: 11/1000)
+
+📅 Epoch 86/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.5819, Acc: 80.99%, Prec: 81.41%, Rec: 80.15%, F1: 80.55%
+📊 Val   - Loss: 14.0083, Acc: 71.18%, Prec: 72.66%, Rec: 70.42%, F1: 70.79%
+📈 Learning Rate: 4.47e-06
+✅ New Best Val Acc: 71.18% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 87/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.5770, Acc: 80.67%, Prec: 81.04%, Rec: 79.79%, F1: 80.18%
+📊 Val   - Loss: 14.6559, Acc: 70.82%, Prec: 72.11%, Rec: 69.83%, F1: 70.32%
+📈 Learning Rate: 4.38e-06
+📉 No improvement. Best so far: 71.18% (patience: 1/1000)
+
+📅 Epoch 88/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.5603, Acc: 81.17%, Prec: 81.43%, Rec: 80.32%, F1: 80.67%
+📊 Val   - Loss: 14.6176, Acc: 71.26%, Prec: 72.66%, Rec: 70.40%, F1: 70.91%
+📈 Learning Rate: 4.29e-06
+✅ New Best Val Acc: 71.26% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 89/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.5571, Acc: 81.22%, Prec: 81.66%, Rec: 80.31%, F1: 80.75%
+📊 Val   - Loss: 13.9233, Acc: 71.00%, Prec: 72.81%, Rec: 70.13%, F1: 70.68%
+📈 Learning Rate: 4.20e-06
+📉 No improvement. Best so far: 71.26% (patience: 1/1000)
+
+📅 Epoch 90/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.5525, Acc: 80.98%, Prec: 81.27%, Rec: 80.03%, F1: 80.41%
+📊 Val   - Loss: 13.5743, Acc: 70.98%, Prec: 72.99%, Rec: 69.75%, F1: 70.48%
+📈 Learning Rate: 4.11e-06
+📉 No improvement. Best so far: 71.26% (patience: 2/1000)
+
+📅 Epoch 91/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.5445, Acc: 81.52%, Prec: 81.97%, Rec: 80.67%, F1: 81.07%
+📊 Val   - Loss: 14.9793, Acc: 70.69%, Prec: 72.74%, Rec: 69.71%, F1: 70.41%
+📈 Learning Rate: 4.02e-06
+📉 No improvement. Best so far: 71.26% (patience: 3/1000)
+
+📅 Epoch 92/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.5203, Acc: 81.56%, Prec: 81.97%, Rec: 80.70%, F1: 81.10%
+📊 Val   - Loss: 14.2396, Acc: 71.77%, Prec: 73.89%, Rec: 70.72%, F1: 71.55%
+📈 Learning Rate: 3.93e-06
+✅ New Best Val Acc: 71.77% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 93/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.5251, Acc: 81.78%, Prec: 82.03%, Rec: 80.92%, F1: 81.30%
+📊 Val   - Loss: 13.5356, Acc: 71.64%, Prec: 73.27%, Rec: 70.58%, F1: 71.18%
+📈 Learning Rate: 3.84e-06
+📉 No improvement. Best so far: 71.77% (patience: 1/1000)
+
+📅 Epoch 94/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.5018, Acc: 81.97%, Prec: 82.21%, Rec: 81.08%, F1: 81.43%
+📊 Val   - Loss: 14.4673, Acc: 71.35%, Prec: 73.26%, Rec: 70.23%, F1: 71.06%
+📈 Learning Rate: 3.76e-06
+📉 No improvement. Best so far: 71.77% (patience: 2/1000)
+
+📅 Epoch 95/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.4668, Acc: 82.23%, Prec: 82.68%, Rec: 81.42%, F1: 81.83%
+📊 Val   - Loss: 14.5024, Acc: 72.21%, Prec: 73.52%, Rec: 71.34%, F1: 71.89%
+📈 Learning Rate: 3.67e-06
+✅ New Best Val Acc: 72.21% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 96/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.4835, Acc: 82.20%, Prec: 82.60%, Rec: 81.33%, F1: 81.73%
+📊 Val   - Loss: 13.9686, Acc: 71.77%, Prec: 73.45%, Rec: 70.71%, F1: 71.31%
+📈 Learning Rate: 3.58e-06
+📉 No improvement. Best so far: 72.21% (patience: 1/1000)
+
+📅 Epoch 97/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.4772, Acc: 82.27%, Prec: 82.66%, Rec: 81.48%, F1: 81.88%
+📊 Val   - Loss: 13.7217, Acc: 71.42%, Prec: 72.78%, Rec: 70.27%, F1: 70.82%
+📈 Learning Rate: 3.50e-06
+📉 No improvement. Best so far: 72.21% (patience: 2/1000)
+
+📅 Epoch 98/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.4431, Acc: 82.35%, Prec: 82.69%, Rec: 81.57%, F1: 81.94%
+📊 Val   - Loss: 14.9297, Acc: 71.15%, Prec: 73.22%, Rec: 70.09%, F1: 70.78%
+📈 Learning Rate: 3.42e-06
+📉 No improvement. Best so far: 72.21% (patience: 3/1000)
+
+📅 Epoch 99/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.4250, Acc: 82.73%, Prec: 83.11%, Rec: 81.97%, F1: 82.35%
+📊 Val   - Loss: 14.1231, Acc: 71.49%, Prec: 73.21%, Rec: 70.43%, F1: 71.00%
+📈 Learning Rate: 3.33e-06
+📉 No improvement. Best so far: 72.21% (patience: 4/1000)
+
+📅 Epoch 100/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.4631, Acc: 82.43%, Prec: 82.83%, Rec: 81.60%, F1: 82.02%
+📊 Val   - Loss: 15.2078, Acc: 71.22%, Prec: 72.86%, Rec: 70.17%, F1: 70.77%
+📈 Learning Rate: 3.25e-06
+📉 No improvement. Best so far: 72.21% (patience: 5/1000)
+
+📅 Epoch 101/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.4075, Acc: 82.91%, Prec: 83.30%, Rec: 82.15%, F1: 82.53%
+📊 Val   - Loss: 14.8434, Acc: 71.64%, Prec: 73.10%, Rec: 70.74%, F1: 71.28%
+📈 Learning Rate: 3.17e-06
+📉 No improvement. Best so far: 72.21% (patience: 6/1000)
+
+📅 Epoch 102/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.4117, Acc: 82.93%, Prec: 83.20%, Rec: 82.10%, F1: 82.46%
+📊 Val   - Loss: 14.3403, Acc: 71.66%, Prec: 73.70%, Rec: 70.58%, F1: 71.36%
+📈 Learning Rate: 3.09e-06
+📉 No improvement. Best so far: 72.21% (patience: 7/1000)
+
+📅 Epoch 103/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.4109, Acc: 83.16%, Prec: 83.55%, Rec: 82.38%, F1: 82.78%
+📊 Val   - Loss: 14.7725, Acc: 71.49%, Prec: 73.20%, Rec: 70.54%, F1: 71.11%
+📈 Learning Rate: 3.01e-06
+📉 No improvement. Best so far: 72.21% (patience: 8/1000)
+
+📅 Epoch 104/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.4058, Acc: 83.00%, Prec: 83.33%, Rec: 82.12%, F1: 82.49%
+📊 Val   - Loss: 14.1774, Acc: 71.82%, Prec: 73.16%, Rec: 70.99%, F1: 71.46%
+📈 Learning Rate: 2.93e-06
+📉 No improvement. Best so far: 72.21% (patience: 9/1000)
+
+📅 Epoch 105/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.4084, Acc: 82.88%, Prec: 83.29%, Rec: 82.05%, F1: 82.43%
+📊 Val   - Loss: 14.4163, Acc: 71.46%, Prec: 73.19%, Rec: 70.39%, F1: 71.09%
+📈 Learning Rate: 2.85e-06
+📉 No improvement. Best so far: 72.21% (patience: 10/1000)
+
+📅 Epoch 106/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.3715, Acc: 83.17%, Prec: 83.59%, Rec: 82.42%, F1: 82.82%
+📊 Val   - Loss: 13.9173, Acc: 71.09%, Prec: 72.96%, Rec: 70.22%, F1: 70.83%
+📈 Learning Rate: 2.78e-06
+📉 No improvement. Best so far: 72.21% (patience: 11/1000)
+
+📅 Epoch 107/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.3804, Acc: 83.45%, Prec: 83.88%, Rec: 82.71%, F1: 83.10%
+📊 Val   - Loss: 14.6181, Acc: 71.95%, Prec: 73.31%, Rec: 71.21%, F1: 71.66%
+📈 Learning Rate: 2.70e-06
+📉 No improvement. Best so far: 72.21% (patience: 12/1000)
+
+📅 Epoch 108/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.3755, Acc: 83.43%, Prec: 83.75%, Rec: 82.60%, F1: 82.99%
+📊 Val   - Loss: 13.7368, Acc: 72.21%, Prec: 73.48%, Rec: 71.26%, F1: 71.77%
+📈 Learning Rate: 2.63e-06
+📉 No improvement. Best so far: 72.21% (patience: 13/1000)
+
+📅 Epoch 109/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.3637, Acc: 83.57%, Prec: 83.91%, Rec: 82.75%, F1: 83.16%
+📊 Val   - Loss: 14.8801, Acc: 71.60%, Prec: 73.25%, Rec: 70.70%, F1: 71.36%
+📈 Learning Rate: 2.56e-06
+📉 No improvement. Best so far: 72.21% (patience: 14/1000)
+
+📅 Epoch 110/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.3770, Acc: 83.54%, Prec: 83.87%, Rec: 82.79%, F1: 83.18%
+📊 Val   - Loss: 15.0232, Acc: 72.02%, Prec: 73.17%, Rec: 71.14%, F1: 71.61%
+📈 Learning Rate: 2.49e-06
+📉 No improvement. Best so far: 72.21% (patience: 15/1000)
+
+📅 Epoch 111/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.3692, Acc: 83.81%, Prec: 84.24%, Rec: 83.10%, F1: 83.50%
+📊 Val   - Loss: 14.7237, Acc: 72.19%, Prec: 73.44%, Rec: 71.49%, F1: 71.93%
+📈 Learning Rate: 2.42e-06
+📉 No improvement. Best so far: 72.21% (patience: 16/1000)
+
+📅 Epoch 112/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.3215, Acc: 84.13%, Prec: 84.40%, Rec: 83.37%, F1: 83.72%
+📊 Val   - Loss: 14.9011, Acc: 72.17%, Prec: 73.99%, Rec: 71.42%, F1: 72.09%
+📈 Learning Rate: 2.35e-06
+📉 No improvement. Best so far: 72.21% (patience: 17/1000)
+
+📅 Epoch 113/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.3272, Acc: 83.84%, Prec: 84.25%, Rec: 83.06%, F1: 83.47%
+📊 Val   - Loss: 14.8955, Acc: 72.39%, Prec: 73.94%, Rec: 71.56%, F1: 72.14%
+📈 Learning Rate: 2.28e-06
+✅ New Best Val Acc: 72.39% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 114/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.3195, Acc: 84.10%, Prec: 84.46%, Rec: 83.34%, F1: 83.72%
+📊 Val   - Loss: 14.0916, Acc: 71.49%, Prec: 73.23%, Rec: 70.49%, F1: 71.17%
+📈 Learning Rate: 2.22e-06
+📉 No improvement. Best so far: 72.39% (patience: 1/1000)
+
+📅 Epoch 115/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.2987, Acc: 84.16%, Prec: 84.46%, Rec: 83.40%, F1: 83.75%
+📊 Val   - Loss: 15.0361, Acc: 73.01%, Prec: 73.99%, Rec: 72.14%, F1: 72.60%
+📈 Learning Rate: 2.16e-06
+✅ New Best Val Acc: 73.01% — Model saved to checkpoints/face/oracle/30_79.pth
+
+📅 Epoch 116/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.2966, Acc: 84.44%, Prec: 84.74%, Rec: 83.68%, F1: 84.05%
+📊 Val   - Loss: 13.9117, Acc: 71.91%, Prec: 73.66%, Rec: 71.01%, F1: 71.67%
+📈 Learning Rate: 2.09e-06
+📉 No improvement. Best so far: 73.01% (patience: 1/1000)
+
+📅 Epoch 117/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.3044, Acc: 84.31%, Prec: 84.80%, Rec: 83.50%, F1: 83.94%
+📊 Val   - Loss: 14.0491, Acc: 72.26%, Prec: 73.81%, Rec: 71.37%, F1: 71.95%
+📈 Learning Rate: 2.03e-06
+📉 No improvement. Best so far: 73.01% (patience: 2/1000)
+
+📅 Epoch 118/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.2812, Acc: 84.60%, Prec: 84.92%, Rec: 83.82%, F1: 84.20%
+📊 Val   - Loss: 14.6097, Acc: 72.50%, Prec: 74.13%, Rec: 71.65%, F1: 72.37%
+📈 Learning Rate: 1.97e-06
+📉 No improvement. Best so far: 73.01% (patience: 3/1000)
+
+📅 Epoch 119/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.2745, Acc: 84.60%, Prec: 84.81%, Rec: 83.80%, F1: 84.15%
+📊 Val   - Loss: 14.2641, Acc: 72.19%, Prec: 73.54%, Rec: 71.22%, F1: 71.82%
+📈 Learning Rate: 1.92e-06
+📉 No improvement. Best so far: 73.01% (patience: 4/1000)
+
+📅 Epoch 120/150 — FACE — Classes: 30-79
+📊 Train - Loss: 13.2696, Acc: 84.55%, Prec: 84.74%, Rec: 83.74%, F1: 84.07%
+📊 Val   - Loss: 14.5420, Acc: 72.55%, Prec: 74.27%, Rec: 71.81%, F1: 72.47%
+📈 Learning Rate: 1.86e-06
+📉 No improvement. Best so far: 73.01% (patience: 5/1000)
+
+📅 Epoch 121/150 — FACE — Classes: 30-79
