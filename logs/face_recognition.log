@@ -1,0 +1,46 @@
+=== Configurations ===
+Config: TaskName set to 'face_recognition'
+🛠️ Explicitly received params: {'GPU_ID': [0], 'num_class': 100, 'lora_rank': 8}
+🔒 LoRA mode (rank=8): Freezing backbone, unfreezing LoRA + classifier
+Loaded pretrained weights from timm: deit_tiny_patch16_224
+✅ Loaded pretrained weights
+✅ Built face model
+
+📊 Parameter Summary:
+  🔢 Total Parameters     : 5.61M
+  ✅ Trainable Parameters : 0.20M
+  📉 % Trainable          : 3.63%
+🎯 Starting BID-LoRA Face Recognition Sliding Window Experiment
+============================================================
+🔧 Configuration:
+   Alpha (retention weight): 0.15
+   Gamma (acquisition weight): 1
+   BND (erasure limit): 100
+============================================================
+🔄 Loading model weights from /home/jag/codes/CLU/checkpoints/face/oracle/0_49.pth...
+⚠️ Skipping incompatible or missing keys: ['transformer.layers.0.1.fn.fn.net.0.lora_A', 'transformer.layers.0.1.fn.fn.net.0.lora_B', 'transformer.layers.0.1.fn.fn.net.3.lora_A', 'transformer.layers.0.1.fn.fn.net.3.lora_B', 'transformer.layers.1.1.fn.fn.net.0.lora_A']... (+43 more)
+✅ Loaded pretrained checkpoint: /home/jag/codes/CLU/checkpoints/face/oracle/0_49.pth
+
+🔥 === STEP 1/5 ===
+
+🔄 Training Step:
+  📚 Retain classes: 10-49
+  🗑️ Forget classes: 0-9
+  ✨ New classes: 50-59
+✅ Imprinted weights for classes 50-59 (initialized from centroids)
+⚡ Head warmup on NEW classes for 5 epochs (margin ON, head_lr=0.0005)
+    Warmup 1: acquisition loss 14.7554
+    Warmup 2: acquisition loss 11.6479
+    Warmup 3: acquisition loss 10.7655
+    Warmup 4: acquisition loss 10.5324
+    Warmup 5: acquisition loss 10.4285
+
+    📈 Epoch 1/50:
+      Loss: 145.7098 | LR_head: 0.000100
+      Forget ↓: 0.00% | Retain ↑: 0.00%
+      New ↑: 52.97% | Overall ↑: 10.55% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/face/bid_lora/step1_best.pth
+
+    📈 Epoch 2/50:
+      Loss: 93.8636 | LR_head: 0.000100
+      Forget ↓: 0.00% | Retain ↑: 0.00%
+      New ↑: 53.65% | Overall ↑: 10.69% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/face/bid_lora/step1_best.pth

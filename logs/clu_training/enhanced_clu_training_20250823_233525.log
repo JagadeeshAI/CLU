@@ -1,6 +1,0 @@
-2025-08-23 23:36:27,352 - INFO - Step 1, Epoch 1: Retain=75.72, New=6.62, Forget=0.00, Combined=61.95, Balanced=41.17, Zero_Ratio=0.000, Phase=Retention
-2025-08-23 23:37:34,030 - INFO - Step 1, Epoch 2: Retain=75.23, New=16.32, Forget=0.00, Combined=63.50, Balanced=45.78, Zero_Ratio=0.000, Phase=Retention
-2025-08-23 23:38:38,900 - INFO - Step 1, Epoch 3: Retain=75.32, New=14.61, Forget=0.00, Combined=63.22, Balanced=44.97, Zero_Ratio=0.000, Phase=Retention
-2025-08-23 23:39:44,539 - INFO - Step 1, Epoch 4: Retain=75.09, New=17.81, Forget=0.00, Combined=63.68, Balanced=46.45, Zero_Ratio=0.000, Phase=Retention
-2025-08-23 23:40:50,557 - INFO - Step 1, Epoch 5: Retain=73.33, New=22.49, Forget=0.00, Combined=63.20, Balanced=47.91, Zero_Ratio=0.000, Phase=Retention
-2025-08-23 23:41:56,277 - INFO - Step 1, Epoch 6: Retain=74.64, New=23.06, Forget=0.00, Combined=64.36, Balanced=48.85, Zero_Ratio=0.000, Phase=Retention

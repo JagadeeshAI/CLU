@@ -259,7 +259,6 @@ def main():
     # Create model
     print(f"\n🏗️ Creating model...")
     model = get_model(
-        config=Config,
         num_classes=100,  # Full dataset classes
         pretrained=False,
         device=device

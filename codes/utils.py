@@ -36,7 +36,7 @@ def get_model(num_classes=100, lora_rank=0, pretrained=True,
               drop_rate=0, device='cuda'):
     
     task_name = getattr(Config, 'taskName', getattr(Config, 'TaskName', '')).lower()
-    
+    task_name = "face"
     if task_name == "classification":
         model = VisionTransformer(
             img_size=224, 
