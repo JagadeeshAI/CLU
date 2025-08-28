@@ -391,17 +391,17 @@ class BIDLoRATrainer:
         # Define the 5-step sliding window protocol from paper
         steps = [
             # # Step 1: (0-9 forget, 10-49 retain, 50-59 new)
-            # {
-            #     'retain': (10, 49),
-            #     'forget': (0, 9), 
-            #     'new': (50, 59)
-            # },
-            # # Step 2: (0-19 forget, 20-59 retain, 60-69 new)
-            # {
-            #     'retain': (20, 59),
-            #     'forget': (0, 19),
-            #     'new': (60, 69) 
-            # },
+            {
+                'retain': (10, 49),
+                'forget': (0, 9), 
+                'new': (50, 59)
+            },
+            # Step 2: (0-19 forget, 20-59 retain, 60-69 new)
+            {
+                'retain': (20, 59),
+                'forget': (0, 19),
+                'new': (60, 69) 
+            },
             # Step 3: (0-29 forget, 30-69 retain, 70-79 new)
             {
                 'retain': (30, 69),

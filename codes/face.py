@@ -1,375 +1,241 @@
-# codes/face_steps.py
+# face_steps_5.py
 import os
-import copy
+import csv
 import torch
 import torch.nn.functional as F
-from torch import nn, optim
+from torch import optim
 from tqdm import tqdm
 from sklearn.metrics import accuracy_score
 
-from config import Config
+# Your repo structure imports
 from codes.utils import get_model, load_model_weights, print_parameter_stats
 from codes.data import get_dynamic_loader
 
-from torch.utils.data import DataLoader, Subset
-
-# -----------------------------
-# Step-1 class splits (sliding window)
-# -----------------------------
-FORGET_RANGE = (0, 9)
-RETAIN_RANGE = (10, 49)
-NEW_RANGE    = (50, 59)
-
-# Expected unique class counts for sanity checks
-EXPECTED_FORGET = 10
-EXPECTED_RETAIN = 40
-EXPECTED_NEW    = 10
-
-# -----------------------------
-# Hyperparameters (gentle/stable)
-# -----------------------------
-EPOCHS       = 50
-BATCH_SIZE   = 32
+# ======================
+# Hyperparameters (tuned to be gentle/stable)
+# ======================
+ALPHA = 0.5   # forgetting weight
+BETA  = 1.0   # new learning weight
+EL    = 10.0  # erasure limit
+LR    = 5e-4  # you can lower to 5e-5 if still aggressive
+EPOCHS = 50
+BATCH_SIZE = 32
 WEIGHT_DECAY = 1e-4
-HEAD_LR      = 1e-4    # classifier rows learn faster
-LORA_LR      = 3e-5    # LoRA learns slower (stability)
-EL           = 10.0    # erasure bound (lower -> stronger erasure)
-SCALE_LOSS   = 10.0    # normalize CE magnitudes due to ArcFace scaling
-KD_T         = 2.0     # distillation temperature
-KD_LAMBDA    = 0.7     # retained KD strength
-MAX_NORM     = 1.0     # grad clipping
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# -----------------------------
-# Helpers: data inspection / proxy-val
-# -----------------------------
-def _peek_label_stats(loader, max_batches=3):
-    labels = []
-    taken = 0
-    for _, y in loader:
-        labels.extend(y.tolist())
-        taken += 1
-        if taken >= max_batches:
-            break
-    if not labels:
-        return 0, None, None
-    import numpy as np
-    u = np.unique(labels)
-    return len(u), min(labels), max(labels)
+# ======================
+# Losses
+# ======================
+def erasure_loss(logits, labels):
+    ce_loss = F.cross_entropy(logits, labels, reduction="mean")
+    return F.relu(EL - ce_loss)
 
-def _debug_loader(name, loader):
-    try:
-        n_batches = len(loader)
-    except TypeError:
-        n_batches = -1
-    n_samples = len(loader.dataset) if hasattr(loader, "dataset") else -1
-    ucnt, lmin, lmax = _peek_label_stats(loader, max_batches=3)
-    print(f"[Data] {name}: batches={n_batches}, samples={n_samples}, "
-          f"labels[min,max]={lmin},{lmax} unique={ucnt}")
+def retention_loss(logits, labels):
+    return F.cross_entropy(logits, labels, reduction="mean")
 
-def _build_proxy_val_from_train(train_loader, take_ratio=0.25, batch_size=32, num_workers=4, pin_memory=False):
-    """
-    Use a small, held-out slice of the *train* subset as a validation proxy,
-    without touching data.py.
-    """
-    assert hasattr(train_loader, "dataset"), "train_loader must have .dataset (Subset)."
-    train_subset = train_loader.dataset  # Subset over ImageFolder
-    full_indices = train_subset.indices if hasattr(train_subset, "indices") else list(range(len(train_subset)))
-    if len(full_indices) == 0:
-        raise RuntimeError("Proxy-val: train subset has zero indices.")
+def acquisition_loss(logits, labels):
+    return F.cross_entropy(logits, labels, reduction="mean")
 
-    # take every k-th sample to avoid heavy overlap
-    step = max(int(1.0 / max(take_ratio, 1e-3)), 5)  # e.g., 0.25 -> step≈4, clamp min 5
-    proxy_indices = full_indices[::step]
-    if len(proxy_indices) < batch_size:
-        proxy_indices = full_indices[: min(len(full_indices), max(batch_size, len(full_indices)//5 + 1))]
-
-    # IMPORTANT: reindex original dataset (not the Subset)
-    proxy_subset = Subset(train_subset.dataset, proxy_indices)
-    proxy_loader = DataLoader(proxy_subset, batch_size=batch_size, shuffle=False,
-                              num_workers=num_workers, pin_memory=pin_memory)
-    return proxy_loader
-
-# -----------------------------
-# Helpers: losses / eval
-# -----------------------------
 @torch.no_grad()
 def _margin_free_logits_from_emb(model, emb):
-    """
-    Margin-free logits for evaluation (ArcFace/CosFace heads):
-      logits = <normalize(emb)> · <normalize(W)>^T * s
-    """
     emb_n = F.normalize(emb, dim=1)
     W = model.loss.weight
     W_n = F.normalize(W, dim=1)
     return F.linear(emb_n, W_n) * 64.0
 
-def erasure_loss(logits_train, labels):
-    """Bounded erasure loss: ReLU(EL - CE). Minimizing this encourages CE↑ until EL."""
-    ce = F.cross_entropy(logits_train, labels, reduction="mean")
-    return F.relu(EL - ce)
+# ======================
+# Train / Eval
+# ======================
+def train_one_epoch(model, retain_loader, forget_loader, new_loader, optimizer, epoch):
+    model.train()
+    total_loss = 0.0
 
-def retention_ce(logits_train, labels):
-    return F.cross_entropy(logits_train, labels, reduction="mean")
+    pbar = tqdm(
+        zip(retain_loader, forget_loader, new_loader),
+        total=min(len(retain_loader), len(forget_loader), len(new_loader)),
+        desc=f"🟢 Train Epoch {epoch}",
+        leave=False,
+    )
 
-def acquisition_ce(logits_train, labels):
-    return F.cross_entropy(logits_train, labels, reduction="mean")
+    for (retain_batch, forget_batch, new_batch) in pbar:
+        optimizer.zero_grad()
 
-def kd_loss(student_logits, teacher_logits, T=2.0):
-    """KL(student || teacher) with temperature (batchmean)."""
-    log_p = F.log_softmax(student_logits / T, dim=1)
-    q     = F.softmax(teacher_logits / T, dim=1)
-    return F.kl_div(log_p, q, reduction="batchmean") * (T * T)
+        # Retain (labels already in 10–49, 20–59, etc. depending on step)
+        x_r, y_r = retain_batch[0].to(DEVICE), retain_batch[1].to(DEVICE)
+        logits_r, _ = model(x_r, y_r)
+        loss_retain = retention_loss(logits_r, y_r)
+
+        # Forget (labels in the to-be-forgotten 10-class slice)
+        x_f, y_f = forget_batch[0].to(DEVICE), forget_batch[1].to(DEVICE)
+        logits_f, _ = model(x_f, y_f)
+        loss_forget = erasure_loss(logits_f, y_f)
+
+        # New (labels in the 10 new classes)
+        x_n, y_n = new_batch[0].to(DEVICE), new_batch[1].to(DEVICE)
+        logits_n, _ = model(x_n, y_n)
+        loss_new = acquisition_loss(logits_n, y_n)
+
+        # Optional mellowing (kept from your final single-step script)
+        scale_factor = 10.0
+        loss_retain /= scale_factor
+        loss_new    /= scale_factor
+
+        loss = loss_retain*2 + ALPHA * loss_forget + BETA * loss_new
+        loss.backward()
+        optimizer.step()
+
+        total_loss += loss.item()
+        pbar.set_postfix(loss=f"{loss.item():.4f}")
+
+    return total_loss / max(1, len(pbar))
 
 @torch.no_grad()
 def evaluate(model, retain_loader, forget_loader, new_loader, epoch):
     model.eval()
 
-    def eval_split(loader, tag):
-        preds, labels = [], []
+    def split_acc(loader, tag):
+        all_preds, all_labels = [], []
         pbar = tqdm(loader, desc=f"🔵 Val Epoch {epoch} [{tag}]", leave=False)
         for x, y in pbar:
             x, y = x.to(DEVICE), y.to(DEVICE)
             logits_train, emb = model(x, y)
             logits_eval = _margin_free_logits_from_emb(model, emb)
-            pred = logits_eval.argmax(dim=1)
-            preds.extend(pred.cpu().numpy())
-            labels.extend(y.cpu().numpy())
-        if not labels:
+            preds = torch.argmax(logits_eval, dim=1)
+            all_preds.extend(preds.cpu().numpy())
+            all_labels.extend(y.cpu().numpy())
+        if not all_labels:
             return 0.0
-        return accuracy_score(labels, preds) * 100
+        return accuracy_score(all_labels, all_preds) * 100.0
 
-    acc_forget = eval_split(forget_loader, "forget")
-    acc_retain = eval_split(retain_loader, "retain")
-    acc_new    = eval_split(new_loader,    "new")
+    acc_forget = split_acc(forget_loader, "forget")
+    acc_retain = split_acc(retain_loader, "retain")
+    acc_new    = split_acc(new_loader,    "new")
 
-    # Overall over retain+new (active target set)
+    # Overall = retain + new
+    combined = torch.utils.data.ConcatDataset([retain_loader.dataset, new_loader.dataset])
+    all_loader = torch.utils.data.DataLoader(combined, batch_size=BATCH_SIZE)
     all_preds, all_labels = [], []
-    from torch.utils.data import ConcatDataset
-    combined = ConcatDataset([retain_loader.dataset, new_loader.dataset])
-    overall_loader = DataLoader(combined, batch_size=BATCH_SIZE)
-    pbar = tqdm(overall_loader, desc=f"🔵 Val Epoch {epoch} [overall]", leave=False)
+    pbar = tqdm(all_loader, desc=f"🔵 Val Epoch {epoch} [overall]", leave=False)
     for x, y in pbar:
         x, y = x.to(DEVICE), y.to(DEVICE)
         logits_train, emb = model(x, y)
         logits_eval = _margin_free_logits_from_emb(model, emb)
-        pred = logits_eval.argmax(dim=1)
-        all_preds.extend(pred.cpu().numpy())
+        preds = torch.argmax(logits_eval, dim=1)
+        all_preds.extend(preds.cpu().numpy())
         all_labels.extend(y.cpu().numpy())
-    acc_overall = accuracy_score(all_labels, all_preds) * 100 if all_labels else 0.0
+    acc_overall = accuracy_score(all_labels, all_preds) * 100.0
 
     return acc_forget, acc_retain, acc_new, acc_overall
 
-# -----------------------------
-# Optimizer + grad masking
-# -----------------------------
-def make_optimizer(model):
-    """Separate LR for LoRA vs ArcFace head."""
-    lora_params, head_params = [], []
-    for name, p in model.named_parameters():
-        if not p.requires_grad:
-            continue
-        if "lora_" in name:
-            lora_params.append(p)
-        elif name.startswith("loss."):
-            head_params.append(p)
-
-    param_groups = []
-    if lora_params:
-        param_groups.append({"params": lora_params, "lr": LORA_LR})
-    if head_params:
-        param_groups.append({"params": head_params, "lr": HEAD_LR})
-
-    if not param_groups:  # Fallback
-        param_groups = [{"params": [p for p in model.parameters() if p.requires_grad], "lr": HEAD_LR}]
-    return optim.AdamW(param_groups, weight_decay=WEIGHT_DECAY)
-
-def mask_classifier_grads(model):
+# ======================
+# Step spec utilities
+# ======================
+def step_specs():
     """
-    Gradient mask on ArcFace head rows:
-      - freeze forgotten rows (0-9)
-      - down-weight retained rows (10-49)
-      - full for new rows (50-59)
-      - small for others (60-99) to keep steady
+    Sliding window over CIFAR-100 classes:
+    Step1: forget 0–9,   retain 10–49, new 50–59
+    Step2: forget 10–19, retain 20–59, new 60–69
+    Step3: forget 20–29, retain 30–69, new 70–79
+    Step4: forget 30–39, retain 40–79, new 80–89
+    Step5: forget 40–49, retain 50–89, new 90–99
     """
-    W = model.loss.weight
-    if W.grad is None:
-        return
-    g = W.grad
-    with torch.no_grad():
-        dev = g.device
-        forget_ids  = torch.arange(FORGET_RANGE[0], FORGET_RANGE[1] + 1, device=dev)
-        retain_ids  = torch.arange(RETAIN_RANGE[0], RETAIN_RANGE[1] + 1, device=dev)
-        new_ids     = torch.arange(NEW_RANGE[0],    NEW_RANGE[1] + 1,    device=dev)
-        other_ids   = torch.arange(60, 100, device=dev)  # untouched classes in this step
+    return [
+        {"forget": (0, 9),   "retain": (10, 49), "new": (50, 59)},
+        {"forget": (10, 19), "retain": (20, 59), "new": (60, 69)},
+        {"forget": (20, 29), "retain": (30, 69), "new": (70, 79)},
+        {"forget": (30, 39), "retain": (40, 79), "new": (80, 89)},
+        {"forget": (40, 49), "retain": (50, 89), "new": (90, 99)},
+    ]
 
-        g[forget_ids] *= 0.0
-        g[retain_ids] *= 0.25
-        g[new_ids]    *= 1.0
-        g[other_ids]  *= 0.1
-
-# -----------------------------
-# Training
-# -----------------------------
-def train_one_epoch(model, teacher, retain_loader, forget_loader, new_loader, optimizer, epoch):
-    model.train()
-    # Curriculum on weights per epoch
-    warm = min(epoch / 10.0, 1.0)
-    cur_ALPHA = 0.5 * (1.0 - 0.5 * warm)      # 0.5 -> ~0.25
-    cur_BETA  = 1.0 * (0.75 + 0.25 * warm)    # 0.75 -> 1.0
-
-    num_iters = min(len(retain_loader), len(forget_loader), len(new_loader))
-    assert num_iters > 0, "No iterations possible — check your loaders (retain/forget/new)!"
-    pbar = tqdm(zip(retain_loader, forget_loader, new_loader),
-                total=num_iters, desc=f"🟢 Train Epoch {epoch}", leave=False)
-
-    running = 0.0
-    for (rb, fb, nb) in pbar:
-        optimizer.zero_grad()
-
-        # --- Retain ---
-        xr, yr = rb[0].to(DEVICE), rb[1].to(DEVICE)
-        logits_r_train, emb_r = model(xr, yr)
-        logits_r_eval = _margin_free_logits_from_emb(model, emb_r)
-
-        with torch.no_grad():
-            t_logits_train, t_emb_r = teacher(xr, yr)
-            t_logits_r_eval = _margin_free_logits_from_emb(teacher, t_emb_r)
-
-        ce_retain = retention_ce(logits_r_train, yr)
-        # CE + KD on margin-free logits for stability of retained set
-        loss_retain = 0.5 * ce_retain + 0.5 * KD_LAMBDA * kd_loss(logits_r_eval, t_logits_r_eval, T=KD_T)
-
-        # --- Forget ---
-        xf, yf = fb[0].to(DEVICE), fb[1].to(DEVICE)
-        logits_f_train, emb_f = model(xf, yf)
-        loss_forget = erasure_loss(logits_f_train, yf)
-
-        # --- New ---
-        xn, yn = nb[0].to(DEVICE), nb[1].to(DEVICE)
-        logits_n_train, emb_n = model(xn, yn)
-        loss_new = acquisition_ce(logits_n_train, yn)
-
-        # Normalize loss scales (ArcFace CE tends to be large)
-        total = (loss_retain + cur_ALPHA * loss_forget + cur_BETA * loss_new) / SCALE_LOSS
-        total.backward()
-
-        # Gradient masking on ArcFace rows
-        mask_classifier_grads(model)
-
-        # Clip for safety
-        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=MAX_NORM)
-
-        optimizer.step()
-
-        running += total.item()
-        pbar.set_postfix(loss=f"{total.item():.4f}")
-
-    return running / num_iters
-
-# -----------------------------
-# Main
-# -----------------------------
-def main():
-    # Ensure face task in config if data.py depends on it
-    Config.TaskName = "face_recognition"
-
-    # --- Build model + load pretrained 0_49 checkpoint ---
-    model = get_model(
-        num_classes=100,
-        pretrained=False,
-        device=DEVICE,
-        lora_rank=8  # LoRA enabled
-    )
-    print("✅ Built face model")
-
-    ckpt = "/home/jag/codes/CLU/checkpoints/face/oracle/0_49.pth"
-    if os.path.exists(ckpt):
-        print(f"🔄 Loading model weights from {ckpt}...")
-        load_model_weights(model, ckpt, strict=False)
+def ckpt_in_for_step(step_idx):
+    """Step indices are 1..5"""
+    if step_idx == 1:
+        return "/home/jag/codes/CLU/checkpoints/face/oracle/0_49.pth"
     else:
-        print(f"⚠️ Pretrained checkpoint not found at: {ckpt}")
+        return f"./checkpoints/step{step_idx-1}.pth"
+
+def ckpt_out_for_step(step_idx):
+    return f"./checkpoints/step{step_idx}.pth"
+
+# ======================
+# Runner for a single step
+# ======================
+def run_step(step_idx, spec, log_writer):
+    os.makedirs("./checkpoints", exist_ok=True)
+    os.makedirs("./logs", exist_ok=True)
+
+    print(f"\n{'='*88}")
+    print(f"🚀 STEP {step_idx} | Forget {spec['forget'][0]}-{spec['forget'][1]}  "
+          f"| Retain {spec['retain'][0]}-{spec['retain'][1]}  "
+          f"| New {spec['new'][0]}-{spec['new'][1]}")
+    print(f"{'='*88}")
+
+    # Model
+    model = get_model(num_classes=100, lora_rank=8, pretrained=False, device=DEVICE)
+    ckpt_in = ckpt_in_for_step(step_idx)
+    if os.path.exists(ckpt_in):
+        print(f"📥 Loading checkpoint: {ckpt_in}")
+        load_model_weights(model, ckpt_in, strict=False)
+    else:
+        print(f"⚠️ Warning: input checkpoint not found at {ckpt_in}. Starting without preload.")
 
     print_parameter_stats(model)
+    optimizer = optim.AdamW(model.parameters(), lr=LR, weight_decay=WEIGHT_DECAY)
 
-    # Frozen teacher (epoch-0 snapshot)
-    teacher = copy.deepcopy(model).eval()
-    for p in teacher.parameters():
-        p.requires_grad = False
+    # Loaders
+    retain_tr = get_dynamic_loader(class_range=spec["retain"], mode="train", batch_size=BATCH_SIZE)
+    forget_tr = get_dynamic_loader(class_range=spec["forget"], mode="train", batch_size=BATCH_SIZE)
+    new_tr    = get_dynamic_loader(class_range=spec["new"],    mode="train", batch_size=BATCH_SIZE)
 
-    # --- Data loaders (no label remapping; head has 100 outputs) ---
-    pin = (DEVICE.type == "cuda")
-    retain_tr = get_dynamic_loader(class_range=RETAIN_RANGE, mode="train", batch_size=BATCH_SIZE,
-                                   image_size=224, num_workers=4, pin_memory=pin)
-    forget_tr = get_dynamic_loader(class_range=FORGET_RANGE, mode="train", batch_size=BATCH_SIZE,
-                                   image_size=224, num_workers=4, pin_memory=pin)
-    new_tr    = get_dynamic_loader(class_range=NEW_RANGE,    mode="train", batch_size=BATCH_SIZE,
-                                   image_size=224, num_workers=4, pin_memory=pin)
+    retain_va = get_dynamic_loader(class_range=spec["retain"], mode="test",  batch_size=BATCH_SIZE)
+    forget_va = get_dynamic_loader(class_range=spec["forget"], mode="test",  batch_size=BATCH_SIZE)
+    new_va    = get_dynamic_loader(class_range=spec["new"],    mode="test",  batch_size=BATCH_SIZE)
 
-    retain_val = get_dynamic_loader(class_range=RETAIN_RANGE, mode="test", batch_size=BATCH_SIZE,
-                                    image_size=224, num_workers=4, pin_memory=pin)
-    forget_val = get_dynamic_loader(class_range=FORGET_RANGE, mode="test", batch_size=BATCH_SIZE,
-                                    image_size=224, num_workers=4, pin_memory=pin)
-    new_val    = get_dynamic_loader(class_range=NEW_RANGE,    mode="test", batch_size=BATCH_SIZE,
-                                    image_size=224, num_workers=4, pin_memory=pin)
+    # Initial eval (epoch 0)
+    f0, r0, n0, o0 = evaluate(model, retain_va, forget_va, new_va, epoch=0)
+    print(f"Epoch 000/{EPOCHS:03d} | Forget ↓ {f0:.2f}% | Retain ↑ {r0:.2f}% | New ↑ {n0:.2f}% | Overall ↑ {o0:.2f}%")
+    log_writer.writerow([step_idx, 0, "-", f"{f0:.4f}", f"{r0:.4f}", f"{n0:.4f}", f"{o0:.4f}"])
 
-    # --- Inspect coverage ---
-    _debug_loader("retain_tr", retain_tr)
-    _debug_loader("forget_tr", forget_tr)
-    _debug_loader("new_tr",    new_tr)
-    _debug_loader("retain_val", retain_val)
-    _debug_loader("forget_val", forget_val)
-    _debug_loader("new_val",    new_val)
-
-    # --- If val coverage is too narrow, build proxy-val from train ---
-    MIN_FRACTION = 0.5  # accept if we see at least half expected unique classes
-    ret_u, _, _ = _peek_label_stats(retain_val)
-    new_u, _, _ = _peek_label_stats(new_val)
-    for_u, _, _ = _peek_label_stats(forget_val)
-
-    need_proxy_retain = (ret_u < max(1, int(EXPECTED_RETAIN * MIN_FRACTION)))
-    need_proxy_new    = (new_u < max(1, int(EXPECTED_NEW    * MIN_FRACTION)))
-    need_proxy_forget = (for_u < max(1, int(EXPECTED_FORGET * MIN_FRACTION)))
-
-    if need_proxy_retain:
-        print("⚠️ retain_val has too few classes — building proxy-val from retain_tr")
-        retain_val = _build_proxy_val_from_train(retain_tr, take_ratio=0.25,
-                                                 batch_size=BATCH_SIZE, num_workers=4, pin_memory=pin)
-    if need_proxy_new:
-        print("⚠️ new_val has too few classes — building proxy-val from new_tr")
-        new_val = _build_proxy_val_from_train(new_tr, take_ratio=0.25,
-                                              batch_size=BATCH_SIZE, num_workers=4, pin_memory=pin)
-    if need_proxy_forget:
-        print("⚠️ forget_val has too few classes — building proxy-val from forget_tr")
-        forget_val = _build_proxy_val_from_train(forget_tr, take_ratio=0.25,
-                                                 batch_size=BATCH_SIZE, num_workers=4, pin_memory=pin)
-
-    # Reprint after fixing
-    _debug_loader("retain_val(final)", retain_val)
-    _debug_loader("forget_val(final)", forget_val)
-    _debug_loader("new_val(final)",    new_val)
-
-    # --- Optimizer with param groups ---
-    optimizer = make_optimizer(model)
-
-    # --- Initial evaluation (epoch 0) ---
-    f0, r0, n0, o0 = evaluate(model, retain_val, forget_val, new_val, epoch=0)
-    print(f"| Forget ↓ {f0:.2f}% | Retain ↑ {r0:.2f}% | New ↑ {n0:.2f}% | Overall ↑ {o0:.2f}%")
-
-    # --- Training ---
+    # Train epochs
+    best_overall = -1.0
     for epoch in range(1, EPOCHS + 1):
-        train_loss = train_one_epoch(model, teacher, retain_tr, forget_tr, new_tr, optimizer, epoch)
-        f, r, n, o = evaluate(model, retain_val, forget_val, new_val, epoch)
+        tr_loss = train_one_epoch(model, retain_tr, forget_tr, new_tr, optimizer, epoch)
+        f_acc, r_acc, n_acc, o_acc = evaluate(model, retain_va, forget_va, new_va, epoch)
+        print(f"Epoch {epoch:03d}/{EPOCHS:03d} | Train Loss {tr_loss:.4f} "
+              f"| Forget ↓ {f_acc:.2f}% | Retain ↑ {r_acc:.2f}% | New ↑ {n_acc:.2f}% | Overall ↑ {o_acc:.2f}%")
+        log_writer.writerow([step_idx, epoch, f"{tr_loss:.4f}", f"{f_acc:.4f}", f"{r_acc:.4f}", f"{n_acc:.4f}", f"{o_acc:.4f}"])
 
-        print(f"\nEpoch {epoch:03d}/{EPOCHS:03d} | Train Loss {train_loss:.4f} "
-              f"| Forget ↓ {f:.2f}% | Retain ↑ {r:.2f}% | New ↑ {n:.2f}% | Overall ↑ {o:.2f}%\n")
+        # Save best-per-overall within the step (optional)
+        if o_acc > best_overall:
+            best_overall = o_acc
+            torch.save(model.state_dict(), ckpt_out_for_step(step_idx) + ".best")
+            # keep quiet to avoid too many prints
 
-    # --- Save Step-1 checkpoint ---
-    os.makedirs("checkpoints", exist_ok=True)
-    save_path = "checkpoints/step1.pth"
-    torch.save(model.state_dict(), save_path)
-    print(f"✅ Step 1 completed. Saved to {save_path}")
+    # Save final step checkpoint
+    ckpt_out = ckpt_out_for_step(step_idx)
+    torch.save(model.state_dict(), ckpt_out)
+    print(f"✅ Saved STEP {step_idx} checkpoint → {ckpt_out} (best overall in-step = {best_overall:.2f}%)")
+
+# ======================
+# Main: all 5 steps
+# ======================
+def main():
+    specs = step_specs()
+    os.makedirs("./logs", exist_ok=True)
+    csv_path = "./logs/face_steps_metrics.csv"
+    fresh_file = not os.path.exists(csv_path)
+
+    with open(csv_path, "a", newline="") as f:
+        writer = csv.writer(f)
+        if fresh_file:
+            writer.writerow(["step", "epoch", "train_loss", "forget_acc", "retain_acc", "new_acc", "overall_acc"])
+
+        for idx, spec in enumerate(specs, start=1):
+            run_step(idx, spec, writer)
+
+    print(f"\n📒 Logs appended to: {csv_path}")
+    print("🏁 All 5 steps completed.")
 
 if __name__ == "__main__":
     main()

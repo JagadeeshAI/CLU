@@ -1,46 +1,340 @@
 === Configurations ===
 Config: TaskName set to 'face_recognition'
+
+========================================================================================
+🚀 STEP 1 | Forget 0-9  | Retain 10-49  | New 50-59
+========================================================================================
 🛠️ Explicitly received params: {'GPU_ID': [0], 'num_class': 100, 'lora_rank': 8}
 🔒 LoRA mode (rank=8): Freezing backbone, unfreezing LoRA + classifier
-Loaded pretrained weights from timm: deit_tiny_patch16_224
-✅ Loaded pretrained weights
 ✅ Built face model
+📥 Loading checkpoint: /home/jag/codes/CLU/checkpoints/face/oracle/0_49.pth
+🔄 Loading model weights from /home/jag/codes/CLU/checkpoints/face/oracle/0_49.pth...
+⚠️ Skipping incompatible or missing keys: ['transformer.layers.0.1.fn.fn.net.0.lora_A', 'transformer.layers.0.1.fn.fn.net.0.lora_B', 'transformer.layers.0.1.fn.fn.net.3.lora_A', 'transformer.layers.0.1.fn.fn.net.3.lora_B', 'transformer.layers.1.1.fn.fn.net.0.lora_A']... (+43 more)
 
 📊 Parameter Summary:
   🔢 Total Parameters     : 5.61M
   ✅ Trainable Parameters : 0.20M
   📉 % Trainable          : 3.63%
-🎯 Starting BID-LoRA Face Recognition Sliding Window Experiment
-============================================================
-🔧 Configuration:
-   Alpha (retention weight): 0.15
-   Gamma (acquisition weight): 1
-   BND (erasure limit): 100
-============================================================
-🔄 Loading model weights from /home/jag/codes/CLU/checkpoints/face/oracle/0_49.pth...
-⚠️ Skipping incompatible or missing keys: ['transformer.layers.0.1.fn.fn.net.0.lora_A', 'transformer.layers.0.1.fn.fn.net.0.lora_B', 'transformer.layers.0.1.fn.fn.net.3.lora_A', 'transformer.layers.0.1.fn.fn.net.3.lora_B', 'transformer.layers.1.1.fn.fn.net.0.lora_A']... (+43 more)
-✅ Loaded pretrained checkpoint: /home/jag/codes/CLU/checkpoints/face/oracle/0_49.pth
+Epoch 000/050 | Forget ↓ 74.62% | Retain ↑ 75.38% | New ↑ 0.00% | Overall ↑ 60.36%
+Epoch 001/050 | Train Loss 4.5106 | Forget ↓ 0.00% | Retain ↑ 71.63% | New ↑ 37.21% | Overall ↑ 64.77%
+Epoch 002/050 | Train Loss 4.1430 | Forget ↓ 0.00% | Retain ↑ 71.80% | New ↑ 43.04% | Overall ↑ 66.07%
+Epoch 003/050 | Train Loss 4.0988 | Forget ↓ 0.00% | Retain ↑ 70.58% | New ↑ 48.17% | Overall ↑ 66.11%
+Epoch 004/050 | Train Loss 4.0788 | Forget ↓ 0.00% | Retain ↑ 70.52% | New ↑ 48.74% | Overall ↑ 66.18%
+Epoch 005/050 | Train Loss 4.0545 | Forget ↓ 0.00% | Retain ↑ 71.20% | New ↑ 51.71% | Overall ↑ 67.32%
+Epoch 006/050 | Train Loss 4.0377 | Forget ↓ 0.00% | Retain ↑ 70.15% | New ↑ 51.94% | Overall ↑ 66.52%
+Epoch 007/050 | Train Loss 4.0341 | Forget ↓ 0.00% | Retain ↑ 70.04% | New ↑ 60.05% | Overall ↑ 68.05%
+Epoch 008/050 | Train Loss 4.0365 | Forget ↓ 0.00% | Retain ↑ 69.70% | New ↑ 56.62% | Overall ↑ 67.09%
+Epoch 009/050 | Train Loss 4.0079 | Forget ↓ 0.00% | Retain ↑ 69.78% | New ↑ 62.21% | Overall ↑ 68.27%
+Epoch 010/050 | Train Loss 3.9996 | Forget ↓ 0.00% | Retain ↑ 70.12% | New ↑ 60.16% | Overall ↑ 68.14%
+Epoch 011/050 | Train Loss 4.0082 | Forget ↓ 0.00% | Retain ↑ 69.13% | New ↑ 64.95% | Overall ↑ 68.30%
+Epoch 012/050 | Train Loss 3.9898 | Forget ↓ 0.00% | Retain ↑ 70.38% | New ↑ 61.76% | Overall ↑ 68.66%
+Epoch 013/050 | Train Loss 3.9750 | Forget ↓ 0.00% | Retain ↑ 70.38% | New ↑ 65.53% | Overall ↑ 69.41%
+Epoch 014/050 | Train Loss 3.9717 | Forget ↓ 0.00% | Retain ↑ 69.47% | New ↑ 62.67% | Overall ↑ 68.11%
+Epoch 015/050 | Train Loss 3.9751 | Forget ↓ 0.00% | Retain ↑ 70.26% | New ↑ 63.58% | Overall ↑ 68.93%
+Epoch 016/050 | Train Loss 3.9517 | Forget ↓ 0.00% | Retain ↑ 69.89% | New ↑ 68.15% | Overall ↑ 69.55%
+Epoch 017/050 | Train Loss 3.9657 | Forget ↓ 0.00% | Retain ↑ 69.47% | New ↑ 68.84% | Overall ↑ 69.34%
+Epoch 018/050 | Train Loss 3.9522 | Forget ↓ 0.00% | Retain ↑ 69.58% | New ↑ 65.64% | Overall ↑ 68.80%
+Epoch 019/050 | Train Loss 3.9351 | Forget ↓ 0.00% | Retain ↑ 69.13% | New ↑ 69.18% | Overall ↑ 69.14%
+Epoch 020/050 | Train Loss 3.9337 | Forget ↓ 0.00% | Retain ↑ 68.76% | New ↑ 68.72% | Overall ↑ 68.75%
+Epoch 021/050 | Train Loss 3.9380 | Forget ↓ 0.00% | Retain ↑ 68.36% | New ↑ 69.98% | Overall ↑ 68.68%
+Epoch 022/050 | Train Loss 3.9280 | Forget ↓ 0.00% | Retain ↑ 71.12% | New ↑ 68.84% | Overall ↑ 70.66%
+Epoch 023/050 | Train Loss 3.9200 | Forget ↓ 0.00% | Retain ↑ 69.55% | New ↑ 71.12% | Overall ↑ 69.87%
+Epoch 024/050 | Train Loss 3.9245 | Forget ↓ 0.00% | Retain ↑ 69.41% | New ↑ 72.15% | Overall ↑ 69.96%
+Epoch 025/050 | Train Loss 3.9118 | Forget ↓ 0.00% | Retain ↑ 70.09% | New ↑ 71.69% | Overall ↑ 70.41%
+Epoch 026/050 | Train Loss 3.9065 | Forget ↓ 0.00% | Retain ↑ 70.38% | New ↑ 72.72% | Overall ↑ 70.84%
+Epoch 027/050 | Train Loss 3.9118 | Forget ↓ 0.00% | Retain ↑ 69.70% | New ↑ 73.29% | Overall ↑ 70.41%
+Epoch 028/050 | Train Loss 3.9074 | Forget ↓ 0.00% | Retain ↑ 70.04% | New ↑ 72.49% | Overall ↑ 70.53%
+Epoch 029/050 | Train Loss 3.8871 | Forget ↓ 0.00% | Retain ↑ 70.38% | New ↑ 74.54% | Overall ↑ 71.21%
+Epoch 030/050 | Train Loss 3.8995 | Forget ↓ 0.00% | Retain ↑ 70.15% | New ↑ 74.89% | Overall ↑ 71.09%
+Epoch 031/050 | Train Loss 3.8797 | Forget ↓ 0.00% | Retain ↑ 70.86% | New ↑ 73.74% | Overall ↑ 71.44%
+Epoch 032/050 | Train Loss 3.8877 | Forget ↓ 0.00% | Retain ↑ 68.79% | New ↑ 73.40% | Overall ↑ 69.71%
+Epoch 033/050 | Train Loss 3.8892 | Forget ↓ 0.00% | Retain ↑ 69.55% | New ↑ 75.34% | Overall ↑ 70.71%
+Epoch 034/050 | Train Loss 3.8807 | Forget ↓ 0.00% | Retain ↑ 70.15% | New ↑ 74.66% | Overall ↑ 71.05%
+Epoch 035/050 | Train Loss 3.8743 | Forget ↓ 0.00% | Retain ↑ 70.86% | New ↑ 73.40% | Overall ↑ 71.37%
+Epoch 036/050 | Train Loss 3.8723 | Forget ↓ 0.00% | Retain ↑ 69.64% | New ↑ 74.20% | Overall ↑ 70.55%
+Epoch 037/050 | Train Loss 3.8464 | Forget ↓ 0.00% | Retain ↑ 69.72% | New ↑ 75.00% | Overall ↑ 70.78%
+Epoch 038/050 | Train Loss 3.8741 | Forget ↓ 0.00% | Retain ↑ 69.61% | New ↑ 74.54% | Overall ↑ 70.59%
+Epoch 039/050 | Train Loss 3.8581 | Forget ↓ 0.00% | Retain ↑ 68.87% | New ↑ 76.37% | Overall ↑ 70.37%
+Epoch 040/050 | Train Loss 3.8490 | Forget ↓ 0.00% | Retain ↑ 70.21% | New ↑ 75.00% | Overall ↑ 71.16%
+Epoch 041/050 | Train Loss 3.8696 | Forget ↓ 0.00% | Retain ↑ 69.55% | New ↑ 76.60% | Overall ↑ 70.96%
+Epoch 042/050 | Train Loss 3.8498 | Forget ↓ 0.00% | Retain ↑ 70.43% | New ↑ 76.48% | Overall ↑ 71.64%
+Epoch 043/050 | Train Loss 3.8420 | Forget ↓ 0.00% | Retain ↑ 70.12% | New ↑ 75.80% | Overall ↑ 71.25%
+Epoch 044/050 | Train Loss 3.8576 | Forget ↓ 0.00% | Retain ↑ 70.12% | New ↑ 75.80% | Overall ↑ 71.25%
+Epoch 045/050 | Train Loss 3.8464 | Forget ↓ 0.00% | Retain ↑ 69.92% | New ↑ 77.28% | Overall ↑ 71.39%
+Epoch 046/050 | Train Loss 3.8443 | Forget ↓ 0.00% | Retain ↑ 69.78% | New ↑ 75.80% | Overall ↑ 70.98%
+Epoch 047/050 | Train Loss 3.8534 | Forget ↓ 0.00% | Retain ↑ 69.36% | New ↑ 75.46% | Overall ↑ 70.57%
+Epoch 048/050 | Train Loss 3.8259 | Forget ↓ 0.00% | Retain ↑ 70.43% | New ↑ 77.05% | Overall ↑ 71.75%
+Epoch 049/050 | Train Loss 3.8254 | Forget ↓ 0.00% | Retain ↑ 69.44% | New ↑ 77.85% | Overall ↑ 71.12%
+Epoch 050/050 | Train Loss 3.8317 | Forget ↓ 0.00% | Retain ↑ 70.55% | New ↑ 76.71% | Overall ↑ 71.78%
+✅ Saved STEP 1 checkpoint → ./checkpoints/step1.pth (best overall in-step = 71.78%)
 
-🔥 === STEP 1/5 ===
+========================================================================================
+🚀 STEP 2 | Forget 10-19  | Retain 20-59  | New 60-69
+========================================================================================
+🛠️ Explicitly received params: {'GPU_ID': [0], 'num_class': 100, 'lora_rank': 8}
+🔒 LoRA mode (rank=8): Freezing backbone, unfreezing LoRA + classifier
+✅ Built face model
+📥 Loading checkpoint: ./checkpoints/step1.pth
+🔄 Loading model weights from ./checkpoints/step1.pth...
+⚠️ Skipping keys: []
 
-🔄 Training Step:
-  📚 Retain classes: 10-49
-  🗑️ Forget classes: 0-9
-  ✨ New classes: 50-59
-✅ Imprinted weights for classes 50-59 (initialized from centroids)
-⚡ Head warmup on NEW classes for 5 epochs (margin ON, head_lr=0.0005)
-    Warmup 1: acquisition loss 14.7554
-    Warmup 2: acquisition loss 11.6479
-    Warmup 3: acquisition loss 10.7655
-    Warmup 4: acquisition loss 10.5324
-    Warmup 5: acquisition loss 10.4285
+📊 Parameter Summary:
+  🔢 Total Parameters     : 5.61M
+  ✅ Trainable Parameters : 0.20M
+  📉 % Trainable          : 3.63%
+Epoch 000/050 | Forget ↓ 52.23% | Retain ↑ 54.45% | New ↑ 0.00% | Overall ↑ 44.16%
+Epoch 001/050 | Train Loss 4.7286 | Forget ↓ 0.00% | Retain ↑ 66.49% | New ↑ 23.84% | Overall ↑ 58.42%
+Epoch 002/050 | Train Loss 4.3738 | Forget ↓ 0.00% | Retain ↑ 67.29% | New ↑ 28.83% | Overall ↑ 60.02%
+Epoch 003/050 | Train Loss 4.2901 | Forget ↓ 0.00% | Retain ↑ 67.32% | New ↑ 34.52% | Overall ↑ 61.12%
+Epoch 004/050 | Train Loss 4.2979 | Forget ↓ 0.00% | Retain ↑ 68.35% | New ↑ 37.60% | Overall ↑ 62.53%
+Epoch 005/050 | Train Loss 4.2661 | Forget ↓ 0.00% | Retain ↑ 67.60% | New ↑ 39.86% | Overall ↑ 62.35%
+Epoch 006/050 | Train Loss 4.2471 | Forget ↓ 0.00% | Retain ↑ 67.43% | New ↑ 45.55% | Overall ↑ 63.29%
+Epoch 007/050 | Train Loss 4.2266 | Forget ↓ 0.00% | Retain ↑ 67.52% | New ↑ 47.69% | Overall ↑ 63.76%
+Epoch 008/050 | Train Loss 4.2437 | Forget ↓ 0.00% | Retain ↑ 67.96% | New ↑ 48.99% | Overall ↑ 64.37%
+Epoch 009/050 | Train Loss 4.2036 | Forget ↓ 0.00% | Retain ↑ 67.79% | New ↑ 51.60% | Overall ↑ 64.73%
+Epoch 010/050 | Train Loss 4.2031 | Forget ↓ 0.00% | Retain ↑ 66.74% | New ↑ 54.92% | Overall ↑ 64.51%
+Epoch 011/050 | Train Loss 4.1973 | Forget ↓ 0.00% | Retain ↑ 68.01% | New ↑ 49.82% | Overall ↑ 64.57%
+Epoch 012/050 | Train Loss 4.1912 | Forget ↓ 0.00% | Retain ↑ 66.77% | New ↑ 54.09% | Overall ↑ 64.37%
+Epoch 013/050 | Train Loss 4.1876 | Forget ↓ 0.00% | Retain ↑ 67.65% | New ↑ 52.19% | Overall ↑ 64.73%
+Epoch 014/050 | Train Loss 4.1800 | Forget ↓ 0.00% | Retain ↑ 67.27% | New ↑ 55.28% | Overall ↑ 65.00%
+Epoch 015/050 | Train Loss 4.1535 | Forget ↓ 0.00% | Retain ↑ 66.52% | New ↑ 56.58% | Overall ↑ 64.64%
+Epoch 016/050 | Train Loss 4.1559 | Forget ↓ 0.00% | Retain ↑ 67.49% | New ↑ 55.63% | Overall ↑ 65.25%
+Epoch 017/050 | Train Loss 4.1403 | Forget ↓ 0.00% | Retain ↑ 67.79% | New ↑ 58.96% | Overall ↑ 66.12%
+Epoch 018/050 | Train Loss 4.1405 | Forget ↓ 0.00% | Retain ↑ 66.44% | New ↑ 58.96% | Overall ↑ 65.02%
+Epoch 019/050 | Train Loss 4.1458 | Forget ↓ 0.00% | Retain ↑ 67.38% | New ↑ 60.85% | Overall ↑ 66.14%
+Epoch 020/050 | Train Loss 4.1192 | Forget ↓ 0.00% | Retain ↑ 66.27% | New ↑ 62.16% | Overall ↑ 65.49%
+Epoch 021/050 | Train Loss 4.1230 | Forget ↓ 0.00% | Retain ↑ 66.80% | New ↑ 63.35% | Overall ↑ 66.14%
+Epoch 022/050 | Train Loss 4.1231 | Forget ↓ 0.00% | Retain ↑ 67.49% | New ↑ 62.04% | Overall ↑ 66.46%
+Epoch 023/050 | Train Loss 4.1249 | Forget ↓ 0.00% | Retain ↑ 67.24% | New ↑ 62.04% | Overall ↑ 66.26%
+Epoch 024/050 | Train Loss 4.0907 | Forget ↓ 0.00% | Retain ↑ 68.15% | New ↑ 60.50% | Overall ↑ 66.70%
+Epoch 025/050 | Train Loss 4.1143 | Forget ↓ 0.00% | Retain ↑ 67.21% | New ↑ 62.51% | Overall ↑ 66.32%
+Epoch 026/050 | Train Loss 4.0995 | Forget ↓ 0.00% | Retain ↑ 67.13% | New ↑ 63.35% | Overall ↑ 66.41%
+Epoch 027/050 | Train Loss 4.1055 | Forget ↓ 0.00% | Retain ↑ 67.18% | New ↑ 63.70% | Overall ↑ 66.52%
+Epoch 028/050 | Train Loss 4.0911 | Forget ↓ 0.00% | Retain ↑ 66.66% | New ↑ 64.06% | Overall ↑ 66.17%
+Epoch 029/050 | Train Loss 4.0910 | Forget ↓ 0.00% | Retain ↑ 67.35% | New ↑ 62.51% | Overall ↑ 66.43%
+Epoch 030/050 | Train Loss 4.0906 | Forget ↓ 0.00% | Retain ↑ 67.99% | New ↑ 62.99% | Overall ↑ 67.04%
+Epoch 031/050 | Train Loss 4.0923 | Forget ↓ 0.00% | Retain ↑ 66.08% | New ↑ 65.60% | Overall ↑ 65.99%
+Epoch 032/050 | Train Loss 4.0821 | Forget ↓ 0.00% | Retain ↑ 67.43% | New ↑ 64.06% | Overall ↑ 66.79%
+Epoch 033/050 | Train Loss 4.0504 | Forget ↓ 0.00% | Retain ↑ 67.32% | New ↑ 64.41% | Overall ↑ 66.77%
+Epoch 034/050 | Train Loss 4.0559 | Forget ↓ 0.00% | Retain ↑ 67.24% | New ↑ 64.53% | Overall ↑ 66.73%
+Epoch 035/050 | Train Loss 4.0817 | Forget ↓ 0.00% | Retain ↑ 66.38% | New ↑ 65.36% | Overall ↑ 66.19%
+Epoch 036/050 | Train Loss 4.0624 | Forget ↓ 0.00% | Retain ↑ 67.85% | New ↑ 64.29% | Overall ↑ 67.18%
+Epoch 037/050 | Train Loss 4.0546 | Forget ↓ 0.00% | Retain ↑ 67.68% | New ↑ 66.19% | Overall ↑ 67.40%
+Epoch 038/050 | Train Loss 4.0557 | Forget ↓ 0.00% | Retain ↑ 67.49% | New ↑ 66.31% | Overall ↑ 67.26%
+Epoch 039/050 | Train Loss 4.0462 | Forget ↓ 0.00% | Retain ↑ 67.29% | New ↑ 66.07% | Overall ↑ 67.06%
+Epoch 040/050 | Train Loss 4.0491 | Forget ↓ 0.00% | Retain ↑ 67.68% | New ↑ 65.95% | Overall ↑ 67.35%
+Epoch 041/050 | Train Loss 4.0488 | Forget ↓ 0.00% | Retain ↑ 67.65% | New ↑ 66.31% | Overall ↑ 67.40%
+Epoch 042/050 | Train Loss 4.0319 | Forget ↓ 0.00% | Retain ↑ 67.40% | New ↑ 66.43% | Overall ↑ 67.22%
+Epoch 043/050 | Train Loss 4.0306 | Forget ↓ 0.00% | Retain ↑ 65.86% | New ↑ 68.92% | Overall ↑ 66.43%
+Epoch 044/050 | Train Loss 4.0364 | Forget ↓ 0.00% | Retain ↑ 67.74% | New ↑ 67.38% | Overall ↑ 67.67%
+Epoch 045/050 | Train Loss 4.0352 | Forget ↓ 0.00% | Retain ↑ 66.66% | New ↑ 67.50% | Overall ↑ 66.82%
+Epoch 046/050 | Train Loss 4.0338 | Forget ↓ 0.00% | Retain ↑ 67.13% | New ↑ 66.90% | Overall ↑ 67.09%
+Epoch 047/050 | Train Loss 4.0252 | Forget ↓ 0.00% | Retain ↑ 66.88% | New ↑ 67.02% | Overall ↑ 66.91%
+Epoch 048/050 | Train Loss 4.0074 | Forget ↓ 0.00% | Retain ↑ 67.35% | New ↑ 68.92% | Overall ↑ 67.65%
+Epoch 049/050 | Train Loss 4.0036 | Forget ↓ 0.00% | Retain ↑ 67.35% | New ↑ 68.21% | Overall ↑ 67.51%
+Epoch 050/050 | Train Loss 4.0168 | Forget ↓ 0.00% | Retain ↑ 67.07% | New ↑ 69.04% | Overall ↑ 67.44%
+✅ Saved STEP 2 checkpoint → ./checkpoints/step2.pth (best overall in-step = 67.67%)
 
-    📈 Epoch 1/50:
-      Loss: 145.7098 | LR_head: 0.000100
-      Forget ↓: 0.00% | Retain ↑: 0.00%
-      New ↑: 52.97% | Overall ↑: 10.55% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/face/bid_lora/step1_best.pth
+========================================================================================
+🚀 STEP 3 | Forget 20-29  | Retain 30-69  | New 70-79
+========================================================================================
+🛠️ Explicitly received params: {'GPU_ID': [0], 'num_class': 100, 'lora_rank': 8}
+🔒 LoRA mode (rank=8): Freezing backbone, unfreezing LoRA + classifier
+✅ Built face model
+📥 Loading checkpoint: ./checkpoints/step2.pth
+🔄 Loading model weights from ./checkpoints/step2.pth...
+⚠️ Skipping keys: []
 
-    📈 Epoch 2/50:
-      Loss: 93.8636 | LR_head: 0.000100
-      Forget ↓: 0.00% | Retain ↑: 0.00%
-      New ↑: 53.65% | Overall ↑: 10.69% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/face/bid_lora/step1_best.pth
+📊 Parameter Summary:
+  🔢 Total Parameters     : 5.61M
+  ✅ Trainable Parameters : 0.20M
+  📉 % Trainable          : 3.63%
+Epoch 000/050 | Forget ↓ 43.06% | Retain ↑ 51.42% | New ↑ 0.00% | Overall ↑ 40.50%
+Epoch 001/050 | Train Loss 4.8103 | Forget ↓ 0.00% | Retain ↑ 57.14% | New ↑ 42.77% | Overall ↑ 54.09%
+Epoch 002/050 | Train Loss 4.4433 | Forget ↓ 0.00% | Retain ↑ 59.16% | New ↑ 46.51% | Overall ↑ 56.48%
+Epoch 003/050 | Train Loss 4.3746 | Forget ↓ 0.00% | Retain ↑ 61.69% | New ↑ 51.72% | Overall ↑ 59.57%
+Epoch 004/050 | Train Loss 4.3544 | Forget ↓ 0.00% | Retain ↑ 59.44% | New ↑ 57.86% | Overall ↑ 59.11%
+Epoch 005/050 | Train Loss 4.3556 | Forget ↓ 0.00% | Retain ↑ 62.17% | New ↑ 51.20% | Overall ↑ 59.84%
+Epoch 006/050 | Train Loss 4.3162 | Forget ↓ 0.00% | Retain ↑ 58.97% | New ↑ 60.35% | Overall ↑ 59.26%
+Epoch 007/050 | Train Loss 4.3147 | Forget ↓ 0.00% | Retain ↑ 59.50% | New ↑ 61.71% | Overall ↑ 59.97%
+Epoch 008/050 | Train Loss 4.2880 | Forget ↓ 0.00% | Retain ↑ 60.82% | New ↑ 61.91% | Overall ↑ 61.05%
+Epoch 009/050 | Train Loss 4.2921 | Forget ↓ 0.00% | Retain ↑ 61.63% | New ↑ 65.56% | Overall ↑ 62.47%
+Epoch 010/050 | Train Loss 4.2699 | Forget ↓ 0.00% | Retain ↑ 61.66% | New ↑ 66.08% | Overall ↑ 62.60%
+Epoch 011/050 | Train Loss 4.2655 | Forget ↓ 0.00% | Retain ↑ 60.23% | New ↑ 66.70% | Overall ↑ 61.60%
+Epoch 012/050 | Train Loss 4.2808 | Forget ↓ 0.00% | Retain ↑ 61.32% | New ↑ 65.97% | Overall ↑ 62.31%
+Epoch 013/050 | Train Loss 4.2478 | Forget ↓ 0.00% | Retain ↑ 60.65% | New ↑ 67.43% | Overall ↑ 62.09%
+Epoch 014/050 | Train Loss 4.2309 | Forget ↓ 0.00% | Retain ↑ 63.04% | New ↑ 64.00% | Overall ↑ 63.24%
+Epoch 015/050 | Train Loss 4.2336 | Forget ↓ 0.00% | Retain ↑ 61.75% | New ↑ 69.41% | Overall ↑ 63.37%
+Epoch 016/050 | Train Loss 4.2181 | Forget ↓ 0.00% | Retain ↑ 59.95% | New ↑ 71.38% | Overall ↑ 62.38%
+Epoch 017/050 | Train Loss 4.2138 | Forget ↓ 0.00% | Retain ↑ 60.65% | New ↑ 70.55% | Overall ↑ 62.75%
+Epoch 018/050 | Train Loss 4.2098 | Forget ↓ 0.00% | Retain ↑ 61.02% | New ↑ 71.38% | Overall ↑ 63.22%
+Epoch 019/050 | Train Loss 4.2020 | Forget ↓ 0.00% | Retain ↑ 62.17% | New ↑ 69.41% | Overall ↑ 63.70%
+Epoch 020/050 | Train Loss 4.2041 | Forget ↓ 0.00% | Retain ↑ 61.49% | New ↑ 70.24% | Overall ↑ 63.35%
+Epoch 021/050 | Train Loss 4.1984 | Forget ↓ 0.00% | Retain ↑ 59.87% | New ↑ 75.03% | Overall ↑ 63.09%
+Epoch 022/050 | Train Loss 4.1869 | Forget ↓ 0.00% | Retain ↑ 59.64% | New ↑ 73.15% | Overall ↑ 62.51%
+Epoch 023/050 | Train Loss 4.1815 | Forget ↓ 0.00% | Retain ↑ 61.49% | New ↑ 72.74% | Overall ↑ 63.88%
+Epoch 024/050 | Train Loss 4.1963 | Forget ↓ 0.00% | Retain ↑ 63.35% | New ↑ 73.05% | Overall ↑ 65.41%
+Epoch 025/050 | Train Loss 4.1634 | Forget ↓ 0.00% | Retain ↑ 62.00% | New ↑ 73.67% | Overall ↑ 64.48%
+Epoch 026/050 | Train Loss 4.1590 | Forget ↓ 0.00% | Retain ↑ 62.03% | New ↑ 73.88% | Overall ↑ 64.54%
+Epoch 027/050 | Train Loss 4.1557 | Forget ↓ 0.00% | Retain ↑ 63.18% | New ↑ 73.78% | Overall ↑ 65.43%
+Epoch 028/050 | Train Loss 4.1526 | Forget ↓ 0.00% | Retain ↑ 61.32% | New ↑ 73.67% | Overall ↑ 63.95%
+Epoch 029/050 | Train Loss 4.1460 | Forget ↓ 0.00% | Retain ↑ 62.39% | New ↑ 74.19% | Overall ↑ 64.90%
+Epoch 030/050 | Train Loss 4.1518 | Forget ↓ 0.00% | Retain ↑ 62.53% | New ↑ 73.15% | Overall ↑ 64.79%
+Epoch 031/050 | Train Loss 4.1447 | Forget ↓ 0.00% | Retain ↑ 62.03% | New ↑ 74.71% | Overall ↑ 64.72%
+Epoch 032/050 | Train Loss 4.1215 | Forget ↓ 0.00% | Retain ↑ 61.35% | New ↑ 74.92% | Overall ↑ 64.24%
+Epoch 033/050 | Train Loss 4.1293 | Forget ↓ 0.00% | Retain ↑ 63.63% | New ↑ 73.36% | Overall ↑ 65.69%
+Epoch 034/050 | Train Loss 4.1227 | Forget ↓ 0.00% | Retain ↑ 62.92% | New ↑ 74.82% | Overall ↑ 65.45%
+Epoch 035/050 | Train Loss 4.1306 | Forget ↓ 0.00% | Retain ↑ 62.48% | New ↑ 73.78% | Overall ↑ 64.88%
+Epoch 036/050 | Train Loss 4.1071 | Forget ↓ 0.00% | Retain ↑ 62.25% | New ↑ 73.99% | Overall ↑ 64.74%
+Epoch 037/050 | Train Loss 4.1107 | Forget ↓ 0.00% | Retain ↑ 63.29% | New ↑ 75.13% | Overall ↑ 65.80%
+Epoch 038/050 | Train Loss 4.0933 | Forget ↓ 0.00% | Retain ↑ 62.17% | New ↑ 75.03% | Overall ↑ 64.90%
+Epoch 039/050 | Train Loss 4.1121 | Forget ↓ 0.00% | Retain ↑ 62.90% | New ↑ 75.03% | Overall ↑ 65.47%
+Epoch 040/050 | Train Loss 4.0942 | Forget ↓ 0.00% | Retain ↑ 63.21% | New ↑ 75.86% | Overall ↑ 65.89%
+Epoch 041/050 | Train Loss 4.1017 | Forget ↓ 0.00% | Retain ↑ 62.84% | New ↑ 75.86% | Overall ↑ 65.61%
+Epoch 042/050 | Train Loss 4.0896 | Forget ↓ 0.00% | Retain ↑ 62.50% | New ↑ 75.23% | Overall ↑ 65.21%
+Epoch 043/050 | Train Loss 4.0909 | Forget ↓ 0.00% | Retain ↑ 62.73% | New ↑ 75.75% | Overall ↑ 65.50%
+Epoch 044/050 | Train Loss 4.0826 | Forget ↓ 0.00% | Retain ↑ 62.28% | New ↑ 76.17% | Overall ↑ 65.23%
+Epoch 045/050 | Train Loss 4.0925 | Forget ↓ 0.00% | Retain ↑ 63.37% | New ↑ 75.75% | Overall ↑ 66.00%
+Epoch 046/050 | Train Loss 4.0734 | Forget ↓ 0.00% | Retain ↑ 63.18% | New ↑ 76.80% | Overall ↑ 66.07%
+Epoch 047/050 | Train Loss 4.0732 | Forget ↓ 0.00% | Retain ↑ 61.86% | New ↑ 78.04% | Overall ↑ 65.30%
+Epoch 048/050 | Train Loss 4.0868 | Forget ↓ 0.00% | Retain ↑ 62.62% | New ↑ 78.15% | Overall ↑ 65.92%
+Epoch 049/050 | Train Loss 4.0916 | Forget ↓ 0.00% | Retain ↑ 63.15% | New ↑ 77.42% | Overall ↑ 66.18%
+Epoch 050/050 | Train Loss 4.0726 | Forget ↓ 0.00% | Retain ↑ 63.40% | New ↑ 76.90% | Overall ↑ 66.27%
+✅ Saved STEP 3 checkpoint → ./checkpoints/step3.pth (best overall in-step = 66.27%)
+
+========================================================================================
+🚀 STEP 4 | Forget 30-39  | Retain 40-79  | New 80-89
+========================================================================================
+🛠️ Explicitly received params: {'GPU_ID': [0], 'num_class': 100, 'lora_rank': 8}
+🔒 LoRA mode (rank=8): Freezing backbone, unfreezing LoRA + classifier
+✅ Built face model
+📥 Loading checkpoint: ./checkpoints/step3.pth
+🔄 Loading model weights from ./checkpoints/step3.pth...
+⚠️ Skipping keys: []
+
+📊 Parameter Summary:
+  🔢 Total Parameters     : 5.61M
+  ✅ Trainable Parameters : 0.20M
+  📉 % Trainable          : 3.63%
+Epoch 000/050 | Forget ↓ 46.38% | Retain ↑ 46.51% | New ↑ 0.00% | Overall ↑ 37.38%
+Epoch 001/050 | Train Loss 4.9176 | Forget ↓ 0.00% | Retain ↑ 58.85% | New ↑ 37.74% | Overall ↑ 54.71%
+Epoch 002/050 | Train Loss 4.5541 | Forget ↓ 0.00% | Retain ↑ 61.01% | New ↑ 45.69% | Overall ↑ 58.00%
+Epoch 003/050 | Train Loss 4.4928 | Forget ↓ 0.00% | Retain ↑ 62.22% | New ↑ 50.06% | Overall ↑ 59.83%
+Epoch 004/050 | Train Loss 4.4510 | Forget ↓ 0.00% | Retain ↑ 61.67% | New ↑ 53.53% | Overall ↑ 60.07%
+Epoch 005/050 | Train Loss 4.4273 | Forget ↓ 0.00% | Retain ↑ 61.94% | New ↑ 55.32% | Overall ↑ 60.64%
+Epoch 006/050 | Train Loss 4.3958 | Forget ↓ 0.00% | Retain ↑ 62.52% | New ↑ 58.79% | Overall ↑ 61.79%
+Epoch 007/050 | Train Loss 4.3823 | Forget ↓ 0.00% | Retain ↑ 60.55% | New ↑ 60.36% | Overall ↑ 60.51%
+Epoch 008/050 | Train Loss 4.3634 | Forget ↓ 0.00% | Retain ↑ 62.19% | New ↑ 57.45% | Overall ↑ 61.26%
+Epoch 009/050 | Train Loss 4.3654 | Forget ↓ 0.00% | Retain ↑ 61.45% | New ↑ 60.81% | Overall ↑ 61.32%
+Epoch 010/050 | Train Loss 4.3380 | Forget ↓ 0.00% | Retain ↑ 62.35% | New ↑ 61.81% | Overall ↑ 62.25%
+Epoch 011/050 | Train Loss 4.3407 | Forget ↓ 0.00% | Retain ↑ 60.05% | New ↑ 64.84% | Overall ↑ 60.99%
+Epoch 012/050 | Train Loss 4.3212 | Forget ↓ 0.00% | Retain ↑ 63.12% | New ↑ 61.48% | Overall ↑ 62.80%
+Epoch 013/050 | Train Loss 4.3226 | Forget ↓ 0.00% | Retain ↑ 61.86% | New ↑ 66.07% | Overall ↑ 62.69%
+Epoch 014/050 | Train Loss 4.3046 | Forget ↓ 0.00% | Retain ↑ 62.38% | New ↑ 66.07% | Overall ↑ 63.10%
+Epoch 015/050 | Train Loss 4.3037 | Forget ↓ 0.00% | Retain ↑ 62.65% | New ↑ 63.49% | Overall ↑ 62.82%
+Epoch 016/050 | Train Loss 4.2993 | Forget ↓ 0.00% | Retain ↑ 62.22% | New ↑ 67.53% | Overall ↑ 63.26%
+Epoch 017/050 | Train Loss 4.2933 | Forget ↓ 0.00% | Retain ↑ 61.86% | New ↑ 65.85% | Overall ↑ 62.64%
+Epoch 018/050 | Train Loss 4.2849 | Forget ↓ 0.00% | Retain ↑ 63.01% | New ↑ 68.09% | Overall ↑ 64.01%
+Epoch 019/050 | Train Loss 4.2728 | Forget ↓ 0.00% | Retain ↑ 63.12% | New ↑ 66.85% | Overall ↑ 63.85%
+Epoch 020/050 | Train Loss 4.2662 | Forget ↓ 0.00% | Retain ↑ 62.08% | New ↑ 66.63% | Overall ↑ 62.97%
+Epoch 021/050 | Train Loss 4.2664 | Forget ↓ 0.00% | Retain ↑ 62.60% | New ↑ 67.64% | Overall ↑ 63.59%
+Epoch 022/050 | Train Loss 4.2405 | Forget ↓ 0.00% | Retain ↑ 63.75% | New ↑ 68.87% | Overall ↑ 64.75%
+Epoch 023/050 | Train Loss 4.2493 | Forget ↓ 0.00% | Retain ↑ 63.01% | New ↑ 70.44% | Overall ↑ 64.47%
+Epoch 024/050 | Train Loss 4.2367 | Forget ↓ 0.00% | Retain ↑ 63.12% | New ↑ 68.42% | Overall ↑ 64.16%
+Epoch 025/050 | Train Loss 4.2443 | Forget ↓ 0.00% | Retain ↑ 62.76% | New ↑ 69.43% | Overall ↑ 64.07%
+Epoch 026/050 | Train Loss 4.2265 | Forget ↓ 0.00% | Retain ↑ 63.23% | New ↑ 69.65% | Overall ↑ 64.49%
+Epoch 027/050 | Train Loss 4.2252 | Forget ↓ 0.00% | Retain ↑ 63.50% | New ↑ 68.42% | Overall ↑ 64.47%
+Epoch 028/050 | Train Loss 4.2345 | Forget ↓ 0.00% | Retain ↑ 62.68% | New ↑ 70.44% | Overall ↑ 64.20%
+Epoch 029/050 | Train Loss 4.2123 | Forget ↓ 0.00% | Retain ↑ 62.00% | New ↑ 70.44% | Overall ↑ 63.65%
+Epoch 030/050 | Train Loss 4.2064 | Forget ↓ 0.00% | Retain ↑ 62.24% | New ↑ 70.88% | Overall ↑ 63.94%
+Epoch 031/050 | Train Loss 4.2132 | Forget ↓ 0.00% | Retain ↑ 62.54% | New ↑ 71.00% | Overall ↑ 64.20%
+Epoch 032/050 | Train Loss 4.2036 | Forget ↓ 0.00% | Retain ↑ 62.95% | New ↑ 70.10% | Overall ↑ 64.36%
+Epoch 033/050 | Train Loss 4.1986 | Forget ↓ 0.00% | Retain ↑ 63.94% | New ↑ 71.56% | Overall ↑ 65.44%
+Epoch 034/050 | Train Loss 4.1916 | Forget ↓ 0.00% | Retain ↑ 63.69% | New ↑ 70.88% | Overall ↑ 65.11%
+Epoch 035/050 | Train Loss 4.1959 | Forget ↓ 0.00% | Retain ↑ 62.41% | New ↑ 73.46% | Overall ↑ 64.58%
+Epoch 036/050 | Train Loss 4.1902 | Forget ↓ 0.00% | Retain ↑ 62.63% | New ↑ 72.34% | Overall ↑ 64.53%
+Epoch 037/050 | Train Loss 4.1978 | Forget ↓ 0.00% | Retain ↑ 64.19% | New ↑ 72.00% | Overall ↑ 65.72%
+Epoch 038/050 | Train Loss 4.1703 | Forget ↓ 0.00% | Retain ↑ 62.87% | New ↑ 73.35% | Overall ↑ 64.93%
+Epoch 039/050 | Train Loss 4.1857 | Forget ↓ 0.00% | Retain ↑ 62.90% | New ↑ 73.35% | Overall ↑ 64.95%
+Epoch 040/050 | Train Loss 4.1717 | Forget ↓ 0.00% | Retain ↑ 63.56% | New ↑ 72.90% | Overall ↑ 65.39%
+Epoch 041/050 | Train Loss 4.1611 | Forget ↓ 0.00% | Retain ↑ 62.90% | New ↑ 73.46% | Overall ↑ 64.97%
+Epoch 042/050 | Train Loss 4.1724 | Forget ↓ 0.00% | Retain ↑ 63.31% | New ↑ 73.35% | Overall ↑ 65.28%
+Epoch 043/050 | Train Loss 4.1610 | Forget ↓ 0.00% | Retain ↑ 63.97% | New ↑ 72.90% | Overall ↑ 65.72%
+Epoch 044/050 | Train Loss 4.1737 | Forget ↓ 0.00% | Retain ↑ 62.63% | New ↑ 72.34% | Overall ↑ 64.53%
+Epoch 045/050 | Train Loss 4.1523 | Forget ↓ 0.00% | Retain ↑ 64.40% | New ↑ 73.12% | Overall ↑ 66.12%
+Epoch 046/050 | Train Loss 4.1593 | Forget ↓ 0.00% | Retain ↑ 63.99% | New ↑ 73.12% | Overall ↑ 65.79%
+Epoch 047/050 | Train Loss 4.1317 | Forget ↓ 0.00% | Retain ↑ 62.76% | New ↑ 73.68% | Overall ↑ 64.91%
+Epoch 048/050 | Train Loss 4.1490 | Forget ↓ 0.00% | Retain ↑ 63.56% | New ↑ 73.46% | Overall ↑ 65.50%
+Epoch 049/050 | Train Loss 4.1450 | Forget ↓ 0.00% | Retain ↑ 63.86% | New ↑ 73.57% | Overall ↑ 65.77%
+Epoch 050/050 | Train Loss 4.1384 | Forget ↓ 0.00% | Retain ↑ 64.10% | New ↑ 74.36% | Overall ↑ 66.12%
+✅ Saved STEP 4 checkpoint → ./checkpoints/step4.pth (best overall in-step = 66.12%)
+
+========================================================================================
+🚀 STEP 5 | Forget 40-49  | Retain 50-89  | New 90-99
+========================================================================================
+🛠️ Explicitly received params: {'GPU_ID': [0], 'num_class': 100, 'lora_rank': 8}
+🔒 LoRA mode (rank=8): Freezing backbone, unfreezing LoRA + classifier
+✅ Built face model
+📥 Loading checkpoint: ./checkpoints/step4.pth
+🔄 Loading model weights from ./checkpoints/step4.pth...
+⚠️ Skipping keys: []
+
+📊 Parameter Summary:
+  🔢 Total Parameters     : 5.61M
+  ✅ Trainable Parameters : 0.20M
+  📉 % Trainable          : 3.63%
+Epoch 000/050 | Forget ↓ 52.00% | Retain ↑ 49.82% | New ↑ 0.00% | Overall ↑ 47.25%
+Epoch 001/050 | Train Loss 5.2107 | Forget ↓ 30.36% | Retain ↑ 62.94% | New ↑ 0.00% | Overall ↑ 59.70%
+Epoch 002/050 | Train Loss 4.9435 | Forget ↓ 9.64% | Retain ↑ 64.85% | New ↑ 36.60% | Overall ↑ 63.39%
+Epoch 003/050 | Train Loss 4.2510 | Forget ↓ 0.31% | Retain ↑ 56.28% | New ↑ 92.78% | Overall ↑ 58.16%
+Epoch 004/050 | Train Loss 4.2528 | Forget ↓ 0.00% | Retain ↑ 56.31% | New ↑ 93.81% | Overall ↑ 58.24%
+Epoch 005/050 | Train Loss 4.0765 | Forget ↓ 0.00% | Retain ↑ 57.04% | New ↑ 94.33% | Overall ↑ 58.96%
+Epoch 006/050 | Train Loss 4.0824 | Forget ↓ 0.00% | Retain ↑ 56.73% | New ↑ 95.36% | Overall ↑ 58.72%
+Epoch 007/050 | Train Loss 4.0134 | Forget ↓ 0.00% | Retain ↑ 58.21% | New ↑ 95.88% | Overall ↑ 60.15%
+Epoch 008/050 | Train Loss 3.9651 | Forget ↓ 0.00% | Retain ↑ 57.68% | New ↑ 96.39% | Overall ↑ 59.68%
+Epoch 009/050 | Train Loss 3.9737 | Forget ↓ 0.00% | Retain ↑ 57.93% | New ↑ 96.39% | Overall ↑ 59.92%
+Epoch 010/050 | Train Loss 3.9716 | Forget ↓ 0.00% | Retain ↑ 57.82% | New ↑ 96.91% | Overall ↑ 59.84%
+Epoch 011/050 | Train Loss 4.0395 | Forget ↓ 0.00% | Retain ↑ 59.56% | New ↑ 96.91% | Overall ↑ 61.48%
+Epoch 012/050 | Train Loss 3.9806 | Forget ↓ 0.00% | Retain ↑ 59.11% | New ↑ 97.42% | Overall ↑ 61.08%
+Epoch 013/050 | Train Loss 3.9555 | Forget ↓ 0.00% | Retain ↑ 58.69% | New ↑ 95.88% | Overall ↑ 60.61%
+Epoch 014/050 | Train Loss 3.9725 | Forget ↓ 0.00% | Retain ↑ 59.03% | New ↑ 97.94% | Overall ↑ 61.03%
+Epoch 015/050 | Train Loss 3.8700 | Forget ↓ 0.00% | Retain ↑ 60.62% | New ↑ 96.39% | Overall ↑ 62.46%
+Epoch 016/050 | Train Loss 3.9816 | Forget ↓ 0.00% | Retain ↑ 61.04% | New ↑ 95.88% | Overall ↑ 62.84%
+Epoch 017/050 | Train Loss 3.8818 | Forget ↓ 0.00% | Retain ↑ 60.73% | New ↑ 96.39% | Overall ↑ 62.57%
+Epoch 018/050 | Train Loss 3.8810 | Forget ↓ 0.00% | Retain ↑ 59.08% | New ↑ 96.91% | Overall ↑ 61.03%
+Epoch 019/050 | Train Loss 3.9535 | Forget ↓ 0.00% | Retain ↑ 60.65% | New ↑ 96.91% | Overall ↑ 62.52%
+Epoch 020/050 | Train Loss 3.8902 | Forget ↓ 0.00% | Retain ↑ 60.09% | New ↑ 97.42% | Overall ↑ 62.01%
+Epoch 021/050 | Train Loss 3.8842 | Forget ↓ 0.00% | Retain ↑ 60.54% | New ↑ 95.88% | Overall ↑ 62.36%
+Epoch 022/050 | Train Loss 3.9119 | Forget ↓ 0.00% | Retain ↑ 60.03% | New ↑ 97.42% | Overall ↑ 61.96%
+Epoch 023/050 | Train Loss 3.8667 | Forget ↓ 0.00% | Retain ↑ 61.77% | New ↑ 96.91% | Overall ↑ 63.58%
+Epoch 024/050 | Train Loss 3.8949 | Forget ↓ 0.00% | Retain ↑ 61.24% | New ↑ 96.39% | Overall ↑ 63.05%
+Epoch 025/050 | Train Loss 3.8348 | Forget ↓ 0.00% | Retain ↑ 60.87% | New ↑ 97.42% | Overall ↑ 62.76%
+Epoch 026/050 | Train Loss 3.8417 | Forget ↓ 0.00% | Retain ↑ 60.62% | New ↑ 97.42% | Overall ↑ 62.52%
+Epoch 027/050 | Train Loss 3.9020 | Forget ↓ 0.00% | Retain ↑ 61.07% | New ↑ 96.91% | Overall ↑ 62.91%
+Epoch 028/050 | Train Loss 3.9014 | Forget ↓ 0.00% | Retain ↑ 60.99% | New ↑ 96.91% | Overall ↑ 62.84%
+Epoch 029/050 | Train Loss 3.8528 | Forget ↓ 0.00% | Retain ↑ 61.07% | New ↑ 97.42% | Overall ↑ 62.94%
+Epoch 030/050 | Train Loss 3.8885 | Forget ↓ 0.00% | Retain ↑ 60.71% | New ↑ 97.42% | Overall ↑ 62.60%
+Epoch 031/050 | Train Loss 3.8331 | Forget ↓ 0.00% | Retain ↑ 61.68% | New ↑ 96.91% | Overall ↑ 63.50%
+Epoch 032/050 | Train Loss 3.8774 | Forget ↓ 0.00% | Retain ↑ 60.73% | New ↑ 96.39% | Overall ↑ 62.57%
+Epoch 033/050 | Train Loss 3.8758 | Forget ↓ 0.00% | Retain ↑ 62.61% | New ↑ 96.39% | Overall ↑ 64.35%
+Epoch 034/050 | Train Loss 3.8735 | Forget ↓ 0.00% | Retain ↑ 63.03% | New ↑ 97.42% | Overall ↑ 64.80%
+Epoch 035/050 | Train Loss 3.9051 | Forget ↓ 0.00% | Retain ↑ 60.87% | New ↑ 96.91% | Overall ↑ 62.73%
+Epoch 036/050 | Train Loss 3.8470 | Forget ↓ 0.00% | Retain ↑ 61.80% | New ↑ 96.91% | Overall ↑ 63.60%
+Epoch 037/050 | Train Loss 3.8843 | Forget ↓ 0.00% | Retain ↑ 61.43% | New ↑ 96.91% | Overall ↑ 63.26%
+Epoch 038/050 | Train Loss 3.8661 | Forget ↓ 0.00% | Retain ↑ 62.16% | New ↑ 96.39% | Overall ↑ 63.92%
+Epoch 039/050 | Train Loss 3.8189 | Forget ↓ 0.00% | Retain ↑ 62.86% | New ↑ 96.39% | Overall ↑ 64.59%
+Epoch 040/050 | Train Loss 3.8541 | Forget ↓ 0.00% | Retain ↑ 61.63% | New ↑ 97.42% | Overall ↑ 63.47%
+Epoch 041/050 | Train Loss 3.8225 | Forget ↓ 0.00% | Retain ↑ 62.13% | New ↑ 97.42% | Overall ↑ 63.95%
+Epoch 042/050 | Train Loss 3.8691 | Forget ↓ 0.00% | Retain ↑ 62.52% | New ↑ 97.94% | Overall ↑ 64.35%
+Epoch 043/050 | Train Loss 3.8038 | Forget ↓ 0.00% | Retain ↑ 61.54% | New ↑ 97.42% | Overall ↑ 63.39%
+Epoch 044/050 | Train Loss 3.8166 | Forget ↓ 0.00% | Retain ↑ 62.22% | New ↑ 95.88% | Overall ↑ 63.95%
+Epoch 045/050 | Train Loss 3.8461 | Forget ↓ 0.00% | Retain ↑ 62.52% | New ↑ 96.91% | Overall ↑ 64.30%
+Epoch 046/050 | Train Loss 3.7662 | Forget ↓ 0.00% | Retain ↑ 62.30% | New ↑ 96.91% | Overall ↑ 64.08%
+Epoch 047/050 | Train Loss 3.8103 | Forget ↓ 0.00% | Retain ↑ 61.88% | New ↑ 95.88% | Overall ↑ 63.63%
+Epoch 048/050 | Train Loss 3.7834 | Forget ↓ 0.00% | Retain ↑ 62.94% | New ↑ 96.91% | Overall ↑ 64.69%
+Epoch 049/050 | Train Loss 3.8524 | Forget ↓ 0.00% | Retain ↑ 61.10% | New ↑ 97.94% | Overall ↑ 62.99%
+Epoch 050/050 | Train Loss 3.8354 | Forget ↓ 0.00% | Retain ↑ 63.90% | New ↑ 96.39% | Overall ↑ 65.57%
+✅ Saved STEP 5 checkpoint → ./checkpoints/step5.pth (best overall in-step = 65.57%)
+
+📒 Logs appended to: ./logs/face_steps_metrics.csv
+🏁 All 5 steps completed.

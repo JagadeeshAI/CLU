@@ -1,0 +1,44 @@
+=== Configurations ===
+Config: TaskName set to 'classification'
+🛠️ Explicitly received params: {'num_classes': 100, 'lora_rank': 8}
+🔒 LoRA mode (rank=8): Freezing backbone, unfreezing LoRA + classifier
+Loaded pretrained weights from timm: deit_tiny_patch16_224
+✅ Loaded pretrained weights
+✅ Built classification model
+
+📊 Parameter Summary:
+  🔢 Total Parameters     : 5.73M
+  ✅ Trainable Parameters : 0.20M
+  📉 % Trainable          : 3.55%
+🎯 Starting BID-LoRA Sliding Window Experiment
+============================================================
+🔧 Configuration:
+   Alpha (retention weight): 0.15
+   Gamma (acquisition weight): 0.15
+   BND (erasure limit): 100
+============================================================
+🔄 Loading model weights from /home/jag/codes/CLU/checkpoints/classification/oracle/0_49.pth...
+⚠️ Skipping incompatible or missing keys: ['blocks.0.mlp.fc1.lora_A', 'blocks.0.mlp.fc1.lora_B', 'blocks.0.mlp.fc2.lora_A', 'blocks.0.mlp.fc2.lora_B', 'blocks.1.mlp.fc1.lora_A']... (+43 more)
+✅ Loaded pretrained checkpoint: /home/jag/codes/CLU/checkpoints/classification/oracle/0_49.pth
+
+🔥 === STEP 1/5 ===
+
+🔄 Training Step:
+  📚 Retain classes: 10-49
+  🗑️  Forget classes: 0-9
+  ✨ New classes: 50-59
+
+    📈 Epoch 1/50:
+      Loss: 15.8465 | LR: 0.000100
+      Forget ↓: 78.40% | Retain ↑: 87.57%
+      New ↑: 0.00% | Overall ↑: 70.05% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 2/50:
+      Loss: 15.1255 | LR: 0.000100
+      Forget ↓: 0.00% | Retain ↑: 88.00%
+      New ↑: 19.47% | Overall ↑: 74.29% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 3/50:
+      Loss: 1.2432 | LR: 0.000099
+      Forget ↓: 0.00% | Retain ↑: 85.33%
+      New ↑: 51.20% | Overall ↑: 78.51% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
