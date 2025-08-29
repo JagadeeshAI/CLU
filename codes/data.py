@@ -82,11 +82,11 @@ def get_dynamic_loader(
     if "face" in task_name:
         data_dir = ROOT_FACE_TRAIN if mode == "train" else ROOT_FACE_VAL
         dataset_class = FaceDataset
-        # print(f"Loading Face Recognition data from {data_dir}")
+        print(f"Loading Face Recognition data from {data_dir}")
     elif "classif" in task_name:
         data_dir = ROOT_CIFAR_TRAIN if mode == "train" else ROOT_CIFAR_VAL
         dataset_class = datasets.ImageFolder
-        # print(f"Loading Classification (CIFAR-100) data from {data_dir}")
+        print(f"Loading Classification (CIFAR-100) data from {data_dir}")
     else:
         raise ValueError(f"Unknown task name: {task_name}")
 

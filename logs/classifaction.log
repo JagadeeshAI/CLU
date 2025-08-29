@@ -42,3 +42,1309 @@ Loaded pretrained weights from timm: deit_tiny_patch16_224
       Loss: 1.2432 | LR: 0.000099
       Forget ↓: 0.00% | Retain ↑: 85.33%
       New ↑: 51.20% | Overall ↑: 78.51% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 4/50:
+      Loss: 0.9137 | LR: 0.000098
+      Forget ↓: 0.00% | Retain ↑: 84.63%
+      New ↑: 57.60% | Overall ↑: 79.23% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 5/50:
+      Loss: 0.7663 | LR: 0.000098
+      Forget ↓: 0.00% | Retain ↑: 83.80%
+      New ↑: 61.47% | Overall ↑: 79.33% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 6/50:
+      Loss: 0.6974 | LR: 0.000096
+      Forget ↓: 0.00% | Retain ↑: 83.27%
+      New ↑: 64.40% | Overall ↑: 79.49% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 7/50:
+      Loss: 0.6417 | LR: 0.000095
+      Forget ↓: 0.00% | Retain ↑: 83.13%
+      New ↑: 66.27% | Overall ↑: 79.76% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 8/50:
+      Loss: 0.6164 | LR: 0.000094
+      Forget ↓: 0.00% | Retain ↑: 82.93%
+      New ↑: 68.40% | Overall ↑: 80.03% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 9/50:
+      Loss: 0.5720 | LR: 0.000092
+      Forget ↓: 0.00% | Retain ↑: 82.57%
+      New ↑: 70.27% | Overall ↑: 80.11% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 10/50:
+      Loss: 0.5530 | LR: 0.000090
+      Forget ↓: 0.00% | Retain ↑: 82.53%
+      New ↑: 70.93% | Overall ↑: 80.21% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 11/50:
+      Loss: 0.5319 | LR: 0.000089
+      Forget ↓: 0.00% | Retain ↑: 82.77%
+      New ↑: 71.73% | Overall ↑: 80.56% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 12/50:
+      Loss: 0.5067 | LR: 0.000086
+      Forget ↓: 0.00% | Retain ↑: 82.53%
+      New ↑: 72.53% | Overall ↑: 80.53%
+
+    📈 Epoch 13/50:
+      Loss: 0.5032 | LR: 0.000084
+      Forget ↓: 0.00% | Retain ↑: 82.43%
+      New ↑: 73.47% | Overall ↑: 80.64% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 14/50:
+      Loss: 0.4889 | LR: 0.000082
+      Forget ↓: 0.00% | Retain ↑: 82.57%
+      New ↑: 73.33% | Overall ↑: 80.72% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 15/50:
+      Loss: 0.4792 | LR: 0.000079
+      Forget ↓: 0.00% | Retain ↑: 82.40%
+      New ↑: 73.87% | Overall ↑: 80.69%
+
+    📈 Epoch 16/50:
+      Loss: 0.4604 | LR: 0.000077
+      Forget ↓: 0.00% | Retain ↑: 82.33%
+      New ↑: 74.67% | Overall ↑: 80.80% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 17/50:
+      Loss: 0.4611 | LR: 0.000074
+      Forget ↓: 0.00% | Retain ↑: 82.37%
+      New ↑: 75.20% | Overall ↑: 80.93% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1_best.pth
+
+    📈 Epoch 18/50:
+      Loss: 0.4492 | LR: 0.000071
+      Forget ↓: 0.00% | Retain ↑: 82.17%
+      New ↑: 75.47% | Overall ↑: 80.83%
+
+    📈 Epoch 19/50:
+      Loss: 0.4419 | LR: 0.000068
+      Forget ↓: 0.00% | Retain ↑: 82.13%
+      New ↑: 75.87% | Overall ↑: 80.88%
+
+    📈 Epoch 20/50:
+      Loss: 0.4328 | LR: 0.000065
+      Forget ↓: 0.00% | Retain ↑: 82.07%
+      New ↑: 75.73% | Overall ↑: 80.80%
+
+    📈 Epoch 21/50:
+      Loss: 0.4315 | LR: 0.000062
+      Forget ↓: 0.00% | Retain ↑: 82.03%
+      New ↑: 75.07% | Overall ↑: 80.64%
+
+    📈 Epoch 22/50:
+      Loss: 0.4307 | LR: 0.000059
+      Forget ↓: 0.00% | Retain ↑: 81.87%
+      New ↑: 75.73% | Overall ↑: 80.64%
+
+    📈 Epoch 23/50:
+      Loss: 0.4214 | LR: 0.000056
+      Forget ↓: 0.00% | Retain ↑: 81.70%
+      New ↑: 76.67% | Overall ↑: 80.69%
+
+    📈 Epoch 24/50:
+      Loss: 0.4165 | LR: 0.000053
+      Forget ↓: 0.00% | Retain ↑: 81.80%
+      New ↑: 76.53% | Overall ↑: 80.75%
+
+    📈 Epoch 25/50:
+      Loss: 0.4179 | LR: 0.000050
+      Forget ↓: 0.00% | Retain ↑: 81.57%
+      New ↑: 76.93% | Overall ↑: 80.64%
+
+    📈 Epoch 26/50:
+      Loss: 0.4139 | LR: 0.000047
+      Forget ↓: 0.00% | Retain ↑: 81.67%
+      New ↑: 76.13% | Overall ↑: 80.56%
+
+    📈 Epoch 27/50:
+      Loss: 0.4068 | LR: 0.000044
+      Forget ↓: 0.00% | Retain ↑: 81.67%
+      New ↑: 76.53% | Overall ↑: 80.64%
+
+    📈 Epoch 28/50:
+      Loss: 0.4073 | LR: 0.000041
+      Forget ↓: 0.00% | Retain ↑: 81.67%
+      New ↑: 76.40% | Overall ↑: 80.61%
+
+    📈 Epoch 29/50:
+      Loss: 0.4111 | LR: 0.000038
+      Forget ↓: 0.00% | Retain ↑: 81.63%
+      New ↑: 77.07% | Overall ↑: 80.72%
+
+    📈 Epoch 30/50:
+      Loss: 0.3994 | LR: 0.000035
+      Forget ↓: 0.00% | Retain ↑: 81.60%
+      New ↑: 76.93% | Overall ↑: 80.67%
+
+    📈 Epoch 31/50:
+      Loss: 0.3903 | LR: 0.000032
+      Forget ↓: 0.00% | Retain ↑: 81.63%
+      New ↑: 77.07% | Overall ↑: 80.72%
+
+    📈 Epoch 32/50:
+      Loss: 0.3916 | LR: 0.000029
+      Forget ↓: 0.00% | Retain ↑: 81.57%
+      New ↑: 76.93% | Overall ↑: 80.64%
+
+    📈 Epoch 33/50:
+      Loss: 0.3932 | LR: 0.000026
+      Forget ↓: 0.00% | Retain ↑: 81.53%
+      New ↑: 77.07% | Overall ↑: 80.64%
+
+    📈 Epoch 34/50:
+      Loss: 0.3867 | LR: 0.000023
+      Forget ↓: 0.00% | Retain ↑: 81.53%
+      New ↑: 77.33% | Overall ↑: 80.69%
+
+    📈 Epoch 35/50:
+      Loss: 0.3909 | LR: 0.000021
+      Forget ↓: 0.00% | Retain ↑: 81.53%
+      New ↑: 76.67% | Overall ↑: 80.56%
+
+    📈 Epoch 36/50:
+      Loss: 0.3955 | LR: 0.000018
+      Forget ↓: 0.00% | Retain ↑: 81.50%
+      New ↑: 76.67% | Overall ↑: 80.53%
+
+    📈 Epoch 37/50:
+      Loss: 0.3818 | LR: 0.000016
+      Forget ↓: 0.00% | Retain ↑: 81.50%
+      New ↑: 76.80% | Overall ↑: 80.56%
+
+    📈 Epoch 38/50:
+      Loss: 0.3829 | LR: 0.000014
+      Forget ↓: 0.00% | Retain ↑: 81.47%
+      New ↑: 77.20% | Overall ↑: 80.61%
+
+    📈 Epoch 39/50:
+      Loss: 0.3836 | LR: 0.000011
+      Forget ↓: 0.00% | Retain ↑: 81.40%
+      New ↑: 76.93% | Overall ↑: 80.51%
+
+    📈 Epoch 40/50:
+      Loss: 0.3911 | LR: 0.000010
+      Forget ↓: 0.00% | Retain ↑: 81.40%
+      New ↑: 77.07% | Overall ↑: 80.53%
+
+    📈 Epoch 41/50:
+      Loss: 0.3960 | LR: 0.000008
+      Forget ↓: 0.00% | Retain ↑: 81.40%
+      New ↑: 77.07% | Overall ↑: 80.53%
+
+    📈 Epoch 42/50:
+      Loss: 0.3928 | LR: 0.000006
+      Forget ↓: 0.00% | Retain ↑: 81.37%
+      New ↑: 77.07% | Overall ↑: 80.51%
+
+    📈 Epoch 43/50:
+      Loss: 0.3872 | LR: 0.000005
+      Forget ↓: 0.00% | Retain ↑: 81.37%
+      New ↑: 77.07% | Overall ↑: 80.51%
+
+    📈 Epoch 44/50:
+      Loss: 0.3858 | LR: 0.000004
+      Forget ↓: 0.00% | Retain ↑: 81.37%
+      New ↑: 76.93% | Overall ↑: 80.48%
+
+    📈 Epoch 45/50:
+      Loss: 0.3808 | LR: 0.000002
+      Forget ↓: 0.00% | Retain ↑: 81.37%
+      New ↑: 77.07% | Overall ↑: 80.51%
+
+    📈 Epoch 46/50:
+      Loss: 0.4013 | LR: 0.000002
+      Forget ↓: 0.00% | Retain ↑: 81.40%
+      New ↑: 77.07% | Overall ↑: 80.53%
+
+    📈 Epoch 47/50:
+      Loss: 0.3858 | LR: 0.000001
+      Forget ↓: 0.00% | Retain ↑: 81.37%
+      New ↑: 77.07% | Overall ↑: 80.51%
+
+    📈 Epoch 48/50:
+      Loss: 0.3852 | LR: 0.000000
+      Forget ↓: 0.00% | Retain ↑: 81.37%
+      New ↑: 77.07% | Overall ↑: 80.51%
+
+    📈 Epoch 49/50:
+      Loss: 0.3813 | LR: 0.000000
+      Forget ↓: 0.00% | Retain ↑: 81.37%
+      New ↑: 76.93% | Overall ↑: 80.48%
+
+    📈 Epoch 50/50:
+      Loss: 0.3803 | LR: 0.000000
+      Forget ↓: 0.00% | Retain ↑: 81.37%
+      New ↑: 76.93% | Overall ↑: 80.48%
+
+✅ Training completed! Best Overall: 80.93%
+
+📊 VALIDATION RESULTS:
+============================================================
+  Forget ↓ (0-9): 0.00% (0/750)
+  Retain ↑ (10-49): 81.37% (2441/3000)
+  New ↑ (50-59): 76.93% (577/750)
+  Overall ↑ (10-59): 80.48% (3018/3750)
+============================================================
+
+📋 STEP 1 FINAL SUMMARY:
+  🗑️  Forget ↓: 0.00% (Classes 0-9)
+  📚 Retain ↑: 81.37% (Classes 10-49)
+  ✨ New ↑: 76.93% (Classes 50-59)
+  🎯 Overall ↑: 80.48%
+💾 Saved checkpoint: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step1.pth
+
+🔥 === STEP 2/5 ===
+
+🔄 Training Step:
+  📚 Retain classes: 20-59
+  🗑️  Forget classes: 0-19
+  ✨ New classes: 60-69
+
+    📈 Epoch 1/50:
+      Loss: 3.2546 | LR: 0.000100
+      Forget ↓: 36.13% | Retain ↑: 76.47%
+      New ↑: 44.13% | Overall ↑: 70.00% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 2/50:
+      Loss: 14.7185 | LR: 0.000100
+      Forget ↓: 17.93% | Retain ↑: 78.80%
+      New ↑: 44.53% | Overall ↑: 71.95% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 3/50:
+      Loss: 13.6789 | LR: 0.000099
+      Forget ↓: 0.00% | Retain ↑: 78.47%
+      New ↑: 44.53% | Overall ↑: 71.68%
+
+    📈 Epoch 4/50:
+      Loss: 1.0688 | LR: 0.000098
+      Forget ↓: 0.00% | Retain ↑: 74.70%
+      New ↑: 61.20% | Overall ↑: 72.00% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 5/50:
+      Loss: 0.9266 | LR: 0.000098
+      Forget ↓: 0.00% | Retain ↑: 74.43%
+      New ↑: 65.07% | Overall ↑: 72.56% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 6/50:
+      Loss: 0.8505 | LR: 0.000096
+      Forget ↓: 0.00% | Retain ↑: 74.50%
+      New ↑: 67.60% | Overall ↑: 73.12% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 7/50:
+      Loss: 0.8044 | LR: 0.000095
+      Forget ↓: 0.00% | Retain ↑: 74.57%
+      New ↑: 69.60% | Overall ↑: 73.57% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 8/50:
+      Loss: 0.7662 | LR: 0.000094
+      Forget ↓: 0.00% | Retain ↑: 74.73%
+      New ↑: 70.80% | Overall ↑: 73.95% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 9/50:
+      Loss: 0.7449 | LR: 0.000092
+      Forget ↓: 0.00% | Retain ↑: 74.50%
+      New ↑: 71.07% | Overall ↑: 73.81%
+
+    📈 Epoch 10/50:
+      Loss: 0.7104 | LR: 0.000090
+      Forget ↓: 0.00% | Retain ↑: 74.70%
+      New ↑: 71.87% | Overall ↑: 74.13% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 11/50:
+      Loss: 0.6869 | LR: 0.000089
+      Forget ↓: 0.00% | Retain ↑: 74.77%
+      New ↑: 72.53% | Overall ↑: 74.32% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 12/50:
+      Loss: 0.6703 | LR: 0.000086
+      Forget ↓: 0.00% | Retain ↑: 74.70%
+      New ↑: 72.80% | Overall ↑: 74.32%
+
+    📈 Epoch 13/50:
+      Loss: 0.6522 | LR: 0.000084
+      Forget ↓: 0.00% | Retain ↑: 74.93%
+      New ↑: 73.60% | Overall ↑: 74.67% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 14/50:
+      Loss: 0.6312 | LR: 0.000082
+      Forget ↓: 0.00% | Retain ↑: 74.97%
+      New ↑: 73.20% | Overall ↑: 74.61%
+
+    📈 Epoch 15/50:
+      Loss: 0.6200 | LR: 0.000079
+      Forget ↓: 0.00% | Retain ↑: 74.77%
+      New ↑: 73.33% | Overall ↑: 74.48%
+
+    📈 Epoch 16/50:
+      Loss: 0.6263 | LR: 0.000077
+      Forget ↓: 0.00% | Retain ↑: 74.83%
+      New ↑: 73.60% | Overall ↑: 74.59%
+
+    📈 Epoch 17/50:
+      Loss: 0.5973 | LR: 0.000074
+      Forget ↓: 0.00% | Retain ↑: 74.80%
+      New ↑: 74.40% | Overall ↑: 74.72% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 18/50:
+      Loss: 0.5921 | LR: 0.000071
+      Forget ↓: 0.00% | Retain ↑: 74.73%
+      New ↑: 74.40% | Overall ↑: 74.67%
+
+    📈 Epoch 19/50:
+      Loss: 0.5925 | LR: 0.000068
+      Forget ↓: 0.00% | Retain ↑: 74.83%
+      New ↑: 74.80% | Overall ↑: 74.83% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 20/50:
+      Loss: 0.5695 | LR: 0.000065
+      Forget ↓: 0.00% | Retain ↑: 74.60%
+      New ↑: 74.80% | Overall ↑: 74.64%
+
+    📈 Epoch 21/50:
+      Loss: 0.5668 | LR: 0.000062
+      Forget ↓: 0.00% | Retain ↑: 74.63%
+      New ↑: 74.93% | Overall ↑: 74.69%
+
+    📈 Epoch 22/50:
+      Loss: 0.5629 | LR: 0.000059
+      Forget ↓: 0.00% | Retain ↑: 74.67%
+      New ↑: 75.47% | Overall ↑: 74.83%
+
+    📈 Epoch 23/50:
+      Loss: 0.5598 | LR: 0.000056
+      Forget ↓: 0.00% | Retain ↑: 74.77%
+      New ↑: 75.20% | Overall ↑: 74.85% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 24/50:
+      Loss: 0.5456 | LR: 0.000053
+      Forget ↓: 0.00% | Retain ↑: 74.67%
+      New ↑: 75.07% | Overall ↑: 74.75%
+
+    📈 Epoch 25/50:
+      Loss: 0.5448 | LR: 0.000050
+      Forget ↓: 0.00% | Retain ↑: 74.73%
+      New ↑: 75.47% | Overall ↑: 74.88% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2_best.pth
+
+    📈 Epoch 26/50:
+      Loss: 0.5358 | LR: 0.000047
+      Forget ↓: 0.00% | Retain ↑: 74.67%
+      New ↑: 75.73% | Overall ↑: 74.88%
+
+    📈 Epoch 27/50:
+      Loss: 0.5324 | LR: 0.000044
+      Forget ↓: 0.00% | Retain ↑: 74.47%
+      New ↑: 76.13% | Overall ↑: 74.80%
+
+    📈 Epoch 28/50:
+      Loss: 0.5306 | LR: 0.000041
+      Forget ↓: 0.00% | Retain ↑: 74.53%
+      New ↑: 75.73% | Overall ↑: 74.77%
+
+    📈 Epoch 29/50:
+      Loss: 0.5221 | LR: 0.000038
+      Forget ↓: 0.00% | Retain ↑: 74.53%
+      New ↑: 75.87% | Overall ↑: 74.80%
+
+    📈 Epoch 30/50:
+      Loss: 0.5239 | LR: 0.000035
+      Forget ↓: 0.00% | Retain ↑: 74.20%
+      New ↑: 76.13% | Overall ↑: 74.59%
+
+    📈 Epoch 31/50:
+      Loss: 0.5160 | LR: 0.000032
+      Forget ↓: 0.00% | Retain ↑: 74.43%
+      New ↑: 75.73% | Overall ↑: 74.69%
+
+    📈 Epoch 32/50:
+      Loss: 0.5243 | LR: 0.000029
+      Forget ↓: 0.00% | Retain ↑: 74.40%
+      New ↑: 75.73% | Overall ↑: 74.67%
+
+    📈 Epoch 33/50:
+      Loss: 0.5141 | LR: 0.000026
+      Forget ↓: 0.00% | Retain ↑: 74.40%
+      New ↑: 76.00% | Overall ↑: 74.72%
+
+    📈 Epoch 34/50:
+      Loss: 0.5214 | LR: 0.000023
+      Forget ↓: 0.00% | Retain ↑: 74.40%
+      New ↑: 76.13% | Overall ↑: 74.75%
+
+    📈 Epoch 35/50:
+      Loss: 0.5189 | LR: 0.000021
+      Forget ↓: 0.00% | Retain ↑: 74.50%
+      New ↑: 76.00% | Overall ↑: 74.80%
+
+    📈 Epoch 36/50:
+      Loss: 0.5138 | LR: 0.000018
+      Forget ↓: 0.00% | Retain ↑: 74.47%
+      New ↑: 76.13% | Overall ↑: 74.80%
+
+    📈 Epoch 37/50:
+      Loss: 0.5098 | LR: 0.000016
+      Forget ↓: 0.00% | Retain ↑: 74.47%
+      New ↑: 76.13% | Overall ↑: 74.80%
+
+    📈 Epoch 38/50:
+      Loss: 0.5221 | LR: 0.000014
+      Forget ↓: 0.00% | Retain ↑: 74.50%
+      New ↑: 76.13% | Overall ↑: 74.83%
+
+    📈 Epoch 39/50:
+      Loss: 0.5099 | LR: 0.000011
+      Forget ↓: 0.00% | Retain ↑: 74.50%
+      New ↑: 76.27% | Overall ↑: 74.85%
+
+    📈 Epoch 40/50:
+      Loss: 0.5045 | LR: 0.000010
+      Forget ↓: 0.00% | Retain ↑: 74.53%
+      New ↑: 76.27% | Overall ↑: 74.88%
+
+    📈 Epoch 41/50:
+      Loss: 0.5060 | LR: 0.000008
+      Forget ↓: 0.00% | Retain ↑: 74.43%
+      New ↑: 76.40% | Overall ↑: 74.83%
+
+    📈 Epoch 42/50:
+      Loss: 0.5053 | LR: 0.000006
+      Forget ↓: 0.00% | Retain ↑: 74.53%
+      New ↑: 76.13% | Overall ↑: 74.85%
+
+    📈 Epoch 43/50:
+      Loss: 0.5088 | LR: 0.000005
+      Forget ↓: 0.00% | Retain ↑: 74.50%
+      New ↑: 76.13% | Overall ↑: 74.83%
+
+    📈 Epoch 44/50:
+      Loss: 0.5097 | LR: 0.000004
+      Forget ↓: 0.00% | Retain ↑: 74.50%
+      New ↑: 76.27% | Overall ↑: 74.85%
+
+    📈 Epoch 45/50:
+      Loss: 0.4996 | LR: 0.000002
+      Forget ↓: 0.00% | Retain ↑: 74.53%
+      New ↑: 76.27% | Overall ↑: 74.88%
+
+    📈 Epoch 46/50:
+      Loss: 0.5046 | LR: 0.000002
+      Forget ↓: 0.00% | Retain ↑: 74.50%
+      New ↑: 76.27% | Overall ↑: 74.85%
+
+    📈 Epoch 47/50:
+      Loss: 0.5111 | LR: 0.000001
+      Forget ↓: 0.00% | Retain ↑: 74.50%
+      New ↑: 76.27% | Overall ↑: 74.85%
+
+    📈 Epoch 48/50:
+      Loss: 0.5111 | LR: 0.000000
+      Forget ↓: 0.00% | Retain ↑: 74.50%
+      New ↑: 76.27% | Overall ↑: 74.85%
+
+    📈 Epoch 49/50:
+      Loss: 0.5044 | LR: 0.000000
+      Forget ↓: 0.00% | Retain ↑: 74.50%
+      New ↑: 76.27% | Overall ↑: 74.85%
+
+    📈 Epoch 50/50:
+      Loss: 0.5080 | LR: 0.000000
+      Forget ↓: 0.00% | Retain ↑: 74.50%
+      New ↑: 76.27% | Overall ↑: 74.85%
+
+✅ Training completed! Best Overall: 74.88%
+
+📊 VALIDATION RESULTS:
+============================================================
+  Forget ↓ (0-19): 0.00% (0/1500)
+  Retain ↑ (20-59): 74.50% (2235/3000)
+  New ↑ (60-69): 76.27% (572/750)
+  Overall ↑ (20-69): 74.85% (2807/3750)
+============================================================
+
+📋 STEP 2 FINAL SUMMARY:
+  🗑️  Forget ↓: 0.00% (Classes 0-19)
+  📚 Retain ↑: 74.50% (Classes 20-59)
+  ✨ New ↑: 76.27% (Classes 60-69)
+  🎯 Overall ↑: 74.85%
+💾 Saved checkpoint: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step2.pth
+
+🔥 === STEP 3/5 ===
+
+🔄 Training Step:
+  📚 Retain classes: 30-69
+  🗑️  Forget classes: 0-29
+  ✨ New classes: 70-79
+
+    📈 Epoch 1/50:
+      Loss: 3.1251 | LR: 0.000100
+      Forget ↓: 20.84% | Retain ↑: 71.17%
+      New ↑: 56.00% | Overall ↑: 68.13% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 2/50:
+      Loss: 13.7565 | LR: 0.000100
+      Forget ↓: 14.53% | Retain ↑: 73.30%
+      New ↑: 49.33% | Overall ↑: 68.51% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 3/50:
+      Loss: 12.5158 | LR: 0.000099
+      Forget ↓: 4.93% | Retain ↑: 72.60%
+      New ↑: 50.13% | Overall ↑: 68.11%
+
+    📈 Epoch 4/50:
+      Loss: 11.2520 | LR: 0.000098
+      Forget ↓: 2.93% | Retain ↑: 71.57%
+      New ↑: 52.67% | Overall ↑: 67.79%
+
+    📈 Epoch 5/50:
+      Loss: 9.9874 | LR: 0.000098
+      Forget ↓: 2.93% | Retain ↑: 70.90%
+      New ↑: 54.40% | Overall ↑: 67.60%
+
+    📈 Epoch 6/50:
+      Loss: 8.7799 | LR: 0.000096
+      Forget ↓: 2.62% | Retain ↑: 69.57%
+      New ↑: 56.13% | Overall ↑: 66.88%
+
+    📈 Epoch 7/50:
+      Loss: 7.6444 | LR: 0.000095
+      Forget ↓: 1.69% | Retain ↑: 68.80%
+      New ↑: 56.40% | Overall ↑: 66.32%
+
+    📈 Epoch 8/50:
+      Loss: 6.5058 | LR: 0.000094
+      Forget ↓: 0.71% | Retain ↑: 68.17%
+      New ↑: 55.47% | Overall ↑: 65.63%
+
+    📈 Epoch 9/50:
+      Loss: 5.3802 | LR: 0.000092
+      Forget ↓: 0.44% | Retain ↑: 67.93%
+      New ↑: 56.53% | Overall ↑: 65.65%
+
+    📈 Epoch 10/50:
+      Loss: 4.3346 | LR: 0.000090
+      Forget ↓: 0.40% | Retain ↑: 67.63%
+      New ↑: 56.40% | Overall ↑: 65.39%
+
+    📈 Epoch 11/50:
+      Loss: 3.3046 | LR: 0.000089
+      Forget ↓: 0.36% | Retain ↑: 67.17%
+      New ↑: 57.20% | Overall ↑: 65.17%
+
+    📈 Epoch 12/50:
+      Loss: 2.3529 | LR: 0.000086
+      Forget ↓: 0.36% | Retain ↑: 66.63%
+      New ↑: 57.87% | Overall ↑: 64.88%
+
+    📈 Epoch 13/50:
+      Loss: 1.5364 | LR: 0.000084
+      Forget ↓: 0.31% | Retain ↑: 66.67%
+      New ↑: 56.53% | Overall ↑: 64.64%
+
+    📈 Epoch 14/50:
+      Loss: 1.1613 | LR: 0.000082
+      Forget ↓: 0.31% | Retain ↑: 67.13%
+      New ↑: 58.13% | Overall ↑: 65.33%
+
+    📈 Epoch 15/50:
+      Loss: 1.0036 | LR: 0.000079
+      Forget ↓: 0.31% | Retain ↑: 67.57%
+      New ↑: 58.93% | Overall ↑: 65.84%
+
+    📈 Epoch 16/50:
+      Loss: 0.9114 | LR: 0.000077
+      Forget ↓: 0.31% | Retain ↑: 68.03%
+      New ↑: 60.67% | Overall ↑: 66.56%
+
+    📈 Epoch 17/50:
+      Loss: 0.8676 | LR: 0.000074
+      Forget ↓: 0.31% | Retain ↑: 68.43%
+      New ↑: 62.00% | Overall ↑: 67.15%
+
+    📈 Epoch 18/50:
+      Loss: 0.7932 | LR: 0.000071
+      Forget ↓: 0.27% | Retain ↑: 68.80%
+      New ↑: 62.80% | Overall ↑: 67.60%
+
+    📈 Epoch 19/50:
+      Loss: 0.7497 | LR: 0.000068
+      Forget ↓: 0.27% | Retain ↑: 69.13%
+      New ↑: 64.67% | Overall ↑: 68.24%
+
+    📈 Epoch 20/50:
+      Loss: 0.7077 | LR: 0.000065
+      Forget ↓: 0.27% | Retain ↑: 69.43%
+      New ↑: 66.00% | Overall ↑: 68.75% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 21/50:
+      Loss: 0.6921 | LR: 0.000062
+      Forget ↓: 0.27% | Retain ↑: 69.73%
+      New ↑: 66.53% | Overall ↑: 69.09% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 22/50:
+      Loss: 0.6608 | LR: 0.000059
+      Forget ↓: 0.27% | Retain ↑: 69.93%
+      New ↑: 66.53% | Overall ↑: 69.25% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 23/50:
+      Loss: 0.6205 | LR: 0.000056
+      Forget ↓: 0.27% | Retain ↑: 69.90%
+      New ↑: 68.00% | Overall ↑: 69.52% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 24/50:
+      Loss: 0.6013 | LR: 0.000053
+      Forget ↓: 0.27% | Retain ↑: 69.87%
+      New ↑: 68.40% | Overall ↑: 69.57% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 25/50:
+      Loss: 0.5868 | LR: 0.000050
+      Forget ↓: 0.27% | Retain ↑: 69.87%
+      New ↑: 68.53% | Overall ↑: 69.60% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 26/50:
+      Loss: 0.5820 | LR: 0.000047
+      Forget ↓: 0.27% | Retain ↑: 70.13%
+      New ↑: 68.80% | Overall ↑: 69.87% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 27/50:
+      Loss: 0.5431 | LR: 0.000044
+      Forget ↓: 0.27% | Retain ↑: 70.13%
+      New ↑: 69.20% | Overall ↑: 69.95% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 28/50:
+      Loss: 0.5570 | LR: 0.000041
+      Forget ↓: 0.22% | Retain ↑: 70.03%
+      New ↑: 69.33% | Overall ↑: 69.89%
+
+    📈 Epoch 29/50:
+      Loss: 0.5437 | LR: 0.000038
+      Forget ↓: 0.22% | Retain ↑: 70.10%
+      New ↑: 69.60% | Overall ↑: 70.00% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 30/50:
+      Loss: 0.5261 | LR: 0.000035
+      Forget ↓: 0.22% | Retain ↑: 70.20%
+      New ↑: 70.27% | Overall ↑: 70.21% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 31/50:
+      Loss: 0.5279 | LR: 0.000032
+      Forget ↓: 0.22% | Retain ↑: 70.30%
+      New ↑: 70.27% | Overall ↑: 70.29% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 32/50:
+      Loss: 0.5145 | LR: 0.000029
+      Forget ↓: 0.22% | Retain ↑: 70.23%
+      New ↑: 70.40% | Overall ↑: 70.27%
+
+    📈 Epoch 33/50:
+      Loss: 0.5038 | LR: 0.000026
+      Forget ↓: 0.22% | Retain ↑: 70.33%
+      New ↑: 70.53% | Overall ↑: 70.37% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 34/50:
+      Loss: 0.4876 | LR: 0.000023
+      Forget ↓: 0.22% | Retain ↑: 70.40%
+      New ↑: 70.80% | Overall ↑: 70.48% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 35/50:
+      Loss: 0.5016 | LR: 0.000021
+      Forget ↓: 0.22% | Retain ↑: 70.50%
+      New ↑: 70.80% | Overall ↑: 70.56% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 36/50:
+      Loss: 0.4886 | LR: 0.000018
+      Forget ↓: 0.22% | Retain ↑: 70.50%
+      New ↑: 70.67% | Overall ↑: 70.53%
+
+    📈 Epoch 37/50:
+      Loss: 0.4906 | LR: 0.000016
+      Forget ↓: 0.22% | Retain ↑: 70.50%
+      New ↑: 70.93% | Overall ↑: 70.59% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 38/50:
+      Loss: 0.4694 | LR: 0.000014
+      Forget ↓: 0.22% | Retain ↑: 70.57%
+      New ↑: 70.93% | Overall ↑: 70.64% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 39/50:
+      Loss: 0.4711 | LR: 0.000011
+      Forget ↓: 0.22% | Retain ↑: 70.53%
+      New ↑: 70.93% | Overall ↑: 70.61%
+
+    📈 Epoch 40/50:
+      Loss: 0.4833 | LR: 0.000010
+      Forget ↓: 0.22% | Retain ↑: 70.50%
+      New ↑: 70.93% | Overall ↑: 70.59%
+
+    📈 Epoch 41/50:
+      Loss: 0.4641 | LR: 0.000008
+      Forget ↓: 0.22% | Retain ↑: 70.53%
+      New ↑: 70.93% | Overall ↑: 70.61%
+
+    📈 Epoch 42/50:
+      Loss: 0.4702 | LR: 0.000006
+      Forget ↓: 0.22% | Retain ↑: 70.53%
+      New ↑: 70.93% | Overall ↑: 70.61%
+
+    📈 Epoch 43/50:
+      Loss: 0.4711 | LR: 0.000005
+      Forget ↓: 0.22% | Retain ↑: 70.53%
+      New ↑: 70.93% | Overall ↑: 70.61%
+
+    📈 Epoch 44/50:
+      Loss: 0.4606 | LR: 0.000004
+      Forget ↓: 0.22% | Retain ↑: 70.57%
+      New ↑: 70.93% | Overall ↑: 70.64%
+
+    📈 Epoch 45/50:
+      Loss: 0.4681 | LR: 0.000002
+      Forget ↓: 0.22% | Retain ↑: 70.60%
+      New ↑: 70.93% | Overall ↑: 70.67% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3_best.pth
+
+    📈 Epoch 46/50:
+      Loss: 0.4439 | LR: 0.000002
+      Forget ↓: 0.22% | Retain ↑: 70.60%
+      New ↑: 70.93% | Overall ↑: 70.67%
+
+    📈 Epoch 47/50:
+      Loss: 0.4702 | LR: 0.000001
+      Forget ↓: 0.22% | Retain ↑: 70.57%
+      New ↑: 71.07% | Overall ↑: 70.67%
+
+    📈 Epoch 48/50:
+      Loss: 0.4548 | LR: 0.000000
+      Forget ↓: 0.22% | Retain ↑: 70.57%
+      New ↑: 71.07% | Overall ↑: 70.67%
+
+    📈 Epoch 49/50:
+      Loss: 0.4677 | LR: 0.000000
+      Forget ↓: 0.22% | Retain ↑: 70.57%
+      New ↑: 71.07% | Overall ↑: 70.67%
+
+    📈 Epoch 50/50:
+      Loss: 0.4582 | LR: 0.000000
+      Forget ↓: 0.22% | Retain ↑: 70.57%
+      New ↑: 71.07% | Overall ↑: 70.67%
+
+✅ Training completed! Best Overall: 70.67%
+
+📊 VALIDATION RESULTS:
+============================================================
+  Forget ↓ (0-29): 0.22% (5/2250)
+  Retain ↑ (30-69): 70.57% (2117/3000)
+  New ↑ (70-79): 71.07% (533/750)
+  Overall ↑ (30-79): 70.67% (2650/3750)
+============================================================
+
+📋 STEP 3 FINAL SUMMARY:
+  🗑️  Forget ↓: 0.22% (Classes 0-29)
+  📚 Retain ↑: 70.57% (Classes 30-69)
+  ✨ New ↑: 71.07% (Classes 70-79)
+  🎯 Overall ↑: 70.67%
+💾 Saved checkpoint: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step3.pth
+
+🔥 === STEP 4/5 ===
+
+🔄 Training Step:
+  📚 Retain classes: 40-79
+  🗑️  Forget classes: 0-39
+  ✨ New classes: 80-89
+
+    📈 Epoch 1/50:
+      Loss: 4.7857 | LR: 0.000100
+      Forget ↓: 8.23% | Retain ↑: 70.23%
+      New ↑: 17.20% | Overall ↑: 59.63% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 2/50:
+      Loss: 2.6159 | LR: 0.000100
+      Forget ↓: 1.83% | Retain ↑: 69.70%
+      New ↑: 39.20% | Overall ↑: 63.60% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 3/50:
+      Loss: 1.8647 | LR: 0.000099
+      Forget ↓: 0.13% | Retain ↑: 69.53%
+      New ↑: 47.87% | Overall ↑: 65.20% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 4/50:
+      Loss: 1.4708 | LR: 0.000098
+      Forget ↓: 0.13% | Retain ↑: 69.73%
+      New ↑: 52.53% | Overall ↑: 66.29% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 5/50:
+      Loss: 1.2380 | LR: 0.000098
+      Forget ↓: 0.13% | Retain ↑: 70.27%
+      New ↑: 55.73% | Overall ↑: 67.36% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 6/50:
+      Loss: 1.0889 | LR: 0.000096
+      Forget ↓: 0.13% | Retain ↑: 70.43%
+      New ↑: 57.60% | Overall ↑: 67.87% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 7/50:
+      Loss: 0.9798 | LR: 0.000095
+      Forget ↓: 0.13% | Retain ↑: 70.53%
+      New ↑: 59.87% | Overall ↑: 68.40% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 8/50:
+      Loss: 0.9024 | LR: 0.000094
+      Forget ↓: 0.13% | Retain ↑: 70.80%
+      New ↑: 61.47% | Overall ↑: 68.93% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 9/50:
+      Loss: 0.8252 | LR: 0.000092
+      Forget ↓: 0.13% | Retain ↑: 71.07%
+      New ↑: 63.07% | Overall ↑: 69.47% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 10/50:
+      Loss: 0.7671 | LR: 0.000090
+      Forget ↓: 0.13% | Retain ↑: 71.17%
+      New ↑: 64.53% | Overall ↑: 69.84% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 11/50:
+      Loss: 0.7359 | LR: 0.000089
+      Forget ↓: 0.10% | Retain ↑: 71.27%
+      New ↑: 66.67% | Overall ↑: 70.35% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 12/50:
+      Loss: 0.6666 | LR: 0.000086
+      Forget ↓: 0.10% | Retain ↑: 71.30%
+      New ↑: 68.13% | Overall ↑: 70.67% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 13/50:
+      Loss: 0.6502 | LR: 0.000084
+      Forget ↓: 0.10% | Retain ↑: 71.30%
+      New ↑: 68.93% | Overall ↑: 70.83% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 14/50:
+      Loss: 0.6333 | LR: 0.000082
+      Forget ↓: 0.10% | Retain ↑: 71.10%
+      New ↑: 70.00% | Overall ↑: 70.88% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 15/50:
+      Loss: 0.6000 | LR: 0.000079
+      Forget ↓: 0.10% | Retain ↑: 71.07%
+      New ↑: 70.53% | Overall ↑: 70.96% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 16/50:
+      Loss: 0.5904 | LR: 0.000077
+      Forget ↓: 0.10% | Retain ↑: 71.17%
+      New ↑: 71.33% | Overall ↑: 71.20% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 17/50:
+      Loss: 0.5607 | LR: 0.000074
+      Forget ↓: 0.10% | Retain ↑: 71.03%
+      New ↑: 71.07% | Overall ↑: 71.04%
+
+    📈 Epoch 18/50:
+      Loss: 0.5547 | LR: 0.000071
+      Forget ↓: 0.10% | Retain ↑: 71.13%
+      New ↑: 71.73% | Overall ↑: 71.25% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 19/50:
+      Loss: 0.5401 | LR: 0.000068
+      Forget ↓: 0.10% | Retain ↑: 71.23%
+      New ↑: 72.13% | Overall ↑: 71.41% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 20/50:
+      Loss: 0.5308 | LR: 0.000065
+      Forget ↓: 0.10% | Retain ↑: 71.27%
+      New ↑: 72.53% | Overall ↑: 71.52% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 21/50:
+      Loss: 0.5096 | LR: 0.000062
+      Forget ↓: 0.10% | Retain ↑: 71.07%
+      New ↑: 73.07% | Overall ↑: 71.47%
+
+    📈 Epoch 22/50:
+      Loss: 0.4908 | LR: 0.000059
+      Forget ↓: 0.10% | Retain ↑: 71.20%
+      New ↑: 73.07% | Overall ↑: 71.57% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 23/50:
+      Loss: 0.4885 | LR: 0.000056
+      Forget ↓: 0.10% | Retain ↑: 71.23%
+      New ↑: 73.07% | Overall ↑: 71.60% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 24/50:
+      Loss: 0.4792 | LR: 0.000053
+      Forget ↓: 0.10% | Retain ↑: 71.13%
+      New ↑: 73.07% | Overall ↑: 71.52%
+
+    📈 Epoch 25/50:
+      Loss: 0.4742 | LR: 0.000050
+      Forget ↓: 0.10% | Retain ↑: 71.13%
+      New ↑: 74.00% | Overall ↑: 71.71% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 26/50:
+      Loss: 0.4645 | LR: 0.000047
+      Forget ↓: 0.10% | Retain ↑: 70.93%
+      New ↑: 73.73% | Overall ↑: 71.49%
+
+    📈 Epoch 27/50:
+      Loss: 0.4554 | LR: 0.000044
+      Forget ↓: 0.10% | Retain ↑: 71.00%
+      New ↑: 74.53% | Overall ↑: 71.71%
+
+    📈 Epoch 28/50:
+      Loss: 0.4491 | LR: 0.000041
+      Forget ↓: 0.10% | Retain ↑: 70.87%
+      New ↑: 74.67% | Overall ↑: 71.63%
+
+    📈 Epoch 29/50:
+      Loss: 0.4559 | LR: 0.000038
+      Forget ↓: 0.10% | Retain ↑: 70.90%
+      New ↑: 74.67% | Overall ↑: 71.65%
+
+    📈 Epoch 30/50:
+      Loss: 0.4504 | LR: 0.000035
+      Forget ↓: 0.10% | Retain ↑: 70.87%
+      New ↑: 75.73% | Overall ↑: 71.84% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 31/50:
+      Loss: 0.4434 | LR: 0.000032
+      Forget ↓: 0.07% | Retain ↑: 71.27%
+      New ↑: 75.33% | Overall ↑: 72.08% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 32/50:
+      Loss: 0.4326 | LR: 0.000029
+      Forget ↓: 0.07% | Retain ↑: 71.10%
+      New ↑: 75.47% | Overall ↑: 71.97%
+
+    📈 Epoch 33/50:
+      Loss: 0.4325 | LR: 0.000026
+      Forget ↓: 0.07% | Retain ↑: 70.93%
+      New ↑: 75.60% | Overall ↑: 71.87%
+
+    📈 Epoch 34/50:
+      Loss: 0.4336 | LR: 0.000023
+      Forget ↓: 0.07% | Retain ↑: 71.07%
+      New ↑: 75.87% | Overall ↑: 72.03%
+
+    📈 Epoch 35/50:
+      Loss: 0.4222 | LR: 0.000021
+      Forget ↓: 0.07% | Retain ↑: 71.20%
+      New ↑: 76.00% | Overall ↑: 72.16% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4_best.pth
+
+    📈 Epoch 36/50:
+      Loss: 0.4275 | LR: 0.000018
+      Forget ↓: 0.07% | Retain ↑: 71.13%
+      New ↑: 76.27% | Overall ↑: 72.16%
+
+    📈 Epoch 37/50:
+      Loss: 0.4237 | LR: 0.000016
+      Forget ↓: 0.07% | Retain ↑: 71.03%
+      New ↑: 76.13% | Overall ↑: 72.05%
+
+    📈 Epoch 38/50:
+      Loss: 0.4311 | LR: 0.000014
+      Forget ↓: 0.07% | Retain ↑: 71.13%
+      New ↑: 76.27% | Overall ↑: 72.16%
+
+    📈 Epoch 39/50:
+      Loss: 0.4167 | LR: 0.000011
+      Forget ↓: 0.07% | Retain ↑: 71.03%
+      New ↑: 76.27% | Overall ↑: 72.08%
+
+    📈 Epoch 40/50:
+      Loss: 0.4238 | LR: 0.000010
+      Forget ↓: 0.07% | Retain ↑: 71.13%
+      New ↑: 76.00% | Overall ↑: 72.11%
+
+    📈 Epoch 41/50:
+      Loss: 0.4266 | LR: 0.000008
+      Forget ↓: 0.07% | Retain ↑: 71.10%
+      New ↑: 76.00% | Overall ↑: 72.08%
+
+    📈 Epoch 42/50:
+      Loss: 0.4090 | LR: 0.000006
+      Forget ↓: 0.07% | Retain ↑: 71.00%
+      New ↑: 76.40% | Overall ↑: 72.08%
+
+    📈 Epoch 43/50:
+      Loss: 0.4220 | LR: 0.000005
+      Forget ↓: 0.07% | Retain ↑: 71.07%
+      New ↑: 76.27% | Overall ↑: 72.11%
+
+    📈 Epoch 44/50:
+      Loss: 0.4215 | LR: 0.000004
+      Forget ↓: 0.07% | Retain ↑: 71.10%
+      New ↑: 76.13% | Overall ↑: 72.11%
+
+    📈 Epoch 45/50:
+      Loss: 0.4138 | LR: 0.000002
+      Forget ↓: 0.07% | Retain ↑: 71.10%
+      New ↑: 76.40% | Overall ↑: 72.16%
+
+    📈 Epoch 46/50:
+      Loss: 0.4096 | LR: 0.000002
+      Forget ↓: 0.07% | Retain ↑: 71.13%
+      New ↑: 76.27% | Overall ↑: 72.16%
+
+    📈 Epoch 47/50:
+      Loss: 0.4185 | LR: 0.000001
+      Forget ↓: 0.07% | Retain ↑: 71.13%
+      New ↑: 76.27% | Overall ↑: 72.16%
+
+    📈 Epoch 48/50:
+      Loss: 0.4229 | LR: 0.000000
+      Forget ↓: 0.07% | Retain ↑: 71.13%
+      New ↑: 76.27% | Overall ↑: 72.16%
+
+    📈 Epoch 49/50:
+      Loss: 0.4131 | LR: 0.000000
+      Forget ↓: 0.07% | Retain ↑: 71.13%
+      New ↑: 76.27% | Overall ↑: 72.16%
+
+    📈 Epoch 50/50:
+      Loss: 0.4148 | LR: 0.000000
+      Forget ↓: 0.07% | Retain ↑: 71.13%
+      New ↑: 76.27% | Overall ↑: 72.16%
+
+✅ Training completed! Best Overall: 72.16%
+
+📊 VALIDATION RESULTS:
+============================================================
+  Forget ↓ (0-39): 0.07% (2/3000)
+  Retain ↑ (40-79): 71.13% (2134/3000)
+  New ↑ (80-89): 76.27% (572/750)
+  Overall ↑ (40-89): 72.16% (2706/3750)
+============================================================
+
+📋 STEP 4 FINAL SUMMARY:
+  🗑️  Forget ↓: 0.07% (Classes 0-39)
+  📚 Retain ↑: 71.13% (Classes 40-79)
+  ✨ New ↑: 76.27% (Classes 80-89)
+  🎯 Overall ↑: 72.16%
+💾 Saved checkpoint: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step4.pth
+
+🔥 === STEP 5/5 ===
+
+🔄 Training Step:
+  📚 Retain classes: 50-89
+  🗑️  Forget classes: 0-49
+  ✨ New classes: 90-99
+
+    📈 Epoch 1/50:
+      Loss: 3.1390 | LR: 0.000100
+      Forget ↓: 4.16% | Retain ↑: 69.80%
+      New ↑: 26.27% | Overall ↑: 61.09% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 2/50:
+      Loss: 1.7660 | LR: 0.000100
+      Forget ↓: 0.64% | Retain ↑: 70.00%
+      New ↑: 42.27% | Overall ↑: 64.45% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 3/50:
+      Loss: 1.3666 | LR: 0.000099
+      Forget ↓: 0.05% | Retain ↑: 70.83%
+      New ↑: 50.27% | Overall ↑: 66.72% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 4/50:
+      Loss: 1.1945 | LR: 0.000098
+      Forget ↓: 0.05% | Retain ↑: 71.27%
+      New ↑: 54.00% | Overall ↑: 67.81% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 5/50:
+      Loss: 1.0594 | LR: 0.000098
+      Forget ↓: 0.05% | Retain ↑: 71.00%
+      New ↑: 58.40% | Overall ↑: 68.48% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 6/50:
+      Loss: 0.9293 | LR: 0.000096
+      Forget ↓: 0.05% | Retain ↑: 71.07%
+      New ↑: 61.20% | Overall ↑: 69.09% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 7/50:
+      Loss: 0.8788 | LR: 0.000095
+      Forget ↓: 0.05% | Retain ↑: 71.10%
+      New ↑: 63.60% | Overall ↑: 69.60% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 8/50:
+      Loss: 0.8261 | LR: 0.000094
+      Forget ↓: 0.05% | Retain ↑: 71.27%
+      New ↑: 64.13% | Overall ↑: 69.84% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 9/50:
+      Loss: 0.7847 | LR: 0.000092
+      Forget ↓: 0.05% | Retain ↑: 71.20%
+      New ↑: 64.93% | Overall ↑: 69.95% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 10/50:
+      Loss: 0.7453 | LR: 0.000090
+      Forget ↓: 0.05% | Retain ↑: 71.27%
+      New ↑: 66.13% | Overall ↑: 70.24% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 11/50:
+      Loss: 0.6988 | LR: 0.000089
+      Forget ↓: 0.05% | Retain ↑: 71.53%
+      New ↑: 66.93% | Overall ↑: 70.61% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 12/50:
+      Loss: 0.6764 | LR: 0.000086
+      Forget ↓: 0.05% | Retain ↑: 71.50%
+      New ↑: 66.93% | Overall ↑: 70.59%
+
+    📈 Epoch 13/50:
+      Loss: 0.6559 | LR: 0.000084
+      Forget ↓: 0.05% | Retain ↑: 71.33%
+      New ↑: 68.00% | Overall ↑: 70.67% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 14/50:
+      Loss: 0.6440 | LR: 0.000082
+      Forget ↓: 0.03% | Retain ↑: 71.37%
+      New ↑: 68.80% | Overall ↑: 70.85% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 15/50:
+      Loss: 0.6196 | LR: 0.000079
+      Forget ↓: 0.03% | Retain ↑: 71.50%
+      New ↑: 69.60% | Overall ↑: 71.12% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 16/50:
+      Loss: 0.6021 | LR: 0.000077
+      Forget ↓: 0.03% | Retain ↑: 71.27%
+      New ↑: 70.27% | Overall ↑: 71.07%
+
+    📈 Epoch 17/50:
+      Loss: 0.5899 | LR: 0.000074
+      Forget ↓: 0.03% | Retain ↑: 71.17%
+      New ↑: 70.13% | Overall ↑: 70.96%
+
+    📈 Epoch 18/50:
+      Loss: 0.5757 | LR: 0.000071
+      Forget ↓: 0.03% | Retain ↑: 71.37%
+      New ↑: 70.40% | Overall ↑: 71.17% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 19/50:
+      Loss: 0.5574 | LR: 0.000068
+      Forget ↓: 0.03% | Retain ↑: 71.50%
+      New ↑: 71.07% | Overall ↑: 71.41% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 20/50:
+      Loss: 0.5367 | LR: 0.000065
+      Forget ↓: 0.03% | Retain ↑: 71.43%
+      New ↑: 71.60% | Overall ↑: 71.47% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 21/50:
+      Loss: 0.5447 | LR: 0.000062
+      Forget ↓: 0.03% | Retain ↑: 71.17%
+      New ↑: 71.20% | Overall ↑: 71.17%
+
+    📈 Epoch 22/50:
+      Loss: 0.5369 | LR: 0.000059
+      Forget ↓: 0.03% | Retain ↑: 71.37%
+      New ↑: 71.33% | Overall ↑: 71.36%
+
+    📈 Epoch 23/50:
+      Loss: 0.5235 | LR: 0.000056
+      Forget ↓: 0.03% | Retain ↑: 71.20%
+      New ↑: 72.00% | Overall ↑: 71.36%
+
+    📈 Epoch 24/50:
+      Loss: 0.5126 | LR: 0.000053
+      Forget ↓: 0.03% | Retain ↑: 71.20%
+      New ↑: 72.80% | Overall ↑: 71.52% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 25/50:
+      Loss: 0.5134 | LR: 0.000050
+      Forget ↓: 0.03% | Retain ↑: 71.17%
+      New ↑: 72.67% | Overall ↑: 71.47%
+
+    📈 Epoch 26/50:
+      Loss: 0.4973 | LR: 0.000047
+      Forget ↓: 0.03% | Retain ↑: 71.23%
+      New ↑: 72.80% | Overall ↑: 71.55% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 27/50:
+      Loss: 0.4989 | LR: 0.000044
+      Forget ↓: 0.03% | Retain ↑: 71.00%
+      New ↑: 73.20% | Overall ↑: 71.44%
+
+    📈 Epoch 28/50:
+      Loss: 0.4921 | LR: 0.000041
+      Forget ↓: 0.03% | Retain ↑: 71.07%
+      New ↑: 73.73% | Overall ↑: 71.60% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 29/50:
+      Loss: 0.4979 | LR: 0.000038
+      Forget ↓: 0.03% | Retain ↑: 70.80%
+      New ↑: 73.87% | Overall ↑: 71.41%
+
+    📈 Epoch 30/50:
+      Loss: 0.4820 | LR: 0.000035
+      Forget ↓: 0.03% | Retain ↑: 70.90%
+      New ↑: 74.00% | Overall ↑: 71.52%
+
+    📈 Epoch 31/50:
+      Loss: 0.4844 | LR: 0.000032
+      Forget ↓: 0.03% | Retain ↑: 70.80%
+      New ↑: 74.27% | Overall ↑: 71.49%
+
+    📈 Epoch 32/50:
+      Loss: 0.4773 | LR: 0.000029
+      Forget ↓: 0.03% | Retain ↑: 71.07%
+      New ↑: 73.87% | Overall ↑: 71.63% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 33/50:
+      Loss: 0.4723 | LR: 0.000026
+      Forget ↓: 0.03% | Retain ↑: 71.03%
+      New ↑: 73.87% | Overall ↑: 71.60%
+
+    📈 Epoch 34/50:
+      Loss: 0.4764 | LR: 0.000023
+      Forget ↓: 0.03% | Retain ↑: 71.03%
+      New ↑: 74.53% | Overall ↑: 71.73% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 35/50:
+      Loss: 0.4717 | LR: 0.000021
+      Forget ↓: 0.03% | Retain ↑: 70.97%
+      New ↑: 74.67% | Overall ↑: 71.71%
+
+    📈 Epoch 36/50:
+      Loss: 0.4681 | LR: 0.000018
+      Forget ↓: 0.03% | Retain ↑: 70.93%
+      New ↑: 74.93% | Overall ↑: 71.73%
+
+    📈 Epoch 37/50:
+      Loss: 0.4736 | LR: 0.000016
+      Forget ↓: 0.03% | Retain ↑: 71.07%
+      New ↑: 74.80% | Overall ↑: 71.81% ⭐ BEST! Saved: /home/jag/codes/CLU/checkpoints/classification/bid_lora/step5_best.pth
+
+    📈 Epoch 38/50:
+      Loss: 0.4654 | LR: 0.000014
+      Forget ↓: 0.03% | Retain ↑: 70.87%
+      New ↑: 74.80% | Overall ↑: 71.65%
+
+    📈 Epoch 39/50:
+      Loss: 0.4671 | LR: 0.000011
+      Forget ↓: 0.03% | Retain ↑: 70.90%
+      New ↑: 74.67% | Overall ↑: 71.65%
+
+    📈 Epoch 40/50:
+      Loss: 0.4634 | LR: 0.000010
+      Forget ↓: 0.03% | Retain ↑: 70.87%
+      New ↑: 74.80% | Overall ↑: 71.65%
+
+    📈 Epoch 41/50:
+      Loss: 0.4636 | LR: 0.000008
+      Forget ↓: 0.03% | Retain ↑: 70.90%
+      New ↑: 74.67% | Overall ↑: 71.65%
+
+    📈 Epoch 42/50:
+      Loss: 0.4608 | LR: 0.000006
+      Forget ↓: 0.03% | Retain ↑: 70.87%
+      New ↑: 74.67% | Overall ↑: 71.63%
+
+    📈 Epoch 43/50:
+      Loss: 0.4615 | LR: 0.000005
+      Forget ↓: 0.03% | Retain ↑: 70.93%
+      New ↑: 74.80% | Overall ↑: 71.71%
+
+    📈 Epoch 44/50:
+      Loss: 0.4617 | LR: 0.000004
+      Forget ↓: 0.03% | Retain ↑: 70.90%
+      New ↑: 74.67% | Overall ↑: 71.65%
+
+    📈 Epoch 45/50:
+      Loss: 0.4556 | LR: 0.000002
+      Forget ↓: 0.03% | Retain ↑: 70.97%
+      New ↑: 74.80% | Overall ↑: 71.73%

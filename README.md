@@ -9,6 +9,7 @@ ssh jag@172.17.38.139
 tmux attach -t step_train
 tmux new -s step_train
 tmux new -s face
+tmux new -s obd
 tmux new -s classey
 tmux new -s coco
 tmux attach -t face
